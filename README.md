@@ -62,3 +62,34 @@ On Sunday, you will present to us what you have achieved.
 
 
 ### For your project. Edit this README.md file to include your own project name,  overview, user stories, and usage. 
+
+
+...bluebrint 
+
+..Project name
+
+
+
+
+...Project description
+My project serves two categories of society at the airport, the general public and people with special needs..
+
+....Database schema
+
+
+
+
+1. Services:
+    1. UsersService,  LocationsService
+2. Models:
+    1. User, flights,...
+3. Controllers:
+    1. collectionVC, specialneedsVC, UsersVC, LogingVC, RegisterVC, MapVC,  ...
+    
+  ...User stories: 
+  1- As passenger i can search for my fligt, so i will cone to airport on time .
+  2- As passenger i can see all airport facilities ، so I can reach it quickly.
+  3- As passenger whith special needs i can get helping very easy, so i will be more comfortable
+  4- As passenger i can serac for my lost luggage very esaly, so i will git it as sson as possible.
+  5-  
+  
