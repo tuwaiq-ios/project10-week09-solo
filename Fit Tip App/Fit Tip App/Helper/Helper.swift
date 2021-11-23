@@ -11,10 +11,12 @@ extension UIViewController {
     
     func setupGradientLayer() -> CAGradientLayer {
         let gradient = CAGradientLayer()
-        let topColor = UIColor(red: 100/255, green: 90/255, blue: 255/255, alpha: 1).cgColor
-        let bottomColor = UIColor(red: 140/255, green: 135/255, blue: 255/255, alpha: 1).cgColor
-        gradient.colors = [topColor, bottomColor]
-        gradient.locations = [0, 1]
+        let firstColor = ThemeColor.mainColor.cgColor
+        let secoundColor = ThemeColor.secoundColor.cgColor
+        let thirdColor = ThemeColor.thirdColor.cgColor
+        let fourthColor = ThemeColor.fourthColor.cgColor
+        gradient.colors = [firstColor, secoundColor,thirdColor ,fourthColor]
+        gradient.locations = [0, 1, 0, 1]
         return gradient
     }
 }

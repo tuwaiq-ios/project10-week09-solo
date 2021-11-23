@@ -12,21 +12,21 @@ class WelcomeCell: UICollectionViewCell {
     
     
     var welcomeVC: WelcomeViewController!
-    var topicImage = AnimationView()
+    var topicAnimationView = AnimationView()
     var topicLabel = UILabel()
     var descriptionLabel = UILabel()
     
     var page: Welcome? {
         didSet {
-            topicImage.animation = Animation.named(page?.imageName ?? "")
+            topicAnimationView.animation = Animation.named(page?.imageName ?? "")
             topicLabel.text = page?.topic
             descriptionLabel.text = page?.description
             if page?.topic == "Start" {
-                topicImage.removeFromSuperview()
+                topicAnimationView.removeFromSuperview()
                 topicLabel.removeFromSuperview()
                 descriptionLabel.removeFromSuperview()
             }else{
-                setupTopicImage()
+                setupAnimationView()
                 setupTopicLabel()
                 setupDescriptionLabel()
             }
@@ -36,34 +36,34 @@ class WelcomeCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupTopicImage()
+        setupAnimationView()
         setupTopicLabel()
         setupDescriptionLabel()
-        backgroundColor = .white
+        backgroundColor = UIColor(named: "BackgroundColor")
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    // ---------------------------------------------------------------------------------------------------------------------------------------------------- //
     
-    private func setupTopicImage() {
-        addSubview(topicImage)
-        topicImage.translatesAutoresizingMaskIntoConstraints = false
-        topicImage.contentMode = .scaleAspectFill
-        topicImage.layer.cornerRadius = 75
-        topicImage.layer.masksToBounds = true
+    
+    private func setupAnimationView() {
+    
+        addSubview(topicAnimationView)
+        topicAnimationView.translatesAutoresizingMaskIntoConstraints = false
+        topicAnimationView.loopMode = .loop
+        topicAnimationView.play()
+        
         let constraints = [
-            topicImage.centerXAnchor.constraint(equalTo: centerXAnchor),
-            topicImage.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -(center.y/2)),
-            topicImage.widthAnchor.constraint(equalToConstant: 150),
-            topicImage.heightAnchor.constraint(equalToConstant: 150),
+            topicAnimationView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            topicAnimationView.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -(center.y/2)),
+            topicAnimationView.widthAnchor.constraint(equalToConstant: 150),
+            topicAnimationView.heightAnchor.constraint(equalToConstant: 150),
+            
         ]
         NSLayoutConstraint.activate(constraints)
     }
-    
-    // ---------------------------------------------------------------------------------------------------------------------------------------------------- //
     
     private func setupTopicLabel() {
         addSubview(topicLabel)
@@ -71,13 +71,13 @@ class WelcomeCell: UICollectionViewCell {
         topicLabel.font = UIFont(name: "Alata", size: 28)
         topicLabel.textAlignment = .center
         let constraints = [
-            topicLabel.topAnchor.constraint(equalTo: topicImage.bottomAnchor, constant: 16),
+            topicLabel.topAnchor.constraint(equalTo: topicAnimationView.bottomAnchor, constant: 16),
             topicLabel.centerXAnchor.constraint(equalTo: centerXAnchor)
         ]
         NSLayoutConstraint.activate(constraints)
     }
     
-    // ---------------------------------------------------------------------------------------------------------------------------------------------------- //
+   
     
     private func setupDescriptionLabel() {
         addSubview(descriptionLabel)

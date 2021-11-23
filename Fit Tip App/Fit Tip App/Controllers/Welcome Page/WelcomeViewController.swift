@@ -10,10 +10,7 @@ import Lottie
 
 class WelcomeViewController: UIViewController {
 
-    let welcomePages = [Welcome(imageName: "Fit_Tip_Logo",
-                                topic: "Fit Tip",
-                                description: "Fitness App"),
-                        Welcome(imageName: "goal",
+    let welcomePages = [Welcome(imageName: "goal",
                                 topic: "Goal",
                                 description: "Chose your goal"),
                         Welcome(imageName: "mesure",
@@ -24,9 +21,12 @@ class WelcomeViewController: UIViewController {
                                 description: "Check your calories, how many steps you walked"),
                         Welcome(imageName: "food",
                                 topic: "Meals",
-                                description: "Variety of meals that align with your goals")]
+                                description: "Variety of meals that align with your goals"),
+                        Welcome(imageName: "Fit_Tip_Logo",
+                                topic: "Start",
+                                description: " ")]
     
-    var collectionView =  UICollectionView()
+    var collectionView:  UICollectionView!
     var skipButton = UIButton(type: .system)
     var pageControl = UIPageControl()
     var slideAnimView = AnimationView()
@@ -34,7 +34,9 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        setupCollectionview()
+        setupSkipButton()
+        setupPageControl()
     }
 
 
@@ -46,7 +48,7 @@ class WelcomeViewController: UIViewController {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = UIColor(named: "BackgroundColor")
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.isPagingEnabled = true
         collectionView.register(WelcomeCell.self, forCellWithReuseIdentifier: "cellId")
@@ -89,7 +91,7 @@ class WelcomeViewController: UIViewController {
         let gradient = setupGradientLayer()
         gradient.frame = view.bounds
         transitionView.layer.insertSublayer(gradient, at: 0)
-        let timer = Timer(timeInterval: 0.3, target: self, selector: #selector(self.animateLogo), userInfo: nil, repeats: false)
+        let timer = Timer(timeInterval: 0.9, target: self, selector: #selector(self.animateLogo), userInfo: nil, repeats: false)
         UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
             transitionView.transform = CGAffineTransform(scaleX: 20, y: 20)
             RunLoop.current.add(timer, forMode: .default)
@@ -106,7 +108,7 @@ class WelcomeViewController: UIViewController {
         view.addSubview(imageView)
         imageView.alpha = 0
         imageView.transform = CGAffineTransform(rotationAngle: 720)
-        UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+        UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
             imageView.transform = .identity
             imageView.alpha = 1
         }) { (true) in
@@ -123,7 +125,7 @@ class WelcomeViewController: UIViewController {
         label.textColor = .white
         view.addSubview(label)
         label.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options: .curveEaseIn, animations: {
+        UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options: .curveEaseIn, animations: {
             label.transform = .identity
         }) { (true) in
             let controller = SignInViewController()
@@ -131,6 +133,23 @@ class WelcomeViewController: UIViewController {
             self.present(controller, animated: false, completion: nil)
             self.collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .centeredHorizontally, animated: false)
         }
+    }
+    
+    
+    private func setupPageControl() {
+        view.addSubview(pageControl)
+        pageControl.translatesAutoresizingMaskIntoConstraints = false
+        pageControl.currentPage = 0
+        pageControl.numberOfPages = welcomePages.count
+        pageControl.currentPageIndicatorTintColor = ThemeColor.mainColor
+        pageControl.pageIndicatorTintColor = ThemeColor.thirdColor
+        pageControl.isUserInteractionEnabled = false
+        let constraints = [
+            pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            pageControl.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -8),
+            pageControl.heightAnchor.constraint(equalToConstant: 30)
+        ]
+        NSLayoutConstraint.activate(constraints)
     }
 }
 
@@ -176,10 +195,10 @@ extension WelcomeViewController: UICollectionViewDelegate,UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         let welcomeCell = cell as! WelcomeCell
-        welcomeCell.topicImage.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+        welcomeCell.topicAnimationView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
         welcomeCell.descriptionLabel.transform = CGAffineTransform(translationX: view.frame.origin.x + view.frame.width/2, y: 0)
         UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
-            welcomeCell.topicImage.transform = .identity
+            welcomeCell.topicAnimationView.transform = .identity
             welcomeCell.descriptionLabel.transform = .identity
         })
     }
