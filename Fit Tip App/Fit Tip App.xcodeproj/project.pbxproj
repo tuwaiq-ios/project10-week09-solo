@@ -9,19 +9,43 @@
 /* Begin PBXBuildFile section */
 		1E5B395F274C2EBF006D681B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B395E274C2EBF006D681B /* AppDelegate.swift */; };
 		1E5B3961274C2EBF006D681B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B3960274C2EBF006D681B /* SceneDelegate.swift */; };
-		1E5B3963274C2EBF006D681B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B3962274C2EBF006D681B /* ViewController.swift */; };
+		1E5B3963274C2EBF006D681B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B3962274C2EBF006D681B /* WelcomeViewController.swift */; };
 		1E5B3968274C2EC2006D681B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B3967274C2EC2006D681B /* Assets.xcassets */; };
 		1E5B396B274C2EC2006D681B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B3969274C2EC2006D681B /* LaunchScreen.storyboard */; };
+		1E5B3985274D0DF3006D681B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B3984274D0DF2006D681B /* GoogleService-Info.plist */; };
+		1E5B398A274D147A006D681B /* WelcomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B3989274D147A006D681B /* WelcomeModel.swift */; };
+		1E5B398D274D169F006D681B /* WelcomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B398C274D169F006D681B /* WelcomeCell.swift */; };
+		1E5B3990274D1ED1006D681B /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B398F274D1ED1006D681B /* ThemeColor.swift */; };
+		1E5B3996274D221B006D681B /* activity.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B3992274D2217006D681B /* activity.json */; };
+		1E5B3997274D221B006D681B /* goal.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B3993274D2218006D681B /* goal.json */; };
+		1E5B3998274D221B006D681B /* mesure.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B3994274D221A006D681B /* mesure.json */; };
+		1E5B3999274D221B006D681B /* food.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B3995274D221B006D681B /* food.json */; };
+		1E5B399B274D2635006D681B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B399A274D2635006D681B /* Helper.swift */; };
+		1E5B399D274D2722006D681B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B399C274D2722006D681B /* SignInViewController.swift */; };
+		6C61A07860AAC96D96C64184 /* Pods_Fit_Tip_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E659BA2042B9C36A2475D /* Pods_Fit_Tip_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E5B395B274C2EBF006D681B /* Fit Tip App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fit Tip App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5B395E274C2EBF006D681B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E5B3960274C2EBF006D681B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1E5B3962274C2EBF006D681B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E5B3962274C2EBF006D681B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		1E5B3967274C2EC2006D681B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E5B396A274C2EC2006D681B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E5B396C274C2EC2006D681B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E5B3984274D0DF2006D681B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1E5B3989274D147A006D681B /* WelcomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModel.swift; sourceTree = "<group>"; };
+		1E5B398C274D169F006D681B /* WelcomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCell.swift; sourceTree = "<group>"; };
+		1E5B398F274D1ED1006D681B /* ThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
+		1E5B3992274D2217006D681B /* activity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activity.json; sourceTree = "<group>"; };
+		1E5B3993274D2218006D681B /* goal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = goal.json; sourceTree = "<group>"; };
+		1E5B3994274D221A006D681B /* mesure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mesure.json; sourceTree = "<group>"; };
+		1E5B3995274D221B006D681B /* food.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = food.json; sourceTree = "<group>"; };
+		1E5B399A274D2635006D681B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		1E5B399C274D2722006D681B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		556E659BA2042B9C36A2475D /* Pods_Fit_Tip_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fit_Tip_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9784A1BC515546B5A2F89E97 /* Pods-Fit Tip App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fit Tip App.debug.xcconfig"; path = "Target Support Files/Pods-Fit Tip App/Pods-Fit Tip App.debug.xcconfig"; sourceTree = "<group>"; };
+		D607717FBBF962B60E4849DB /* Pods-Fit Tip App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fit Tip App.release.xcconfig"; path = "Target Support Files/Pods-Fit Tip App/Pods-Fit Tip App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C61A07860AAC96D96C64184 /* Pods_Fit_Tip_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +65,8 @@
 			children = (
 				1E5B395D274C2EBF006D681B /* Fit Tip App */,
 				1E5B395C274C2EBF006D681B /* Products */,
+				C031D5ACF1673BC5D92A026D /* Pods */,
+				207C391D70C502534572C0EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +83,87 @@
 			children = (
 				1E5B395E274C2EBF006D681B /* AppDelegate.swift */,
 				1E5B3960274C2EBF006D681B /* SceneDelegate.swift */,
-				1E5B3962274C2EBF006D681B /* ViewController.swift */,
-				1E5B3967274C2EC2006D681B /* Assets.xcassets */,
-				1E5B3969274C2EC2006D681B /* LaunchScreen.storyboard */,
+				1E5B398E274D1EA1006D681B /* Helper */,
+				1E5B3988274D1451006D681B /* Networking */,
+				1E5B3987274D1449006D681B /* Models */,
+				1E5B3986274D1440006D681B /* Controllers */,
+				1E5B398B274D14CA006D681B /* Assets */,
 				1E5B396C274C2EC2006D681B /* Info.plist */,
+				1E5B3984274D0DF2006D681B /* GoogleService-Info.plist */,
 			);
 			path = "Fit Tip App";
+			sourceTree = "<group>";
+		};
+		1E5B3986274D1440006D681B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1E5B3962274C2EBF006D681B /* WelcomeViewController.swift */,
+				1E5B398C274D169F006D681B /* WelcomeCell.swift */,
+				1E5B399C274D2722006D681B /* SignInViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1E5B3987274D1449006D681B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E5B3989274D147A006D681B /* WelcomeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1E5B3988274D1451006D681B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1E5B398B274D14CA006D681B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1E5B3991274D21F8006D681B /* Animation */,
+				1E5B3967274C2EC2006D681B /* Assets.xcassets */,
+				1E5B3969274C2EC2006D681B /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		1E5B398E274D1EA1006D681B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1E5B398F274D1ED1006D681B /* ThemeColor.swift */,
+				1E5B399A274D2635006D681B /* Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		1E5B3991274D21F8006D681B /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				1E5B3992274D2217006D681B /* activity.json */,
+				1E5B3995274D221B006D681B /* food.json */,
+				1E5B3993274D2218006D681B /* goal.json */,
+				1E5B3994274D221A006D681B /* mesure.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		207C391D70C502534572C0EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				556E659BA2042B9C36A2475D /* Pods_Fit_Tip_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C031D5ACF1673BC5D92A026D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9784A1BC515546B5A2F89E97 /* Pods-Fit Tip App.debug.xcconfig */,
+				D607717FBBF962B60E4849DB /* Pods-Fit Tip App.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E5B396F274C2EC2006D681B /* Build configuration list for PBXNativeTarget "Fit Tip App" */;
 			buildPhases = (
+				22479E0D23BE64038912532F /* [CP] Check Pods Manifest.lock */,
 				1E5B3957274C2EBF006D681B /* Sources */,
 				1E5B3958274C2EBF006D681B /* Frameworks */,
 				1E5B3959274C2EBF006D681B /* Resources */,
+				5FF17C7C59FDF73F87C9E8F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,20 +227,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E5B396B274C2EC2006D681B /* LaunchScreen.storyboard in Resources */,
+				1E5B3999274D221B006D681B /* food.json in Resources */,
 				1E5B3968274C2EC2006D681B /* Assets.xcassets in Resources */,
+				1E5B3996274D221B006D681B /* activity.json in Resources */,
+				1E5B3997274D221B006D681B /* goal.json in Resources */,
+				1E5B3998274D221B006D681B /* mesure.json in Resources */,
+				1E5B3985274D0DF3006D681B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22479E0D23BE64038912532F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fit Tip App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FF17C7C59FDF73F87C9E8F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fit Tip App/Pods-Fit Tip App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fit Tip App/Pods-Fit Tip App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fit Tip App/Pods-Fit Tip App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1E5B3957274C2EBF006D681B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E5B3963274C2EBF006D681B /* ViewController.swift in Sources */,
+				1E5B3963274C2EBF006D681B /* WelcomeViewController.swift in Sources */,
+				1E5B399B274D2635006D681B /* Helper.swift in Sources */,
 				1E5B395F274C2EBF006D681B /* AppDelegate.swift in Sources */,
+				1E5B398D274D169F006D681B /* WelcomeCell.swift in Sources */,
+				1E5B399D274D2722006D681B /* SignInViewController.swift in Sources */,
+				1E5B398A274D147A006D681B /* WelcomeModel.swift in Sources */,
 				1E5B3961274C2EBF006D681B /* SceneDelegate.swift in Sources */,
+				1E5B3990274D1ED1006D681B /* ThemeColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +428,7 @@
 		};
 		1E5B3970274C2EC2006D681B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9784A1BC515546B5A2F89E97 /* Pods-Fit Tip App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,6 +456,7 @@
 		};
 		1E5B3971274C2EC2006D681B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D607717FBBF962B60E4849DB /* Pods-Fit Tip App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

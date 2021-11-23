@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>962936657247-n62catseks80r78crdh7c0htv84gda64.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.962936657247-n62catseks80r78crdh7c0htv84gda64</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCwaA4vP0dmCAIRM1hHB9PrdVYh_rYZEN0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>962936657247</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>atheer-alzahrani.Fit-Tip-App</string>
+	<key>PROJECT_ID</key>
+	<string>fit-tip-ae422</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fit-tip-ae422.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:962936657247:ios:7b21cdbb6e5a7bf1e652ea</string>
+</dict>
+</plist>
