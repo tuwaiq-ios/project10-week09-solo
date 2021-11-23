@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignInLogoAnimation: UIImageView {
+class SignInLogo: UIImageView {
     
 
     

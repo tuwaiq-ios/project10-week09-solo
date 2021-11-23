@@ -25,6 +25,12 @@
 		1E5B39A0274D6F9F006D681B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B399F274D6F9F006D681B /* GradientView.swift */; };
 		1E5B39A3274D71E7006D681B /* SignInLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39A2274D71E7006D681B /* SignInLogo.swift */; };
 		1E5B39A5274D7289006D681B /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39A4274D7289006D681B /* SignInView.swift */; };
+		1E5B39A7274D7B77006D681B /* KeyboardHandelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39A6274D7B77006D681B /* KeyboardHandelr.swift */; };
+		1E5B39A9274D7D3E006D681B /* SignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39A8274D7D3E006D681B /* SignButton.swift */; };
+		1E5B39AB274D7EB1006D681B /* UserNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39AA274D7EB1006D681B /* UserNetworking.swift */; };
+		1E5B39AD274D8016006D681B /* NetworkingLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39AC274D8016006D681B /* NetworkingLoadingIndicator.swift */; };
+		1E5B39AF274D8257006D681B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39AE274D8257006D681B /* TabBar.swift */; };
+		1E5B39B1274D87BD006D681B /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B39B0274D87BD006D681B /* loading.json */; };
 		6C61A07860AAC96D96C64184 /* Pods_Fit_Tip_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E659BA2042B9C36A2475D /* Pods_Fit_Tip_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +55,12 @@
 		1E5B399F274D6F9F006D681B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		1E5B39A2274D71E7006D681B /* SignInLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInLogo.swift; sourceTree = "<group>"; };
 		1E5B39A4274D7289006D681B /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		1E5B39A6274D7B77006D681B /* KeyboardHandelr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandelr.swift; sourceTree = "<group>"; };
+		1E5B39A8274D7D3E006D681B /* SignButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignButton.swift; sourceTree = "<group>"; };
+		1E5B39AA274D7EB1006D681B /* UserNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNetworking.swift; sourceTree = "<group>"; };
+		1E5B39AC274D8016006D681B /* NetworkingLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingLoadingIndicator.swift; sourceTree = "<group>"; };
+		1E5B39AE274D8257006D681B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		1E5B39B0274D87BD006D681B /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		556E659BA2042B9C36A2475D /* Pods_Fit_Tip_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fit_Tip_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9784A1BC515546B5A2F89E97 /* Pods-Fit Tip App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fit Tip App.debug.xcconfig"; path = "Target Support Files/Pods-Fit Tip App/Pods-Fit Tip App.debug.xcconfig"; sourceTree = "<group>"; };
 		D607717FBBF962B60E4849DB /* Pods-Fit Tip App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fit Tip App.release.xcconfig"; path = "Target Support Files/Pods-Fit Tip App/Pods-Fit Tip App.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +115,7 @@
 		1E5B3986274D1440006D681B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1E5B39AE274D8257006D681B /* TabBar.swift */,
 				1E5B399E274D6E84006D681B /* Welcome Page */,
 				1E5B39A1274D71BB006D681B /* SignIn */,
 			);
@@ -120,6 +133,8 @@
 		1E5B3988274D1451006D681B /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				1E5B39AA274D7EB1006D681B /* UserNetworking.swift */,
+				1E5B39AC274D8016006D681B /* NetworkingLoadingIndicator.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -151,6 +166,7 @@
 				1E5B3995274D221B006D681B /* food.json */,
 				1E5B3993274D2218006D681B /* goal.json */,
 				1E5B3994274D221A006D681B /* mesure.json */,
+				1E5B39B0274D87BD006D681B /* loading.json */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -170,6 +186,8 @@
 				1E5B399C274D2722006D681B /* SignInViewController.swift */,
 				1E5B39A2274D71E7006D681B /* SignInLogo.swift */,
 				1E5B39A4274D7289006D681B /* SignInView.swift */,
+				1E5B39A6274D7B77006D681B /* KeyboardHandelr.swift */,
+				1E5B39A8274D7D3E006D681B /* SignButton.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -253,6 +271,7 @@
 			files = (
 				1E5B396B274C2EC2006D681B /* LaunchScreen.storyboard in Resources */,
 				1E5B3999274D221B006D681B /* food.json in Resources */,
+				1E5B39B1274D87BD006D681B /* loading.json in Resources */,
 				1E5B3968274C2EC2006D681B /* Assets.xcassets in Resources */,
 				1E5B3996274D221B006D681B /* activity.json in Resources */,
 				1E5B3997274D221B006D681B /* goal.json in Resources */,
@@ -310,15 +329,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5B39AB274D7EB1006D681B /* UserNetworking.swift in Sources */,
 				1E5B3963274C2EBF006D681B /* WelcomeViewController.swift in Sources */,
 				1E5B399B274D2635006D681B /* Helper.swift in Sources */,
+				1E5B39AF274D8257006D681B /* TabBar.swift in Sources */,
 				1E5B395F274C2EBF006D681B /* AppDelegate.swift in Sources */,
 				1E5B398D274D169F006D681B /* WelcomeCell.swift in Sources */,
+				1E5B39AD274D8016006D681B /* NetworkingLoadingIndicator.swift in Sources */,
 				1E5B39A3274D71E7006D681B /* SignInLogo.swift in Sources */,
 				1E5B399D274D2722006D681B /* SignInViewController.swift in Sources */,
 				1E5B398A274D147A006D681B /* WelcomeModel.swift in Sources */,
+				1E5B39A7274D7B77006D681B /* KeyboardHandelr.swift in Sources */,
 				1E5B3961274C2EBF006D681B /* SceneDelegate.swift in Sources */,
 				1E5B3990274D1ED1006D681B /* ThemeColor.swift in Sources */,
+				1E5B39A9274D7D3E006D681B /* SignButton.swift in Sources */,
 				1E5B39A5274D7289006D681B /* SignInView.swift in Sources */,
 				1E5B39A0274D6F9F006D681B /* GradientView.swift in Sources */,
 			);
