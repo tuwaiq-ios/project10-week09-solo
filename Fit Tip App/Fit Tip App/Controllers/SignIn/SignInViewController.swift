@@ -85,6 +85,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if error != nil {
+                self.networkingLoadingIndicator.endLoadingAnimation()
                 self.loginView.errorLabel.text = error?.localizedDescription
                 return
             }
@@ -96,17 +97,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func checkForExistingEmail(_ email: String, completion: @escaping (_ errorMessage: String?) -> Void) {
-        networkingLoadingIndicator.startLoadingAnimation()
-        Auth.auth().fetchSignInMethods(forEmail: email) { (methods, error) in
-            self.networkingLoadingIndicator.endLoadingAnimation()
-            if methods == nil {
-                return completion(nil)
-            }else{
-                return completion("This email is already in use.")
-            }
-        }
-    }
+  
     
     private func setupSignUpButton() {
         let signUpButton = UIButton(type: .system)
@@ -129,17 +120,17 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     }
     
     @objc private func signUpButtonPressed() {
-        //        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
-        //            for subview in self.loginView.subviews {
-        //                subview.alpha = 0
-        //            }
-        //            self.loginButton.alpha = 0
-        //        }) { (true) in
-        //            let controller = SignUpVC()
-        //            controller.modalPresentationStyle = .fullScreen
-        //            controller.signInVC = self
-        //            self.present(controller, animated: false, completion: nil)
-        //        }
+                UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+                    for subview in self.loginView.subviews {
+                        subview.alpha = 0
+                    }
+                    self.signInButton.alpha = 0
+                }) { (true) in
+                    let controller = SignUpViewController()
+                    controller.modalPresentationStyle = .fullScreen
+                    controller.signInVC = self
+                    self.present(controller, animated: false, completion: nil)
+                }
     }
 }
 

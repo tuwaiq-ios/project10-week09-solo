@@ -54,7 +54,7 @@ class SignInView: UIView {
         loginLabel.text = "Sign In"
         loginLabel.textAlignment = .center
         loginLabel.font = UIFont.boldSystemFont(ofSize: 18)
-        loginLabel.textColor = ThemeColor.secoundColor
+        loginLabel.textColor = ThemeColor.mainColor
         let constraints = [
             loginLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             loginLabel.topAnchor.constraint(equalTo: topAnchor, constant: 32)

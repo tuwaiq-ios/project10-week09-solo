@@ -47,7 +47,7 @@ class GradientView: UIView {
         let secoundColor = ThemeColor.secoundColor.cgColor
         let thirdColor = ThemeColor.thirdColor.cgColor
         
-        gradient.colors = [ secoundColor,thirdColor]
+        gradient.colors = [ thirdColor,secoundColor]
         gradient.locations = [0, 1]
         return gradient
     }

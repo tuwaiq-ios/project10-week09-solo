@@ -31,6 +31,16 @@
 		1E5B39AD274D8016006D681B /* NetworkingLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39AC274D8016006D681B /* NetworkingLoadingIndicator.swift */; };
 		1E5B39AF274D8257006D681B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39AE274D8257006D681B /* TabBar.swift */; };
 		1E5B39B1274D87BD006D681B /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B39B0274D87BD006D681B /* loading.json */; };
+		1E5B39B4274E089C006D681B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39B3274E089C006D681B /* SignUpViewController.swift */; };
+		1E5B39B6274E0906006D681B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39B5274E0906006D681B /* SignUpView.swift */; };
+		1E5B39B9274E146A006D681B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39B8274E1469006D681B /* ProfileViewController.swift */; };
+		1E5B39BB274E34FF006D681B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39BA274E34FF006D681B /* User.swift */; };
+		1E5B39BD274E4A51006D681B /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39BC274E4A51006D681B /* LogoViewController.swift */; };
+		1E5B39BF274E4AD1006D681B /* settingUpAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B39BE274E4AD1006D681B /* settingUpAnimation.json */; };
+		1E5B39C1274E5E0E006D681B /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39C0274E5E0D006D681B /* ExerciseViewController.swift */; };
+		1E5B39C3274E5E48006D681B /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39C2274E5E48006D681B /* MealViewController.swift */; };
+		1E5B39C5274E5E89006D681B /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39C4274E5E88006D681B /* ActivityViewController.swift */; };
+		1E5B39C7274E5F1F006D681B /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39C6274E5F1F006D681B /* TipViewController.swift */; };
 		6C61A07860AAC96D96C64184 /* Pods_Fit_Tip_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E659BA2042B9C36A2475D /* Pods_Fit_Tip_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +71,16 @@
 		1E5B39AC274D8016006D681B /* NetworkingLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingLoadingIndicator.swift; sourceTree = "<group>"; };
 		1E5B39AE274D8257006D681B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		1E5B39B0274D87BD006D681B /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		1E5B39B3274E089C006D681B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1E5B39B5274E0906006D681B /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		1E5B39B8274E1469006D681B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1E5B39BA274E34FF006D681B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1E5B39BC274E4A51006D681B /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
+		1E5B39BE274E4AD1006D681B /* settingUpAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = settingUpAnimation.json; sourceTree = "<group>"; };
+		1E5B39C0274E5E0D006D681B /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
+		1E5B39C2274E5E48006D681B /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
+		1E5B39C4274E5E88006D681B /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		1E5B39C6274E5F1F006D681B /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		556E659BA2042B9C36A2475D /* Pods_Fit_Tip_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fit_Tip_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9784A1BC515546B5A2F89E97 /* Pods-Fit Tip App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fit Tip App.debug.xcconfig"; path = "Target Support Files/Pods-Fit Tip App/Pods-Fit Tip App.debug.xcconfig"; sourceTree = "<group>"; };
 		D607717FBBF962B60E4849DB /* Pods-Fit Tip App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fit Tip App.release.xcconfig"; path = "Target Support Files/Pods-Fit Tip App/Pods-Fit Tip App.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,8 +136,16 @@
 			isa = PBXGroup;
 			children = (
 				1E5B39AE274D8257006D681B /* TabBar.swift */,
+				1E5B39C0274E5E0D006D681B /* ExerciseViewController.swift */,
+				1E5B39C4274E5E88006D681B /* ActivityViewController.swift */,
+				1E5B39C2274E5E48006D681B /* MealViewController.swift */,
+				1E5B39C6274E5F1F006D681B /* TipViewController.swift */,
 				1E5B399E274D6E84006D681B /* Welcome Page */,
 				1E5B39A1274D71BB006D681B /* SignIn */,
+				1E5B39B2274E07D9006D681B /* SignUp */,
+				1E5B39A8274D7D3E006D681B /* SignButton.swift */,
+				1E5B39A6274D7B77006D681B /* KeyboardHandelr.swift */,
+				1E5B39B7274E143C006D681B /* Profile */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -126,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				1E5B3989274D147A006D681B /* WelcomeModel.swift */,
+				1E5B39BA274E34FF006D681B /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,6 +191,7 @@
 		1E5B3991274D21F8006D681B /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				1E5B39BE274E4AD1006D681B /* settingUpAnimation.json */,
 				1E5B3992274D2217006D681B /* activity.json */,
 				1E5B3995274D221B006D681B /* food.json */,
 				1E5B3993274D2218006D681B /* goal.json */,
@@ -176,6 +206,7 @@
 			children = (
 				1E5B3962274C2EBF006D681B /* WelcomeViewController.swift */,
 				1E5B398C274D169F006D681B /* WelcomeCell.swift */,
+				1E5B39BC274E4A51006D681B /* LogoViewController.swift */,
 			);
 			path = "Welcome Page";
 			sourceTree = "<group>";
@@ -186,10 +217,25 @@
 				1E5B399C274D2722006D681B /* SignInViewController.swift */,
 				1E5B39A2274D71E7006D681B /* SignInLogo.swift */,
 				1E5B39A4274D7289006D681B /* SignInView.swift */,
-				1E5B39A6274D7B77006D681B /* KeyboardHandelr.swift */,
-				1E5B39A8274D7D3E006D681B /* SignButton.swift */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		1E5B39B2274E07D9006D681B /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				1E5B39B3274E089C006D681B /* SignUpViewController.swift */,
+				1E5B39B5274E0906006D681B /* SignUpView.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		1E5B39B7274E143C006D681B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1E5B39B8274E1469006D681B /* ProfileViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		207C391D70C502534572C0EC /* Frameworks */ = {
@@ -272,6 +318,7 @@
 				1E5B396B274C2EC2006D681B /* LaunchScreen.storyboard in Resources */,
 				1E5B3999274D221B006D681B /* food.json in Resources */,
 				1E5B39B1274D87BD006D681B /* loading.json in Resources */,
+				1E5B39BF274E4AD1006D681B /* settingUpAnimation.json in Resources */,
 				1E5B3968274C2EC2006D681B /* Assets.xcassets in Resources */,
 				1E5B3996274D221B006D681B /* activity.json in Resources */,
 				1E5B3997274D221B006D681B /* goal.json in Resources */,
@@ -331,19 +378,28 @@
 			files = (
 				1E5B39AB274D7EB1006D681B /* UserNetworking.swift in Sources */,
 				1E5B3963274C2EBF006D681B /* WelcomeViewController.swift in Sources */,
+				1E5B39C3274E5E48006D681B /* MealViewController.swift in Sources */,
+				1E5B39C1274E5E0E006D681B /* ExerciseViewController.swift in Sources */,
 				1E5B399B274D2635006D681B /* Helper.swift in Sources */,
 				1E5B39AF274D8257006D681B /* TabBar.swift in Sources */,
 				1E5B395F274C2EBF006D681B /* AppDelegate.swift in Sources */,
+				1E5B39B4274E089C006D681B /* SignUpViewController.swift in Sources */,
+				1E5B39C7274E5F1F006D681B /* TipViewController.swift in Sources */,
 				1E5B398D274D169F006D681B /* WelcomeCell.swift in Sources */,
 				1E5B39AD274D8016006D681B /* NetworkingLoadingIndicator.swift in Sources */,
+				1E5B39BB274E34FF006D681B /* User.swift in Sources */,
 				1E5B39A3274D71E7006D681B /* SignInLogo.swift in Sources */,
+				1E5B39B9274E146A006D681B /* ProfileViewController.swift in Sources */,
 				1E5B399D274D2722006D681B /* SignInViewController.swift in Sources */,
 				1E5B398A274D147A006D681B /* WelcomeModel.swift in Sources */,
 				1E5B39A7274D7B77006D681B /* KeyboardHandelr.swift in Sources */,
 				1E5B3961274C2EBF006D681B /* SceneDelegate.swift in Sources */,
 				1E5B3990274D1ED1006D681B /* ThemeColor.swift in Sources */,
 				1E5B39A9274D7D3E006D681B /* SignButton.swift in Sources */,
+				1E5B39C5274E5E89006D681B /* ActivityViewController.swift in Sources */,
+				1E5B39BD274E4A51006D681B /* LogoViewController.swift in Sources */,
 				1E5B39A5274D7289006D681B /* SignInView.swift in Sources */,
+				1E5B39B6274E0906006D681B /* SignUpView.swift in Sources */,
 				1E5B39A0274D6F9F006D681B /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
