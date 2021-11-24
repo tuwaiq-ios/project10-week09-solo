@@ -33,6 +33,7 @@ class UserNetworking {
             CurrentUser.goal = data["goal"] as? String
             CurrentUser.height = data["height"] as? Int
             CurrentUser.weight = data["weight"] as? Int
+            
             if CurrentUser.id == nil || CurrentUser.profileImage == nil || CurrentUser.name == nil{
                 do{
                     try Auth.auth().signOut()

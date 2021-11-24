@@ -41,6 +41,7 @@
 		1E5B39C3274E5E48006D681B /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39C2274E5E48006D681B /* MealViewController.swift */; };
 		1E5B39C5274E5E89006D681B /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39C4274E5E88006D681B /* ActivityViewController.swift */; };
 		1E5B39C7274E5F1F006D681B /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39C6274E5F1F006D681B /* TipViewController.swift */; };
+		1E5B39C9274E9F1F006D681B /* LoadImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39C8274E9F1F006D681B /* LoadImage + Extension.swift */; };
 		6C61A07860AAC96D96C64184 /* Pods_Fit_Tip_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E659BA2042B9C36A2475D /* Pods_Fit_Tip_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		1E5B39C2274E5E48006D681B /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		1E5B39C4274E5E88006D681B /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		1E5B39C6274E5F1F006D681B /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
+		1E5B39C8274E9F1F006D681B /* LoadImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadImage + Extension.swift"; sourceTree = "<group>"; };
 		556E659BA2042B9C36A2475D /* Pods_Fit_Tip_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fit_Tip_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9784A1BC515546B5A2F89E97 /* Pods-Fit Tip App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fit Tip App.debug.xcconfig"; path = "Target Support Files/Pods-Fit Tip App/Pods-Fit Tip App.debug.xcconfig"; sourceTree = "<group>"; };
 		D607717FBBF962B60E4849DB /* Pods-Fit Tip App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fit Tip App.release.xcconfig"; path = "Target Support Files/Pods-Fit Tip App/Pods-Fit Tip App.release.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				1E5B398F274D1ED1006D681B /* ThemeColor.swift */,
 				1E5B399A274D2635006D681B /* Helper.swift */,
 				1E5B399F274D6F9F006D681B /* GradientView.swift */,
+				1E5B39C8274E9F1F006D681B /* LoadImage + Extension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				1E5B39A7274D7B77006D681B /* KeyboardHandelr.swift in Sources */,
 				1E5B3961274C2EBF006D681B /* SceneDelegate.swift in Sources */,
 				1E5B3990274D1ED1006D681B /* ThemeColor.swift in Sources */,
+				1E5B39C9274E9F1F006D681B /* LoadImage + Extension.swift in Sources */,
 				1E5B39A9274D7D3E006D681B /* SignButton.swift in Sources */,
 				1E5B39C5274E5E89006D681B /* ActivityViewController.swift in Sources */,
 				1E5B39BD274E4A51006D681B /* LogoViewController.swift in Sources */,

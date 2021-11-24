@@ -24,8 +24,10 @@ class TabBar: UITabBarController {
     }
     
     func setupTabBar(){
-        tabBar.backgroundColor = ThemeColor.fourthColor
-        tabBar.barTintColor = ThemeColor.thirdColor
+        tabBar.layer.cornerRadius = 20
+        tabBar.layer.masksToBounds = true
+        tabBar.backgroundColor = .systemGray3
+        tabBar.barTintColor = ThemeColor.secoundColor
         tabBar.tintColor = ThemeColor.mainColor
     }
     
