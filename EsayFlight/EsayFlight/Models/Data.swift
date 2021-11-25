@@ -19,4 +19,10 @@ var details = [
                Homme (image: UIImage(named: "luggage")!, name: "lost luggage")
                 ]
 
+let searchArray = [12234,  12234, 87655, 8997]
 
+
+struct Search {
+    let id: String
+    var content: String
+}

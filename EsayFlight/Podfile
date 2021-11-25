@@ -8,5 +8,6 @@ target 'EsayFlight' do
   # Pods for EsayFlight
 pod 'Firebase/Analytics'	
 pod 'Firebase/Auth'	
-pod 'Firebase/Firestore'	
+pod 'Firebase/Firestore'
+pod 'DropDown'	
 end

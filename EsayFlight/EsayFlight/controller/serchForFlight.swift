@@ -85,12 +85,20 @@ class serchForFlight : UIViewController {
       return imageView
     }()
     
-    let progressView = UIProgressView(progressViewStyle: .bar)
+    lazy var progressView: UIProgressView = {
+        let progressView = UIProgressView(progressViewStyle: .default)
+        progressView.translatesAutoresizingMaskIntoConstraints = false
+        progressView.trackTintColor = .white
+        progressView.progressTintColor = .systemMint
+        progressView.progress = 0
+        return progressView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleCancel))
-        blackSquare = UIView(frame: CGRect(x: 0, y: 100, width: 380, height: 800))
+        blackSquare = UIView(frame: CGRect(x: 0, y: 100, width: 390, height: 800))
         blackSquare.backgroundColor = .white
         blackSquare.layer.cornerRadius = 55
         view.addSubview(blackSquare)
@@ -104,10 +112,12 @@ class serchForFlight : UIViewController {
         view.addSubview(imageView)
 
         
-        progressView.center = view.center
-        progressView.setProgress(0.5, animated: true)
-        progressView.trackTintColor = UIColor.lightGray
-        progressView.tintColor = UIColor.systemMint
+        
+        progressView.heightAnchor.constraint(equalToConstant: 12).isActive = true
+
+        progressView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        progressView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
+        progressView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50).isActive = true
        
        
 
@@ -137,7 +147,7 @@ class serchForFlight : UIViewController {
         
         emptay.topAnchor.constraint(equalTo: depaturelable.topAnchor, constant: 50).isActive = true
         emptay.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
-        emptay.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -280).isActive = true
+        emptay.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -250).isActive = true
         emptay.heightAnchor.constraint(equalToConstant: 40).isActive = true
 
         
@@ -149,8 +159,8 @@ class serchForFlight : UIViewController {
         
         
         
-        imageView.topAnchor.constraint(equalTo: view.topAnchor,constant: 390).isActive = true
-        imageView.leftAnchor.constraint(equalTo: view.leftAnchor,constant: 300).isActive = true
+        imageView.topAnchor.constraint(equalTo: view.topAnchor,constant: 385).isActive = true
+        imageView.leftAnchor.constraint(equalTo: view.leftAnchor,constant: 330).isActive = true
         imageView.heightAnchor.constraint(equalToConstant: 50).isActive = true
         imageView.widthAnchor.constraint(equalToConstant: 50).isActive = true
         

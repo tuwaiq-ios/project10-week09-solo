@@ -12,7 +12,7 @@ class Home : UIViewController, UICollectionViewDelegate, UICollectionViewDataSou
     var blackSquare: UIView!
         override func viewDidLoad() {
             super.viewDidLoad()
-            blackSquare = UIView(frame: CGRect(x: 0, y: 100, width: 380, height: 800))
+            blackSquare = UIView(frame: CGRect(x: 0, y: 100, width: 390, height: 800))
             blackSquare.backgroundColor = .white
             blackSquare.layer.cornerRadius = 55
             view.addSubview(blackSquare)
@@ -22,10 +22,24 @@ class Home : UIViewController, UICollectionViewDelegate, UICollectionViewDataSou
             collectionView.dataSource = self
             collectionView.register(HomeCell.self, forCellWithReuseIdentifier: HomeCell.identifier)
             setupCollectionConstraints()
+        
+            view.isUserInteractionEnabled = true
             
-        }
-    
+            let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
+                swipeLeft.direction = .left
+                self.view.addGestureRecognizer(swipeLeft)
+            
    
+       }
+    
+    
+    @objc func handleGesture(gesture: UISwipeGestureRecognizer) {
+       if gesture.direction == .left {
+           present(
+               UINavigationController(rootViewController: Location()),
+               animated: true,
+               completion: nil
+           )}}
 
         let collectionView: UICollectionView = {
             let layout = UICollectionViewFlowLayout()
@@ -90,7 +104,7 @@ class Home : UIViewController, UICollectionViewDelegate, UICollectionViewDataSou
         }else if indexPath.row == 1 {
             
             let navigationController = UINavigationController(
-                rootViewController: Services()
+                rootViewController:AskForHelp()
             )
             
             navigationController.navigationBar.prefersLargeTitles = true
@@ -99,7 +113,7 @@ class Home : UIViewController, UICollectionViewDelegate, UICollectionViewDataSou
         } else if indexPath.row == 2 {
             
             let navigationController = UINavigationController(
-                rootViewController: AskForHelp()
+                rootViewController: Services()
                 )
             navigationController.modalPresentationStyle = .fullScreen
             navigationController.navigationBar.prefersLargeTitles = true
