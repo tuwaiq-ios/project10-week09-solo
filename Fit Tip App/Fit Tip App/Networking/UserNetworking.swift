@@ -20,7 +20,7 @@ class UserNetworking {
     var networkingLoadingIndicator = NetworkingLoadingIndicator()
     
     // MARK: USER INFO LISTENR
-
+    
     func setupUserInfo(_ uid: String, completion: @escaping (_ isActive: Bool) -> Void) {
         userCollection.document(uid).addSnapshotListener { snapshot, error in
             if error != nil { return }
@@ -101,5 +101,15 @@ class UserNetworking {
                 }
             }
         }
+    }
+    
+    // MARK: ADD MEASURMENT
+    func newMeasurment(uid: String, goal: String, height: Int, weight: Int){
+        userCollection.document(uid).setData([
+            "goal": goal,
+            "height": height,
+            "weight": weight
+        
+        ], merge: true)
     }
 }
