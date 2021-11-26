@@ -22,6 +22,7 @@ class ProfileViewController: UIViewController {
     let heightLabel = UILabel()
     let weightLabel = UILabel()
     let settingButton = UIButton(type: .system)
+    let newMeasureButton = UIButton(type: .system)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,43 @@ class ProfileViewController: UIViewController {
         setupScrollView()
         setupStackView()
         setupHeightAndWeight()
+        setupNewMeasure()
+        
+    }
+    
+    func setupNewMeasure(){
+        scrollView.addSubview(newMeasureButton)
+        newMeasureButton.translatesAutoresizingMaskIntoConstraints = false
+        newMeasureButton.setTitle("Insert New Measure", for: .normal)
+        newMeasureButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        newMeasureButton.tintColor = UIColor(named: "BackgroundColor")
+        newMeasureButton.layer.cornerRadius = 10
+        newMeasureButton.layer.masksToBounds = true
+        
+        let gradient = setupGradientLayer()
+        gradient.frame = view.bounds
+        gradient.startPoint = CGPoint(x: 0, y: 1)
+        gradient.endPoint = CGPoint(x: 1, y: 1)
+        newMeasureButton.layer.insertSublayer(gradient, at: 0)
+        
+        newMeasureButton.addTarget(self, action: #selector(newMeasurePressed), for: .touchUpInside)
+        
+        let constraint = [
+            newMeasureButton.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 16),
+            newMeasureButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            newMeasureButton.heightAnchor.constraint(equalToConstant: 50),
+            newMeasureButton.widthAnchor.constraint(equalToConstant: view.frame.width-25)
+        ]
+        
+        NSLayoutConstraint.activate(constraint)
+    }
+    
+    @objc func newMeasurePressed(){
+        
+        let newMeasureVC = NewMeasureViewController()
+        newMeasureVC.modalPresentationStyle = .fullScreen
+        self.present(newMeasureVC, animated: true, completion: nil)
+        
     }
     
     func setupScrollView(){
@@ -55,29 +93,44 @@ class ProfileViewController: UIViewController {
         stackView.addArrangedSubview(heightLabel)
         stackView.addArrangedSubview(weightLabel)
         stackView.backgroundColor = .systemGray3
-        
+        stackView.layer.cornerRadius = 10
         let constraint = [
             stackView.topAnchor.constraint(equalTo: scrollView.topAnchor),
             stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 15),
             stackView.heightAnchor.constraint(equalToConstant: 100),
-//            stackView.widthAnchor.constraint(equalToConstant: 300 )
         ]
         NSLayoutConstraint.activate(constraint)
         
     }
     
     func setupHeightAndWeight(){
+        let height = UILabel()
+        height.translatesAutoresizingMaskIntoConstraints = false
+        height.text = "Height"
+        height.font = .systemFont(ofSize: 13, weight: .semibold)
+        heightLabel.addSubview(height)
         heightLabel.textAlignment = .center
-        heightLabel.text = "Height"
+        heightLabel.text = "\(CurrentUser.height ?? 0) cm"
+        heightLabel.font = .systemFont(ofSize: 19, weight: .semibold)
         heightLabel.translatesAutoresizingMaskIntoConstraints = false
         
+        let weight = UILabel()
+        weight.translatesAutoresizingMaskIntoConstraints = false
+        weight.text = "Weight"
+        weight.font = .systemFont(ofSize: 13, weight: .semibold)
+        weightLabel.addSubview(weight)
         weightLabel.textAlignment = .center
-        weightLabel.text = "Weight"
+        weightLabel.text = "\(CurrentUser.weight ?? 0) kg"
+        weightLabel.font = .systemFont(ofSize: 19, weight: .semibold)
         weightLabel.translatesAutoresizingMaskIntoConstraints = false
         
         let constrant = [
+            height.topAnchor.constraint(equalTo: stackView.topAnchor, constant: 5),
+            height.leftAnchor.constraint(equalTo: heightLabel.leftAnchor, constant: 5),
             heightLabel.centerYAnchor.constraint(equalTo: stackView.centerYAnchor),
+            weight.topAnchor.constraint(equalTo: stackView.topAnchor, constant: 5),
+            weight.leftAnchor.constraint(equalTo: weightLabel.leftAnchor, constant: 5),
             weightLabel.centerYAnchor.constraint(equalTo: stackView.centerYAnchor)
         ]
         NSLayoutConstraint.activate(constrant)
@@ -97,7 +150,9 @@ class ProfileViewController: UIViewController {
         ]
         NSLayoutConstraint.activate(constraints)
         let gradient = setupGradientLayer()
-        gradient.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+        gradient.frame = view.bounds
+        gradient.startPoint = CGPoint(x: 0, y: 1)
+        gradient.endPoint = CGPoint(x: 1, y: 1)
         gradientView.layer.insertSublayer(gradient, at: 0)
         setupProfilePicture()
         setupNameLabel()
@@ -136,7 +191,7 @@ class ProfileViewController: UIViewController {
         goalDropDownView.translatesAutoresizingMaskIntoConstraints = false
         goalDropDownView.addSubview(goalLabel)
         goalLabel.translatesAutoresizingMaskIntoConstraints = false
-        goalLabel.text = "Select your goal"
+        goalLabel.text = CurrentUser.goal ?? "Select your goal"
         goalLabel.font = .systemFont(ofSize: 13, weight: .semibold)
         goalLabel.textAlignment = .left
         goalLabel.textColor = UIColor(named: "BackgroundColor")
@@ -163,6 +218,7 @@ class ProfileViewController: UIViewController {
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
           print("Selected item: \(item) at index: \(index)")
             self.goalLabel.text = dropDownData[index]
+            UserNetworking.shared.newMeasurment2(uid: CurrentUser.id ?? "", user: [.goal: dropDownData[index]])
         }
         dropDown.direction = .bottom
     }

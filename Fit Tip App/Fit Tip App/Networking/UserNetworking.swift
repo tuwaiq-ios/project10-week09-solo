@@ -101,7 +101,15 @@ class UserNetworking {
                 }
             }
         }
+        
+        
     }
+    
+    /* newMeasurment2(uid: "", user: [
+     .goal: 12,
+     .height: 12
+ ])
+     */
     
     // MARK: ADD MEASURMENT
     func newMeasurment(uid: String, goal: String, height: Int, weight: Int){
@@ -112,4 +120,37 @@ class UserNetworking {
         
         ], merge: true)
     }
+    
+    func newMeasurment2(uid: String, user: [UserKey: Any]){
+        
+        
+        userCollection.document(uid).setData(
+            convertKeyToString(user),
+            merge: true
+        )
+    }
+    
+  
+}
+
+enum UserKey: String, Stringable {
+    case goal = "goal"
+    case height = "height"
+    case weight = "weight"
+    
+    func toString() -> String {
+        return rawValue
+    }
+}
+
+protocol Stringable {
+    func toString() -> String
+}
+
+func convertKeyToString<T>(_ dict: [T:Any]) -> [String:Any] where T : Stringable  {
+    var newDict: [String:Any] = [:]
+    dict.keys.forEach { key in
+        newDict[key.toString()] = dict[key]
+    }
+    return newDict
 }
