@@ -27,7 +27,7 @@ class TabBar: UITabBarController {
         tabBar.layer.cornerRadius = 20
         tabBar.layer.masksToBounds = true
         tabBar.backgroundColor = .systemGray3
-        tabBar.barTintColor = ThemeColor.secoundColor
+        tabBar.barTintColor = .systemGray3
         tabBar.tintColor = ThemeColor.mainColor
     }
     
@@ -101,7 +101,6 @@ class TabBar: UITabBarController {
         for c in 0..<controllers.count{
             let navBar = controllers[c].navigationBar
             navBar.barTintColor = UIColor(displayP3Red: 244/255, green: 244/255, blue: 244/255, alpha: 1)
-            navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
             controllers[c].tabBarItem.image = images[c]
         }
         viewControllers = controllers

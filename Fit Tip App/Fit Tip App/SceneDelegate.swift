@@ -21,6 +21,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: sceneWindow)
         window?.rootViewController = LogoViewController()
         window?.makeKeyAndVisible()
+//        let switchMoodChanged = SettingViewController.setting.switchMood
+//        switchMoodChanged.addTarget(window, action: #selector(SettingViewController.switchStateDidChange), for: .valueChanged)
+
+//        if switchMoodChanged.isOn {
+//            window?.overrideUserInterfaceStyle = .dark
+//        }else{
+//            window?.overrideUserInterfaceStyle = .light
+//        }
         if Auth.auth().currentUser != nil{
             let userNetworking = UserNetworking()
             let uid = Auth.auth().currentUser!.uid

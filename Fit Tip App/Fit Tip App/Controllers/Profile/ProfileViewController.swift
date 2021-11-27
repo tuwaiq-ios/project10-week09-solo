@@ -7,8 +7,10 @@
 
 import UIKit
 import DropDown
+import Charts
+import TinyConstraints
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, ChartViewDelegate {
 
     let gradientView = UIView()
     let profilePicture = UIImageView()
@@ -24,15 +26,76 @@ class ProfileViewController: UIViewController {
     let settingButton = UIButton(type: .system)
     let newMeasureButton = UIButton(type: .system)
     
+    lazy var lineChartView: LineChartView = {
+        let chartView = LineChartView()
+        chartView.rightAxis.enabled = false
+        let yAxis = chartView.leftAxis
+        yAxis.labelFont = .systemFont(ofSize: 12, weight: .semibold)
+        yAxis.axisLineColor = ThemeColor.mainColor
+        yAxis.labelTextColor = ThemeColor.mainColor
+        chartView.xAxis.labelPosition = .bottom
+        chartView.xAxis.labelFont = .systemFont(ofSize: 12, weight: .semibold)
+        chartView.xAxis.setLabelCount(3, force: false)
+        chartView.xAxis.labelTextColor = ThemeColor.mainColor
+        chartView.xAxis.axisLineColor = ThemeColor.mainColor
+        chartView.animate(xAxisDuration: 2.5)
+        return chartView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        navigationItem.title = "Profile"
         setupGradientView()
         setupScrollView()
         setupStackView()
         setupHeightAndWeight()
         setupNewMeasure()
+        setupChartView()
+        setDataChart()
+    }
+    
+    
+    func setupChartView(){
+        scrollView.addSubview(lineChartView)
+        lineChartView.translatesAutoresizingMaskIntoConstraints = false
+        lineChartView.backgroundColor = .systemGray3
+        lineChartView.layer.cornerRadius = 10
+        lineChartView.layer.masksToBounds = true
+        let constraints = [
+            lineChartView.topAnchor.constraint(equalTo: newMeasureButton.bottomAnchor, constant: 16),
+            lineChartView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            lineChartView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            lineChartView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100)
+        ]
+        NSLayoutConstraint.activate(constraints)
         
+    }
+    
+    func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
+        print(entry)
+    }
+    
+    func setDataChart(){
+        let yValues: [ChartDataEntry] = [
+            ChartDataEntry(x: 0, y: 0),
+        ChartDataEntry(x: 1, y: Double(CurrentUser.weight ?? 0)),
+        ChartDataEntry(x: 2, y: Double(CurrentUser.weight ?? 0)),
+        ChartDataEntry(x: 3, y: Double(CurrentUser.weight ?? 0)),
+        ]
+        
+        let setData = LineChartDataSet(entries: yValues, label: "Weight")
+        setData.drawCirclesEnabled = false
+        setData.mode = .cubicBezier
+        setData.lineWidth = 3
+        setData.setColor(ThemeColor.thirdColor)
+        setData.fill = Fill(color: ThemeColor.mainColor)
+        setData.fillAlpha = 0.8
+        setData.drawFilledEnabled = true
+        setData.drawHorizontalHighlightIndicatorEnabled = false
+        setData.drawVerticalHighlightIndicatorEnabled = false
+        let data = LineChartData(dataSet: setData)
+        lineChartView.data = data
     }
     
     func setupNewMeasure(){
@@ -165,6 +228,7 @@ class ProfileViewController: UIViewController {
         settingButton.translatesAutoresizingMaskIntoConstraints = false
         settingButton.setImage(UIImage(systemName: "gearshape.fill"), for: .normal)
         settingButton.tintColor = UIColor(named: "BackgroundColor")
+        settingButton.addTarget(self, action: #selector(settingButtonPressed), for: .touchUpInside)
         let constraint = [
             settingButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 110),
             settingButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20),
@@ -173,6 +237,12 @@ class ProfileViewController: UIViewController {
         ]
         NSLayoutConstraint.activate(constraint)
     }
+    
+    @objc func settingButtonPressed(){
+        let settingVC = SettingViewController()
+        show(settingVC, sender: nil)
+    }
+    
     func setupNameLabel(){
         view.addSubview(nameLabel)
         nameLabel.translatesAutoresizingMaskIntoConstraints = false

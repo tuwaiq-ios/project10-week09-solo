@@ -12,5 +12,7 @@ pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
 pod 'SkyFloatingLabelTextField'
 pod 'DropDown'
+pod 'Charts'
+pod 'TinyConstraints'
 
 end

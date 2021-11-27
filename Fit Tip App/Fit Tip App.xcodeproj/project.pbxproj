@@ -43,6 +43,10 @@
 		1E5B39C7274E5F1F006D681B /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39C6274E5F1F006D681B /* TipViewController.swift */; };
 		1E5B39C9274E9F1F006D681B /* LoadImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39C8274E9F1F006D681B /* LoadImage + Extension.swift */; };
 		1E5B39CB274FABC1006D681B /* NewMeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39CA274FABC0006D681B /* NewMeasureViewController.swift */; };
+		1E5B39CD27512B62006D681B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39CC27512B60006D681B /* SettingViewController.swift */; };
+		1E5B39CF27516A5D006D681B /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39CE27516A5C006D681B /* Tip.swift */; };
+		1E5B39D127516BBA006D681B /* TipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39D027516BB9006D681B /* TipCell.swift */; };
+		1E5B39D427523FEC006D681B /* TipPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39D327523FEB006D681B /* TipPageViewController.swift */; };
 		6C61A07860AAC96D96C64184 /* Pods_Fit_Tip_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E659BA2042B9C36A2475D /* Pods_Fit_Tip_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +89,10 @@
 		1E5B39C6274E5F1F006D681B /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		1E5B39C8274E9F1F006D681B /* LoadImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoadImage + Extension.swift"; sourceTree = "<group>"; };
 		1E5B39CA274FABC0006D681B /* NewMeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMeasureViewController.swift; sourceTree = "<group>"; };
+		1E5B39CC27512B60006D681B /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		1E5B39CE27516A5C006D681B /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		1E5B39D027516BB9006D681B /* TipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCell.swift; sourceTree = "<group>"; };
+		1E5B39D327523FEB006D681B /* TipPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipPageViewController.swift; sourceTree = "<group>"; };
 		556E659BA2042B9C36A2475D /* Pods_Fit_Tip_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fit_Tip_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9784A1BC515546B5A2F89E97 /* Pods-Fit Tip App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fit Tip App.debug.xcconfig"; path = "Target Support Files/Pods-Fit Tip App/Pods-Fit Tip App.debug.xcconfig"; sourceTree = "<group>"; };
 		D607717FBBF962B60E4849DB /* Pods-Fit Tip App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fit Tip App.release.xcconfig"; path = "Target Support Files/Pods-Fit Tip App/Pods-Fit Tip App.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,8 +150,8 @@
 				1E5B39AE274D8257006D681B /* TabBar.swift */,
 				1E5B39C0274E5E0D006D681B /* ExerciseViewController.swift */,
 				1E5B39C4274E5E88006D681B /* ActivityViewController.swift */,
-				1E5B39C2274E5E48006D681B /* MealViewController.swift */,
-				1E5B39C6274E5F1F006D681B /* TipViewController.swift */,
+				1E5B39D5275292CD006D681B /* Meal */,
+				1E5B39D227516BC4006D681B /* Tip */,
 				1E5B399E274D6E84006D681B /* Welcome Page */,
 				1E5B39A1274D71BB006D681B /* SignIn */,
 				1E5B39B2274E07D9006D681B /* SignUp */,
@@ -159,6 +167,7 @@
 			children = (
 				1E5B3989274D147A006D681B /* WelcomeModel.swift */,
 				1E5B39BA274E34FF006D681B /* User.swift */,
+				1E5B39CE27516A5C006D681B /* Tip.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -239,9 +248,28 @@
 			isa = PBXGroup;
 			children = (
 				1E5B39B8274E1469006D681B /* ProfileViewController.swift */,
+				1E5B39CC27512B60006D681B /* SettingViewController.swift */,
 				1E5B39CA274FABC0006D681B /* NewMeasureViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		1E5B39D227516BC4006D681B /* Tip */ = {
+			isa = PBXGroup;
+			children = (
+				1E5B39C6274E5F1F006D681B /* TipViewController.swift */,
+				1E5B39D027516BB9006D681B /* TipCell.swift */,
+				1E5B39D327523FEB006D681B /* TipPageViewController.swift */,
+			);
+			path = Tip;
+			sourceTree = "<group>";
+		};
+		1E5B39D5275292CD006D681B /* Meal */ = {
+			isa = PBXGroup;
+			children = (
+				1E5B39C2274E5E48006D681B /* MealViewController.swift */,
+			);
+			path = Meal;
 			sourceTree = "<group>";
 		};
 		207C391D70C502534572C0EC /* Frameworks */ = {
@@ -399,12 +427,16 @@
 				1E5B399D274D2722006D681B /* SignInViewController.swift in Sources */,
 				1E5B398A274D147A006D681B /* WelcomeModel.swift in Sources */,
 				1E5B39CB274FABC1006D681B /* NewMeasureViewController.swift in Sources */,
+				1E5B39CF27516A5D006D681B /* Tip.swift in Sources */,
+				1E5B39CD27512B62006D681B /* SettingViewController.swift in Sources */,
 				1E5B39A7274D7B77006D681B /* KeyboardHandelr.swift in Sources */,
 				1E5B3961274C2EBF006D681B /* SceneDelegate.swift in Sources */,
+				1E5B39D127516BBA006D681B /* TipCell.swift in Sources */,
 				1E5B3990274D1ED1006D681B /* ThemeColor.swift in Sources */,
 				1E5B39C9274E9F1F006D681B /* LoadImage + Extension.swift in Sources */,
 				1E5B39A9274D7D3E006D681B /* SignButton.swift in Sources */,
 				1E5B39C5274E5E89006D681B /* ActivityViewController.swift in Sources */,
+				1E5B39D427523FEC006D681B /* TipPageViewController.swift in Sources */,
 				1E5B39BD274E4A51006D681B /* LogoViewController.swift in Sources */,
 				1E5B39A5274D7289006D681B /* SignInView.swift in Sources */,
 				1E5B39B6274E0906006D681B /* SignUpView.swift in Sources */,
