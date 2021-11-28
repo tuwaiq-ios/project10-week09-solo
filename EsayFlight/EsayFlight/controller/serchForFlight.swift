@@ -7,10 +7,17 @@
 
 import UIKit
 
-class serchForFlight : UIViewController {
+struct Trip {
+    let id:String
+    let gate:String
+    let time:Date
+}
+
+
+class serchForFlight : UIViewController, UITextFieldDelegate {
     
     var blackSquare: UIView!
-
+    var allTrips:[Trip] = [.init(id: "12345", gate: "5", time: Date()),.init(id: "54321", gate: "4", time: Date())]
     
     let namelable: UILabel = {
         let label = UILabel()
@@ -28,6 +35,7 @@ class serchForFlight : UIViewController {
         tf.layer.cornerRadius = 15
         tf.layer.borderColor = UIColor.systemMint.cgColor
         tf.textAlignment = .center
+        tf.returnKeyType = .continue
         tf.layer.borderWidth = 2
         tf.text = ""
       
@@ -36,7 +44,7 @@ class serchForFlight : UIViewController {
     
     let depaturelable: UILabel = {
         let label = UILabel()
-        label.text = "Depature Time :"
+        label.text = "Departure Time :"
         label.textColor = .black
         label.font = label.font.withSize(25)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -88,17 +96,28 @@ class serchForFlight : UIViewController {
     lazy var progressView: UIProgressView = {
         let progressView = UIProgressView(progressViewStyle: .default)
         progressView.translatesAutoresizingMaskIntoConstraints = false
-        progressView.trackTintColor = .white
+        progressView.trackTintColor = .lightGray
         progressView.progressTintColor = .systemMint
-        progressView.progress = 0
+        // 11: 19 now
+        // 12: 00 for trip
+        // 31 : Dep Time
+        // 31 M / 60 H = 0.83
+        progressView.progress =  0.51
         return progressView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        SetupView()
+        ticktNumber.delegate = self
+    }
+  
+    
+      private func SetupView () {
         self.navigationItem.hidesBackButton = true
+        view.backgroundColor = .systemMint
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleCancel))
-        blackSquare = UIView(frame: CGRect(x: 0, y: 100, width: 390, height: 800))
+        blackSquare = UIView(frame: CGRect(x: 0, y: 100, width: view.bounds.width, height: 800))
         blackSquare.backgroundColor = .white
         blackSquare.layer.cornerRadius = 55
         view.addSubview(blackSquare)
@@ -110,65 +129,63 @@ class serchForFlight : UIViewController {
         view.addSubview(emptay2)
         view.addSubview(progressView)
         view.addSubview(imageView)
-
-        
-        
         progressView.heightAnchor.constraint(equalToConstant: 12).isActive = true
-
         progressView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        progressView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
+        progressView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50).isActive = true
         progressView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -50).isActive = true
-       
-       
-
-        view.backgroundColor = .systemMint
-        
-        
-        
         namelable.topAnchor.constraint(equalTo: view.topAnchor, constant: 170).isActive = true
         namelable.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16).isActive = true
         namelable.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        
         ticktNumber.topAnchor.constraint(equalTo: namelable.bottomAnchor, constant: 24).isActive = true
         ticktNumber.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 32).isActive = true
         ticktNumber.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -32).isActive = true
         ticktNumber.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        
         depaturelable.topAnchor.constraint(equalTo: view.topAnchor, constant: 290).isActive = true
         depaturelable.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16).isActive = true
         depaturelable.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        
-        
         Gatelable.topAnchor.constraint(equalTo: view.topAnchor, constant: 290).isActive = true
         Gatelable.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 280).isActive = true
         Gatelable.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        
-        
-        
         emptay.topAnchor.constraint(equalTo: depaturelable.topAnchor, constant: 50).isActive = true
         emptay.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
         emptay.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -250).isActive = true
         emptay.heightAnchor.constraint(equalToConstant: 40).isActive = true
-
-        
         emptay2.topAnchor.constraint(equalTo: Gatelable.topAnchor, constant: 50).isActive = true
         emptay2.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 280).isActive = true
         emptay2.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
         emptay2.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        
-        
-        
-        
         imageView.topAnchor.constraint(equalTo: view.topAnchor,constant: 385).isActive = true
         imageView.leftAnchor.constraint(equalTo: view.leftAnchor,constant: 330).isActive = true
         imageView.heightAnchor.constraint(equalToConstant: 50).isActive = true
         imageView.widthAnchor.constraint(equalToConstant: 50).isActive = true
-        
     }
     
-    
-    
-    @objc func handleCancel() {
+      @objc func handleCancel() {
         dismiss(animated: true, completion: nil)
     }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        // done
+        let text = textField.text
+        print(text)
+       let new = allTrips.first(where: {$0.id == text})
+        emptay2.text = new?.gate
+       // emptay.text = new?.time
+        // call firebase
+    }
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        // start
+        
+        
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+   
+    
+    
+    
+    
+    
+    
 }

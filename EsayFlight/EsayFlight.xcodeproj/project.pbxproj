@@ -11,6 +11,10 @@
 		1F1FBDB5274F73C000D9F691 /* SerchLuggauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FBDB4274F73C000D9F691 /* SerchLuggauge.swift */; };
 		1F1FBDB8274F811700D9F691 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FBDB7274F811700D9F691 /* Location.swift */; };
 		1F1FBDBA274F868300D9F691 /* searchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FBDB9274F868300D9F691 /* searchCell.swift */; };
+		1F1FBDBC275359AE00D9F691 /* Terminal1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FBDBB275359AE00D9F691 /* Terminal1.swift */; };
+		1F1FBDBE275359DE00D9F691 /* Terminal2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FBDBD275359DE00D9F691 /* Terminal2.swift */; };
+		1F1FBDC027535A0A00D9F691 /* Terminal1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FBDBF27535A0A00D9F691 /* Terminal1Cell.swift */; };
+		1F1FBDC227535A2900D9F691 /* Terminal2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FBDC127535A2900D9F691 /* Terminal2Cell.swift */; };
 		1F7C87AF274CF06D00112F6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F7C87AE274CF06D00112F6A /* GoogleService-Info.plist */; };
 		1F7C87B1274CFFAE00112F6A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C87B0274CFFAE00112F6A /* Home.swift */; };
 		1F7C87B3274D273100112F6A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C87B2274D273100112F6A /* Data.swift */; };
@@ -33,6 +37,10 @@
 		1F1FBDB4274F73C000D9F691 /* SerchLuggauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerchLuggauge.swift; sourceTree = "<group>"; };
 		1F1FBDB7274F811700D9F691 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		1F1FBDB9274F868300D9F691 /* searchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchCell.swift; sourceTree = "<group>"; };
+		1F1FBDBB275359AE00D9F691 /* Terminal1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminal1.swift; sourceTree = "<group>"; };
+		1F1FBDBD275359DE00D9F691 /* Terminal2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminal2.swift; sourceTree = "<group>"; };
+		1F1FBDBF27535A0A00D9F691 /* Terminal1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminal1Cell.swift; sourceTree = "<group>"; };
+		1F1FBDC127535A2900D9F691 /* Terminal2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminal2Cell.swift; sourceTree = "<group>"; };
 		1F7C87AE274CF06D00112F6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F7C87B0274CFFAE00112F6A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		1F7C87B2274D273100112F6A /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -83,8 +91,8 @@
 		1F7C87B4274D273C00112F6A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1F1FBDB6274F73C900D9F691 /* Services */,
 				1F7C87B2274D273100112F6A /* Data.swift */,
+				1F1FBDB6274F73C900D9F691 /* Services */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -100,6 +108,10 @@
 				1F7C87B9274E2ADD00112F6A /* serchForluggage.swift */,
 				1F7C87BD274E2B3300112F6A /* AskForHelp.swift */,
 				1F1FBDB7274F811700D9F691 /* Location.swift */,
+				1F1FBDBB275359AE00D9F691 /* Terminal1.swift */,
+				1F1FBDBF27535A0A00D9F691 /* Terminal1Cell.swift */,
+				1F1FBDBD275359DE00D9F691 /* Terminal2.swift */,
+				1F1FBDC127535A2900D9F691 /* Terminal2Cell.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -271,8 +283,12 @@
 				1F1FBDB3274F736D00D9F691 /* NewSearchVC.swift in Sources */,
 				1F1FBDB8274F811700D9F691 /* Location.swift in Sources */,
 				1F1FBDBA274F868300D9F691 /* searchCell.swift in Sources */,
+				1F1FBDBE275359DE00D9F691 /* Terminal2.swift in Sources */,
 				1F7C87B1274CFFAE00112F6A /* Home.swift in Sources */,
+				1F1FBDC227535A2900D9F691 /* Terminal2Cell.swift in Sources */,
 				1F7C87BE274E2B3300112F6A /* AskForHelp.swift in Sources */,
+				1F1FBDBC275359AE00D9F691 /* Terminal1.swift in Sources */,
+				1F1FBDC027535A0A00D9F691 /* Terminal1Cell.swift in Sources */,
 				1F7C87BC274E2B0900112F6A /* Services.swift in Sources */,
 				1F7C87B3274D273100112F6A /* Data.swift in Sources */,
 				1F7C87B6274E12A700112F6A /* HomeCell.swift in Sources */,
