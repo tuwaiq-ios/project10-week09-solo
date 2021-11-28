@@ -125,7 +125,7 @@ class RegisterVC: UIViewController , UIImagePickerControllerDelegate , UINavigat
       firstName.widthAnchor.constraint(equalToConstant: 350),
       firstName.heightAnchor.constraint(equalToConstant: 40),
     ])
-   
+    
     view.addSubview(userEmail)
     NSLayoutConstraint.activate([
       userEmail.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20),
@@ -166,6 +166,10 @@ class RegisterVC: UIViewController , UIImagePickerControllerDelegate , UINavigat
       logInButton.heightAnchor.constraint(equalToConstant: 40),
     ])
     
+    // for dismiss keyboard
+    let tapGesture = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+    view.addGestureRecognizer(tapGesture)
+    tapGesture.cancelsTouchesInView = false
     
   }
   

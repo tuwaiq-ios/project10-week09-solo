@@ -8,7 +8,7 @@
 import UIKit
 import FirebaseAuth
 
-class LogInVC: UIViewController {
+class LogInVC: UIViewController, UITextFieldDelegate {
   
   lazy var userEmail: UITextField = {
     let userEmail = UITextField()
@@ -77,6 +77,8 @@ class LogInVC: UIViewController {
     return imageView
   }()
   
+  var rememberData: Bool! = false
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -131,13 +133,33 @@ class LogInVC: UIViewController {
       registerButton.heightAnchor.constraint(equalToConstant: 40),
     ])
     
+    userEmail.delegate = self
+    userPassword.delegate = self
+    userEmail.text = UserDefaults.standard.value(forKey: "em") as? String
+    userPassword.text = UserDefaults.standard.value(forKey: "pa") as? String
+    
+    // for dismiss keyboard
+    let tapGesture = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+    view.addGestureRecognizer(tapGesture)
+    tapGesture.cancelsTouchesInView = false
+    
   }
   
+  var rem: Bool! = false
   @objc private func loginButtonTapped() {
     
-    //linked with firebase
     let email = userEmail.text ?? ""
     let password = userPassword.text ?? ""
+    
+    UserDefaults.standard.set(email, forKey: "em")
+    UserDefaults.standard.set(password, forKey: "pa")
+    
+    if (rem == true){
+      UserDefaults.standard.set("0", forKey: "t")
+    }
+    else{
+      UserDefaults.standard.set("1", forKey: "f")
+    }
     
     if email.isEmpty || password.isEmpty {
       return
@@ -160,6 +182,12 @@ class LogInVC: UIViewController {
     let vc = RegisterVC()
     vc.modalPresentationStyle = .fullScreen
     self.present(vc, animated: true, completion: nil)
+  }
+  
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    userEmail.resignFirstResponder()
+    userPassword.resignFirstResponder()
+    return true
   }
   
 }
