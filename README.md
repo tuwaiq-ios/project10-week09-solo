@@ -34,7 +34,7 @@
 Where
 
 ### Project Description :
-// Add your project description
+To search for cafes and add comments to them ..
 
 ### Features List:
 // Add your project feature list
