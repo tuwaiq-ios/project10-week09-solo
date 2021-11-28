@@ -40,14 +40,21 @@ class TipCell: UICollectionViewCell {
             tipImageCell.heightAnchor.constraint(equalToConstant: 150),
         ])
         titelCellLabel.textColor = .white
+        titelCellLabel.layer.shadowColor = UIColor.black.cgColor
+        titelCellLabel.layer.shadowOffset = CGSize(width: 1, height: 1)
+        titelCellLabel.layer.shadowRadius = 4.5
+        titelCellLabel.layer.shadowOpacity = 0.3
+        titelCellLabel.layer.masksToBounds = false
+        titelCellLabel.layer.shadowPath = UIBezierPath(roundedRect: titelCellLabel.bounds, cornerRadius: 10).cgPath
         titelCellLabel.numberOfLines = 0
-        titelCellLabel.font = .systemFont(ofSize: 20, weight: .semibold)
+        titelCellLabel.font = .systemFont(ofSize: 20, weight: .light)
         titelCellLabel.translatesAutoresizingMaskIntoConstraints = false
         self.contentView.addSubview(titelCellLabel)
         NSLayoutConstraint.activate([
             titelCellLabel.topAnchor.constraint(equalTo: tipImageCell.bottomAnchor , constant: 5),
-            titelCellLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 10),
-            titelCellLabel.heightAnchor.constraint(equalToConstant: 20)
+            titelCellLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 5),
+            titelCellLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: 5),
+
         ])
       
         

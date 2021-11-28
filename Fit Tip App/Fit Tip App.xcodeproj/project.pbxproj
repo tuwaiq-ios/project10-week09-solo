@@ -47,6 +47,11 @@
 		1E5B39CF27516A5D006D681B /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39CE27516A5C006D681B /* Tip.swift */; };
 		1E5B39D127516BBA006D681B /* TipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39D027516BB9006D681B /* TipCell.swift */; };
 		1E5B39D427523FEC006D681B /* TipPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39D327523FEB006D681B /* TipPageViewController.swift */; };
+		1E5B39D72752966B006D681B /* BreakfastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39D62752966B006D681B /* BreakfastCell.swift */; };
+		1E5B39D9275296C5006D681B /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B39D8275296C5006D681B /* Meal.swift */; };
+		1EB4BC832753623B00DF1176 /* LunchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4BC822753623A00DF1176 /* LunchCell.swift */; };
+		1EB4BC852753626900DF1176 /* DinnerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4BC842753626900DF1176 /* DinnerCell.swift */; };
+		1EB4BC8727537D4B00DF1176 /* MealPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4BC8627537D4B00DF1176 /* MealPageViewController.swift */; };
 		6C61A07860AAC96D96C64184 /* Pods_Fit_Tip_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556E659BA2042B9C36A2475D /* Pods_Fit_Tip_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +98,11 @@
 		1E5B39CE27516A5C006D681B /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		1E5B39D027516BB9006D681B /* TipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCell.swift; sourceTree = "<group>"; };
 		1E5B39D327523FEB006D681B /* TipPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipPageViewController.swift; sourceTree = "<group>"; };
+		1E5B39D62752966B006D681B /* BreakfastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastCell.swift; sourceTree = "<group>"; };
+		1E5B39D8275296C5006D681B /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		1EB4BC822753623A00DF1176 /* LunchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchCell.swift; sourceTree = "<group>"; };
+		1EB4BC842753626900DF1176 /* DinnerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerCell.swift; sourceTree = "<group>"; };
+		1EB4BC8627537D4B00DF1176 /* MealPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPageViewController.swift; sourceTree = "<group>"; };
 		556E659BA2042B9C36A2475D /* Pods_Fit_Tip_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fit_Tip_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9784A1BC515546B5A2F89E97 /* Pods-Fit Tip App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fit Tip App.debug.xcconfig"; path = "Target Support Files/Pods-Fit Tip App/Pods-Fit Tip App.debug.xcconfig"; sourceTree = "<group>"; };
 		D607717FBBF962B60E4849DB /* Pods-Fit Tip App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fit Tip App.release.xcconfig"; path = "Target Support Files/Pods-Fit Tip App/Pods-Fit Tip App.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +178,7 @@
 				1E5B3989274D147A006D681B /* WelcomeModel.swift */,
 				1E5B39BA274E34FF006D681B /* User.swift */,
 				1E5B39CE27516A5C006D681B /* Tip.swift */,
+				1E5B39D8275296C5006D681B /* Meal.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -268,6 +279,10 @@
 			isa = PBXGroup;
 			children = (
 				1E5B39C2274E5E48006D681B /* MealViewController.swift */,
+				1EB4BC8627537D4B00DF1176 /* MealPageViewController.swift */,
+				1E5B39D62752966B006D681B /* BreakfastCell.swift */,
+				1EB4BC822753623A00DF1176 /* LunchCell.swift */,
+				1EB4BC842753626900DF1176 /* DinnerCell.swift */,
 			);
 			path = Meal;
 			sourceTree = "<group>";
@@ -412,12 +427,17 @@
 			files = (
 				1E5B39AB274D7EB1006D681B /* UserNetworking.swift in Sources */,
 				1E5B3963274C2EBF006D681B /* WelcomeViewController.swift in Sources */,
+				1EB4BC8727537D4B00DF1176 /* MealPageViewController.swift in Sources */,
 				1E5B39C3274E5E48006D681B /* MealViewController.swift in Sources */,
 				1E5B39C1274E5E0E006D681B /* ExerciseViewController.swift in Sources */,
+				1E5B39D9275296C5006D681B /* Meal.swift in Sources */,
 				1E5B399B274D2635006D681B /* Helper.swift in Sources */,
 				1E5B39AF274D8257006D681B /* TabBar.swift in Sources */,
+				1EB4BC832753623B00DF1176 /* LunchCell.swift in Sources */,
 				1E5B395F274C2EBF006D681B /* AppDelegate.swift in Sources */,
 				1E5B39B4274E089C006D681B /* SignUpViewController.swift in Sources */,
+				1EB4BC852753626900DF1176 /* DinnerCell.swift in Sources */,
+				1E5B39D72752966B006D681B /* BreakfastCell.swift in Sources */,
 				1E5B39C7274E5F1F006D681B /* TipViewController.swift in Sources */,
 				1E5B398D274D169F006D681B /* WelcomeCell.swift in Sources */,
 				1E5B39AD274D8016006D681B /* NetworkingLoadingIndicator.swift in Sources */,

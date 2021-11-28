@@ -14,5 +14,6 @@ pod 'SkyFloatingLabelTextField'
 pod 'DropDown'
 pod 'Charts'
 pod 'TinyConstraints'
+pod 'ChartsRealm'
 
 end
