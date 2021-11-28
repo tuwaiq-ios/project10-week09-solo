@@ -8,38 +8,64 @@
 
 /* Begin PBXBuildFile section */
 		36610F2347624DBA2CA35835 /* Pods_tuwaiq_1000.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EACC00631425B1C3002C357 /* Pods_tuwaiq_1000.framework */; };
+		5E33D36A27538B8D007EC44C /* ManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D36927538B8D007EC44C /* ManagerVC.swift */; };
+		5E33D36C27538BB6007EC44C /* ManagerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D36B27538BB6007EC44C /* ManagerCell.swift */; };
+		5E33D36E27538BE6007EC44C /* NewProdectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D36D27538BE6007EC44C /* NewProdectVC.swift */; };
+		5E33D37027538C19007EC44C /* UpdateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D36F27538C19007EC44C /* UpdateVC.swift */; };
+		5E33D37227538C3F007EC44C /* DetelisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D37127538C3F007EC44C /* DetelisVC.swift */; };
+		5E33D37427538C83007EC44C /* PurchaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D37327538C83007EC44C /* PurchaseVC.swift */; };
+		5E33D37627538CA9007EC44C /* PrucheasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D37527538CA9007EC44C /* PrucheasCell.swift */; };
+		5E33D37827538D50007EC44C /* Manager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E33D37727538D50007EC44C /* Manager.storyboard */; };
+		5E33D37D27538E1C007EC44C /* RecCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D37C27538E1C007EC44C /* RecCollectionVC.swift */; };
+		5E33D37F27538E47007EC44C /* RecCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D37E27538E47007EC44C /* RecCell.swift */; };
+		5E33D38227538ED7007EC44C /* ReceipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D38127538ED7007EC44C /* ReceipVC.swift */; };
+		5E33D38427538EFD007EC44C /* ReceiptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D38327538EFD007EC44C /* ReceiptCell.swift */; };
+		5E33D38B2753909B007EC44C /* AddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D38A2753909B007EC44C /* AddressVC.swift */; };
+		5E33D38D275390CC007EC44C /* CartTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D38C275390CC007EC44C /* CartTableVC.swift */; };
+		5E33D38F2753910B007EC44C /* CartTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D38E2753910B007EC44C /* CartTableCell.swift */; };
+		5E33D39127539125007EC44C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D39027539125007EC44C /* Data.swift */; };
+		5E33D393275391A5007EC44C /* Productlnfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D392275391A5007EC44C /* Productlnfo.swift */; };
+		5E33D3952753938F007EC44C /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D3942753938F007EC44C /* DetailsCell.swift */; };
+		5E33D397275397AB007EC44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E33D396275397AB007EC44C /* Main.storyboard */; };
+		5E33D399275397C4007EC44C /* customer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E33D398275397C4007EC44C /* customer.storyboard */; };
+		5E33D39B275399E1007EC44C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E33D39A275399E1007EC44C /* Launch Screen.storyboard */; };
 		E633B941274E0F670046ED89 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E633B940274E0F670046ED89 /* SideMenuVC.swift */; };
-		E633B943274E14BD0046ED89 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E633B942274E14BD0046ED89 /* ContainerVC.swift */; };
-		E633B946274E150D0046ED89 /* TopStudentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E633B945274E150D0046ED89 /* TopStudentsVC.swift */; };
-		E633B948274E164F0046ED89 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E633B947274E164F0046ED89 /* InfoVC.swift */; };
-		E633B94A274E27600046ED89 /* inside info.swift in Sources */ = {isa = PBXBuildFile; fileRef = E633B949274E275F0046ED89 /* inside info.swift */; };
-		E633B94C274E27B30046ED89 /* infoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E633B94B274E27B30046ED89 /* infoCell.swift */; };
-		E633B94E274E464C0046ED89 /* gg.swift in Sources */ = {isa = PBXBuildFile; fileRef = E633B94D274E464B0046ED89 /* gg.swift */; };
 		E634873D274DAFCD00559B91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E634873C274DAFCD00559B91 /* AppDelegate.swift */; };
 		E634873F274DAFCD00559B91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E634873E274DAFCD00559B91 /* SceneDelegate.swift */; };
 		E6348741274DAFCD00559B91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6348740274DAFCD00559B91 /* ViewController.swift */; };
-		E6348746274DAFD700559B91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6348745274DAFD700559B91 /* Assets.xcassets */; };
-		E6348749274DAFD700559B91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6348747274DAFD700559B91 /* LaunchScreen.storyboard */; };
 		E6348751274DB06B00559B91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6348750274DB06B00559B91 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A478376C334709A4E1DD343 /* Pods-tuwaiq 1000.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tuwaiq 1000.release.xcconfig"; path = "Target Support Files/Pods-tuwaiq 1000/Pods-tuwaiq 1000.release.xcconfig"; sourceTree = "<group>"; };
+		5E33D36927538B8D007EC44C /* ManagerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerVC.swift; sourceTree = "<group>"; };
+		5E33D36B27538BB6007EC44C /* ManagerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerCell.swift; sourceTree = "<group>"; };
+		5E33D36D27538BE6007EC44C /* NewProdectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProdectVC.swift; sourceTree = "<group>"; };
+		5E33D36F27538C19007EC44C /* UpdateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateVC.swift; sourceTree = "<group>"; };
+		5E33D37127538C3F007EC44C /* DetelisVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetelisVC.swift; sourceTree = "<group>"; };
+		5E33D37327538C83007EC44C /* PurchaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseVC.swift; sourceTree = "<group>"; };
+		5E33D37527538CA9007EC44C /* PrucheasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrucheasCell.swift; sourceTree = "<group>"; };
+		5E33D37727538D50007EC44C /* Manager.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Manager.storyboard; sourceTree = "<group>"; };
+		5E33D37C27538E1C007EC44C /* RecCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecCollectionVC.swift; sourceTree = "<group>"; };
+		5E33D37E27538E47007EC44C /* RecCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecCell.swift; sourceTree = "<group>"; };
+		5E33D38127538ED7007EC44C /* ReceipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipVC.swift; sourceTree = "<group>"; };
+		5E33D38327538EFD007EC44C /* ReceiptCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptCell.swift; sourceTree = "<group>"; };
+		5E33D38A2753909B007EC44C /* AddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressVC.swift; sourceTree = "<group>"; };
+		5E33D38C275390CC007EC44C /* CartTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableVC.swift; sourceTree = "<group>"; };
+		5E33D38E2753910B007EC44C /* CartTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableCell.swift; sourceTree = "<group>"; };
+		5E33D39027539125007EC44C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		5E33D392275391A5007EC44C /* Productlnfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Productlnfo.swift; sourceTree = "<group>"; };
+		5E33D3942753938F007EC44C /* DetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCell.swift; sourceTree = "<group>"; };
+		5E33D396275397AB007EC44C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5E33D398275397C4007EC44C /* customer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = customer.storyboard; sourceTree = "<group>"; };
+		5E33D39A275399E1007EC44C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		6EACC00631425B1C3002C357 /* Pods_tuwaiq_1000.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tuwaiq_1000.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D055DC38DDE235AF6F952A1 /* Pods-tuwaiq 1000.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tuwaiq 1000.debug.xcconfig"; path = "Target Support Files/Pods-tuwaiq 1000/Pods-tuwaiq 1000.debug.xcconfig"; sourceTree = "<group>"; };
 		E633B940274E0F670046ED89 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
-		E633B942274E14BD0046ED89 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
-		E633B945274E150D0046ED89 /* TopStudentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStudentsVC.swift; sourceTree = "<group>"; };
-		E633B947274E164F0046ED89 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
-		E633B949274E275F0046ED89 /* inside info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "inside info.swift"; sourceTree = "<group>"; };
-		E633B94B274E27B30046ED89 /* infoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoCell.swift; sourceTree = "<group>"; };
-		E633B94D274E464B0046ED89 /* gg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gg.swift; sourceTree = "<group>"; };
 		E6348739274DAFCD00559B91 /* tuwaiq 1000.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tuwaiq 1000.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E634873C274DAFCD00559B91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E634873E274DAFCD00559B91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E6348740274DAFCD00559B91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E6348745274DAFD700559B91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E6348748274DAFD700559B91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E634874A274DAFD700559B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6348750274DB06B00559B91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +91,82 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5E33D37927538D5E007EC44C /* custmer */ = {
+			isa = PBXGroup;
+			children = (
+				5E33D37A27538D70007EC44C /* Controller */,
+			);
+			path = custmer;
+			sourceTree = "<group>";
+		};
+		5E33D37A27538D70007EC44C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5E33D37B27538D82007EC44C /* Recommendation */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5E33D37B27538D82007EC44C /* Recommendation */ = {
+			isa = PBXGroup;
+			children = (
+				5E33D37C27538E1C007EC44C /* RecCollectionVC.swift */,
+				5E33D37E27538E47007EC44C /* RecCell.swift */,
+			);
+			path = Recommendation;
+			sourceTree = "<group>";
+		};
+		5E33D38027538E4E007EC44C /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				5E33D38327538EFD007EC44C /* ReceiptCell.swift */,
+				5E33D38127538ED7007EC44C /* ReceipVC.swift */,
+			);
+			path = Receipt;
+			sourceTree = "<group>";
+		};
+		5E33D38527538F1A007EC44C /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				5E33D38A2753909B007EC44C /* AddressVC.swift */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		5E33D38627538F37007EC44C /* Cart Table */ = {
+			isa = PBXGroup;
+			children = (
+				5E33D38C275390CC007EC44C /* CartTableVC.swift */,
+				5E33D38E2753910B007EC44C /* CartTableCell.swift */,
+			);
+			path = "Cart Table";
+			sourceTree = "<group>";
+		};
+		5E33D38727538F8B007EC44C /* Products Collection */ = {
+			isa = PBXGroup;
+			children = (
+				5E33D392275391A5007EC44C /* Productlnfo.swift */,
+			);
+			path = "Products Collection";
+			sourceTree = "<group>";
+		};
+		5E33D38827538FB9007EC44C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E634873E274DAFCD00559B91 /* SceneDelegate.swift */,
+				E634873C274DAFCD00559B91 /* AppDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E33D38927538FF1007EC44C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E33D39027539125007EC44C /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5EAC4FAED6748A23AC4380A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +178,19 @@
 		E633B93F274E0EED0046ED89 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E634873E274DAFCD00559B91 /* SceneDelegate.swift */,
-				E634873C274DAFCD00559B91 /* AppDelegate.swift */,
+				E633B940274E0F670046ED89 /* SideMenuVC.swift */,
+				E6348740274DAFCD00559B91 /* ViewController.swift */,
+				5E33D36927538B8D007EC44C /* ManagerVC.swift */,
+				5E33D36D27538BE6007EC44C /* NewProdectVC.swift */,
+				5E33D36B27538BB6007EC44C /* ManagerCell.swift */,
+				5E33D37327538C83007EC44C /* PurchaseVC.swift */,
+				5E33D37527538CA9007EC44C /* PrucheasCell.swift */,
+				5E33D37127538C3F007EC44C /* DetelisVC.swift */,
+				5E33D39A275399E1007EC44C /* Launch Screen.storyboard */,
+				5E33D3942753938F007EC44C /* DetailsCell.swift */,
+				5E33D37727538D50007EC44C /* Manager.storyboard */,
+				5E33D36F27538C19007EC44C /* UpdateVC.swift */,
+				5E33D37927538D5E007EC44C /* custmer */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -105,17 +218,15 @@
 			isa = PBXGroup;
 			children = (
 				E633B93F274E0EED0046ED89 /* Controller */,
-				E6348740274DAFCD00559B91 /* ViewController.swift */,
-				E633B945274E150D0046ED89 /* TopStudentsVC.swift */,
-				E633B947274E164F0046ED89 /* InfoVC.swift */,
-				E633B94B274E27B30046ED89 /* infoCell.swift */,
-				E633B94D274E464B0046ED89 /* gg.swift */,
-				E633B949274E275F0046ED89 /* inside info.swift */,
-				E633B942274E14BD0046ED89 /* ContainerVC.swift */,
-				E633B940274E0F670046ED89 /* SideMenuVC.swift */,
-				E6348745274DAFD700559B91 /* Assets.xcassets */,
-				E6348747274DAFD700559B91 /* LaunchScreen.storyboard */,
 				E634874A274DAFD700559B91 /* Info.plist */,
+				5E33D38927538FF1007EC44C /* Model */,
+				5E33D38827538FB9007EC44C /* View */,
+				5E33D38727538F8B007EC44C /* Products Collection */,
+				5E33D38627538F37007EC44C /* Cart Table */,
+				5E33D38527538F1A007EC44C /* Address */,
+				5E33D38027538E4E007EC44C /* Receipt */,
+				5E33D396275397AB007EC44C /* Main.storyboard */,
+				5E33D398275397C4007EC44C /* customer.storyboard */,
 			);
 			path = "tuwaiq 1000";
 			sourceTree = "<group>";
@@ -180,8 +291,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6348749274DAFD700559B91 /* LaunchScreen.storyboard in Resources */,
-				E6348746274DAFD700559B91 /* Assets.xcassets in Resources */,
+				5E33D399275397C4007EC44C /* customer.storyboard in Resources */,
+				5E33D397275397AB007EC44C /* Main.storyboard in Resources */,
+				5E33D37827538D50007EC44C /* Manager.storyboard in Resources */,
+				5E33D39B275399E1007EC44C /* Launch Screen.storyboard in Resources */,
 				E6348751274DB06B00559B91 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,31 +348,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E33D3952753938F007EC44C /* DetailsCell.swift in Sources */,
+				5E33D38227538ED7007EC44C /* ReceipVC.swift in Sources */,
 				E6348741274DAFCD00559B91 /* ViewController.swift in Sources */,
+				5E33D38F2753910B007EC44C /* CartTableCell.swift in Sources */,
+				5E33D36E27538BE6007EC44C /* NewProdectVC.swift in Sources */,
+				5E33D393275391A5007EC44C /* Productlnfo.swift in Sources */,
+				5E33D38D275390CC007EC44C /* CartTableVC.swift in Sources */,
 				E634873D274DAFCD00559B91 /* AppDelegate.swift in Sources */,
 				E633B941274E0F670046ED89 /* SideMenuVC.swift in Sources */,
+				5E33D37227538C3F007EC44C /* DetelisVC.swift in Sources */,
+				5E33D37427538C83007EC44C /* PurchaseVC.swift in Sources */,
+				5E33D37F27538E47007EC44C /* RecCell.swift in Sources */,
+				5E33D36C27538BB6007EC44C /* ManagerCell.swift in Sources */,
+				5E33D38B2753909B007EC44C /* AddressVC.swift in Sources */,
+				5E33D37027538C19007EC44C /* UpdateVC.swift in Sources */,
+				5E33D36A27538B8D007EC44C /* ManagerVC.swift in Sources */,
 				E634873F274DAFCD00559B91 /* SceneDelegate.swift in Sources */,
-				E633B94C274E27B30046ED89 /* infoCell.swift in Sources */,
-				E633B94A274E27600046ED89 /* inside info.swift in Sources */,
-				E633B948274E164F0046ED89 /* InfoVC.swift in Sources */,
-				E633B94E274E464C0046ED89 /* gg.swift in Sources */,
-				E633B946274E150D0046ED89 /* TopStudentsVC.swift in Sources */,
-				E633B943274E14BD0046ED89 /* ContainerVC.swift in Sources */,
+				5E33D37627538CA9007EC44C /* PrucheasCell.swift in Sources */,
+				5E33D39127539125007EC44C /* Data.swift in Sources */,
+				5E33D37D27538E1C007EC44C /* RecCollectionVC.swift in Sources */,
+				5E33D38427538EFD007EC44C /* ReceiptCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E6348747274DAFD700559B91 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E6348748274DAFD700559B91 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E634874B274DAFD700559B91 /* Debug */ = {
@@ -382,13 +495,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7D055DC38DDE235AF6F952A1 /* Pods-tuwaiq 1000.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VY425D726T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "tuwaiq 1000/Info.plist";
+				INFOPLIST_KEY_NSMainNibFile = Main;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -398,7 +511,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mohammedali111.com.tuwaiq-1000";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mohammedali111-tuwaiq1000-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -410,13 +523,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2A478376C334709A4E1DD343 /* Pods-tuwaiq 1000.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VY425D726T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "tuwaiq 1000/Info.plist";
+				INFOPLIST_KEY_NSMainNibFile = Main;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -426,7 +539,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mohammedali111.com.tuwaiq-1000";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mohammedali111-tuwaiq1000-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
