@@ -1,0 +1,6 @@
+framework module Pods_Fawaz_solo_project {
+  umbrella header "Pods-Fawaz solo project-umbrella.h"
+
+  export *
+  module * { export * }
+}
