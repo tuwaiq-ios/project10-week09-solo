@@ -29,7 +29,6 @@
 - Use tab controller
 - Use alert controller
 
-## You should have a:
 ### Project Name: 
 Where
 
@@ -37,9 +36,8 @@ Where
 To search for cafes and add comments to them ..
 
 ### Features List:
-// Add your project feature list
-- Feature 1
-- Feature 2
+- Register an account and control the profile
+- Search available cafes
 
 ### Structure:
 // Add your project screens/models/views/cells
