@@ -17,5 +17,8 @@ class CurrentUser {
     static var goal: String?
     static var height: Int?
     static var weight: Int?
+    static var steps: Int?
+    static var calorie: Double?
+    static var timer: Int?
     
 }

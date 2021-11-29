@@ -33,6 +33,9 @@ class UserNetworking {
             CurrentUser.goal = data["goal"] as? String
             CurrentUser.height = data["height"] as? Int
             CurrentUser.weight = data["weight"] as? Int
+            CurrentUser.steps = data["steps"] as? Int
+            CurrentUser.calorie = data["calorie"] as? Double
+            CurrentUser.timer = data["timer"] as? Int
             
             if CurrentUser.id == nil || CurrentUser.profileImage == nil || CurrentUser.name == nil{
                 do{
@@ -105,22 +108,8 @@ class UserNetworking {
         
     }
     
-    /* newMeasurment2(uid: "", user: [
-     .goal: 12,
-     .height: 12
- ])
-     */
-    
     // MARK: ADD MEASURMENT
-    func newMeasurment(uid: String, goal: String, height: Int, weight: Int){
-        userCollection.document(uid).setData([
-            "goal": goal,
-            "height": height,
-            "weight": weight
-        
-        ], merge: true)
-    }
-    
+   
     func newMeasurment2(uid: String, user: [UserKey: Any]){
         
         
@@ -130,13 +119,26 @@ class UserNetworking {
         )
     }
     
+    func logout(){
+        do{
+            try Auth.auth().signOut()
+        } catch {
+            print(error)
+        }
+       
+    }
+    
   
 }
+
 
 enum UserKey: String, Stringable {
     case goal = "goal"
     case height = "height"
     case weight = "weight"
+    case steps = "steps"
+    case calorie = "calorie"
+    case timer = "timer"
     
     func toString() -> String {
         return rawValue
@@ -154,3 +156,10 @@ func convertKeyToString<T>(_ dict: [T:Any]) -> [String:Any] where T : Stringable
     }
     return newDict
 }
+
+
+/* newMeasurment2(uid: "", user: [
+ .goal: 12,
+ .height: 12
+])
+ */

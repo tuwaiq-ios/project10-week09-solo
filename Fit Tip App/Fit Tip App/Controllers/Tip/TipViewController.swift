@@ -63,7 +63,7 @@ class TipViewController: UIViewController,UICollectionViewDelegate, UICollection
     func collectionView(_ collectionView: UICollectionView,
                             layout collectionViewLayout: UICollectionViewLayout,
                             sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (view.frame.width-26), height: 250)
+        return CGSize(width: (view.frame.width-26), height: 270)
         }
 
     func collectionView(_ collectionView: UICollectionView,

@@ -451,6 +451,7 @@ PODS:
     - Realm (= 3.18.0)
   - SkyFloatingLabelTextField (4.0.0)
   - TinyConstraints (4.0.2)
+  - YoutubePlayer-in-WKWebView (0.3.8)
 
 DEPENDENCIES:
   - Charts
@@ -462,6 +463,7 @@ DEPENDENCIES:
   - lottie-ios
   - SkyFloatingLabelTextField
   - TinyConstraints
+  - YoutubePlayer-in-WKWebView
 
 SPEC REPOS:
   trunk:
@@ -489,6 +491,7 @@ SPEC REPOS:
     - RealmSwift
     - SkyFloatingLabelTextField
     - TinyConstraints
+    - YoutubePlayer-in-WKWebView
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -515,7 +518,8 @@ SPEC CHECKSUMS:
   RealmSwift: c817b5f374668cf08f649afb05f55d92a787649c
   SkyFloatingLabelTextField: 79ddc40e4ad59707fedbb48d605417aee48bb78a
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
+  YoutubePlayer-in-WKWebView: 4fca3b4f6f09940077bfbae7bddb771f2b43aacd
 
-PODFILE CHECKSUM: 4e78cf6bd8218f89572a946ceb12fe1d06565242
+PODFILE CHECKSUM: a810b911ca927fd0443b5fe9a02af299f0ff2ba8
 
 COCOAPODS: 1.11.2

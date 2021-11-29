@@ -8,9 +8,6 @@
 import UIKit
 
 class MealViewController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
-//    var collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-   
 
     let breakfastLabel = UILabel()
     let lunchLabel = UILabel()

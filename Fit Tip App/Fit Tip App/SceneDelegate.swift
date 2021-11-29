@@ -8,6 +8,8 @@
 import UIKit
 import FirebaseAuth
 
+var gloabalWindow: UIWindow?
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -19,16 +21,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let sceneWindow = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: sceneWindow)
+        gloabalWindow = window
         window?.rootViewController = LogoViewController()
         window?.makeKeyAndVisible()
-//        let switchMoodChanged = SettingViewController.setting.switchMood
-//        switchMoodChanged.addTarget(window, action: #selector(SettingViewController.switchStateDidChange), for: .valueChanged)
-
-//        if switchMoodChanged.isOn {
-//            window?.overrideUserInterfaceStyle = .dark
-//        }else{
-//            window?.overrideUserInterfaceStyle = .light
-//        }
+       
         if Auth.auth().currentUser != nil{
             let userNetworking = UserNetworking()
             let uid = Auth.auth().currentUser!.uid

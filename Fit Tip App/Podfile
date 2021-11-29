@@ -15,5 +15,5 @@ pod 'DropDown'
 pod 'Charts'
 pod 'TinyConstraints'
 pod 'ChartsRealm'
-
+pod 'YoutubePlayer-in-WKWebView'
 end

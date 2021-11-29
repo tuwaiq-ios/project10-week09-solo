@@ -35,20 +35,12 @@ class SettingViewController: UIViewController {
     func setupMoodSwitch(){
        
         switchMood.addTarget(self, action: #selector(switchStateDidChange), for: .valueChanged)
-        switchMood.setOn(true, animated: true)
         view.addSubview(switchMood)
         switchMood.onTintColor = ThemeColor.mainColor
     }
     
     @objc func switchStateDidChange() {
-           if switchMood.isOn{
-               overrideUserInterfaceStyle = .dark
-               print("UISwitch state is now On")
-           }
-           else{
-               overrideUserInterfaceStyle = .light
-               print("UISwitch state is now Off")
-           }
-       }
+        gloabalWindow?.overrideUserInterfaceStyle = switchMood.isOn ? .dark : .light
+    }
 }
 

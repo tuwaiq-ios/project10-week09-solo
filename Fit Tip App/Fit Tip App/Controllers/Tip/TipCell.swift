@@ -62,7 +62,7 @@ class TipCell: UICollectionViewCell {
         descCellLabel.font = .systemFont(ofSize: 15)
         descCellLabel.textColor = ThemeColor.mainColor
         descCellLabel.translatesAutoresizingMaskIntoConstraints = false
-        self.contentView.addSubview(descCellLabel)
+        self.addSubview(descCellLabel)
         NSLayoutConstraint.activate([
             descCellLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor , constant: -16),
             descCellLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 10),
