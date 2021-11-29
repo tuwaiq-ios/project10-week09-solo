@@ -47,7 +47,7 @@ class ManagerViewController: UIViewController, UICollectionViewDelegate, UIColle
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-		let alert = UIAlertController(title: "Alert", message: "Do you want to Update or Delete this product ?", preferredStyle: .alert )
+		let alert = UIAlertController(title: "Alert", message: "Do you want to Update or Delete this Student ?", preferredStyle: .alert )
 		alert.addAction(UIAlertAction (title: "Update", style: .default, handler: { _ in
 
 			self.performSegue(withIdentifier: "to_update", sender: indexPath)
@@ -70,7 +70,9 @@ class ManagerViewController: UIViewController, UICollectionViewDelegate, UIColle
 		if segue.identifier != "to_update"{
 			return
 		}
-		let updateVC = segue.destination 
+       // -----------------------------------------------------------------------
+        let updateVC = segue.destination as! UpdateViewController
+        updateVC.indexPath = sender as? IndexPath
 	}
 }
  

@@ -12,16 +12,16 @@
         <!--Cart Table View Controller-->
         <scene sceneID="QlI-pY-UHZ">
             <objects>
-                <viewController id="yoU-9Y-684" customClass="CartTableViewController" customModule="Project_4_Shopping_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yoU-9Y-684" customClass="CartTableViewController" customModule="tuwaiq_1000" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wh9-d5-wTK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Pqh-0X-3da">
-                                <rect key="frame" x="0.0" y="105" width="414" height="549"/>
+                                <rect key="frame" x="0.0" y="149" width="414" height="505"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cartCell" rowHeight="105" id="qud-9m-jwc" customClass="CartTableViewCell" customModule="Project_4_Shopping_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cartCell" rowHeight="105" id="qud-9m-jwc" customClass="CartTableViewCell" customModule="tuwaiq_1000" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qud-9m-jwc" id="MDZ-xb-H5g">
@@ -80,7 +80,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Out" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0de-B1-FDj">
-                                <rect key="frame" x="16" y="44" width="382" height="36"/>
+                                <rect key="frame" x="16" y="88" width="382" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -116,13 +116,13 @@
         <!--Address View Cotroller-->
         <scene sceneID="610-l6-jXe">
             <objects>
-                <viewController id="Sh7-ve-asj" customClass="AddressViewCotroller" customModule="Project_4_Shopping_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Sh7-ve-asj" customClass="AddressViewCotroller" customModule="tuwaiq_1000" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ooc-UR-pA0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOJ-nv-pPT">
-                                <rect key="frame" x="182" y="670" width="212" height="60"/>
+                                <rect key="frame" x="182" y="675" width="212" height="60"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="212" id="YFf-97-YWq"/>
@@ -139,37 +139,37 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHc-95-Jdf">
-                                <rect key="frame" x="20" y="110" width="45" height="21"/>
+                                <rect key="frame" x="20" y="198" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhD-jR-XNZ">
-                                <rect key="frame" x="20" y="171" width="61" height="21"/>
+                                <rect key="frame" x="20" y="259" width="61" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAb-5x-IKp">
-                                <rect key="frame" x="20" y="232" width="31" height="21"/>
+                                <rect key="frame" x="20" y="320" width="31" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9Y-54-9WF">
-                                <rect key="frame" x="20" y="293" width="63" height="21"/>
+                                <rect key="frame" x="20" y="381" width="63" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOV-vj-oS8">
-                                <rect key="frame" x="20" y="354" width="47" height="21"/>
+                                <rect key="frame" x="20" y="442" width="47" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hvp-MM-G22">
-                                <rect key="frame" x="88" y="104" width="97" height="34"/>
+                                <rect key="frame" x="88" y="192" width="97" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="1IT-XD-aPg"/>
                                     <constraint firstAttribute="height" constant="34" id="Nhi-hP-xcP"/>
@@ -178,7 +178,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JjU-2S-clb">
-                                <rect key="frame" x="89" y="225" width="97" height="34"/>
+                                <rect key="frame" x="89" y="313" width="97" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="108-5n-xLV"/>
                                     <constraint firstAttribute="width" constant="97" id="6aU-eC-TBD"/>
@@ -187,7 +187,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YRd-Ul-Efs">
-                                <rect key="frame" x="89" y="286" width="97" height="34"/>
+                                <rect key="frame" x="89" y="374" width="97" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="7Mm-LK-yFc"/>
                                     <constraint firstAttribute="height" constant="34" id="FI7-FJ-q47"/>
@@ -196,7 +196,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jw3-da-BIO">
-                                <rect key="frame" x="89" y="343" width="97" height="34"/>
+                                <rect key="frame" x="89" y="431" width="97" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="GV6-L3-bkG"/>
                                     <constraint firstAttribute="width" constant="97" id="j02-9H-u8N"/>
@@ -205,13 +205,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address for Delivery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cge-kk-6SL">
-                                <rect key="frame" x="16" y="19" width="382" height="36"/>
+                                <rect key="frame" x="16" y="107" width="382" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1o2-2s-0Y7">
-                                <rect key="frame" x="88" y="164" width="97" height="34"/>
+                                <rect key="frame" x="88" y="252" width="97" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Pjx-64-cXg"/>
                                     <constraint firstAttribute="width" constant="97" id="rve-KF-rVG"/>
@@ -267,7 +267,7 @@
         <!--Receipt View Controller-->
         <scene sceneID="L7C-AB-D8v">
             <objects>
-                <viewController id="GeF-b9-DCI" customClass="ReceiptViewController" customModule="Project_4_Shopping_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GeF-b9-DCI" customClass="ReceiptViewController" customModule="tuwaiq_1000" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9cD-e9-sYK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -336,7 +336,7 @@
                                 <rect key="frame" x="20" y="338" width="374" height="329"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="check_out" rowHeight="54" id="KZ1-5N-0xz" customClass="ReceiptCell" customModule="Project_4_Shopping_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="check_out" rowHeight="54" id="KZ1-5N-0xz" customClass="ReceiptCell" customModule="tuwaiq_1000" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="374" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KZ1-5N-0xz" id="T4m-mu-Thb">
@@ -464,7 +464,7 @@
         <!--Rec Collection View Controller-->
         <scene sceneID="t05-cT-JDH">
             <objects>
-                <viewController id="m9g-BA-o9a" customClass="RecCollectionViewController" customModule="Project_4_Shopping_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="m9g-BA-o9a" customClass="RecCollectionViewController" customModule="tuwaiq_1000" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m7Q-A2-xWo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -472,14 +472,14 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Ar-VT-TJp">
                                 <rect key="frame" x="16" y="159" width="382" height="355"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dJl-4n-LrK">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dJl-4n-LrK" userLabel="Flow Layout">
                                     <size key="itemSize" width="133" height="136"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="rec" id="3pq-zh-4SS" customClass="RecCell" customModule="Project_4_Shopping_App" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="rec" id="3pq-zh-4SS" customClass="RecCell" customModule="tuwaiq_1000" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="133" height="136"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="D3L-v2-48G">
@@ -540,8 +540,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="vGg-5Z-qBU"/>
                     <connections>
-                        <outlet property="collectionView" destination="3Ar-VT-TJp" id="8Pb-rX-hOq"/>
-                        <outlet property="flowLayout" destination="dJl-4n-LrK" id="5xj-rr-x4G"/>
+                        <outlet property="collectionView" destination="3Ar-VT-TJp" id="DMh-IQ-Tmb"/>
+                        <outlet property="flowLayout" destination="dJl-4n-LrK" id="m77-2e-EvK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ar-Q9-Dfl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -568,7 +568,7 @@
         <!--Products Collection View Controller-->
         <scene sceneID="NHP-CY-oaD">
             <objects>
-                <viewController id="xkv-2N-Z8v" customClass="ProductsCollectionViewController" customModule="Project_4_Shopping_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xkv-2N-Z8v" customClass="ProductsCollectionViewController" customModule="tuwaiq_1000" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FrH-u5-JU0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -583,7 +583,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="p4j-ja-VhL" customClass="productCollectionViewCell" customModule="Project_4_Shopping_App" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="p4j-ja-VhL" customClass="productCollectionViewCell" customModule="tuwaiq_1000" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="117" height="141"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -620,9 +620,9 @@
                                         </constraints>
                                         <size key="customSize" width="117" height="141"/>
                                         <connections>
-                                            <outlet property="procductImage" destination="DWF-F2-THf" id="xBz-24-wez"/>
-                                            <outlet property="productName" destination="4Pg-X5-ici" id="b8R-BN-ZgP"/>
-                                            <outlet property="productPriceLabel" destination="Apx-sz-wB1" id="6NO-o9-9Ei"/>
+                                            <outlet property="procductImage" destination="DWF-F2-THf" id="CVx-Y1-o9h"/>
+                                            <outlet property="productName" destination="4Pg-X5-ici" id="fKH-GW-DtZ"/>
+                                            <outlet property="productPriceLabel" destination="Apx-sz-wB1" id="QFd-5u-eQM"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -643,8 +643,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="nDq-wK-3Fr"/>
                     <connections>
-                        <outlet property="collectionFlowLayout" destination="GRQ-To-8HQ" id="bOQ-iZ-7At"/>
-                        <outlet property="productCollectionView" destination="xCq-xw-7pT" id="0CV-tp-h0i"/>
+                        <outlet property="collectionFlowLayout" destination="GRQ-To-8HQ" id="ajw-4R-H6x"/>
+                        <outlet property="productCollectionView" destination="xCq-xw-7pT" id="5ip-UH-Uh7"/>
                         <segue destination="BPm-k5-7fw" kind="push" identifier="product_info" id="lVl-dH-1DQ"/>
                     </connections>
                 </viewController>
@@ -655,7 +655,7 @@
         <!--Product Info-->
         <scene sceneID="HLx-CE-u5M">
             <objects>
-                <viewController id="BPm-k5-7fw" customClass="ProductInfo" customModule="Project_4_Shopping_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BPm-k5-7fw" customClass="ProductInfo" customModule="tuwaiq_1000" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XmN-tY-SvA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -776,7 +776,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Hhc-81-pQl"/>
+        <segue reference="akV-WF-cl1"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>

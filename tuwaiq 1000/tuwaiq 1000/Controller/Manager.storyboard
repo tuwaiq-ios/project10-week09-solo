@@ -11,7 +11,7 @@
         <!--Add Product-->
         <scene sceneID="HFO-kA-xLn">
             <objects>
-                <viewController id="pnb-H3-vWe" customClass="NewProductViewController" customModule="Project_4_Shopping_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pnb-H3-vWe" customClass="NewProductViewController" customModule="tuwaiq_1000" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EhB-1u-i8y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -218,7 +218,7 @@
         <!--Details-->
         <scene sceneID="WCG-pt-mbt">
             <objects>
-                <viewController id="80z-I1-p25" customClass="DetailsViewController" customModule="Project_4_Shopping_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="80z-I1-p25" customClass="DetailsViewController" customModule="tuwaiq_1000" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OvU-ed-NsF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,7 +236,7 @@
                                     <constraint firstAttribute="height" constant="218" id="Ort-ql-DIm"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="out_of_stock" rowHeight="63" id="ej2-9L-HNJ" customClass="DetailsCell" customModule="Project_4_Shopping_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="out_of_stock" rowHeight="63" id="ej2-9L-HNJ" customClass="DetailsCell" customModule="tuwaiq_1000" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="374" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ej2-9L-HNJ" id="31I-Eb-mMf">
@@ -349,7 +349,7 @@
         <!--Delete & Update-->
         <scene sceneID="V1m-35-Lbs">
             <objects>
-                <viewController id="dMV-IW-mXU" customClass="ManagerViewController" customModule="Project_4_Shopping_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dMV-IW-mXU" customClass="ManagerViewController" customModule="tuwaiq_1000" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a9b-Kw-jRb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -364,7 +364,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="manager_update" id="eIy-m7-nKP" customClass="ManagerCell" customModule="Project_4_Shopping_App" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="manager_update" id="eIy-m7-nKP" customClass="ManagerCell" customModule="tuwaiq_1000" customModuleProvider="target">
                                         <rect key="frame" x="104.5" y="0.0" width="205" height="252"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -438,7 +438,7 @@
         <!--Update View Controller-->
         <scene sceneID="6Vy-Ej-Iyq">
             <objects>
-                <viewController id="Yyp-Gu-ou9" customClass="UpdateViewController" customModule="Project_4_Shopping_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Yyp-Gu-ou9" customClass="UpdateViewController" customModule="tuwaiq_1000" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K2n-Vy-ccw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -530,6 +530,9 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addPressed:" destination="Yyp-Gu-ou9" eventType="touchUpInside" id="J6c-Yh-spl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Image :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1U-aM-CCP">
                                 <rect key="frame" x="22" y="346" width="108.5" height="18"/>
@@ -604,6 +607,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1iz-nG-4uR"/>
+                    <connections>
+                        <outlet property="newProductImage" destination="uR1-q5-KDV" id="6RU-BD-gKe"/>
+                        <outlet property="newProductName" destination="Ju1-YZ-UdV" id="xFO-pG-9xx"/>
+                        <outlet property="newProductPrice" destination="vsw-Gj-pgG" id="pro-TM-A0e"/>
+                        <outlet property="newProductQuantity" destination="KzI-7h-FjM" id="41a-fS-3Mm"/>
+                        <outlet property="newProductSpecs" destination="FiZ-Ld-bpo" id="PKd-ea-mSI"/>
+                        <outlet property="newProductSummery" destination="3uN-YW-RyL" id="1DU-sr-8Mj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VGa-Au-dfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -612,7 +623,7 @@
         <!--Purchase-->
         <scene sceneID="5VO-pZ-syv">
             <objects>
-                <viewController id="yVM-SZ-Gbo" customClass="PurchaseViewController" customModule="Project_4_Shopping_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yVM-SZ-Gbo" customClass="PurchaseViewController" customModule="tuwaiq_1000" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WVL-9t-6OO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -621,7 +632,7 @@
                                 <rect key="frame" x="0.0" y="194" width="414" height="319"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="purchase_cell" rowHeight="74" id="j56-MC-3PL" customClass="PurchaseCell" customModule="Project_4_Shopping_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="purchase_cell" rowHeight="74" id="j56-MC-3PL" customClass="PurchaseCell" customModule="tuwaiq_1000" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j56-MC-3PL" id="mQq-Yz-pV0">
@@ -660,6 +671,11 @@
                                                 <constraint firstAttribute="bottom" secondItem="IMb-J4-lZQ" secondAttribute="bottom" constant="16" id="yuG-aO-2bL"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="purImageView" destination="hXk-kF-ayz" id="tV1-GE-Dzi"/>
+                                            <outlet property="purNameLable" destination="amt-aJ-ON8" id="X7q-ju-3DN"/>
+                                            <outlet property="purPriceLabel" destination="IMb-J4-lZQ" id="FtV-lC-Esq"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -683,6 +699,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Purchase" image="purchased" catalog="system" id="DT5-1P-d2C"/>
+                    <connections>
+                        <outlet property="purchaseTableView" destination="jMg-sJ-JX2" id="53D-y7-xtA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3U-ir-na9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

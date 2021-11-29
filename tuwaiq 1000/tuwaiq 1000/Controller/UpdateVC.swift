@@ -9,7 +9,9 @@ import UIKit
 
 class UpdateViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 	
-	
+    
+    var specificProduct: Product!
+    var indexPath: IndexPath!
 	
 	
 	@IBOutlet weak var newProductName: UITextField!

@@ -34,6 +34,13 @@
 		E634873F274DAFCD00559B91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E634873E274DAFCD00559B91 /* SceneDelegate.swift */; };
 		E6348741274DAFCD00559B91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6348740274DAFCD00559B91 /* ViewController.swift */; };
 		E6348751274DB06B00559B91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6348750274DB06B00559B91 /* GoogleService-Info.plist */; };
+		E69246F32754B7A100421DCB /* Data1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69246F22754B7A100421DCB /* Data1.swift */; };
+		E69246F52754B7DF00421DCB /* VC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69246F42754B7DF00421DCB /* VC1.swift */; };
+		E69246F72754B84100421DCB /* Cell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69246F62754B84100421DCB /* Cell1.swift */; };
+		E69246F92754B92C00421DCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E69246F82754B92C00421DCB /* Assets.xcassets */; };
+		E69246FD2754C77E00421DCB /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69246FC2754C77E00421DCB /* VC2.swift */; };
+		E69247002754F05A00421DCB /* ProductsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69246FF2754F05A00421DCB /* ProductsCollectionViewController.swift */; };
+		E69247022754F18300421DCB /* ProductsCollectionViewController 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69247012754F18300421DCB /* ProductsCollectionViewController 2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +75,13 @@
 		E6348740274DAFCD00559B91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E634874A274DAFD700559B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6348750274DB06B00559B91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E69246F22754B7A100421DCB /* Data1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data1.swift; sourceTree = "<group>"; };
+		E69246F42754B7DF00421DCB /* VC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC1.swift; sourceTree = "<group>"; };
+		E69246F62754B84100421DCB /* Cell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell1.swift; sourceTree = "<group>"; };
+		E69246F82754B92C00421DCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E69246FC2754C77E00421DCB /* VC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
+		E69246FF2754F05A00421DCB /* ProductsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsCollectionViewController.swift; sourceTree = "<group>"; };
+		E69247012754F18300421DCB /* ProductsCollectionViewController 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductsCollectionViewController 2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +204,6 @@
 				5E33D3942753938F007EC44C /* DetailsCell.swift */,
 				5E33D37727538D50007EC44C /* Manager.storyboard */,
 				5E33D36F27538C19007EC44C /* UpdateVC.swift */,
-				5E33D37927538D5E007EC44C /* custmer */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				E6348750274DB06B00559B91 /* GoogleService-Info.plist */,
+				E69246FE2754CB4800421DCB /* jj */,
+				5E33D38927538FF1007EC44C /* Model */,
 				E634873B274DAFCD00559B91 /* tuwaiq 1000 */,
 				E634873A274DAFCD00559B91 /* Products */,
 				5B7D21CAC4DC1DA16501E3B2 /* Pods */,
@@ -218,8 +233,9 @@
 			isa = PBXGroup;
 			children = (
 				E633B93F274E0EED0046ED89 /* Controller */,
+				E69246F82754B92C00421DCB /* Assets.xcassets */,
 				E634874A274DAFD700559B91 /* Info.plist */,
-				5E33D38927538FF1007EC44C /* Model */,
+				5E33D37927538D5E007EC44C /* custmer */,
 				5E33D38827538FB9007EC44C /* View */,
 				5E33D38727538F8B007EC44C /* Products Collection */,
 				5E33D38627538F37007EC44C /* Cart Table */,
@@ -229,6 +245,19 @@
 				5E33D398275397C4007EC44C /* customer.storyboard */,
 			);
 			path = "tuwaiq 1000";
+			sourceTree = "<group>";
+		};
+		E69246FE2754CB4800421DCB /* jj */ = {
+			isa = PBXGroup;
+			children = (
+				E69246FF2754F05A00421DCB /* ProductsCollectionViewController.swift */,
+				E69247012754F18300421DCB /* ProductsCollectionViewController 2.swift */,
+				E69246F22754B7A100421DCB /* Data1.swift */,
+				E69246FC2754C77E00421DCB /* VC2.swift */,
+				E69246F42754B7DF00421DCB /* VC1.swift */,
+				E69246F62754B84100421DCB /* Cell1.swift */,
+			);
+			path = jj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +324,7 @@
 				5E33D397275397AB007EC44C /* Main.storyboard in Resources */,
 				5E33D37827538D50007EC44C /* Manager.storyboard in Resources */,
 				5E33D39B275399E1007EC44C /* Launch Screen.storyboard in Resources */,
+				E69246F92754B92C00421DCB /* Assets.xcassets in Resources */,
 				E6348751274DB06B00559B91 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,9 +378,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E69246F52754B7DF00421DCB /* VC1.swift in Sources */,
 				5E33D3952753938F007EC44C /* DetailsCell.swift in Sources */,
 				5E33D38227538ED7007EC44C /* ReceipVC.swift in Sources */,
 				E6348741274DAFCD00559B91 /* ViewController.swift in Sources */,
+				E69247002754F05A00421DCB /* ProductsCollectionViewController.swift in Sources */,
 				5E33D38F2753910B007EC44C /* CartTableCell.swift in Sources */,
 				5E33D36E27538BE6007EC44C /* NewProdectVC.swift in Sources */,
 				5E33D393275391A5007EC44C /* Productlnfo.swift in Sources */,
@@ -359,10 +391,14 @@
 				E633B941274E0F670046ED89 /* SideMenuVC.swift in Sources */,
 				5E33D37227538C3F007EC44C /* DetelisVC.swift in Sources */,
 				5E33D37427538C83007EC44C /* PurchaseVC.swift in Sources */,
+				E69247022754F18300421DCB /* ProductsCollectionViewController 2.swift in Sources */,
 				5E33D37F27538E47007EC44C /* RecCell.swift in Sources */,
 				5E33D36C27538BB6007EC44C /* ManagerCell.swift in Sources */,
 				5E33D38B2753909B007EC44C /* AddressVC.swift in Sources */,
+				E69246F72754B84100421DCB /* Cell1.swift in Sources */,
 				5E33D37027538C19007EC44C /* UpdateVC.swift in Sources */,
+				E69246FD2754C77E00421DCB /* VC2.swift in Sources */,
+				E69246F32754B7A100421DCB /* Data1.swift in Sources */,
 				5E33D36A27538B8D007EC44C /* ManagerVC.swift in Sources */,
 				E634873F274DAFCD00559B91 /* SceneDelegate.swift in Sources */,
 				5E33D37627538CA9007EC44C /* PrucheasCell.swift in Sources */,
