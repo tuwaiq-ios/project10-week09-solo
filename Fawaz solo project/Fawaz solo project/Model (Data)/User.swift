@@ -1,5 +1,5 @@
 //
-//  File1.swift
+//  User.swift
 //  Fawaz solo project
 //
 //  Created by Fawaz on 27/11/2021.

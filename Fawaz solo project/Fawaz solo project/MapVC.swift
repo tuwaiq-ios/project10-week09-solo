@@ -1,40 +1,108 @@
 //
-//  File7.swift
+//  MapVC.swift
 //  Fawaz solo project
 //
 //  Created by Fawaz on 27/11/2021.
 //
 
 import UIKit
+import CoreLocation
 import MapKit
 
 class MapVC: UIViewController {
   
-  let mapView : MKMapView = {
-    let map = MKMapView()
-    map.overrideUserInterfaceStyle = .light
-    return map
+  var locationManager: CLLocationManager!
+  var mapView: MKMapView!
+  
+  let centerMapButton: UIButton = {
+    
+    let button = UIButton()
+    button.tintColor = .white
+    button.backgroundColor = .systemBlue
+    button.translatesAutoresizingMaskIntoConstraints = false
+    button.setImage(UIImage(systemName: "location.fill"), for: .normal)
+    button.addTarget(self, action: #selector(handleCenterLocation), for: .touchUpInside)
+
+    return button
   }()
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    setMapConstraints()
+    configureLocationManager()
+    configureMapView()
+    enableLocationServices()
   }
   
-  func setMapConstraints() {
+  @objc func handleCenterLocation() {
+    centerMapOnUserLocation()
+  }
+  
+  func configureLocationManager() {
+    locationManager = CLLocationManager()
+    locationManager.delegate = self
+  }
+  
+  func configureMapView() {
+    
+    mapView = MKMapView()
+    mapView.showsUserLocation = true
+    mapView.delegate = self
+    mapView.userTrackingMode = .follow
     
     view.addSubview(mapView)
-    mapView.translatesAutoresizingMaskIntoConstraints = false
-    mapView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
-    mapView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
-    mapView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
-    mapView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
+    mapView.frame = view.frame
     
+    centerMapButton.layer.cornerRadius = 70 / 2
+    view.addSubview(centerMapButton)
+    NSLayoutConstraint.activate([
+      
+      centerMapButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 135),
+      centerMapButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 270),
+      centerMapButton.widthAnchor.constraint(equalToConstant: 70),
+      centerMapButton.heightAnchor.constraint(equalToConstant: 70),
+    ])
+    
+  }
+  
+  func centerMapOnUserLocation() {
+    guard let coordinate = locationManager.location?.coordinate else { return }
+    let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 2000, longitudinalMeters: 2000)
+    mapView.setRegion(region, animated: true)
+  }
+}
 
-    let F = MKPointAnnotation()
-    F.title = "Fawaz"
-    F.coordinate = CLLocationCoordinate2D(latitude: 18.084764, longitude: 43.138569)
-    mapView.addAnnotation(F)
+extension MapVC: MKMapViewDelegate {
+  
+  func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
+    UIView.animate(withDuration: 0.5) {
+      self.centerMapButton.alpha = 1
+    }
+  }
+  
+}
+
+extension MapVC: CLLocationManagerDelegate {
+  
+  func enableLocationServices() {
+    switch CLLocationManager.authorizationStatus() {
+    case .notDetermined:
+      print("Location auth status is NOT DETERMINED")
+      locationManager.requestWhenInUseAuthorization()
+    case .restricted:
+      print("Location auth status is RESTRICTED")
+    case .denied:
+      print("Location auth status is DENIED")
+    case .authorizedAlways:
+      print("Location auth status is AUTHORIZED ALWAYS")
+    case .authorizedWhenInUse:
+      print("Location auth status is AUTHORIZED WHEN IN USE")
+      locationManager.startUpdatingLocation()
+      locationManager.desiredAccuracy = kCLLocationAccuracyBest
+    }
+  }
+  
+  func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+    guard locationManager.location != nil else { return }
+    centerMapOnUserLocation()
   }
 }
