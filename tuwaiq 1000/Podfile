@@ -8,7 +8,6 @@ target 'tuwaiq 1000' do
   # Pods for tuwaiq 1000
     pod 'Firebase/Core'
     pod 'Firebase/Auth'
-    pod 'GoogleSignIn'
     pod 'Firebase/Firestore'
     pod 'MessageKit'
     pod  'Firebase/Database'

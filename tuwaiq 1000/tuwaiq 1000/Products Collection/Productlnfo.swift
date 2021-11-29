@@ -24,8 +24,8 @@ class ProductInfo: UIViewController {
 		super.viewDidLoad()
 		productimage.image = product!.productPic
 		productName.text = product!.prodauctName
-		productPrice.text = "Price: \(product!.prodauctPrice)"
-		productQuantity.text = "Quantity: \(product!.productQuantity)"
+		productPrice.text = "Evalution: \(product!.prodauctPrice)"
+		productQuantity.text = "Level: \(product!.productQuantity)"
 		productCategory.text = product!.productSpecs
 		productSummery.text = product!.productSummary
 	

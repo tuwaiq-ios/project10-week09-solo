@@ -3,28 +3,13 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="rsd-GX-asa">
-            <objects>
-                <viewController id="ANw-z5-4qV" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vsf-EA-klA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Ezp-jN-00x"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="TMd-7x-9WQ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lhe-aV-O9G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="786" y="65"/>
-        </scene>
         <!--customer-->
         <scene sceneID="o9v-RH-Ul0">
             <objects>
@@ -55,12 +40,14 @@
                         <subviews>
                             <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="0gM-uO-C8G">
                                 <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <color key="backgroundColor" name="collectionViewBackground"/>
+                                <color key="tintColor" name="collectionViewBackground"/>
                                 <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6vH-rV-L60">
                                 <rect key="frame" x="0.0" y="95" width="414" height="767"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.0" green="0.22576135864793034" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XG9-2t-FvF">
                                     <size key="itemSize" width="191" height="246"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -77,7 +64,7 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="btO-CZ-10H">
                                                     <rect key="frame" x="0.0" y="0.0" width="183" height="100"/>
-                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.22576135859999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="100" id="iGN-ic-r19"/>
                                                     </constraints>
@@ -85,16 +72,18 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrm-wo-HM6">
                                                     <rect key="frame" x="8" y="116" width="175" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="highlightedColor" red="0.54541778564453125" green="0.44463505250599583" blue="0.067949095487178326" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mho-MO-7j4">
                                                     <rect key="frame" x="8" y="154" width="175" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="highlightedColor" red="0.54541778559999998" green="0.44463505250000002" blue="0.06794909549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.22576135859999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" name="collectionViewBackground"/>
                                             <constraints>
                                                 <constraint firstItem="mrm-wo-HM6" firstAttribute="leading" secondItem="xvL-dh-GbQ" secondAttribute="leading" constant="8" id="4GG-VM-YEO"/>
                                                 <constraint firstItem="mrm-wo-HM6" firstAttribute="top" secondItem="btO-CZ-10H" secondAttribute="bottom" constant="16" id="4aw-Sz-mBe"/>
@@ -107,7 +96,7 @@
                                                 <constraint firstItem="mho-MO-7j4" firstAttribute="leading" secondItem="xvL-dh-GbQ" secondAttribute="leading" constant="8" id="pph-bG-99U"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.0" green="0.22576135859999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <size key="customSize" width="191" height="246"/>
                                         <connections>
                                             <outlet property="lName" destination="mrm-wo-HM6" id="HvT-UC-jDS"/>
@@ -119,7 +108,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h8r-kl-39h"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.22576135859999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0gM-uO-C8G" firstAttribute="top" secondItem="h8r-kl-39h" secondAttribute="top" id="4zx-pq-zfU"/>
                             <constraint firstItem="6vH-rV-L60" firstAttribute="top" secondItem="0gM-uO-C8G" secondAttribute="bottom" id="Hps-n1-hpF"/>
@@ -158,7 +147,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="skk" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPe-0A-a69">
                                 <rect key="frame" x="0.0" y="250.5" width="414" height="160"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.10435260919929253" green="0.52199367223211046" blue="0.83993314490000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="lcR-7r-6yR"/>
                                 </constraints>
@@ -180,15 +169,15 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwK-EV-1sQ">
                                 <rect key="frame" x="102" y="440" width="212" height="99"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.1043526092" green="0.52199367220000004" blue="0.83993314490000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="212" id="3iH-gL-FXC"/>
                                     <constraint firstAttribute="height" constant="99" id="woT-Lu-fSp"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Student" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="19"/>
-                                    <color key="baseForegroundColor" systemColor="systemTealColor"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Top 10🏅" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="28"/>
+                                    <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -197,15 +186,15 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGq-mA-z3H">
                                 <rect key="frame" x="103" y="611" width="211" height="95"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <color key="backgroundColor" red="0.1043526092" green="0.52199367220000004" blue="0.83993314490000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="211" id="7Mr-7U-iAx"/>
                                     <constraint firstAttribute="height" constant="95" id="q8t-ov-nNE"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Teacher" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="19"/>
-                                    <color key="baseForegroundColor" systemColor="systemTealColor"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Edit student" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="28"/>
+                                    <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -214,7 +203,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Enq-6t-7Ei"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.27003753320000001" blue="0.59805968310000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Enq-6t-7Ei" firstAttribute="bottom" secondItem="pGq-mA-z3H" secondAttribute="bottom" constant="102" id="5Sd-lu-859"/>
                             <constraint firstItem="Enq-6t-7Ei" firstAttribute="trailing" secondItem="LOG-z4-nUR" secondAttribute="trailing" constant="20" id="7cN-LU-dIP"/>
@@ -251,12 +240,9 @@
     </scenes>
     <resources>
         <image name="homekit" catalog="system" width="128" height="106"/>
-        <systemColor name="systemBackgroundColor">
+        <namedColor name="collectionViewBackground">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        </namedColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -17,35 +17,35 @@ var purchsedPr : Array<Item> = []
 
 var List : Array<Item> = [
     Item(
-        name: "cyber security",
+        name: "Cyber Security Twauiq ",
         price1 : "Riyadh",
         logo: UIImage(named: "1"),
-        spe : "The Pro adds an extra telephoto camera lens, a LIDAR sensor, a little more RAM, twice the base storage, and a shiny stainless steel frame. All that will cost you $820 , around $200 more than a base iPhone 13 at the carrier-subsidized price of $611."
+        spe : "A training camp aimed at qualifying Saudi capabilities and developing their skills in various cybersecurity fields, including vulnerability assessment, penetration testing, incident response, and digital forensic investigation"
     ),
 Item(
-    name: "Cyber Security Twauiq",
+    name: "Cyber security",
     price1 : "Riyadh",
     logo: UIImage(named: "19"),
-    spe : "The Pro adds an extra telephoto camera lens, a LIDAR sensor, a little more RAM, twice the base storage, and a shiny stainless steel frame. All that will cost you $799 , around $200 more than a base iPhone 12 pro max at the carrier-subsidized price of $600."
+    spe : "The Cyber ​​Track gives 200 male and female trainees a unique opportunity to improve their skills and develop their capabilities in Linux server and network management, vulnerability assessment, penetration testing, incident response and digital forensics. At the end of the camp, the trainee will be qualified and able to work in one of the areas of cybersecurity The training camp consists of two phases A month-long foundation stage A specialized phase that lasts for three months and is divided into Offensive and defensive."
 ),
 Item(
     name: "Cloud Computing",
     price1 : "Riyadh",
     logo: UIImage(named: "155"),
-    spe : "The Pro adds an extra telephoto camera lens, a LIDAR sensor, a little more RAM, twice the base storage, and a shiny stainless steel frame. All that will cost you $780 , around $200 more than a base iPhone 12 pro at the carrier-subsidized price of $580."
+    spe : "Qualifying recent graduates to work and providing them with the technical and professional skills necessary to work in the field of cloud computing."
 ),
 Item(
     name: "Game Development",
     price1 : "Jeddah",
     logo: UIImage(named: "15"),
-    spe : "The Pro adds an extra telephoto camera lens, a LIDAR sensor, a little more RAM, twice the base storage, and a shiny stainless steel frame. All that will cost you $780 , around $200 more than a base iPhone 12 pro at the carrier-subsidized price of $580."
+    spe : "iOS ، Java، PHP ، Front-end ،Back-end Opcache Practice,SonarQube Application Introduction ,D3.js Introduction ,Game Robot AI Realization, RPG Game Skill Design,Introduction to Lua Garbage Collection Mechanism"
 
 ),
 Item(
     name: "Java Script",
     price1 : "Hail",
     logo: UIImage(named: "11"),
-    spe : "The Pro adds an extra telephoto camera lens, a LIDAR sensor, a little more RAM, twice the base storage, and a shiny stainless steel frame. All that will cost you $700, around $200 more than a base iPhone 12 at the carrier-subsidized price of $550."
+    spe : "Camp enables you to design and build integrated web applications using JavaScript, React, Node for both Front-end and Back-end Technologies used: HTML, CSS, Javascript, React, NodeJS, ExpressJS, MongoDB, Mongoose, Jest The duration of the camp: 12 weeks (Sunday to Thursday - 9 am to 5 pm) and taught in English"
 
 ),
 Item(
@@ -53,34 +53,34 @@ Item(
     price1 : "Abha",
     logo: UIImage(named: "111"),
     
-    spe : "The Pro adds an extra telephoto camera lens, a LIDAR sensor, a little more RAM, twice the base storage, and a shiny stainless steel frame. All that will cost you $600, around $200 more than a base iPhone 11 at the carrier-subsidized price of $499."
+    spe : "Swift Camp enables you to build iOS apps and the ability to develop and publish mobile apps on the Apple App Store,Technologies used: Swift, Swift UI, Firebase,The duration of the camp: 12 weeks (Sunday to Thursday - 9 am to 5 pm) and taught in English"
 ),
 Item(
     name: "C#",
     price1 : "Medina",
     logo: UIImage(named: "1111"),
-    spe : "The Pro adds an extra telephoto camera lens, a LIDAR sensor, a little more RAM, twice the base storage, and a shiny stainless steel frame. All that will cost you $500, around $200 more than a base iPhone xr at the carrier-subsidized price of $455."
+    spe : "Camp enables you to design and build integrated web applications using #C"
 
 ),
 Item(
     name: "Kotlin",
     price1 : "Tabuk",
     logo: UIImage(named: "11111"),
-    spe : "The Pro adds an extra telephoto camera lens, a LIDAR sensor, a little more RAM, twice the base storage, and a shiny stainless steel frame. All that will cost you $599, around $200 more than a base iPhone xs at the carrier-subsidized price of $399."
+    spe : "Intensive Kotlin Boot Camp enables you to build and publish mobile apps on the Android App Store,Technologies used: Kotlin, SQLite, Room, JUnit, Mockito,The duration of the camp: 12 weeks (Sunday to Thursday - 9 am to 5 pm) and taught in English"
 
 ),
     Item(
         name: "Puthon",
         price1 : "Dammam",
         logo: UIImage(named: "16"),
-        spe : "The Pro adds an extra telephoto camera lens, a LIDAR sensor, a little more RAM, twice the base storage, and a shiny stainless steel frame. All that will cost you $599, around $200 more than a base iPhone xs at the carrier-subsidized price of $399."
+        spe : "This 12-week intensive Python course is a unique experience that provides you with in-depth experience building and testing web applications"
 
     ),
     Item(
         name: "Java",
         price1 : "Najran",
         logo: UIImage(named: "1111111"),
-        spe : "The Pro adds an extra telephoto camera lens, a LIDAR sensor, a little more RAM, twice the base storage, and a shiny stainless steel frame. All that will cost you $599, around $200 more than a base iPhone xs at the carrier-subsidized price of $399."
+        spe : "Camp enables you to design and build integrated web applications using Java"
 
     ),
 

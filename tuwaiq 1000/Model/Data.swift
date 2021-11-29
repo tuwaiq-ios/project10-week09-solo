@@ -38,10 +38,10 @@ class Category{
 var products = [
 	Product(prodauctName: "Hassan Abdulaziz ",
 					   productPic: UIImage(named: "qq"),
-					   prodauctPrice:99,
-					   productSummary: "swift",
+					   prodauctPrice: 37.50,
+					   productSummary: "cotton",
 					   productQuantity: 7,
-					   productSpecs: "Abha"),
+					   productSpecs: "Colthing"),
 			   Product(prodauctName: "Green T-shirt",
 					   productPic: UIImage(named: "ww"),
 					   prodauctPrice: 40.0,
