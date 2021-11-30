@@ -10,14 +10,14 @@ import UIKit
 struct Trip {
     let id:String
     let gate:String
-    let time:Date
+    let time: Int?
 }
 
 
 class serchForFlight : UIViewController, UITextFieldDelegate {
     
     var blackSquare: UIView!
-    var allTrips:[Trip] = [.init(id: "12345", gate: "5", time: Date()),.init(id: "54321", gate: "4", time: Date())]
+    var allTrips:[Trip] = [.init(id: "12345", gate: "10", time: 5 ),.init(id: "54321", gate: "4", time: 1)]
     
     let namelable: UILabel = {
         let label = UILabel()
@@ -66,6 +66,7 @@ class serchForFlight : UIViewController, UITextFieldDelegate {
         label.textColor = .black
         label.font = label.font.withSize(16)
         label.backgroundColor = .systemGray6
+        label.textAlignment = .center
         label.layer.cornerRadius = 10
         label.layer.borderWidth = 2
         label.layer.borderColor = UIColor.systemMint.cgColor
@@ -79,6 +80,7 @@ class serchForFlight : UIViewController, UITextFieldDelegate {
         label.textColor = .black
         label.font = label.font.withSize(16)
         label.backgroundColor = .systemGray6
+        label.textAlignment = .center
         label.layer.cornerRadius = 10
         label.layer.borderWidth = 2
         label.layer.borderColor = UIColor.systemMint.cgColor
@@ -98,18 +100,26 @@ class serchForFlight : UIViewController, UITextFieldDelegate {
         progressView.translatesAutoresizingMaskIntoConstraints = false
         progressView.trackTintColor = .lightGray
         progressView.progressTintColor = .systemMint
-        // 11: 19 now
-        // 12: 00 for trip
-        // 31 : Dep Time
-        // 31 M / 60 H = 0.83
-        progressView.progress =  0.51
+        progressView.progress =  0.0
+        self.perform(#selector(updateProgress), with: nil, afterDelay: 0.2)
+
         return progressView
     }()
     
+    var progressValue = 0.0
+    
+    @objc func updateProgress() {
+           progressValue = progressValue + 0.01
+           self.progressView.progress = Float(progressValue)
+           if progressValue != 1.0 {
+               self.perform(#selector(updateProgress), with: nil, afterDelay: 0.2)
+           }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         SetupView()
         ticktNumber.delegate = self
+
     }
   
     
@@ -169,8 +179,7 @@ class serchForFlight : UIViewController, UITextFieldDelegate {
         print(text)
        let new = allTrips.first(where: {$0.id == text})
         emptay2.text = new?.gate
-       // emptay.text = new?.time
-        // call firebase
+        emptay.text = "\(new?.time ?? 00 )"
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         // start

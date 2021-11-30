@@ -31,6 +31,8 @@
 		1F9E1FEC274B6B6F00679CC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9E1FEB274B6B6F00679CC3 /* Assets.xcassets */; };
 		1F9E1FEF274B6B6F00679CC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9E1FED274B6B6F00679CC3 /* LaunchScreen.storyboard */; };
 		1FB8060D2755FBDF00CC5D55 /* AdvertisementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8060C2755FBDF00CC5D55 /* AdvertisementCell.swift */; };
+		1FB806182756432F00CC5D55 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1FB806172756432F00CC5D55 /* video1.mp4 */; };
+		1FB8061A27565B1200CC5D55 /* locationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8061927565B1200CC5D55 /* locationVC.swift */; };
 		89A7A04CC98EFAFCF7FBC549 /* Pods_EsayFlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0DA6505E907BD972130518 /* Pods_EsayFlight.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		1F9E1FEE274B6B6F00679CC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F9E1FF0274B6B6F00679CC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FB8060C2755FBDF00CC5D55 /* AdvertisementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementCell.swift; sourceTree = "<group>"; };
+		1FB806172756432F00CC5D55 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		1FB8061927565B1200CC5D55 /* locationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationVC.swift; sourceTree = "<group>"; };
 		5A29C8781ACD5304C1BD2310 /* Pods-EsayFlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EsayFlight.debug.xcconfig"; path = "Target Support Files/Pods-EsayFlight/Pods-EsayFlight.debug.xcconfig"; sourceTree = "<group>"; };
 		EF0DA6505E907BD972130518 /* Pods_EsayFlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EsayFlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -121,6 +125,7 @@
 				1F1FBDC52754A74600D9F691 /* FreeWIfi.swift */,
 				1FB8060C2755FBDF00CC5D55 /* AdvertisementCell.swift */,
 				1F1FBDBD275359DE00D9F691 /* Advertisement.swift */,
+				1FB806172756432F00CC5D55 /* video1.mp4 */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 		1F9E1FD6274B6B6D00679CC3 = {
 			isa = PBXGroup;
 			children = (
+				1FB8061927565B1200CC5D55 /* locationVC.swift */,
 				1F9E1FE1274B6B6D00679CC3 /* EsayFlight */,
 				1F9E1FE0274B6B6D00679CC3 /* Products */,
 				734D98603B3608E60CF1FFF0 /* Pods */,
@@ -181,6 +187,7 @@
 				1F9E1FDC274B6B6D00679CC3 /* Frameworks */,
 				1F9E1FDD274B6B6D00679CC3 /* Resources */,
 				19B8AAB1E1A1169FD0B5652E /* [CP] Embed Pods Frameworks */,
+				2C3F729179341C6D7D095197 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F9E1FEF274B6B6F00679CC3 /* LaunchScreen.storyboard in Resources */,
+				1FB806182756432F00CC5D55 /* video1.mp4 in Resources */,
 				1F9E1FEC274B6B6F00679CC3 /* Assets.xcassets in Resources */,
 				1F7C87AF274CF06D00112F6A /* GoogleService-Info.plist in Resources */,
 			);
@@ -253,6 +261,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EsayFlight/Pods-EsayFlight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C3F729179341C6D7D095197 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EsayFlight/Pods-EsayFlight-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EsayFlight/Pods-EsayFlight-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EsayFlight/Pods-EsayFlight-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		83EB8CC31EA1B07D4EFE67DE /* [CP] Check Pods Manifest.lock */ = {
@@ -303,6 +328,7 @@
 				1F7C87BC274E2B0900112F6A /* profiel.swift in Sources */,
 				1F1FBDC42754A60D00D9F691 /* TabVC.swift in Sources */,
 				1F7C87B3274D273100112F6A /* Data.swift in Sources */,
+				1FB8061A27565B1200CC5D55 /* locationVC.swift in Sources */,
 				1F7C87B6274E12A700112F6A /* HomeCell.swift in Sources */,
 				1F9E1FE5274B6B6D00679CC3 /* SceneDelegate.swift in Sources */,
 			);

@@ -23,26 +23,26 @@ class Advertisement: UIViewController {
     view.backgroundColor = .white
     // Do any additional setup after loading the view.
     for _ in 0..<1{
-      let model = VideoModel(caption: "Alsodah",
-                  username: "@tasnim",
-                  audioTrackName: "السوده",
+      let model = VideoModel(caption: "kkk",
+                  username: "kkk",
+                  audioTrackName: "kkk",
                   videoFileName: "video1",
                   videoFileFormat: "mp4")
       data.append (model)
     }
     for _ in 1..<2 {
-      let model = VideoModel(caption: "high city ",
-                  username: "@tasnim",
-                  audioTrackName: "المدينه العالي",
-                  videoFileName: "video2",
+      let model = VideoModel(caption: "kkk ",
+                  username: "kkk",
+                  audioTrackName: "kkk",
+                  videoFileName: "video1",
                   videoFileFormat: "mp4")
       data.append (model)
     }
     for _ in 2..<3 {
       let model = VideoModel(caption: "Fog cofffee",
-                  username: "@tasnim",
+                  username: "@starbucks",
                   audioTrackName: "كوفي الضباب",
-                  videoFileName: "video3",
+                  videoFileName: "video1",
                   videoFileFormat: "mp4")
       data.append (model)
     }
@@ -50,7 +50,7 @@ class Advertisement: UIViewController {
       let model = VideoModel(caption: "abo kheyal",
                   username: "@tasnim",
                   audioTrackName:"ابو خيال",
-                  videoFileName: "video4",
+                  videoFileName: "video1",
                   videoFileFormat: " mp4")
       data.append (model)
     }
@@ -58,7 +58,7 @@ class Advertisement: UIViewController {
       let model = VideoModel(caption: "",
                   username: "@Sara",
                   audioTrackName: "Video Song :musical_note:",
-                  videoFileName: "video5",
+                  videoFileName: "video1",
                   videoFileFormat: "mp4")
       data.append (model)
     }
@@ -66,7 +66,7 @@ class Advertisement: UIViewController {
       let model = VideoModel(caption: "",
                   username: "",
                   audioTrackName: "",
-                  videoFileName: "video6",
+                  videoFileName: "video1",
                   videoFileFormat: "mp4")
       data.append (model)
     }
@@ -74,7 +74,7 @@ class Advertisement: UIViewController {
       let model = VideoModel(caption: "",
                   username:"",
                   audioTrackName: "",
-                  videoFileName: "video7",
+                  videoFileName: "video1",
                   videoFileFormat: "mp4")
       data.append (model)
     }
@@ -82,7 +82,7 @@ class Advertisement: UIViewController {
       let model = VideoModel(caption: "",
                   username: "",
                   audioTrackName: "",
-                  videoFileName: "video8",
+                  videoFileName: "video1",
                   videoFileFormat: "mp4")
       data.append (model)
     }
@@ -90,7 +90,7 @@ class Advertisement: UIViewController {
       let model = VideoModel(caption: "",
                   username: "",
                   audioTrackName: "",
-                  videoFileName: "video99",
+                  videoFileName: "video1",
                   videoFileFormat: "MP4")
       data.append (model)
     }
@@ -138,7 +138,7 @@ extension Advertisement: VideoCollectionViewCellDelegate{
   }
   func didTapProfileButton(with model: VideoModel) {
     print("profile button tapped")
-    let vc = Home()
+    let vc = TabBarVC()
     vc.modalPresentationStyle = .fullScreen
     self.present(vc, animated: true, completion: nil)
   }

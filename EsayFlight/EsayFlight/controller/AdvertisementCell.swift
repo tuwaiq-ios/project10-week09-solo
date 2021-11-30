@@ -90,8 +90,7 @@ class VideoCollectionViewCell: UICollectionViewCell, UINavigationControllerDeleg
       profileButton.addTarget(self, action: #selector(didTapProfileButton), for: .touchDown)
       commentButton.addTarget(self, action: #selector(didTapCommentButton), for: .touchDown)
       shareButton.addTarget(self, action: #selector(didTapShareButton), for: .touchDown)
-      ///////////////////////////////
-      ///
+    
 //      videoContainer.clipsToBounds = true
       //Video Back
       contentView.sendSubviewToBack(videoContainer)

@@ -65,7 +65,7 @@ class LoginVC: UIViewController {
     }()
     var imageView: UIImageView = {
       let imageView = UIImageView()
-      imageView.image = UIImage(named: "airport")
+      imageView.image = UIImage(named: "Frame 1")
       imageView.translatesAutoresizingMaskIntoConstraints = false
       return imageView
     }()

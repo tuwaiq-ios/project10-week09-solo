@@ -9,5 +9,7 @@ target 'EsayFlight' do
 pod 'Firebase/Analytics'	
 pod 'Firebase/Auth'	
 pod 'Firebase/Firestore'
-pod 'DropDown'	
+pod 'DropDown'
+
+ pod 'GoogleMaps', '5.2.0'	
 end
