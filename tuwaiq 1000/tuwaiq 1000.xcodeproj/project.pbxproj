@@ -200,7 +200,6 @@
 				5E33D37327538C83007EC44C /* PurchaseVC.swift */,
 				5E33D37527538CA9007EC44C /* PrucheasCell.swift */,
 				5E33D37127538C3F007EC44C /* DetelisVC.swift */,
-				5E33D39A275399E1007EC44C /* Launch Screen.storyboard */,
 				5E33D3942753938F007EC44C /* DetailsCell.swift */,
 				5E33D37727538D50007EC44C /* Manager.storyboard */,
 				5E33D36F27538C19007EC44C /* UpdateVC.swift */,
@@ -234,6 +233,7 @@
 			children = (
 				E633B93F274E0EED0046ED89 /* Controller */,
 				E69246F82754B92C00421DCB /* Assets.xcassets */,
+				5E33D39A275399E1007EC44C /* Launch Screen.storyboard */,
 				E634874A274DAFD700559B91 /* Info.plist */,
 				5E33D37927538D5E007EC44C /* custmer */,
 				5E33D38827538FB9007EC44C /* View */,

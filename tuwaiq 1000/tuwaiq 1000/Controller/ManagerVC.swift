@@ -42,7 +42,7 @@ class ManagerViewController: UIViewController, UICollectionViewDelegate, UIColle
 		
 		cell.productImage.image = data.productPic
 		cell.productName.text = data.prodauctName
-		cell.productPrice.text = "SA\(data.prodauctPrice)"
+		cell.productPrice.text = ":\(data.prodauctPrice)"
 		return cell
 	}
 	

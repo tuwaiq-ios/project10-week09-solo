@@ -51,7 +51,7 @@ class ProductInfo: UIViewController {
 	@IBAction func addToCartPressed(_ sender: Any) {
 		let saveProName = product!.prodauctName
 		let savedProPic =  product!.productPic
-		let savedProPrice = "Price: \(product!.prodauctPrice)"
+		let savedProPrice = "Assessment \(product!.prodauctPrice)"
 		let itemInCart = Cart(cartProdImage: savedProPic, cartProdName: saveProName, cartProdPrice: savedProPrice)
 		cartArray.insert(itemInCart, at: 0)
 		outOfStuckCheck()

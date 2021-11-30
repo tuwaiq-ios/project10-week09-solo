@@ -45,7 +45,7 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
 			revenu.append(i.prodauctPrice)
 		}
 		let result = revenu.reduce(0, +)
-		revenuLabel.text = " SA \(result)"
+		revenuLabel.text = " : \(result)"
 	}
 
 	func totalProfit(){
@@ -54,7 +54,7 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
 			profit.append(profitResult)
 		}
 		let total = profit.reduce(0, +)
-		proftLabel.text = " SA \(total)"
+		proftLabel.text = " : \(total)"
 	}
 	
 }

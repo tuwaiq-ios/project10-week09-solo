@@ -54,26 +54,18 @@ class ProductsCollectionViewController: UIViewController, UICollectionViewDelega
         if search{
             cell.procductImage.image = searchedProductes[indexPath.row].productPic
             cell.productName.text = searchedProductes[indexPath.row].prodauctName
-            cell.productPriceLabel.text = "SA\(searchedProductes[indexPath.row].prodauctPrice)"
+            cell.productPriceLabel.text = ":\(searchedProductes[indexPath.row].prodauctPrice)"
         }else{
             cell.productName.text = products[indexPath.row].prodauctName
             cell.procductImage.image =  products[indexPath.row].productPic
-            cell.productPriceLabel.text = "SA\(products[indexPath.row].prodauctPrice)"
+            cell.productPriceLabel.text = ":\(products[indexPath.row].prodauctPrice)"
         }
         
         
         return cell
     }
     
-//     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-//
-//         let section = categoris[indexPath.section].catName
-//         if let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeader", for: indexPath) as? SectionHeader{
-//             sectionHeader.sectionHeaderLabel.text = " \(section)"
-//             return sectionHeader
-//         }
-//         return UICollectionReusableView()
-//     }
+
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let data = products[indexPath.row]
@@ -99,7 +91,7 @@ class ProductsCollectionViewController: UIViewController, UICollectionViewDelega
         self.navigationItem.searchController = searchController
         self.navigationItem.hidesSearchBarWhenScrolling = false
         definesPresentationContext = true
-        searchController.searchBar.placeholder = "Search Products By Name"
+        searchController.searchBar.placeholder = "Search Student By Name"
         searchController.searchBar.barTintColor = .gray
         searchController.searchBar.barTintColor = .white
     }
