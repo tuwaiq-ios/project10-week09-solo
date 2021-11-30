@@ -13,70 +13,75 @@ class LawyersVC_Cell: UITableViewCell {
   
   let imageCell = UIImageView()
   let nameCell = UILabel()
-  let blog = UILabel()
-  
-  let imageblog = UIImageView()
-  let nameblog = UILabel()
+  let numberCell = UILabel()
   let text = UILabel()
   
+  //==========================================================================
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
     
     super.init(style: style , reuseIdentifier: reuseIdentifier)
+    //========================================================================
     
     imageCell.translatesAutoresizingMaskIntoConstraints = false
-    
     self.addSubview(imageCell)
+    imageCell.backgroundColor = .brown
+    imageCell.layer.masksToBounds = true
+    imageCell.layer.cornerRadius = 10
     
     NSLayoutConstraint.activate([
-      imageCell.leftAnchor.constraint(equalTo: leftAnchor),
-      imageCell.heightAnchor.constraint(equalToConstant: 60),
-      imageCell.widthAnchor.constraint(
-        equalTo: imageCell.heightAnchor,multiplier: 100/100),
-      imageCell.bottomAnchor.constraint(equalTo: bottomAnchor)
+      imageCell.rightAnchor.constraint(equalTo: rightAnchor, constant: -10),
+      imageCell.topAnchor.constraint(equalTo: topAnchor, constant: 10),
+      imageCell.heightAnchor.constraint(equalToConstant: 100),
+      imageCell.widthAnchor.constraint(equalToConstant: 100)
     ])
-    
-    nameCell.textColor = .white
-    nameCell.text = ""
+    //========================================================================
     nameCell.translatesAutoresizingMaskIntoConstraints = false
-    
     self.addSubview(nameCell)
     
-    NSLayoutConstraint.activate([
-      nameCell.leftAnchor.constraint(equalTo: imageCell.leftAnchor , constant: 80),
-      nameCell.heightAnchor.constraint(equalToConstant: 80),
-      nameCell.trailingAnchor.constraint(equalTo: trailingAnchor , constant: 100),
-      nameCell.bottomAnchor.constraint(equalTo: bottomAnchor)])
+    nameCell.textColor = .green
     
-    blog.text = "BLOG"
-    blog.textColor = .white
-    blog.translatesAutoresizingMaskIntoConstraints = false
-    
-    self.addSubview(blog)
+    nameCell.textAlignment = .right
+    nameCell.backgroundColor = .systemBlue
+    nameCell.font = UIFont.boldSystemFont(ofSize: 25)
     
     NSLayoutConstraint.activate([
-      blog.topAnchor.constraint(equalTo: topAnchor, constant:171),
-      blog.leftAnchor.constraint(equalTo: leftAnchor),
-      blog.heightAnchor.constraint(equalToConstant: 30),
-      blog.widthAnchor.constraint(equalToConstant: 60)
+      nameCell.rightAnchor.constraint(equalTo: imageCell.leftAnchor, constant: -10),
+      nameCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 10),
+      nameCell.topAnchor.constraint(equalTo: topAnchor, constant: 10),
+      nameCell.heightAnchor.constraint(equalToConstant: 50),
+//      nameCell.widthAnchor.constraint(equalToConstant: 50)
     ])
+    //========================================================================
     
-    nameblog.font = UIFont.boldSystemFont(ofSize: 25)
-    nameblog.textColor = .blue
-    nameblog.translatesAutoresizingMaskIntoConstraints = false
     
-    self.addSubview(nameblog)
+    numberCell.textColor = .blue
+    numberCell.translatesAutoresizingMaskIntoConstraints = false
+    
+    numberCell.textAlignment = .right
+    numberCell.backgroundColor = .systemBlue
+    numberCell.font = UIFont.boldSystemFont(ofSize: 25)
+    
+    self.addSubview(numberCell)
     
     NSLayoutConstraint.activate([
-      nameblog.topAnchor.constraint(equalTo: topAnchor, constant:205),
-      nameblog.leftAnchor.constraint(equalTo: leftAnchor),
-      nameblog.heightAnchor.constraint(equalToConstant: 30),
-      nameblog.widthAnchor.constraint(equalToConstant: 200)
+//      numberCell.topAnchor.constraint(equalTo: topAnchor, constant:205),
+//      numberCell.leftAnchor.constraint(equalTo: leftAnchor),
+//      numberCell.heightAnchor.constraint(equalToConstant: 30),
+//      numberCell.widthAnchor.constraint(equalToConstant: 200)
+      
+      numberCell.rightAnchor.constraint(equalTo: imageCell.leftAnchor, constant: -10),
+      numberCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 10),
+      numberCell.topAnchor.constraint(equalTo: nameCell.bottomAnchor, constant: 10),
+      numberCell.heightAnchor.constraint(equalToConstant: 50),
+//      numberCell.widthAnchor.constraint(equalToConstant: 50)
+      
     ])
-    
+    //========================================================================
     text.font = UIFont.systemFont(ofSize: 17)
-    text.numberOfLines = 2
+    text.numberOfLines = 0
     text.textColor = .darkGray
     text.translatesAutoresizingMaskIntoConstraints = false
+    
     
     self.addSubview(text)
     
@@ -86,18 +91,8 @@ class LawyersVC_Cell: UITableViewCell {
       text.heightAnchor.constraint(equalToConstant: 90),
       text.widthAnchor.constraint(equalToConstant: 200)
     ])
-    
-    imageblog.translatesAutoresizingMaskIntoConstraints = false
-    
-    self.addSubview(imageblog)
-    
-    NSLayoutConstraint.activate([
-      imageblog.topAnchor.constraint(equalTo: topAnchor),
-      imageblog.leftAnchor.constraint(equalTo: leftAnchor),
-      imageblog.heightAnchor.constraint(equalToConstant: 170),
-      imageblog.widthAnchor.constraint(equalToConstant: 375)
-    ])
   }
+  //==========================================================================
   required init?(coder: NSCoder) {
     super.init(coder: coder)
   }

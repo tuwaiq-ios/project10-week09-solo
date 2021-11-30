@@ -10,19 +10,16 @@ import UIKit
 class CourtVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
   
   private var collectionView: UICollectionView?
-  
+  //==========================================================================
   override func viewDidLoad(){
     super.viewDidLoad()
     
     let layout = UICollectionViewFlowLayout()
     layout.scrollDirection = .vertical
-    
-    layout.minimumLineSpacing = 1
+    layout.minimumLineSpacing = 10
     layout.minimumInteritemSpacing = 1
     layout.sectionInset = UIEdgeInsets(top: 20,left: 10,bottom: 10,right: 10)
     layout.itemSize = CGSize(width: 180, height: 220)
-    
-    //    layout.itemSize = CGSize(width: (view.frame.size.width/3)-4, height: (view.frame.size.width/3)-4)
     
     collectionView = UICollectionView(frame: .zero,
                                       collectionViewLayout: layout)
@@ -32,19 +29,21 @@ class CourtVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     }
     
     collectionView.register(CourtVC_Cell.self, forCellWithReuseIdentifier: CourtVC_Cell.identifier)
-    
-    collectionView.dataSource=self
+    collectionView.backgroundColor = .systemGray
+    collectionView.dataSource = self
     collectionView.delegate = self
     view.addSubview(collectionView)
     collectionView.frame = view.bounds
   }
-  
+  //==========================================================================
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) ->Int {
     
     return data_Court_str.count
   }
-  
+  //==========================================================================
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+    
+//    collectionView.reloadData()
     
     let list = data_Court_str[indexPath.row]
     
@@ -54,9 +53,9 @@ class CourtVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     
     cell.myImageView.image = list.image
     cell.name.text = list.name
-    
     return cell
   }
+  //==========================================================================
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     
     let data1 = data_Court_str[indexPath.row]
@@ -64,8 +63,9 @@ class CourtVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     let VC1_CourtPageVC = CourtPageVC()
     VC1_CourtPageVC.imageCourtPage.image = data1.image
     VC1_CourtPageVC.nameCourtPage.text = data1.name
-    VC1_CourtPageVC.summaryCourtPage.text = data1.summary
+    VC1_CourtPageVC.restFromVC = data1
     
     navigationController?.pushViewController(VC1_CourtPageVC, animated: true)
   }
 }
+//==========================================================================

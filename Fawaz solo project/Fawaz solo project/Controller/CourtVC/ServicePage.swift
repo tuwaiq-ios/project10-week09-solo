@@ -9,13 +9,17 @@ import UIKit
 
 class ServicePageVC : UIViewController{
   
+  var restFromVC2: A?
+  
   let imageBlogPage = UIImageView()
   let nameBlogPage = UILabel()
   let textBlogPage = UILabel()
   
+  //==========================================================================
   override func viewDidLoad() {
     super.viewDidLoad()
-    view.backgroundColor = .white
+    
+    view.backgroundColor = .red
     
     imageBlogPage.layer.masksToBounds = true
     imageBlogPage.layer.cornerRadius = 5.0
@@ -39,6 +43,7 @@ class ServicePageVC : UIViewController{
       nameBlogPage.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 5)
     ])
     
+    textBlogPage.textColor = .black
     textBlogPage.font = .systemFont(ofSize: 22)
     textBlogPage.numberOfLines = 12
     textBlogPage.translatesAutoresizingMaskIntoConstraints = false

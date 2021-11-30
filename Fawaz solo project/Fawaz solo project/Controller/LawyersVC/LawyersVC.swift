@@ -19,20 +19,19 @@ class LawyersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     TV.register(LawyersVC_Cell.self, forCellReuseIdentifier: LawyersVC_Cell.identifier)
     
-    TV.backgroundColor = .white
-    TV.rowHeight = 400
+//    TV.backgroundColor = .white
+    TV.rowHeight = 120
     TV.translatesAutoresizingMaskIntoConstraints = false
     
     view.addSubview(TV)
     
     NSLayoutConstraint.activate([
-      TV.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10),
-      TV.topAnchor.constraint(equalTo: view.topAnchor, constant: 120),
       
-      TV.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10),
-      TV.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -32)
+      TV.topAnchor.constraint(equalTo: view.topAnchor, constant: 10),
+      TV.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10),
+      TV.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10),
+      TV.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10)
     ])
-    
   }
   //======================================================================
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,29 +42,27 @@ class LawyersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
     let list = data_Lawyers_str[indexPath.row]
-    let cell = tableView.dequeueReusableCell(withIdentifier: LawyersVC_Cell.identifier, for: indexPath) as! LawyersVC_Cell
     
-    cell.backgroundColor = .white
-    cell.imageCell.image = UIImage(systemName: "person.fill")
-    cell.imageCell.backgroundColor = .black
-    cell.imageblog.image = list.image
+    let cell = tableView.dequeueReusableCell(withIdentifier: LawyersVC_Cell.identifier, for: indexPath) as! LawyersVC_Cell
+      
+    cell.imageCell.image = list.image
     cell.nameCell.text = list.name
-    cell.nameblog.text = list.type
-    cell.text.text = list.text
-    cell.imageCell.layer.masksToBounds = true
-    cell.imageCell.layer.cornerRadius = 40
+    cell.numberCell.text = list.number
+    
     return cell
   }
   //======================================================================
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
+    tableView.reloadData()
+    
     let data3 = data_Lawyers_str[indexPath.row]
     
     let VC3_LawyersPageVC = LawyersPageVC()
     VC3_LawyersPageVC.imageBlogPage.image = data3.image
-    VC3_LawyersPageVC.nameBlogPage.text = data3.type
+    VC3_LawyersPageVC.nameBlogPage.text = data3.name
+    VC3_LawyersPageVC.numberBlogePage.text = data3.number
     VC3_LawyersPageVC.textBlogPage.text = data3.text
     navigationController?.pushViewController(VC3_LawyersPageVC, animated: true)
-//    self.present(VC2_LawyersPageVC, animated: true, completion: nil)
   }
 }

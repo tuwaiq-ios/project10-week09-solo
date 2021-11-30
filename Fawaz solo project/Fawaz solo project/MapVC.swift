@@ -61,6 +61,24 @@ class MapVC: UIViewController {
       centerMapButton.widthAnchor.constraint(equalToConstant: 70),
       centerMapButton.heightAnchor.constraint(equalToConstant: 70),
     ])
+    //========================================================================
+    let m1 = MKPointAnnotation()
+    m1.title = "المحكمة الإدارية بأبها"
+    m1.coordinate = CLLocationCoordinate2D(latitude: 18.2171787,
+                                          longitude: 42.5145483)
+    mapView.addAnnotation(m1)
+    //========================================================================
+    let m2 = MKPointAnnotation()
+    m2.title = "محكمة الاستئناف الادارية بمنطقة عسير"
+    m2.coordinate = CLLocationCoordinate2D(latitude: 18.2175920,
+                                           longitude: 42.5129536)
+    mapView.addAnnotation(m2)
+    //========================================================================
+    let F = MKPointAnnotation()
+    F.title = "محكمة التنفيذ بأبها"
+    F.coordinate = CLLocationCoordinate2D(latitude: 18.238223, longitude: 43.13856)
+    mapView.addAnnotation(F)
+    //========================================================================
     
   }
   
@@ -84,16 +102,22 @@ extension MapVC: MKMapViewDelegate {
 extension MapVC: CLLocationManagerDelegate {
   
   func enableLocationServices() {
+    
     switch CLLocationManager.authorizationStatus() {
+    
     case .notDetermined:
       print("Location auth status is NOT DETERMINED")
       locationManager.requestWhenInUseAuthorization()
+    
     case .restricted:
       print("Location auth status is RESTRICTED")
+    
     case .denied:
       print("Location auth status is DENIED")
+    
     case .authorizedAlways:
       print("Location auth status is AUTHORIZED ALWAYS")
+    
     case .authorizedWhenInUse:
       print("Location auth status is AUTHORIZED WHEN IN USE")
       locationManager.startUpdatingLocation()

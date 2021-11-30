@@ -12,11 +12,10 @@ class TabVC: UITabBarController {
   
   fileprivate func createNavController(for rootViewController: UIViewController, title: String, image: UIImage) -> UIViewController {
     
-    // titel in all views
     let navController = UINavigationController(rootViewController: rootViewController)
     navController.tabBarItem.title = title
     navController.tabBarItem.image = image
-    navController.navigationBar.prefersLargeTitles = true
+    
     rootViewController.navigationItem.title = title
     return navController
   }
@@ -26,8 +25,8 @@ class TabVC: UITabBarController {
     viewControllers = [
       
       createNavController(
-        for:CourtVC(), //StoreVC(), //CourtVC (),
-           title: NSLocalizedString("CourtVC", comment: ""),
+        for:CourtVC(),
+           title: NSLocalizedString("Courts", comment: ""),
            image: UIImage(systemName: "location")!),
       
       createNavController(
@@ -42,7 +41,7 @@ class TabVC: UITabBarController {
       
       createNavController(
         for:MapVC (),
-           title: NSLocalizedString("location", comment: ""),
+           title: NSLocalizedString("Location", comment: ""),
            image: UIImage(systemName: "location")!),
       
       createNavController(
@@ -56,8 +55,13 @@ class TabVC: UITabBarController {
     super.viewDidLoad()
     
     view.backgroundColor = UIColor (named: "myBackgroundColor")
+    
     UITabBar.appearance().barTintColor = .systemBackground
+    
     tabBar.tintColor = .label
+    
+    self.tabBar.isTranslucent = false
+    
     
     setupVCs()
     
