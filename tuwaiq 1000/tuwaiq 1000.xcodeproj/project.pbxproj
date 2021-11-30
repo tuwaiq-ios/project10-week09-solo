@@ -28,7 +28,7 @@
 		5E33D3952753938F007EC44C /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D3942753938F007EC44C /* DetailsCell.swift */; };
 		5E33D397275397AB007EC44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E33D396275397AB007EC44C /* Main.storyboard */; };
 		5E33D399275397C4007EC44C /* customer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E33D398275397C4007EC44C /* customer.storyboard */; };
-		5E33D39B275399E1007EC44C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E33D39A275399E1007EC44C /* Launch Screen.storyboard */; };
+		E62F35F727561937000E4296 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E62F35F627561937000E4296 /* Launch Screen.storyboard */; };
 		E633B941274E0F670046ED89 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E633B940274E0F670046ED89 /* SideMenuVC.swift */; };
 		E634873D274DAFCD00559B91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E634873C274DAFCD00559B91 /* AppDelegate.swift */; };
 		E634873F274DAFCD00559B91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E634873E274DAFCD00559B91 /* SceneDelegate.swift */; };
@@ -65,9 +65,9 @@
 		5E33D3942753938F007EC44C /* DetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCell.swift; sourceTree = "<group>"; };
 		5E33D396275397AB007EC44C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5E33D398275397C4007EC44C /* customer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = customer.storyboard; sourceTree = "<group>"; };
-		5E33D39A275399E1007EC44C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		6EACC00631425B1C3002C357 /* Pods_tuwaiq_1000.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tuwaiq_1000.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D055DC38DDE235AF6F952A1 /* Pods-tuwaiq 1000.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tuwaiq 1000.debug.xcconfig"; path = "Target Support Files/Pods-tuwaiq 1000/Pods-tuwaiq 1000.debug.xcconfig"; sourceTree = "<group>"; };
+		E62F35F627561937000E4296 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E633B940274E0F670046ED89 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		E6348739274DAFCD00559B91 /* tuwaiq 1000.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tuwaiq 1000.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E634873C274DAFCD00559B91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -233,7 +233,7 @@
 			children = (
 				E633B93F274E0EED0046ED89 /* Controller */,
 				E69246F82754B92C00421DCB /* Assets.xcassets */,
-				5E33D39A275399E1007EC44C /* Launch Screen.storyboard */,
+				E62F35F627561937000E4296 /* Launch Screen.storyboard */,
 				E634874A274DAFD700559B91 /* Info.plist */,
 				5E33D37927538D5E007EC44C /* custmer */,
 				5E33D38827538FB9007EC44C /* View */,
@@ -320,10 +320,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E62F35F727561937000E4296 /* Launch Screen.storyboard in Resources */,
 				5E33D399275397C4007EC44C /* customer.storyboard in Resources */,
 				5E33D397275397AB007EC44C /* Main.storyboard in Resources */,
 				5E33D37827538D50007EC44C /* Manager.storyboard in Resources */,
-				5E33D39B275399E1007EC44C /* Launch Screen.storyboard in Resources */,
 				E69246F92754B92C00421DCB /* Assets.xcassets in Resources */,
 				E6348751274DB06B00559B91 /* GoogleService-Info.plist in Resources */,
 			);
