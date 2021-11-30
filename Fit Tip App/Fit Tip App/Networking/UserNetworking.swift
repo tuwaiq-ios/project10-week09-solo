@@ -16,6 +16,7 @@ class UserNetworking {
     
     let userCollection = Firestore.firestore().collection("users")
     
+    var settingVC = SettingViewController()
     
     var networkingLoadingIndicator = NetworkingLoadingIndicator()
     
@@ -119,14 +120,7 @@ class UserNetworking {
         )
     }
     
-    func logout(){
-        do{
-            try Auth.auth().signOut()
-        } catch {
-            print(error)
-        }
-       
-    }
+    
     
   
 }

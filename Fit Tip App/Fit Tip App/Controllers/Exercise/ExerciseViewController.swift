@@ -19,7 +19,7 @@ class ExerciseViewController: UIViewController, UICollectionViewDelegate, UIColl
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: "BackgroundColor")
         setupCollectionView()
-        navigationItem.title = "Exercise"
+        navigationItem.title = NSLocalizedString("exercise", comment: "")
     }
     
     func setupCollectionView(){

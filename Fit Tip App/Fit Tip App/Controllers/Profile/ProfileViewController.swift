@@ -45,7 +45,7 @@ class ProfileViewController: UIViewController, ChartViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        navigationItem.title = "Profile"
+        navigationItem.title = NSLocalizedString("profile", comment: "")
         setupGradientView()
         setupScrollView()
         setupStackView()
@@ -84,7 +84,7 @@ class ProfileViewController: UIViewController, ChartViewDelegate {
         ChartDataEntry(x: 3, y: Double(CurrentUser.weight ?? 0)),
         ]
         
-        let setData = LineChartDataSet(entries: yValues, label: "Weight")
+        let setData = LineChartDataSet(entries: yValues, label: NSLocalizedString("weight", comment: ""))
         setData.drawCirclesEnabled = false
         setData.mode = .cubicBezier
         setData.lineWidth = 3
@@ -101,7 +101,7 @@ class ProfileViewController: UIViewController, ChartViewDelegate {
     func setupNewMeasure(){
         scrollView.addSubview(newMeasureButton)
         newMeasureButton.translatesAutoresizingMaskIntoConstraints = false
-        newMeasureButton.setTitle("Insert New Measure", for: .normal)
+        newMeasureButton.setTitle(NSLocalizedString("insert_new_measure", comment: ""), for: .normal)
         newMeasureButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         newMeasureButton.tintColor = UIColor(named: "BackgroundColor")
         newMeasureButton.layer.cornerRadius = 10
@@ -170,7 +170,7 @@ class ProfileViewController: UIViewController, ChartViewDelegate {
     func setupHeightAndWeight(){
         let height = UILabel()
         height.translatesAutoresizingMaskIntoConstraints = false
-        height.text = "Height"
+        height.text = NSLocalizedString("height", comment: "")
         height.font = .systemFont(ofSize: 13, weight: .semibold)
         heightLabel.addSubview(height)
         heightLabel.textAlignment = .center
@@ -180,7 +180,7 @@ class ProfileViewController: UIViewController, ChartViewDelegate {
         
         let weight = UILabel()
         weight.translatesAutoresizingMaskIntoConstraints = false
-        weight.text = "Weight"
+        weight.text = NSLocalizedString("weight", comment: "")
         weight.font = .systemFont(ofSize: 13, weight: .semibold)
         weightLabel.addSubview(weight)
         weightLabel.textAlignment = .center
@@ -261,7 +261,7 @@ class ProfileViewController: UIViewController, ChartViewDelegate {
         goalDropDownView.translatesAutoresizingMaskIntoConstraints = false
         goalDropDownView.addSubview(goalLabel)
         goalLabel.translatesAutoresizingMaskIntoConstraints = false
-        goalLabel.text = CurrentUser.goal ?? "Select your goal"
+        goalLabel.text = CurrentUser.goal ?? NSLocalizedString("select_your_goal", comment: "")
         goalLabel.font = .systemFont(ofSize: 13, weight: .semibold)
         goalLabel.textAlignment = .left
         goalLabel.textColor = UIColor(named: "BackgroundColor")
@@ -281,7 +281,7 @@ class ProfileViewController: UIViewController, ChartViewDelegate {
         let tap = UITapGestureRecognizer(target: self, action: #selector(dropDownTapped))
         goalLabel.addGestureRecognizer(tap)
         dropDown.anchorView = goalDropDownView
-        let dropDownData = ["Life Style", "lose weight", "increase weight"]
+        let dropDownData = [NSLocalizedString("life_style", comment: ""), NSLocalizedString("lose_weight", comment: ""), NSLocalizedString("increase_weight", comment: "")]
         dropDown.dataSource = dropDownData
         dropDown.bottomOffset = CGPoint(x: 0, y:(dropDown.anchorView?.plainView.bounds.height)!)
         dropDown.topOffset = CGPoint(x: 0, y:-(dropDown.anchorView?.plainView.bounds.height)!)

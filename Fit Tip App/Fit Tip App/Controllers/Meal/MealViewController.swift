@@ -53,7 +53,7 @@ class MealViewController: UIViewController,UICollectionViewDelegate, UICollectio
     
     func setupBreakfastLabel(){
         view.addSubview(breakfastLabel)
-        breakfastLabel.text = "Breakfast 🍳"
+        breakfastLabel.text = NSLocalizedString("breakfast", comment: "")
         breakfastLabel.font = .systemFont(ofSize: 30, weight: .light)
         breakfastLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -80,7 +80,7 @@ class MealViewController: UIViewController,UICollectionViewDelegate, UICollectio
     
     func setupLunchLabel(){
         view.addSubview(lunchLabel)
-        lunchLabel.text = "Lunch 🌮"
+        lunchLabel.text = NSLocalizedString("lunch", comment: "")
         lunchLabel.font = .systemFont(ofSize: 30, weight: .light)
         lunchLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -107,7 +107,7 @@ class MealViewController: UIViewController,UICollectionViewDelegate, UICollectio
     
     func setupDinnerLabel(){
         view.addSubview(dinnerLabel)
-        dinnerLabel.text = "Dinner 🥗"
+        dinnerLabel.text = NSLocalizedString("dinner", comment: "")
         dinnerLabel.font = .systemFont(ofSize: 30, weight: .light)
         dinnerLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([

@@ -117,7 +117,7 @@ class ActivityViewController: UIViewController {
         
             view.addSubview(startButton)
         startButton.translatesAutoresizingMaskIntoConstraints = false
-        startButton.setTitle("Start", for: .normal)
+        startButton.setTitle( NSLocalizedString("start", comment: ""), for: .normal)
         startButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         startButton.tintColor = UIColor(named: "BackgroundColor")
         startButton.layer.cornerRadius = 10
@@ -177,7 +177,7 @@ class ActivityViewController: UIViewController {
         
         view.addSubview(finishButton)
         finishButton.translatesAutoresizingMaskIntoConstraints = false
-        finishButton.setTitle("Finish", for: .normal)
+        finishButton.setTitle(NSLocalizedString("finish", comment: "") , for: .normal)
         finishButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         finishButton.tintColor = UIColor(named: "BackgroundColor")
         finishButton.layer.cornerRadius = 10
@@ -291,13 +291,13 @@ class ActivityViewController: UIViewController {
                 DispatchQueue.main.async {
                     if let activity = data {
                         if activity.running == true {
-                            self.activityState.text = "Running"
+                            self.activityState.text = NSLocalizedString("running", comment: "")
                             print("Running")
                         }else if activity.walking == true {
-                            self.activityState.text = "Walking"
+                            self.activityState.text = NSLocalizedString("walking", comment: "")
                             print("Walking")
                         }else if activity.automotive == true{
-                            self.activityState.text = "Automotive"
+                            self.activityState.text = NSLocalizedString("automotive", comment: "")
                             print("Automotive")
                         }
                     }
