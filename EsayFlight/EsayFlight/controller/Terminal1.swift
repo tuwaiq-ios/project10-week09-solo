@@ -10,29 +10,25 @@ import UIKit
 
 class Terminal1 : UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    var segmentedControl = UISegmentedControl()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addControl()
-        
-//        let items = ["terminal1" , "terminal2"]
-//             let segmentedControl = UISegmentedControl(items : items)
-//             segmentedControl.center = self.view.center
-//             segmentedControl.selectedSegmentIndex = 0
-//             segmentedControl.addTarget(self, action: #selector(Terminal1.indexChanged(_:)), for: .valueChanged)
-//
-//             segmentedControl.layer.cornerRadius = 5.0
-//             segmentedControl.backgroundColor = .red
-//             segmentedControl.tintColor = .yellow
-//
-//             self.view.addSubview(segmentedControl)
-      
+   
+        addControl() 
         view.backgroundColor = .white
-        view.addSubview(collectionView)
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        collectionView.register(Terminal1Cell.self, forCellWithReuseIdentifier: Terminal1Cell.identifier)
+        view.addSubview(collectionView1)
+        view.addSubview(collectionView2)
+
+        collectionView1.delegate = self
+        collectionView1.dataSource = self
+        collectionView2.delegate = self
+        collectionView2.dataSource = self
+        collectionView1.register(Terminal1Cell.self, forCellWithReuseIdentifier: Terminal1Cell.identifier)
+        collectionView2.register(Terminal2Cell.self, forCellWithReuseIdentifier: Terminal2Cell.identifier)
         setupCollectionConstraints()
+        setupCollectionConstraints2()
         self.navigationItem.hidesBackButton = true
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleCancel))
       
@@ -41,10 +37,20 @@ class Terminal1 : UIViewController, UICollectionViewDelegate, UICollectionViewDa
         dismiss(animated: true, completion: nil)
     }
     
-    let collectionView: UICollectionView = {
+    let collectionView1: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
+//        layout.itemSize = CGSize(width: view.frame.width, height: 200)
         layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing =  12
+        let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cv.backgroundColor = .white
+        return cv
+    }()
+    let collectionView2: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        layout.minimumInteritemSpacing = 12
         layout.minimumLineSpacing =  12
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.backgroundColor = .white
@@ -52,24 +58,42 @@ class Terminal1 : UIViewController, UICollectionViewDelegate, UICollectionViewDa
     }()
     
     func setupCollectionConstraints() {
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.heightAnchor.constraint(equalToConstant: 340).isActive = true
-        collectionView.widthAnchor.constraint(equalToConstant: 340).isActive = true
-        collectionView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        collectionView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        collectionView.topAnchor.constraint(equalTo: view.topAnchor,constant: 200).isActive = true
+        collectionView1.translatesAutoresizingMaskIntoConstraints = false
+        collectionView1.heightAnchor.constraint(equalToConstant: 340).isActive = true
+        collectionView1.widthAnchor.constraint(equalToConstant: 340).isActive = true
+        collectionView1.topAnchor.constraint(equalTo: view.topAnchor,constant: 200).isActive = true
+        collectionView1.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+
+//        collectionView1.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    
+//        collectionView1.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
 
       
+        
+    
+    }
+    func setupCollectionConstraints2() {
+        collectionView2.translatesAutoresizingMaskIntoConstraints = false
+        collectionView2.heightAnchor.constraint(equalToConstant: 340).isActive = true
+        collectionView2.widthAnchor.constraint(equalToConstant: 340).isActive = true
+        collectionView2.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        collectionView2.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+
     }
     
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView === self.collectionView2{
+            return array2.count
+        }
+        
         return array1.count
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Terminal1Cell.identifier, for: indexPath) as! Terminal1Cell
+            let cell =  collectionView1.dequeueReusableCell(withReuseIdentifier: Terminal1Cell.identifier, for: indexPath) as! Terminal1Cell
         let data = array1[indexPath.row]
        
         cell.imageView.image = data.image
@@ -86,53 +110,71 @@ class Terminal1 : UIViewController, UICollectionViewDelegate, UICollectionViewDa
         cell.layer.shadowOpacity = 0.5
         cell.layer.masksToBounds = false
         
-        return cell
+        if (collectionView === collectionView2){
+                
+                let cell2 = collectionView2.dequeueReusableCell(withReuseIdentifier: Terminal2Cell.identifier, for: indexPath) as! Terminal2Cell
+                let data1 = array2[indexPath.row]
+               
+            cell2.imageView1.image = data1.image
+                
+            cell2.backgroundColor = .white
+            cell2.layer.cornerRadius = 10
+            cell2.layer.borderWidth = 25
+            cell2.layer.borderColor = UIColor.clear.cgColor
+            cell2.layer.masksToBounds = true
+                
+            cell2.layer.shadowColor = UIColor.lightGray.cgColor
+            cell2.layer.shadowOffset = CGSize(width: 0, height: 2.0)
+            cell2.layer.shadowRadius = 7
+            cell2.layer.shadowOpacity = 0.5
+            cell2.layer.masksToBounds = false
+                
+                    return cell2
+                
+            
+        }
+            return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 200, height: 200)
+        return CGSize(width: 160, height: 160)
     }
+    
+
     
     
     func addControl()  {
-           let items = ["Terminal1", "Terminal2"]
-           let segmentedControl = UISegmentedControl(items: items)
-           segmentedControl.frame = CGRect(x: 60, y: 80, width: 300, height: 40)
-        segmentedControl.addTarget(self, action: #selector(segmentAction), for: .valueChanged)
-           segmentedControl.selectedSegmentIndex = 1
-           segmentedControl.backgroundColor = UIColor.systemMint
-           segmentedControl.layer.borderColor = UIColor.white.cgColor
-           segmentedControl.selectedSegmentTintColor = UIColor.white
-           segmentedControl.layer.borderWidth = 1
+
+        segmentedControl.insertSegment(withTitle: "terminal1", at: 0, animated: true)
+        segmentedControl.setTitle("terminal1", forSegmentAt: 0)
+        segmentedControl.insertSegment(withTitle: "terminal2", at: 1, animated: true)
+        segmentedControl.setTitle("terminal2", forSegmentAt: 1)
+        segmentedControl.addTarget(self, action: #selector(Segment), for: .valueChanged)
+        segmentedControl.frame = CGRect(x: 60, y: 150, width: 300, height: 40)
+        segmentedControl.selectedSegmentIndex = 0
+        segmentedControl.backgroundColor = UIColor.systemMint
+        segmentedControl.layer.borderColor = UIColor.white.cgColor
+        segmentedControl.selectedSegmentTintColor = UIColor.white
+        segmentedControl.layer.borderWidth = 1
            view.addSubview(segmentedControl)
+        segmentedControl.isUserInteractionEnabled = true
        }
-    
+    @objc func Segment(_ sender: Any) {
+      switch segmentedControl.selectedSegmentIndex {
+      case 0:
+        collectionView1.isHidden = false
+        collectionView2.isHidden = true
+      case 1:
+
+          collectionView1.isHidden = true
+          collectionView2.isHidden = false
+      default:
+        break;
+      }}
+
+
  
-    
-
-    @objc func segmentAction(_ segmentedControl: UISegmentedControl) {
-
-          switch (segmentedControl.selectedSegmentIndex) {
-          case 0:
-              let vc1 = Terminal1()
-              vc1.modalPresentationStyle = .fullScreen
-              present(vc1, animated: false)
-          case 1:
-              let vc2 = Terminal1()
-              vc2.modalPresentationStyle = .fullScreen
-              present(vc2, animated: false)
-          default:
-              break
-          }
-      }
-    
 }
-
-//extension Terminal1 {
-//
-//
-//
-//}
 
 
 

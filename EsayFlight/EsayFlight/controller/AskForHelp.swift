@@ -5,8 +5,19 @@
 //  Created by sara al zhrani on 19/04/1443 AH.
 import UIKit
 import DropDown
+import FirebaseFirestore
 
-class AskForHelp : UIViewController {
+
+
+
+struct information {
+   var name:  String
+    var  helath: String
+    var specailNeeds: String
+    var flightNumber: String
+}
+
+class AskForHelp : UIViewController, UITextViewDelegate {
     var blackSquare: UIView!
     let dropDown = DropDown()
     let dropDown1 = DropDown()
@@ -15,6 +26,8 @@ class AskForHelp : UIViewController {
     let data = ["Old","blind","paralyzed","child"]
     let data2 = ["wheel chair","personal escort"]
     lazy var slideInMenuPadding : CGFloat = self.view.frame.width * 0.30
+    
+   
     
     let name: UILabel = {
         let label = UILabel()
@@ -110,18 +123,18 @@ class AskForHelp : UIViewController {
     let textView2 = UITextView(frame: CGRect(x: 180, y: 300, width: 180, height: 45.0))
     let stackView   = UIStackView()
     
-    lazy var menuView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .systemGray6
-        return view
-    }()
-    
-    
-    lazy var containerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .systemBackground
-        return view
-    }()
+//    lazy var menuView: UIView = {
+//        let view = UIView()
+//        view.backgroundColor = .systemGray6
+//        return view
+//    }()
+//
+//
+//    lazy var containerView: UIView = {
+//        let view = UIView()
+//        view.backgroundColor = .systemBackground
+//        return view
+//    }()
     
     lazy var sidebar = UIBarButtonItem(image: UIImage(systemName: "slidebar.leading")?.withRenderingMode(.alwaysOriginal), style: .done, target: self, action: #selector(menubar))
     
@@ -137,7 +150,7 @@ class AskForHelp : UIViewController {
         self.navigationItem.hidesBackButton = true
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleCancel))
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "bb", style: .plain, target: self, action: #selector(menubar))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: #selector(menubar))
 
         
         blackSquare = UIView(frame: CGRect(x: 0, y: 100, width: 390, height: 800))
@@ -183,6 +196,8 @@ class AskForHelp : UIViewController {
         textView.autocorrectionType = UITextAutocorrectionType.yes
         textView.spellCheckingType = UITextSpellCheckingType.yes
         textView.isEditable = true
+        textView.delegate = self
+
         self.view.addSubview(textView)
         
         
@@ -198,6 +213,8 @@ class AskForHelp : UIViewController {
         textView2.autocorrectionType = UITextAutocorrectionType.yes
         textView2.spellCheckingType = UITextSpellCheckingType.yes
         textView2.isEditable = true
+        textView2.delegate = self
+
         self.view.addSubview(textView2)
         
         
@@ -256,6 +273,7 @@ class AskForHelp : UIViewController {
         dropDown.willShowAction = { [unowned self] in
             print("- \(dropDown.selectedItem ?? "")")
             self.dropdownlable.text = dropDown.selectedItem
+            let data2 = self.dropdownlable.text = dropDown.selectedItem
             self.listeBtn.setTitle(dropDown.selectedItem, for: .normal)
         }
         
@@ -270,8 +288,14 @@ class AskForHelp : UIViewController {
 
             print("- \(item) (\(index))")
             self.dropdownlable2.text =  data2[index]
+            let data = self.dropdownlable2.text =  data2[index]
             return "\(item)"
         }
+        let name =  UserDefaults.standard.value(forKey: "namekey") as? String
+        textView.text = name
+        
+        let flight = UserDefaults.standard.value(forKey: "specailNeeds") as? String
+        textView2.text = flight
         
        
     }
@@ -293,29 +317,25 @@ class AskForHelp : UIViewController {
     
     @objc func sendPressed() {
         
+        let  name = textView.text
+         let specailNeeds = textView2.text
+        UserDefaults.standard.set(name,forKey: "namekey")
+        UserDefaults.standard.set(specailNeeds,forKey: "specailNeeds")
+        
+        Firestore.firestore().collection("profile").document().setData([
+            "name": name,
+            "helath": data,
+            "specailNeeds":specailNeeds,
+            "flightNumber": data2,
+        ], merge: true)
     }
     
-}
+    }
+      
 
 
-//extension UIView {
-//    func edgeTo(_ view: UIView) {
-//        view.addSubview(self)
-//        translatesAutoresizingMaskIntoConstraints = false
-//        topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-//        leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-//        trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-//        bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-//    }
-//    func pinMenueTo(_ view: UIView, whith constant: CGFloat ){
-//        view.addSubview(self)
-//        translatesAutoresizingMaskIntoConstraints = false
-//        topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-//        leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-//        trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-//        bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-//
-//    }
+
+
     
     
 

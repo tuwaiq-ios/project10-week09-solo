@@ -26,8 +26,8 @@ class Terminal1Cell : UICollectionViewCell{
        
         imageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         imageView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: 180).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 180).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 160).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: 160).isActive = true
         
     }
     
@@ -36,7 +36,17 @@ class Terminal1Cell : UICollectionViewCell{
         fatalError("init(coder:) has not been implemented")
     }
     
-    
+//    override func layoutSubviews() {
+//        super.layoutSubviews()
+//        imageView.frame = CGRect(x: 1,
+//                    y: 10 ,
+//                    width: 160,
+//                    height: 160)
+////        myLabel.frame = CGRect(x: 5,
+////                    y: contentView.frame.size.height-50 ,
+////                    width: contentView.frame.size.width-10,
+////                    height: 50)
+//      }
     
 }
 

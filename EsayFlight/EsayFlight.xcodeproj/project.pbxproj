@@ -12,22 +12,25 @@
 		1F1FBDB8274F811700D9F691 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FBDB7274F811700D9F691 /* Location.swift */; };
 		1F1FBDBA274F868300D9F691 /* searchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FBDB9274F868300D9F691 /* searchCell.swift */; };
 		1F1FBDBC275359AE00D9F691 /* Terminal1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FBDBB275359AE00D9F691 /* Terminal1.swift */; };
-		1F1FBDBE275359DE00D9F691 /* Terminal2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FBDBD275359DE00D9F691 /* Terminal2.swift */; };
+		1F1FBDBE275359DE00D9F691 /* Advertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FBDBD275359DE00D9F691 /* Advertisement.swift */; };
 		1F1FBDC027535A0A00D9F691 /* Terminal1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FBDBF27535A0A00D9F691 /* Terminal1Cell.swift */; };
 		1F1FBDC227535A2900D9F691 /* Terminal2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FBDC127535A2900D9F691 /* Terminal2Cell.swift */; };
+		1F1FBDC42754A60D00D9F691 /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FBDC32754A60D00D9F691 /* TabVC.swift */; };
+		1F1FBDC62754A74600D9F691 /* FreeWIfi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FBDC52754A74600D9F691 /* FreeWIfi.swift */; };
 		1F7C87AF274CF06D00112F6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F7C87AE274CF06D00112F6A /* GoogleService-Info.plist */; };
 		1F7C87B1274CFFAE00112F6A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C87B0274CFFAE00112F6A /* Home.swift */; };
 		1F7C87B3274D273100112F6A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C87B2274D273100112F6A /* Data.swift */; };
 		1F7C87B6274E12A700112F6A /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C87B5274E12A700112F6A /* HomeCell.swift */; };
 		1F7C87B8274E2ABC00112F6A /* serchForFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C87B7274E2ABC00112F6A /* serchForFlight.swift */; };
 		1F7C87BA274E2ADD00112F6A /* serchForluggage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C87B9274E2ADD00112F6A /* serchForluggage.swift */; };
-		1F7C87BC274E2B0900112F6A /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C87BB274E2B0900112F6A /* Services.swift */; };
+		1F7C87BC274E2B0900112F6A /* profiel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C87BB274E2B0900112F6A /* profiel.swift */; };
 		1F7C87BE274E2B3300112F6A /* AskForHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7C87BD274E2B3300112F6A /* AskForHelp.swift */; };
 		1F9E1FE3274B6B6D00679CC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E1FE2274B6B6D00679CC3 /* AppDelegate.swift */; };
 		1F9E1FE5274B6B6D00679CC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E1FE4274B6B6D00679CC3 /* SceneDelegate.swift */; };
 		1F9E1FE7274B6B6D00679CC3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9E1FE6274B6B6D00679CC3 /* LoginVC.swift */; };
 		1F9E1FEC274B6B6F00679CC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F9E1FEB274B6B6F00679CC3 /* Assets.xcassets */; };
 		1F9E1FEF274B6B6F00679CC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9E1FED274B6B6F00679CC3 /* LaunchScreen.storyboard */; };
+		1FB8060D2755FBDF00CC5D55 /* AdvertisementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8060C2755FBDF00CC5D55 /* AdvertisementCell.swift */; };
 		89A7A04CC98EFAFCF7FBC549 /* Pods_EsayFlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0DA6505E907BD972130518 /* Pods_EsayFlight.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,16 +41,18 @@
 		1F1FBDB7274F811700D9F691 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		1F1FBDB9274F868300D9F691 /* searchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchCell.swift; sourceTree = "<group>"; };
 		1F1FBDBB275359AE00D9F691 /* Terminal1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminal1.swift; sourceTree = "<group>"; };
-		1F1FBDBD275359DE00D9F691 /* Terminal2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminal2.swift; sourceTree = "<group>"; };
+		1F1FBDBD275359DE00D9F691 /* Advertisement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advertisement.swift; sourceTree = "<group>"; };
 		1F1FBDBF27535A0A00D9F691 /* Terminal1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminal1Cell.swift; sourceTree = "<group>"; };
 		1F1FBDC127535A2900D9F691 /* Terminal2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terminal2Cell.swift; sourceTree = "<group>"; };
+		1F1FBDC32754A60D00D9F691 /* TabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabVC.swift; sourceTree = "<group>"; };
+		1F1FBDC52754A74600D9F691 /* FreeWIfi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeWIfi.swift; sourceTree = "<group>"; };
 		1F7C87AE274CF06D00112F6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F7C87B0274CFFAE00112F6A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		1F7C87B2274D273100112F6A /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		1F7C87B5274E12A700112F6A /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		1F7C87B7274E2ABC00112F6A /* serchForFlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = serchForFlight.swift; sourceTree = "<group>"; };
 		1F7C87B9274E2ADD00112F6A /* serchForluggage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = serchForluggage.swift; sourceTree = "<group>"; };
-		1F7C87BB274E2B0900112F6A /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		1F7C87BB274E2B0900112F6A /* profiel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profiel.swift; sourceTree = "<group>"; };
 		1F7C87BD274E2B3300112F6A /* AskForHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskForHelp.swift; sourceTree = "<group>"; };
 		1F9E1FDF274B6B6D00679CC3 /* EsayFlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EsayFlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F9E1FE2274B6B6D00679CC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +61,7 @@
 		1F9E1FEB274B6B6F00679CC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F9E1FEE274B6B6F00679CC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F9E1FF0274B6B6F00679CC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FB8060C2755FBDF00CC5D55 /* AdvertisementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementCell.swift; sourceTree = "<group>"; };
 		5A29C8781ACD5304C1BD2310 /* Pods-EsayFlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EsayFlight.debug.xcconfig"; path = "Target Support Files/Pods-EsayFlight/Pods-EsayFlight.debug.xcconfig"; sourceTree = "<group>"; };
 		EF0DA6505E907BD972130518 /* Pods_EsayFlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EsayFlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -101,8 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				1F7C87B0274CFFAE00112F6A /* Home.swift */,
+				1F7C87B5274E12A700112F6A /* HomeCell.swift */,
+				1F7C87BB274E2B0900112F6A /* profiel.swift */,
 				1F7C87B7274E2ABC00112F6A /* serchForFlight.swift */,
-				1F7C87BB274E2B0900112F6A /* Services.swift */,
 				1F1FBDB2274F736D00D9F691 /* NewSearchVC.swift */,
 				1F1FBDB9274F868300D9F691 /* searchCell.swift */,
 				1F7C87B9274E2ADD00112F6A /* serchForluggage.swift */,
@@ -110,8 +117,10 @@
 				1F1FBDB7274F811700D9F691 /* Location.swift */,
 				1F1FBDBB275359AE00D9F691 /* Terminal1.swift */,
 				1F1FBDBF27535A0A00D9F691 /* Terminal1Cell.swift */,
-				1F1FBDBD275359DE00D9F691 /* Terminal2.swift */,
 				1F1FBDC127535A2900D9F691 /* Terminal2Cell.swift */,
+				1F1FBDC52754A74600D9F691 /* FreeWIfi.swift */,
+				1FB8060C2755FBDF00CC5D55 /* AdvertisementCell.swift */,
+				1F1FBDBD275359DE00D9F691 /* Advertisement.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -141,7 +150,7 @@
 				1F9E1FE2274B6B6D00679CC3 /* AppDelegate.swift */,
 				1F9E1FE4274B6B6D00679CC3 /* SceneDelegate.swift */,
 				1F9E1FE6274B6B6D00679CC3 /* LoginVC.swift */,
-				1F7C87B5274E12A700112F6A /* HomeCell.swift */,
+				1F1FBDC32754A60D00D9F691 /* TabVC.swift */,
 				1F7C87BF274E2B3B00112F6A /* controller */,
 				1F9E1FEB274B6B6F00679CC3 /* Assets.xcassets */,
 				1F9E1FED274B6B6F00679CC3 /* LaunchScreen.storyboard */,
@@ -283,13 +292,16 @@
 				1F1FBDB3274F736D00D9F691 /* NewSearchVC.swift in Sources */,
 				1F1FBDB8274F811700D9F691 /* Location.swift in Sources */,
 				1F1FBDBA274F868300D9F691 /* searchCell.swift in Sources */,
-				1F1FBDBE275359DE00D9F691 /* Terminal2.swift in Sources */,
+				1F1FBDBE275359DE00D9F691 /* Advertisement.swift in Sources */,
 				1F7C87B1274CFFAE00112F6A /* Home.swift in Sources */,
+				1F1FBDC62754A74600D9F691 /* FreeWIfi.swift in Sources */,
 				1F1FBDC227535A2900D9F691 /* Terminal2Cell.swift in Sources */,
 				1F7C87BE274E2B3300112F6A /* AskForHelp.swift in Sources */,
 				1F1FBDBC275359AE00D9F691 /* Terminal1.swift in Sources */,
 				1F1FBDC027535A0A00D9F691 /* Terminal1Cell.swift in Sources */,
-				1F7C87BC274E2B0900112F6A /* Services.swift in Sources */,
+				1FB8060D2755FBDF00CC5D55 /* AdvertisementCell.swift in Sources */,
+				1F7C87BC274E2B0900112F6A /* profiel.swift in Sources */,
+				1F1FBDC42754A60D00D9F691 /* TabVC.swift in Sources */,
 				1F7C87B3274D273100112F6A /* Data.swift in Sources */,
 				1F7C87B6274E12A700112F6A /* HomeCell.swift in Sources */,
 				1F9E1FE5274B6B6D00679CC3 /* SceneDelegate.swift in Sources */,

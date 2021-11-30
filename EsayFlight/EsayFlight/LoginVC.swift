@@ -150,7 +150,7 @@ class LoginVC: UIViewController {
                 print(error as Any)
                 return
             }
-            let vc = Home()
+            let vc = TabBarVC()
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true, completion: nil)
         

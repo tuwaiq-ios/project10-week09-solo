@@ -44,10 +44,10 @@ class CustomCell: UICollectionViewCell {
         
 
         searchlabel.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        searchlabel.bottomAnchor.constraint(equalTo: self.bottomAnchor,constant: -50).isActive = true
-        searchlabel.leftAnchor.constraint(equalTo: self.leftAnchor,constant: 15).isActive = true
         searchlabel.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
-        
+        searchlabel.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 16).isActive = true
+        searchlabel.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -16).isActive = true
+
         
         contentlabel.centerXAnchor.constraint(equalTo:self.centerXAnchor).isActive = true
         contentlabel.topAnchor.constraint(equalTo: self.topAnchor,constant: 35).isActive = true

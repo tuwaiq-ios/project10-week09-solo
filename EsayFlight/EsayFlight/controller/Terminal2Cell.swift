@@ -13,7 +13,7 @@ class Terminal2Cell : UICollectionViewCell{
     
 
     
-    var imageView: UIImageView = {
+    var imageView1: UIImageView = {
       let imageView = UIImageView()
       imageView.image = UIImage(named: "")
       imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -22,12 +22,12 @@ class Terminal2Cell : UICollectionViewCell{
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.addSubview(imageView)
+        self.addSubview(imageView1)
        
-        imageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        imageView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: 180).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 180).isActive = true
+        imageView1.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        imageView1.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        imageView1.heightAnchor.constraint(equalToConstant: 160).isActive = true
+        imageView1.widthAnchor.constraint(equalToConstant: 160).isActive = true
         
     }
     

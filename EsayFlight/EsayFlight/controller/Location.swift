@@ -48,7 +48,7 @@ class Location : UIViewController, CLLocationManagerDelegate, MKMapViewDelegate 
         mapview.addAnnotation(annotationTow)
         
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleCancel))
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleCancel))
         view.backgroundColor = .systemMint
         view.addSubview(mapview)
         NSLayoutConstraint.activate([
