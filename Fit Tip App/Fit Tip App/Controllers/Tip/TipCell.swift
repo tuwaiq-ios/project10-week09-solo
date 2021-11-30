@@ -53,7 +53,7 @@ class TipCell: UICollectionViewCell {
         NSLayoutConstraint.activate([
             titelCellLabel.topAnchor.constraint(equalTo: tipImageCell.bottomAnchor , constant: 5),
             titelCellLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 5),
-            titelCellLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: 5),
+            titelCellLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -5),
 
         ])
       
@@ -66,7 +66,7 @@ class TipCell: UICollectionViewCell {
         NSLayoutConstraint.activate([
             descCellLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor , constant: -16),
             descCellLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 10),
-            descCellLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor),
+            descCellLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -5),
             descCellLabel.widthAnchor.constraint(equalToConstant: 340)
         ])
     }

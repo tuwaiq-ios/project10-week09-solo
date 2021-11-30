@@ -46,7 +46,7 @@ class DinnerCell: UICollectionViewCell {
         NSLayoutConstraint.activate([
             name.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
             name.leftAnchor.constraint(equalTo: leftAnchor, constant: 10),
-            name.rightAnchor.constraint(equalTo: rightAnchor, constant:  5)
+            name.rightAnchor.constraint(equalTo: rightAnchor, constant:  -5)
         ])
     }
     

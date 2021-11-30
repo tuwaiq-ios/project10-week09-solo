@@ -29,80 +29,80 @@
 "cardio_name" = "Fast feet side front side";
 "cardio_desc" = "3 rounds / 30 seconds.
                                     
-                    Important notes:
-                    - Abdominal muscles taut without muting the breath.
-                    - The back is straight and the head is forward.
-                    - The feet are wide apart and the heels do not touch the ground during the exercise.
-                    - The knees do not go beyond the level of the front legs.
-                    - Inhale through the nose and exhale through the mouth regularly and calmly.
-                    - Commit to the required exercise period.";
+Important notes:
+- Abdominal muscles taut without muting the breath.
+- The back is straight and the head is forward.
+- The feet are wide apart and the heels do not touch the ground during the exercise.
+- The knees do not go beyond the level of the front legs.
+- Inhale through the nose and exhale through the mouth regularly and calmly.
+- Commit to the required exercise period.";
 "belly" = "Belly";
 "belly_name" = "Crunches";
 "belly_desc" = " 3 rounds / 25 times
                                     
-                Important notes:
-                - Hands behind the ear..
-                - Feet are fixed on the ground.
-                - Lift the upper back.
-                - Inhale through the nose when lifting.
-                - Exhale from the mouth when descending.";
+Important notes:
+- Hands behind the ear..
+- Feet are fixed on the ground.
+- Lift the upper back.
+- Inhale through the nose when lifting.
+- Exhale from the mouth when descending.";
 "arm" = "Arm";
 "arm_name" = "Arm Circles";
 "arm_desc" = "1 round / 15 times
                                     
-                Important Notes:
-                - The back is straight.
-                - Touch the thigh at the start of each cycle.
-                - Move the right hand the required number of times, forward and then backward, and then the left hand in the same way and thus counts a round.
-                - Don't hold your breath.
-                - Inhale through the nose and exhale through the mouth.";
+Important Notes:
+- The back is straight.
+- Touch the thigh at the start of each cycle.
+- Move the right hand the required number of times, forward and then backward, and then the left hand in the same way and thus counts a round.
+- Don't hold your breath.
+- Inhale through the nose and exhale through the mouth.";
 "legs" = "Legs";
 "legs_name" = "Wall Sit";
 "legs_desc" = "1 rounds/1 minute
                                     
-                Important Notes:
-                - The back is straight.
-                - Head, shoulder and back fixed to the wall.
-                - Thighs straight and parallel.
-                - Knees at heel level.
-                - Hold this position for the required number of seconds.
-                - Breathe calmly and regularly, and do not hold your breath.";
+Important Notes:
+- The back is straight.
+- Head, shoulder and back fixed to the wall.
+- Thighs straight and parallel.
+- Knees at heel level.
+- Hold this position for the required number of seconds.
+- Breathe calmly and regularly, and do not hold your breath.";
 "back" = "Back";
 "back_name" = "Bent over rowing both arms";
 "back_decs" = "3 rounds / 15 times
                                     
-                Important Notes:
-                - Abdominal muscles tightened without holding a breath.
-                - The back is straight.
-                - The head is at the level of the back.
-                - The knees are bent and do not go beyond the front of the legs.
-                - Breathe calmly and regularly, and do not hold your breath.";
+Important Notes:
+- Abdominal muscles tightened without holding a breath.
+- The back is straight.
+- The head is at the level of the back.
+- The knees are bent and do not go beyond the front of the legs.
+- Breathe calmly and regularly, and do not hold your breath.";
 "chest" = "Chest";
 "chest_name" = "Push ups kneeling";
 "chest_desc" = "3 rounds / 7 times
                                     
-                Important Notes:
-                - Abdominal muscles, legs and buttocks tightened.
-                - Leg, thigh and back straight unit.
-                - Inhale through the nose when descending.
-                - Exhale from the mouth when lifting";
+Important Notes:
+- Abdominal muscles, legs and buttocks tightened.
+- Leg, thigh and back straight unit.
+- Inhale through the nose when descending.
+- Exhale from the mouth when lifting";
 "shoulder" = "Shoulder";
 "shoulder_name" = "Shoulder lateral rotation weight";
 "shoulder_desc" = "1 round / 15 times
                                     
-        Important Notes:
-        - Abdominal muscles tightened without holding a breath.
-        - The back is straight.
-        - Hands extended for the duration of the exercise.
-        - Move the hands in a circular motion.
-        - Breathe calmly and regularly, and do not hold your breath.";
+Important Notes:
+- Abdominal muscles tightened without holding a breath.
+- The back is straight.
+- Hands extended for the duration of the exercise.
+- Move the hands in a circular motion.
+- Breathe calmly and regularly, and do not hold your breath.";
 "whole_body" = "Whole Body";
 "whole_body_name" = "Warm up ";
 "whole_body_desc" = " 1 round/3 minutes
                                     
-                        Important Notes:
-                        - Continue the exercise for the required number of minutes.
-                        - Breathe calmly and regularly, and do not hold your breath.";
+Important Notes:
+- Continue the exercise for the required number of minutes.
+- Breathe calmly and regularly, and do not hold your breath.";
 
 // Activity Page
 "start" = "Start";
@@ -121,212 +121,212 @@
 // Meal Struct
 "egg_muffin" = "Egg Muffin";
 "egg_muffin_desc" = "  Quantity :
-                        - 2 eggs.
-                        - Parsley 1/4 cup.
-                        - Olives 2 tbsp.
-                        - Onion 1/2 pcs.
-                        - Tomato 1/2 pcs.
-                        - A slice of low-fat cheese.
+- 2 eggs.
+- Parsley 1/4 cup.
+- Olives 2 tbsp.
+- Onion 1/2 pcs.
+- Tomato 1/2 pcs.
+- A slice of low-fat cheese.
 
-                        Method:
-                        - Beat eggs with salt.
-                        - Chop the onions and tomatoes and add to the eggs with parsley and olive slices.
-                        - Distribute the mixture in a cupcake tray, and enter the oven for 10 or 15 minutes until the top and bottom are even.
-                        - Cheese is added to it.";
+Method:
+- Beat eggs with salt.
+- Chop the onions and tomatoes and add to the eggs with parsley and olive slices.
+- Distribute the mixture in a cupcake tray, and enter the oven for 10 or 15 minutes until the top and bottom are even.
+- Cheese is added to it.";
 
 "poached" = "Poached eggs with tomatoes";
 "poached_desc" = "Quantity :
-                    - 2 eggs.
-                    - Whole wheat bread.
-                    - Tomato sauce 1 tbsp.
-                    - Green onion 1 piece.
-                    - Tomato 1 piece.
-                    - Olive oil.
+- 2 eggs.
+- Whole wheat bread.
+- Tomato sauce 1 tbsp.
+- Green onion 1 piece.
+- Tomato 1 piece.
+- Olive oil.
 
-                    Method:
-                    - Boil eggs until they are level.
-                    - Mix onions with tomatoes, tomato sauce, spices and olive oil.
-                    - Put the peeled boiled eggs on the tomato sauce and leave on the fire for two minutes.
-                    - Served with bread.";
+Method:
+- Boil eggs until they are level.
+- Mix onions with tomatoes, tomato sauce, spices and olive oil.
+- Put the peeled boiled eggs on the tomato sauce and leave on the fire for two minutes.
+- Served with bread.";
 
 "frittata" = "Frittata";
 "frittata_desc" = "Quantity :
-                        - Kale (European lettuce) 1/2 cup.
-                        - 1/2 piece of cold pepper.
-                        - Low-fat feta cheese 2 tbsp.
-                        - 2 eggs.
+- Kale (European lettuce) 1/2 cup.
+- 1/2 piece of cold pepper.
+- Low-fat feta cheese 2 tbsp.
+- 2 eggs.
 
-                        Method:
-                        - Stir the kale on the fire with a pinch of olive oil spray, salt and pepper until it wilts.
-                        - Add eggs, pepper and cheese and leave on low heat until cooked.
-                        - Put the dish in the oven until browned from the top.";
+Method:
+- Stir the kale on the fire with a pinch of olive oil spray, salt and pepper until it wilts.
+- Add eggs, pepper and cheese and leave on low heat until cooked.
+- Put the dish in the oven until browned from the top.";
 "potato" = "Potato boats";
 "potato_desc" = "Quantity :
-                    - Minced meat 2 tbsp.
-                    - olive oil 1 tbsp.
-                    - Sweet potato 1 piece.
-                    - Hot red pepper 1/2 pcs.
-                    - Light mozzarella cheese 2 tbsp.
-                    - Chopped onion 2 tbsp.
-                    - Tomato sauce 1 tbsp.
+- Minced meat 2 tbsp.
+- olive oil 1 tbsp.
+- Sweet potato 1 piece.
+- Hot red pepper 1/2 pcs.
+- Light mozzarella cheese 2 tbsp.
+- Chopped onion 2 tbsp.
+- Tomato sauce 1 tbsp.
 
-                    Method:
-                    - Cut sweet potatoes in half and boil.
-                    - It is engraved from the text and left aside.
-                    - Filling: kosha with onions and favorite spices with olive oil.
-                    - Add meat, tomato sauce and sweet pepper and stir them over the fire.
-                    - Distribute the filling on the potatoes and add mozzarella cheese.
-                    - Put in the oven until browned on top.";
+Method:
+- Cut sweet potatoes in half and boil.
+- It is engraved from the text and left aside.
+- Filling: kosha with onions and favorite spices with olive oil.
+- Add meat, tomato sauce and sweet pepper and stir them over the fire.
+- Distribute the filling on the potatoes and add mozzarella cheese.
+- Put in the oven until browned on top.";
 "chicken" = "Chicken Teriyaki";
 "chicken_desc" = " Quantity :
-                      - 1/2 red onion
-                      - Carrots 1 piece.
-                      - 1/2 piece of cold pepper.
-                      - 1/2 piece hot pepper.
-                      - Salt, black pepper and garlic powder 1 tsp.
-                      - Minced ginger 1 tsp.
-                      - Garlic 1 piece.
-                      - Chicken breast 1 piece.
-                      - 1/2 cup boiled rice.
-                      - Soy sauce 2 tablespoons.
-                      - 1 green onion.
-                      - Sesame 1 tbsp.
-                      - Starch 1 tbsp.
+- 1/2 red onion
+- Carrots 1 piece.
+- 1/2 piece of cold pepper.
+- 1/2 piece hot pepper.
+- Salt, black pepper and garlic powder 1 tsp.
+- Minced ginger 1 tsp.
+- Garlic 1 piece.
+- Chicken breast 1 piece.
+- 1/2 cup boiled rice.
+- Soy sauce 2 tablespoons.
+- 1 green onion.
+- Sesame 1 tbsp.
+- Starch 1 tbsp.
                       
-                      Method:
-                      - Fry the chicken in a hot frying pan using olive oil spray with the addition of spices and salt .
-                      - Cut vegetables into slices: onions - carrots - cold pepper.
-                      - After the chicken is done, add the vegetables with hot pepper, garlic and ginger with a little water, cover the pot and leave it on a low heat until it is done.
-                      - Remove the soy sauce and starch with about a quarter cup of water and add it to the chicken and vegetables.
-                      - Garnish the dish with green pepper and sesame.
-                      - Served with boiled rice.";
+Method:
+- Fry the chicken in a hot frying pan using olive oil spray with the addition of spices and salt .
+- Cut vegetables into slices: onions - carrots - cold pepper.
+- After the chicken is done, add the vegetables with hot pepper, garlic and ginger with a little water, cover the pot and leave it on a low heat until it is done.
+- Remove the soy sauce and starch with about a quarter cup of water and add it to the chicken and vegetables.
+- Garnish the dish with green pepper and sesame.
+- Served with boiled rice.";
 
 "chicken_vegetables" = "Chicken tray with vegetables";
 "chicken_vegetables_desc" = "Quantity :
-                                  - Sweet potato 1 piece.
-                                  - Carrots 1 piece.
-                                  - Coriander sticks 1/4 cup.
-                                  - Zucchini 1 piece.
-                                  - Chicken.
+- Sweet potato 1 piece.
+- Carrots 1 piece.
+- Coriander sticks 1/4 cup.
+- Zucchini 1 piece.
+- Chicken.
 
-                                  Method:
-                                  - Cut the chicken and vegetables into large cubes and season with olive oil, spices, salt and black pepper.
-                                  - Put the ingredients in a tray, pour about a quarter cup of water over it, and cover the tray with aluminum foil.
-                                  - Put the tray in the oven until it's level, and remove the aluminum foil until it turns red from the top.
-                                  - Served with bread.";
+Method:
+- Cut the chicken and vegetables into large cubes and season with olive oil, spices, salt and black pepper.
+- Put the ingredients in a tray, pour about a quarter cup of water over it, and cover the tray with aluminum foil.
+- Put the tray in the oven until it's level, and remove the aluminum foil until it turns red from the top.
+- Served with bread.";
 
 "salmon" = "Salmon Steak";
 "salmon_desc" = "Quantity :
-                    - Parsley 1 tbsp.
-                    - 1/4 cup boiled rice.
-                    - Honey 1/2 tbsp.
-                    - Salmon.
-                    - Lemon 1 piece.
-                    - Garlic mashed 1 piece.
-                    - Chili powder 1 tsp.
-                    - Salt and black pepper 1 tsp.
+- Parsley 1 tbsp.
+- 1/4 cup boiled rice.
+- Honey 1/2 tbsp.
+- Salmon.
+- Lemon 1 piece.
+- Garlic mashed 1 piece.
+- Chili powder 1 tsp.
+- Salt and black pepper 1 tsp.
 
-                    Method:
-                    - Mix honey, lemon juice, mashed garlic, black pepper, salt and chili powder.
-                    - Marinate the fish and leave it in the refrigerator for an hour.
-                    - It is preferable to use a non-stick frying pan and spray with olive oil, then put the salmon steak and cover it.
-                    - After the first side is flat, flip it over.
-                    - Served with boiled rice.";
+Method:
+- Mix honey, lemon juice, mashed garlic, black pepper, salt and chili powder.
+- Marinate the fish and leave it in the refrigerator for an hour.
+- It is preferable to use a non-stick frying pan and spray with olive oil, then put the salmon steak and cover it.
+- After the first side is flat, flip it over.
+- Served with boiled rice.";
 
 "oat" = "Oat Soup";
 "oat_desc" = "Quantity :
-                  - 1/2 onion slices.
-                  - Tomato juice 1 tablet.
-                  - Tomato sauce 1 tsp.
-                  - Salt, black pepper, mixed spices, black lemon 1 tbsp.
-                  - oats.
+- 1/2 onion slices.
+- Tomato juice 1 tablet.
+- Tomato sauce 1 tsp.
+- Salt, black pepper, mixed spices, black lemon 1 tbsp.
+- oats.
                   
-                  Method:
-                  - Mix onions with spices and spray with olive oil spray.
-                  - Add the rest of the ingredients to the onion and tomato mixture.
-                  - Add 1 cup of water or according to the oats.
-                  - Leave on low heat for 20-30 minutes.";
+Method:
+- Mix onions with spices and spray with olive oil spray.
+- Add the rest of the ingredients to the onion and tomato mixture.
+- Add 1 cup of water or according to the oats.
+- Leave on low heat for 20-30 minutes.";
 
 "avocado" = "Avocado Pasta";
 "avocado_desc" = "Quantity :
-                      - Garlic clove 1 piece.
-                      - Spinach 1 cup.
-                      - Lemon juice 1 tablespoon.
-                      - Chicken breast 1 piece.
-                      - Avocado 1/2 pcs.
-                      - Parmesan cheese 2 tablespoons.
-                      - Whole wheat pasta 1/2 cup.
+- Garlic clove 1 piece.
+- Spinach 1 cup.
+- Lemon juice 1 tablespoon.
+- Chicken breast 1 piece.
+- Avocado 1/2 pcs.
+- Parmesan cheese 2 tablespoons.
+- Whole wheat pasta 1/2 cup.
 
-                      Method:
-                      - Climb the pasta.
-                      - Chop the onions and fry and add the chicken.
-                      - Add garlic, spices, salt, black pepper and oregano.
-                      - In a food processor, put spinach, avocado, garlic and lemon juice.
-                      - Add the mixture to the chicken and stir for 5 minutes on the stove.
-                      - Add pasta to them, cover and simmer over low heat for 10 minutes.
-                      - After it is done, sprinkle cheese on it and serve.";
+Method:
+- Climb the pasta.
+- Chop the onions and fry and add the chicken.
+- Add garlic, spices, salt, black pepper and oregano.
+- In a food processor, put spinach, avocado, garlic and lemon juice.
+- Add the mixture to the chicken and stir for 5 minutes on the stove.
+- Add pasta to them, cover and simmer over low heat for 10 minutes.
+- After it is done, sprinkle cheese on it and serve.";
 
 // Tips Page
 
 "tip_1_titel" = "How to Start Exercising and Stick to It";
 "tip_1_desc" = "If you’re having trouble beginning an exercise plan or following through, you’re not alone. Many of us struggle getting out of the sedentary rut, despite our best intentions.
                                 
-                                You already know there are many great reasons to exercise—from improving energy, mood, sleep, and health to reducing anxiety, stress, and depression. And detailed exercise instructions and workout plans are just a click away. But if knowing how and why to exercise was enough, we’d all be in shape. Making exercise a habit takes more—you need the right mindset and a smart approach.
+You already know there are many great reasons to exercise—from improving energy, mood, sleep, and health to reducing anxiety, stress, and depression. And detailed exercise instructions and workout plans are just a click away. But if knowing how and why to exercise was enough, we’d all be in shape. Making exercise a habit takes more—you need the right mindset and a smart approach.
                                 
-                                While practical concerns like a busy schedule or poor health can make exercise more challenging, for most of us, the biggest barriers are mental. Maybe it’s a lack of self-confidence that keeps you from taking positive steps, or your motivation quickly flames out, or you get easily discouraged and give up. We’ve all been there at some point.
+While practical concerns like a busy schedule or poor health can make exercise more challenging, for most of us, the biggest barriers are mental. Maybe it’s a lack of self-confidence that keeps you from taking positive steps, or your motivation quickly flames out, or you get easily discouraged and give up. We’ve all been there at some point.
                                 
-                                Whatever your age or fitness level—even if you’ve never exercised a day in your life —there are steps you can take to make exercise less intimidating and painful and more fun and instinctive.
+Whatever your age or fitness level—even if you’ve never exercised a day in your life —there are steps you can take to make exercise less intimidating and painful and more fun and instinctive.
                                 
-                                Ditch the all-or-nothing attitude. You don’t have to spend hours in a gym or force yourself into monotonous or painful activities you hate to experience the physical and emotional benefits of exercise. A little exercise is better than nothing. In fact, adding just modest amounts of physical activity to your weekly routine can have a profound effect on your mental and emotional health.
+Ditch the all-or-nothing attitude. You don’t have to spend hours in a gym or force yourself into monotonous or painful activities you hate to experience the physical and emotional benefits of exercise. A little exercise is better than nothing. In fact, adding just modest amounts of physical activity to your weekly routine can have a profound effect on your mental and emotional health.
                                 
-                                Be kind to yourself. Research shows that self-compassion increases the likelihood that you’ll succeed in any given endeavor. So, don’t beat yourself up about your body, your current fitness level, or your supposed lack of willpower. All that will do is demotivate you. Instead, look at your past mistakes and unhealthy choices as opportunities to learn and grow.
+Be kind to yourself. Research shows that self-compassion increases the likelihood that you’ll succeed in any given endeavor. So, don’t beat yourself up about your body, your current fitness level, or your supposed lack of willpower. All that will do is demotivate you. Instead, look at your past mistakes and unhealthy choices as opportunities to learn and grow.
                                 
-                                Check your expectations. You didn’t get out of shape overnight, and you’re not going to instantly transform your body either. Expecting too much, too soon only leads to frustration. Try not to be discouraged by what you can’t accomplish or how far you have to go to reach your fitness goals. Instead of obsessing over results, focus on consistency. While the improvements in mood and energy levels may happen quickly, the physical payoff will come in time.";
+Check your expectations. You didn’t get out of shape overnight, and you’re not going to instantly transform your body either. Expecting too much, too soon only leads to frustration. Try not to be discouraged by what you can’t accomplish or how far you have to go to reach your fitness goals. Instead of obsessing over results, focus on consistency. While the improvements in mood and energy levels may happen quickly, the physical payoff will come in time.";
 
 "tip_2_titel" = "Making exercise more enjoyable.";
 "tip_2_desc" = "As previously noted, you are much more likely to stick with an exercise program that’s fun and rewarding. No amount of willpower is going to keep you going long-term with a workout you hate.
                                             
-                                            Think outside the gym
-                                            Does the thought of going to the gym fill you with dread? If you find the gym inconvenient, expensive, intimidating, or simply boring, that’s okay. There are many exercise alternatives to weight rooms and cardio equipment.
+Think outside the gym
+Does the thought of going to the gym fill you with dread? If you find the gym inconvenient, expensive, intimidating, or simply boring, that’s okay. There are many exercise alternatives to weight rooms and cardio equipment.
                                             
-                                            For many, simply getting outside makes all the difference. You may enjoy running outdoors, where you can enjoy alone time and nature, even if you hate treadmills.
+For many, simply getting outside makes all the difference. You may enjoy running outdoors, where you can enjoy alone time and nature, even if you hate treadmills.
                                             
-                                            Just about everyone can find a physical activity they enjoy. But you may need to think beyond the standard running, swimming, and biking options. Here are a few activities you may find fun:
+Just about everyone can find a physical activity they enjoy. But you may need to think beyond the standard running, swimming, and biking options. Here are a few activities you may find fun:
                                             
-                                            1.horseback riding
-                                            2.ballroom dancing
-                                            3.rollerblading
-                                            4.hiking
-                                            5.paddle boarding
-                                            6.kayaking
-                                            7.gymnastics
-                                            8.martial arts
-                                            9.rock climbing
-                                            10.Zumba
-                                            11.Ultimate Frisbee
-                                            12.fencing
+1.horseback riding
+2.ballroom dancing
+3.rollerblading
+4.hiking
+5.paddle boarding
+6.kayaking
+7.gymnastics
+8.martial arts
+9.rock climbing
+10.Zumba
+11.Ultimate Frisbee
+12.fencing
                                             
-                                            Make it a game
-                                            Activity-based video games such as those from Wii and Kinect can be a fun way to start moving. So-called “exergames” that are played standing up and moving around—simulating dancing, skateboarding, soccer, bowling, or tennis, for example—can burn at least as many calories as walking on a treadmill; some substantially more. Once you build up your confidence, try getting away from the TV screen and playing the real thing outside. Or use a smartphone app to keep your workouts fun and interesting—some immerse you in interactive stories to keep you motivated, such as running from hordes of zombies!
+Make it a game
+Activity-based video games such as those from Wii and Kinect can be a fun way to start moving. So-called “exergames” that are played standing up and moving around—simulating dancing, skateboarding, soccer, bowling, or tennis, for example—can burn at least as many calories as walking on a treadmill; some substantially more. Once you build up your confidence, try getting away from the TV screen and playing the real thing outside. Or use a smartphone app to keep your workouts fun and interesting—some immerse you in interactive stories to keep you motivated, such as running from hordes of zombies!
+
+Pair it with something you enjoy
+Think about activities that you enjoy and how you can incorporate them into an exercise routine. Watch TV as you ride a stationary bike, chat with a friend as you walk, take photographs on a scenic hike, walk the golf course instead of using a cart, or dance to music as you do household chores.
                                             
-                                            Pair it with something you enjoy
-                                            Think about activities that you enjoy and how you can incorporate them into an exercise routine. Watch TV as you ride a stationary bike, chat with a friend as you walk, take photographs on a scenic hike, walk the golf course instead of using a cart, or dance to music as you do household chores.
+Make it social
+Exercise can be a fun time to socialize with friends and working out with others can help keep you motivated. For those who enjoy company but dislike competition, a running club, water aerobics, or dance class may be the perfect thing. Others may find that a little healthy competition keeps the workout fun and exciting. You might seek out tennis partners, join an adult soccer league, find a regular pickup basketball game, or join a volleyball team.
                                             
-                                            Make it social
-                                            Exercise can be a fun time to socialize with friends and working out with others can help keep you motivated. For those who enjoy company but dislike competition, a running club, water aerobics, or dance class may be the perfect thing. Others may find that a little healthy competition keeps the workout fun and exciting. You might seek out tennis partners, join an adult soccer league, find a regular pickup basketball game, or join a volleyball team.
-                                            
-                                            Try a mindfulness approach
-                                            Instead of zoning out or distracting yourself when you exercise, try to pay attention to your body. By really focusing on how your body feels as you exercise—the rhythm of your breathing, the way your feet strike the ground, your muscles flexing as you move, even the way you feel on the inside—you’ll not only improve your physical condition faster but also interrupt the flow of worries or negative thoughts running through your head, easing stress and anxiety. Exercising in this way can also help your nervous system become “unstuck” and begin to move out of the immobilization stress response that characterizes PTSD and trauma. Activities that engage both your arms and legs—such as walking (especially in sand), running, swimming, weight training, rock climbing, skiing, or dancing—are great choices for practicing mindfulness.";
+Try a mindfulness approach
+Instead of zoning out or distracting yourself when you exercise, try to pay attention to your body. By really focusing on how your body feels as you exercise—the rhythm of your breathing, the way your feet strike the ground, your muscles flexing as you move, even the way you feel on the inside—you’ll not only improve your physical condition faster but also interrupt the flow of worries or negative thoughts running through your head, easing stress and anxiety. Exercising in this way can also help your nervous system become “unstuck” and begin to move out of the immobilization stress response that characterizes PTSD and trauma. Activities that engage both your arms and legs—such as walking (especially in sand), running, swimming, weight training, rock climbing, skiing, or dancing—are great choices for practicing mindfulness.";
 "tip_3_titel" = "Stay motivated to exercise.";
 "tip_3_desc" = "No matter how much you enjoy an exercise routine, you may find that you eventually lose interest in it. That’s the time to shake things up and try something new or alter the way you pursue the exercises that have worked so far.
 
-                                            Pair your workout with a treat. For example, you can listen to an audiobook or watch your favorite TV show while on the treadmill or stationary bike.
+Pair your workout with a treat. For example, you can listen to an audiobook or watch your favorite TV show while on the treadmill or stationary bike.
 
-                                            Log your activity. Keep a record of your workouts and fitness progress. Writing things down or tracking them on an app increases commitment and holds you accountable to your routine. Later on, it will also be encouraging to look back at where you began.
+Log your activity. Keep a record of your workouts and fitness progress. Writing things down or tracking them on an app increases commitment and holds you accountable to your routine. Later on, it will also be encouraging to look back at where you began.
 
-                                            Harness the power of the community. Having others rooting for us and supporting us through exercise ups and downs helps to keep motivation strong. There are numerous online fitness communities you can join. You can also try working out with friends either in person or remotely using fitness apps that let you track and compare your progress with each other.
+Harness the power of the community. Having others rooting for us and supporting us through exercise ups and downs helps to keep motivation strong. There are numerous online fitness communities you can join. You can also try working out with friends either in person or remotely using fitness apps that let you track and compare your progress with each other.
 
-                                            Get inspired. Read a health and fitness magazine or visit an exercise website and get inspired with photos of people being active. Sometimes reading about and looking at images of people who are healthy and fit can motivate you to move your body.
+Get inspired. Read a health and fitness magazine or visit an exercise website and get inspired with photos of people being active. Sometimes reading about and looking at images of people who are healthy and fit can motivate you to move your body.
 " ;
 
 // Welcome Page

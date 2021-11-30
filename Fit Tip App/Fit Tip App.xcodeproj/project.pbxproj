@@ -12,7 +12,7 @@
 		1E5B3963274C2EBF006D681B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B3962274C2EBF006D681B /* WelcomeViewController.swift */; };
 		1E5B3968274C2EC2006D681B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B3967274C2EC2006D681B /* Assets.xcassets */; };
 		1E5B3985274D0DF3006D681B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B3984274D0DF2006D681B /* GoogleService-Info.plist */; };
-		1E5B398A274D147A006D681B /* WelcomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B3989274D147A006D681B /* WelcomeModel.swift */; };
+		1E5B398A274D147A006D681B /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B3989274D147A006D681B /* Welcome.swift */; };
 		1E5B398D274D169F006D681B /* WelcomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B398C274D169F006D681B /* WelcomeCell.swift */; };
 		1E5B3990274D1ED1006D681B /* ThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B398F274D1ED1006D681B /* ThemeColor.swift */; };
 		1E5B3996274D221B006D681B /* activity.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B3992274D2217006D681B /* activity.json */; };
@@ -66,7 +66,7 @@
 		1E5B3967274C2EC2006D681B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E5B396C274C2EC2006D681B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E5B3984274D0DF2006D681B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		1E5B3989274D147A006D681B /* WelcomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModel.swift; sourceTree = "<group>"; };
+		1E5B3989274D147A006D681B /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		1E5B398C274D169F006D681B /* WelcomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCell.swift; sourceTree = "<group>"; };
 		1E5B398F274D1ED1006D681B /* ThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColor.swift; sourceTree = "<group>"; };
 		1E5B3992274D2217006D681B /* activity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activity.json; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 		1E5B3987274D1449006D681B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1E5B3989274D147A006D681B /* WelcomeModel.swift */,
+				1E5B3989274D147A006D681B /* Welcome.swift */,
 				1E5B39BA274E34FF006D681B /* User.swift */,
 				1E5B39CE27516A5C006D681B /* Tip.swift */,
 				1E5B39D8275296C5006D681B /* Meal.swift */,
@@ -466,7 +466,7 @@
 				1E5B39A3274D71E7006D681B /* SignInLogo.swift in Sources */,
 				1E5B39B9274E146A006D681B /* ProfileViewController.swift in Sources */,
 				1E5B399D274D2722006D681B /* SignInViewController.swift in Sources */,
-				1E5B398A274D147A006D681B /* WelcomeModel.swift in Sources */,
+				1E5B398A274D147A006D681B /* Welcome.swift in Sources */,
 				1E5B39CB274FABC1006D681B /* NewMeasureViewController.swift in Sources */,
 				1E5B39CF27516A5D006D681B /* Tip.swift in Sources */,
 				1E5B39CD27512B62006D681B /* SettingViewController.swift in Sources */,
