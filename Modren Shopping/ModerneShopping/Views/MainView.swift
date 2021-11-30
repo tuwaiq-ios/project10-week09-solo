@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 struct MainView: View {
     @StateObject var products = ProductsListObject()
     @StateObject var cartItems = CartViewModel()
