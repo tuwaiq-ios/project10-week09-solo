@@ -48,7 +48,7 @@ class NewMeasureViewController: UIViewController, UITextFieldDelegate {
     func setupDoneButton(){
         view.addSubview(doneButton)
         doneButton.translatesAutoresizingMaskIntoConstraints = false
-        doneButton.setTitle("Done", for: .normal)
+        doneButton.setTitle(NSLocalizedString("done", comment: ""), for: .normal)
         doneButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         doneButton.tintColor = UIColor(named: "BackgroundColor")
         doneButton.layer.cornerRadius = 10
@@ -77,7 +77,7 @@ class NewMeasureViewController: UIViewController, UITextFieldDelegate {
     func setupHeightTF(){
         view.addSubview(heightTF)
         heightTF.translatesAutoresizingMaskIntoConstraints = false
-        heightTF.placeholder = "Height"
+        heightTF.placeholder = NSLocalizedString("height", comment: "")
         heightTF.delegate = self
         heightTF.keyboardType = .numberPad
         heightTF.font = UIFont(name: "Alata", size: 18)
@@ -98,7 +98,7 @@ class NewMeasureViewController: UIViewController, UITextFieldDelegate {
     func setupweightTF(){
         view.addSubview(weightTF)
         weightTF.translatesAutoresizingMaskIntoConstraints = false
-        weightTF.placeholder = "Weight"
+        weightTF.placeholder = NSLocalizedString("weight", comment: "")
         weightTF.delegate = self
         weightTF.font = UIFont(name: "Alata", size: 18)
         weightTF.selectedLineColor = ThemeColor.mainColor

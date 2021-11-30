@@ -10,9 +10,10 @@ import UIKit
 class ExerciseViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     lazy var collectionView: UICollectionView = {
-                    let layout = UICollectionViewFlowLayout()
-                    let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-                    return cv
+        let layout = UICollectionViewFlowLayout()
+        let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cv.showsVerticalScrollIndicator = false
+        return cv
             }()
     
     override func viewDidLoad() {

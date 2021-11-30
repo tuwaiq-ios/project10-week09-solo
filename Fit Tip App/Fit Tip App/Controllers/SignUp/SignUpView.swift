@@ -77,7 +77,7 @@ class SignUpView : UIView {
         let signUpLabel = UILabel()
         addSubview(signUpLabel)
         signUpLabel.translatesAutoresizingMaskIntoConstraints = false
-        signUpLabel.text = "Sign Up"
+        signUpLabel.text = NSLocalizedString("sign_up", comment: "")
         signUpLabel.textAlignment = .center
         signUpLabel.font = UIFont.boldSystemFont(ofSize: 18)
         signUpLabel.textColor = ThemeColor.mainColor
@@ -92,7 +92,7 @@ class SignUpView : UIView {
     func setupNameTextField() {
         addSubview(nameTextField)
         nameTextField.translatesAutoresizingMaskIntoConstraints = false
-        nameTextField.placeholder = "Name"
+        nameTextField.placeholder = NSLocalizedString("name", comment: "")
         nameTextField.delegate = controller
         nameTextField.font = UIFont(name: "Alata", size: 18)
         nameTextField.selectedLineColor = ThemeColor.secoundColor
@@ -111,7 +111,7 @@ class SignUpView : UIView {
     func setupEmailTextField() {
         addSubview(emailTextField)
         emailTextField.translatesAutoresizingMaskIntoConstraints = false
-        emailTextField.placeholder = "Email"
+        emailTextField.placeholder = NSLocalizedString("email", comment: "")
         emailTextField.delegate = controller
         emailTextField.font = UIFont(name: "Alata", size: 18)
         emailTextField.selectedLineColor = ThemeColor.secoundColor
@@ -131,7 +131,7 @@ class SignUpView : UIView {
     func setupPasswordTextField() {
         addSubview(passwordTextField)
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
-        passwordTextField.placeholder = "Password"
+        passwordTextField.placeholder = NSLocalizedString("password", comment: "")
         passwordTextField.delegate = controller
         passwordTextField.font = UIFont(name: "Alata", size: 18)
         passwordTextField.selectedLineColor = ThemeColor.secoundColor

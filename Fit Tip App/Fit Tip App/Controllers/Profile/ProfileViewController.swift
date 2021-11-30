@@ -160,11 +160,10 @@ class ProfileViewController: UIViewController, ChartViewDelegate {
         let constraint = [
             stackView.topAnchor.constraint(equalTo: scrollView.topAnchor),
             stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 15),
+            stackView.widthAnchor.constraint(equalToConstant: view.frame.width-25),
             stackView.heightAnchor.constraint(equalToConstant: 100),
         ]
         NSLayoutConstraint.activate(constraint)
-        
     }
     
     func setupHeightAndWeight(){

@@ -10,21 +10,7 @@ import Lottie
 
 class WelcomeViewController: UIViewController {
 
-    let welcomePages = [Welcome(imageName: "goal",
-                                topic: "Goal",
-                                description: "Chose your goal"),
-                        Welcome(imageName: "mesure",
-                                topic: "Mesurments",
-                                description: "Enter your body mesurments"),
-                        Welcome(imageName: "activity",
-                                topic: "Activity",
-                                description: "Check your calories, how many steps you walked"),
-                        Welcome(imageName: "food",
-                                topic: "Meals",
-                                description: "Variety of meals that align with your goals"),
-                        Welcome(imageName: "Fit_Tip_Logo",
-                                topic: "Start",
-                                description: " ")]
+  
     
     var collectionView:  UICollectionView!
     var skipButton = UIButton(type: .system)
@@ -64,7 +50,7 @@ class WelcomeViewController: UIViewController {
     func setupSkipButton(){
         view.addSubview(skipButton)
         skipButton.translatesAutoresizingMaskIntoConstraints = false
-        skipButton.setTitle("Skip", for: .normal)
+        skipButton.setTitle(NSLocalizedString("skip", comment: ""), for: .normal)
         skipButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         skipButton.tintColor = ThemeColor.mainColor
         skipButton.addTarget(self, action: #selector(skipButtonPressed), for: .touchUpInside)

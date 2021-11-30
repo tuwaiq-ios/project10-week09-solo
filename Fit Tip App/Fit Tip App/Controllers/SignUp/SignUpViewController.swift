@@ -53,7 +53,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate,  UIImagePicke
         profileImage.addGestureRecognizer(tap)
     }
     private func setupSignUpButton() {
-        signUpButton = SignButton("Register", self)
+        signUpButton = SignButton(NSLocalizedString("register", comment: ""), self)
         view.addSubview(signUpButton)
         signUpButton.addTarget(self, action: #selector(registerButtonPressed), for: .touchUpInside)
         signUpButton.alpha = 0
@@ -93,17 +93,17 @@ class SignUpViewController: UIViewController, UITextFieldDelegate,  UIImagePicke
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-        alert.addAction(UIAlertAction(title: "Take Photo", style: .default, handler: { (alertAction) in
+        alert.addAction(UIAlertAction(title: NSLocalizedString("take_photo", comment: ""), style: .default, handler: { (alertAction) in
             if UIImagePickerController.isSourceTypeAvailable(.camera) {
                 imagePicker.sourceType = .camera
                 self.present(imagePicker, animated: true, completion: nil)
             }
         }))
-        alert.addAction(UIAlertAction(title: "Open Photo Library", style: .default, handler: { (alertAction) in
+        alert.addAction(UIAlertAction(title: NSLocalizedString("open_photo", comment: ""), style: .default, handler: { (alertAction) in
             imagePicker.sourceType = .photoLibrary
             self.present(imagePicker, animated: true, completion: nil)
         }))
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: NSLocalizedString("cancel", comment: ""), style: .cancel, handler: nil)
         cancelAction.setValue(UIColor.systemRed, forKey: "titleTextColor")
         alert.addAction(cancelAction)
         present(alert, animated: true, completion: nil)
@@ -127,7 +127,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate,  UIImagePicke
     
     private func validateTextField() -> String?{
         if signUpView.nameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || signUpView.emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || signUpView.passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
-            return "Make sure you fill in all fields."
+            return NSLocalizedString("make_sure", comment: "")
         }
         
         let password = signUpView.passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -135,15 +135,15 @@ class SignUpViewController: UIViewController, UITextFieldDelegate,  UIImagePicke
         let email = signUpView.emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         if password.count < 6 {
-            return "Password should be at least 6 characters long."
+            return NSLocalizedString("least_6_characters", comment: "")
         }
         
         if name.count > 30 {
-            return "Your name exceeds a limit of 30 characters."
+            return NSLocalizedString("limit_of_30_characters", comment: "")
         }
         
         if email.count > 30 {
-            return "Your email exceeds a limit of 30 characters."
+            return NSLocalizedString("your_email_exceeds", comment: "")
         }
         
         return nil

@@ -45,18 +45,18 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     
     private func validateTextField() -> String?{
         if loginView.emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || loginView.passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
-            return "Make sure you fill in all fields"
+            return NSLocalizedString("make_sure", comment: "")
         }
         
         let password = loginView.passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         if password.count < 6 {
-            return "Password should be at least 6 characters long"
+            return NSLocalizedString("password_should", comment: "")
         }
         return nil
     }
     
     private func setupLoginButton() {
-        signInButton = SignButton("Sign In", self)
+        signInButton = SignButton(NSLocalizedString("sign_in", comment: ""), self)
         view.addSubview(signInButton)
         signInButton.addTarget(self, action: #selector(loginButtonPressed), for: .touchUpInside)
         let constraints = [
@@ -103,8 +103,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         let signUpButton = UIButton(type: .system)
         view.addSubview(signUpButton)
         signUpButton.translatesAutoresizingMaskIntoConstraints = false
-        let mainString = "Don't have an account? Sign Up"
-        let stringWithColor = "Sign Up"
+        let mainString = NSLocalizedString("don't_have", comment: "")
+        let stringWithColor = NSLocalizedString("sign_up", comment: "")
         let range = (mainString as NSString).range(of: stringWithColor)
         let attributedString = NSMutableAttributedString(string: mainString)
         attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.systemBlue, range: range)
