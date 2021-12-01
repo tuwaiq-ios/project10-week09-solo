@@ -28,7 +28,7 @@ class Terminal1 : UIViewController, UICollectionViewDelegate, UICollectionViewDa
         collectionView1.register(Terminal1Cell.self, forCellWithReuseIdentifier: Terminal1Cell.identifier)
         collectionView2.register(Terminal2Cell.self, forCellWithReuseIdentifier: Terminal2Cell.identifier)
         setupCollectionConstraints()
-        setupCollectionConstraints2()
+//        setupCollectionConstraints2()
         self.navigationItem.hidesBackButton = true
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleCancel))
       

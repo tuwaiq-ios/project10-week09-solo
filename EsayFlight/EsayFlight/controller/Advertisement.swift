@@ -23,74 +23,74 @@ class Advertisement: UIViewController {
     view.backgroundColor = .white
     // Do any additional setup after loading the view.
     for _ in 0..<1{
-      let model = VideoModel(caption: "kkk",
-                  username: "kkk",
-                  audioTrackName: "kkk",
-                  videoFileName: "video1",
-                  videoFileFormat: "mp4")
+      let model = VideoModel(caption: "",
+                  username: "",
+                  audioTrackName: "",
+                  videoFileName: "video11",
+                  videoFileFormat: "MP4")
       data.append (model)
     }
     for _ in 1..<2 {
-      let model = VideoModel(caption: "kkk ",
-                  username: "kkk",
-                  audioTrackName: "kkk",
-                  videoFileName: "video1",
-                  videoFileFormat: "mp4")
+      let model = VideoModel(caption: "",
+                  username: "",
+                  audioTrackName: "",
+                  videoFileName: "video2",
+                  videoFileFormat: "MP4")
       data.append (model)
     }
     for _ in 2..<3 {
-      let model = VideoModel(caption: "Fog cofffee",
-                  username: "@starbucks",
-                  audioTrackName: "كوفي الضباب",
-                  videoFileName: "video1",
-                  videoFileFormat: "mp4")
+      let model = VideoModel(caption: "",
+                  username: "",
+                  audioTrackName: "",
+                  videoFileName: "video3",
+                  videoFileFormat: "MP4")
       data.append (model)
     }
     for _ in 3..<4 {
       let model = VideoModel(caption: "abo kheyal",
-                  username: "@tasnim",
-                  audioTrackName:"ابو خيال",
-                  videoFileName: "video1",
-                  videoFileFormat: " mp4")
+                  username: "",
+                  audioTrackName:"",
+                  videoFileName: "video4",
+                  videoFileFormat: "mp4")
       data.append (model)
     }
     for _ in 4..<5 {
       let model = VideoModel(caption: "",
-                  username: "@Sara",
+                  username: "",
                   audioTrackName: "Video Song :musical_note:",
-                  videoFileName: "video1",
-                  videoFileFormat: "mp4")
+                  videoFileName: "video5",
+                  videoFileFormat: "MP4")
       data.append (model)
     }
     for _ in 5..<6 {
       let model = VideoModel(caption: "",
                   username: "",
                   audioTrackName: "",
-                  videoFileName: "video1",
-                  videoFileFormat: "mp4")
+                  videoFileName: "video6",
+                  videoFileFormat: "MP4")
       data.append (model)
     }
     for _ in 6..<7 {
       let model = VideoModel(caption: "",
                   username:"",
                   audioTrackName: "",
-                  videoFileName: "video1",
-                  videoFileFormat: "mp4")
+                  videoFileName: "video7",
+                  videoFileFormat: "MP4")
       data.append (model)
     }
     for _ in 7..<8{
       let model = VideoModel(caption: "",
                   username: "",
                   audioTrackName: "",
-                  videoFileName: "video1",
-                  videoFileFormat: "mp4")
+                  videoFileName: "video8",
+                  videoFileFormat: "MP4")
       data.append (model)
     }
     for _ in 8..<9 {
       let model = VideoModel(caption: "",
                   username: "",
                   audioTrackName: "",
-                  videoFileName: "video1",
+                  videoFileName: "video9",
                   videoFileFormat: "MP4")
       data.append (model)
     }

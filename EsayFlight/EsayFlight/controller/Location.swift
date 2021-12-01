@@ -23,7 +23,7 @@ class Location : UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate
         
         
         
-        let camera = GMSCameraPosition.camera(withLatitude: 18.2343646, longitude:  42.6579026, zoom: 20)
+        let camera = GMSCameraPosition.camera(withLatitude: 18.2343646, longitude:  42.6579026, zoom: 18)
                 let mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
                 self.view.addSubview(mapView)
 

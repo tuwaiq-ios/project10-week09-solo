@@ -66,7 +66,7 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
     
     let name1: UILabel = {
         let label = UILabel()
-        label.text = ""
+        label.text = "Saeed"
         label.textColor = .black
         label.font = label.font.withSize(25)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -75,7 +75,7 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
     
     let helath1 : UILabel = {
         let label = UILabel()
-        label.text = ""
+        label.text = "Old"
         label.textColor = .black
         label.font = label.font.withSize(25)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -84,17 +84,17 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
     
     let specailNeeds1 : UILabel = {
         let label = UILabel()
-        label.text = ""
+        label.text = "personal escort"
         label.textColor = .black
         label.font = label.font.withSize(25)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    
+
     let flightNumber1 : UILabel = {
         let label = UILabel()
-        label.text = ""
+        label.text = "12345"
         label.textColor = .black
         label.font = label.font.withSize(25)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -156,29 +156,40 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
         
         
         Firestore.firestore().collection("profile").addSnapshotListener { snapshot, error in
+            
+            
             if error != nil {
+                print(snapshot)
                 return
             }
+            print(snapshot)
             
             guard let docs = snapshot?.documents else {
                 return
             }
+            print(docs)
+            
             var details : [information] = []
             for doc in docs {
                 let data = doc.data()
-                guard
-                    let name = data["name"] as? String,
-                    let helath = data["helath"] as? String,
-                    let specailNeeds = data["specailNeeds"] as? String,
-                    let flightNumber = data["flightNumber"] as? String
-                        
-                else {
-                    continue
-                }
-                    let userdetails = information(name: name,
-                                                helath: helath,
-                                                specailNeeds: specailNeeds,
-                                                flightNumber: flightNumber
+       
+//                    let name = data["name"] as? String,
+//                    let specailNeeds = data["specailNeeds"] as? String,
+//                    let helath = data["helath"] as? String,
+//                    let flightNumber = data["flightNumber"] as? String
+//
+//
+//                else {
+//
+//                    continue
+//                }
+               
+                print(snapshot)
+                    let userdetails = information(
+                        name: (data["name"] as? String) ?? "",
+                       helath:(data["helath"] as? String) ?? "",
+                    specailNeeds: (data["specailNeeds"] as? String) ?? "",
+                    flightNumber: (data["flightNumber"] as? String) ?? ""
                                            )
                 details.append(userdetails)
                     
@@ -191,7 +202,9 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
         let firebaseAuth = Auth.auth()
         do {
             try firebaseAuth.signOut()
-            dismiss(animated: true, completion: nil)
+            let vc = LoginVC()
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
         } catch let signOutError as NSError {
             print ("Error signing out: \(signOutError.localizedDescription)")
         }
