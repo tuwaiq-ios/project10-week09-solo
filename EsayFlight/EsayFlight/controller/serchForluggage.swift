@@ -60,7 +60,9 @@ class serchForluggage : UIViewController {
     @objc func addNewserch() {
         let note = Search(id: UUID().uuidString, content: "New ")
         SearchService.shared.updateOrAddNewSearch(note: note)
+       
     }
+    
 }
 
 extension serchForluggage: UICollectionViewDelegate, UICollectionViewDataSource{
@@ -78,10 +80,10 @@ extension serchForluggage: UICollectionViewDelegate, UICollectionViewDataSource{
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
-        let note = inform[indexPath.row]
+        let note1 = inform[indexPath.row]
         
         let searchVC = NewSearchVC()
-        searchVC.data = note
+        searchVC.data = note1
         
         navigationController?.pushViewController(
             searchVC,

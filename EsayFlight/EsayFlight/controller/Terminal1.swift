@@ -20,24 +20,29 @@ class Terminal1 : UIViewController, UICollectionViewDelegate, UICollectionViewDa
         view.backgroundColor = .white
         view.addSubview(collectionView1)
         view.addSubview(collectionView2)
+        setupCollectionConstraints()
 
+       
         collectionView1.delegate = self
         collectionView1.dataSource = self
         collectionView2.delegate = self
         collectionView2.dataSource = self
         collectionView1.register(Terminal1Cell.self, forCellWithReuseIdentifier: Terminal1Cell.identifier)
         collectionView2.register(Terminal2Cell.self, forCellWithReuseIdentifier: Terminal2Cell.identifier)
-        setupCollectionConstraints()
-//        setupCollectionConstraints2()
+       
+        
+        
         self.navigationItem.hidesBackButton = true
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleCancel))
       
     }
+    
+    
     @objc func handleCancel() {
         dismiss(animated: true, completion: nil)
     }
     
-    let collectionView1: UICollectionView = {
+    lazy var collectionView1: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
 //        layout.itemSize = CGSize(width: view.frame.width, height: 200)
@@ -47,7 +52,8 @@ class Terminal1 : UIViewController, UICollectionViewDelegate, UICollectionViewDa
         cv.backgroundColor = .white
         return cv
     }()
-    let collectionView2: UICollectionView = {
+    
+    lazy var collectionView2: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         layout.minimumInteritemSpacing = 12
@@ -162,12 +168,15 @@ class Terminal1 : UIViewController, UICollectionViewDelegate, UICollectionViewDa
     @objc func Segment(_ sender: Any) {
       switch segmentedControl.selectedSegmentIndex {
       case 0:
-        collectionView1.isHidden = false
-        collectionView2.isHidden = true
+        collectionView1.isHidden = true
+        collectionView2.isHidden = false
+         
       case 1:
 
-          collectionView1.isHidden = true
-          collectionView2.isHidden = false
+          collectionView1.isHidden = false
+          collectionView2.isHidden = true
+          setupCollectionConstraints2()
+         
       default:
         break;
       }}

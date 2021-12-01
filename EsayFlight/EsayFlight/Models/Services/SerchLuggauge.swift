@@ -19,6 +19,7 @@ class SearchService {
             "id": note.id,
             "content": note.content
         ], merge: true)
+        print(note)
     }
     
     func listenToSearch(completion: @escaping (([Search]) -> Void)) {
@@ -26,12 +27,13 @@ class SearchService {
             if error != nil {
                 return
             }
-            
+           
             guard let docs = snapshot?.documents else { return }
             var notes = [Search]()
             
             for doc in docs {
                 let data = doc.data()
+                print(data)
                 guard
                     let id = data["id"] as? String,
                     let content = data["content"] as? String
@@ -40,6 +42,7 @@ class SearchService {
                 }
                 
                 notes.append(Search(id: id, content: content))
+               
             }
             
             completion(notes)

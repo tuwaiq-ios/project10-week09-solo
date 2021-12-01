@@ -44,7 +44,7 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
         return label
     }()
     
-    let specailNeeds : UILabel = {
+    let flightNumber: UILabel = {
         let label = UILabel()
         label.text = "Flight number:"
         label.textColor = .black
@@ -54,7 +54,7 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
     }()
     
     
-    let flightNumber : UILabel = {
+    let specailNeeds: UILabel = {
         let label = UILabel()
         label.text = "special Needs:"
         label.textColor = .black
@@ -106,7 +106,7 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        blackSquare = UIView(frame: CGRect(x: 0, y: 100, width: 390, height: 800))
+        blackSquare = UIView(frame: CGRect(x: 0, y: 100, width:view.bounds.width, height: 800))
         blackSquare.backgroundColor = .white
         blackSquare.layer.cornerRadius = 55
         view.addSubview(blackSquare)

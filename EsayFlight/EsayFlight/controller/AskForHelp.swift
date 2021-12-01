@@ -123,18 +123,7 @@ class AskForHelp : UIViewController, UITextViewDelegate {
     let textView2 = UITextView(frame: CGRect(x: 180, y: 300, width: 180, height: 45.0))
     let stackView   = UIStackView()
     
-//    lazy var menuView: UIView = {
-//        let view = UIView()
-//        view.backgroundColor = .systemGray6
-//        return view
-//    }()
-//
-//
-//    lazy var containerView: UIView = {
-//        let view = UIView()
-//        view.backgroundColor = .systemBackground
-//        return view
-//    }()
+
     
     lazy var sidebar = UIBarButtonItem(image: UIImage(systemName: "slidebar.leading")?.withRenderingMode(.alwaysOriginal), style: .done, target: self, action: #selector(menubar))
     
@@ -153,7 +142,7 @@ class AskForHelp : UIViewController, UITextViewDelegate {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: #selector(menubar))
 
         
-        blackSquare = UIView(frame: CGRect(x: 0, y: 100, width: 390, height: 800))
+        blackSquare = UIView(frame: CGRect(x: 0, y: 100, width: view.bounds.width, height: 800))
         blackSquare.backgroundColor = .white
         blackSquare.layer.cornerRadius = 55
         view.addSubview(blackSquare)

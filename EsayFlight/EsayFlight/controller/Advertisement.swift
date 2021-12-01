@@ -47,7 +47,7 @@ class Advertisement: UIViewController {
       data.append (model)
     }
     for _ in 3..<4 {
-      let model = VideoModel(caption: "abo kheyal",
+      let model = VideoModel(caption: "",
                   username: "",
                   audioTrackName:"",
                   videoFileName: "video4",
@@ -57,7 +57,7 @@ class Advertisement: UIViewController {
     for _ in 4..<5 {
       let model = VideoModel(caption: "",
                   username: "",
-                  audioTrackName: "Video Song :musical_note:",
+                  audioTrackName: "",
                   videoFileName: "video5",
                   videoFileFormat: "MP4")
       data.append (model)

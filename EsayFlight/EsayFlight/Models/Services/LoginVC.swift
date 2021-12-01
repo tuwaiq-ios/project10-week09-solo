@@ -74,7 +74,7 @@ class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        blackSquare = UIView(frame: CGRect(x: 0, y: 100, width: 380, height: 800))
+        blackSquare = UIView(frame: CGRect(x: 0, y: 100, width: view.bounds.width, height: 800))
         blackSquare.backgroundColor = .white
         blackSquare.layer.cornerRadius = 55
         view.addSubview(blackSquare)
