@@ -15,7 +15,7 @@
 		CC2AF90727547EA2006C5172 /* NewsPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AF90627547EA2006C5172 /* NewsPageVC.swift */; };
 		CC2AF90927548C84006C5172 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AF90827548C84006C5172 /* ServiceCell.swift */; };
 		CC9C8209275347E200A7C0ED /* Court.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C8208275347E200A7C0ED /* Court.swift */; };
-		CC9C820B275348FD00A7C0ED /* CourtPageVCxxxxxxx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C820A275348FD00A7C0ED /* CourtPageVCxxxxxxx.swift */; };
+		CC9C820B275348FD00A7C0ED /* CourtPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C820A275348FD00A7C0ED /* CourtPageVC.swift */; };
 		CC9C82112753772F00A7C0ED /* Lawyers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C82102753772F00A7C0ED /* Lawyers.swift */; };
 		CC9C821327539C9600A7C0ED /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C821227539C9600A7C0ED /* News.swift */; };
 		CCA633732754E58300232B34 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA633722754E58300232B34 /* MapKit.framework */; };
@@ -35,7 +35,7 @@
 		CCDB3EF52752B32C00CA9BA0 /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB3EF42752B32C00CA9BA0 /* TabVC.swift */; };
 		CCDB3EF72752B36100CA9BA0 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB3EF62752B36100CA9BA0 /* MapVC.swift */; };
 		CCDB3EF92752B4B500CA9BA0 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB3EF82752B4B500CA9BA0 /* MyProfileVC.swift */; };
-		CCDB3EFB2752D74900CA9BA0 /* CourtVCxxxxxxxxxxxx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB3EFA2752D74900CA9BA0 /* CourtVCxxxxxxxxxxxx.swift */; };
+		CCDB3EFB2752D74900CA9BA0 /* CourtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB3EFA2752D74900CA9BA0 /* CourtVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +48,7 @@
 		CC2AF90627547EA2006C5172 /* NewsPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPageVC.swift; sourceTree = "<group>"; };
 		CC2AF90827548C84006C5172 /* ServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
 		CC9C8208275347E200A7C0ED /* Court.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Court.swift; sourceTree = "<group>"; };
-		CC9C820A275348FD00A7C0ED /* CourtPageVCxxxxxxx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtPageVCxxxxxxx.swift; sourceTree = "<group>"; };
+		CC9C820A275348FD00A7C0ED /* CourtPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtPageVC.swift; sourceTree = "<group>"; };
 		CC9C82102753772F00A7C0ED /* Lawyers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lawyers.swift; sourceTree = "<group>"; };
 		CC9C821227539C9600A7C0ED /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		CCA633722754E58300232B34 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -70,7 +70,7 @@
 		CCDB3EF42752B32C00CA9BA0 /* TabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabVC.swift; sourceTree = "<group>"; };
 		CCDB3EF62752B36100CA9BA0 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		CCDB3EF82752B4B500CA9BA0 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
-		CCDB3EFA2752D74900CA9BA0 /* CourtVCxxxxxxxxxxxx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtVCxxxxxxxxxxxx.swift; sourceTree = "<group>"; };
+		CCDB3EFA2752D74900CA9BA0 /* CourtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtVC.swift; sourceTree = "<group>"; };
 		E840346B558699FC8194E271 /* Pods_Fawaz_solo_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fawaz_solo_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,9 +99,9 @@
 		CC9C820C2753490600A7C0ED /* CourtVC */ = {
 			isa = PBXGroup;
 			children = (
-				CCDB3EFA2752D74900CA9BA0 /* CourtVCxxxxxxxxxxxx.swift */,
+				CCDB3EFA2752D74900CA9BA0 /* CourtVC.swift */,
 				CC2AF8FE27547748006C5172 /* CourtVC_Cell.swift */,
-				CC9C820A275348FD00A7C0ED /* CourtPageVCxxxxxxx.swift */,
+				CC9C820A275348FD00A7C0ED /* CourtPageVC.swift */,
 				CC2AF90827548C84006C5172 /* ServiceCell.swift */,
 				CCCE6F552754A4AE003DBEB2 /* ServicePage.swift */,
 			);
@@ -341,11 +341,11 @@
 				CCDB3EF52752B32C00CA9BA0 /* TabVC.swift in Sources */,
 				CC2AF901275479BE006C5172 /* LawyersVC_Cell.swift in Sources */,
 				CC2AF90927548C84006C5172 /* ServiceCell.swift in Sources */,
-				CCDB3EFB2752D74900CA9BA0 /* CourtVCxxxxxxxxxxxx.swift in Sources */,
+				CCDB3EFB2752D74900CA9BA0 /* CourtVC.swift in Sources */,
 				CC2AF90727547EA2006C5172 /* NewsPageVC.swift in Sources */,
 				CCA9446527533D41000BEE49 /* NewsVC.swift in Sources */,
 				CCDB3EED2752B13700CA9BA0 /* User.swift in Sources */,
-				CC9C820B275348FD00A7C0ED /* CourtPageVCxxxxxxx.swift in Sources */,
+				CC9C820B275348FD00A7C0ED /* CourtPageVC.swift in Sources */,
 				CC2AF90327547A40006C5172 /* LawyersPageVC.swift in Sources */,
 				CC2AF8FF27547748006C5172 /* CourtVC_Cell.swift in Sources */,
 				CC9C82112753772F00A7C0ED /* Lawyers.swift in Sources */,

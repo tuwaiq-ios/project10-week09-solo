@@ -14,84 +14,59 @@ class Service_Cell: UITableViewCell {
   
   let imageCell = UIImageView()
   let nameCell = UILabel()
-////  let blog = UILabel()
-//
-//  let imageblog = UIImageView()
-//  let nameblog = UILabel()
-//  let text = UILabel()
+  let stalyCell = UILabel()
+  
   //==========================================================================
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
     
     super.init(style: style , reuseIdentifier: reuseIdentifier)
-    
+    //========================================================================
     imageCell.translatesAutoresizingMaskIntoConstraints = false
     self.addSubview(imageCell)
+    imageCell.layer.masksToBounds = true
+    imageCell.layer.cornerRadius = 10
+    imageCell.backgroundColor = .blue
     
     NSLayoutConstraint.activate([
-      imageCell.leftAnchor.constraint(equalTo: leftAnchor),
-      imageCell.heightAnchor.constraint(equalToConstant: 60),
-      imageCell.widthAnchor.constraint(
-        equalTo: imageCell.heightAnchor,multiplier: 100/100),
-      imageCell.bottomAnchor.constraint(equalTo: bottomAnchor)
+      imageCell.rightAnchor.constraint(equalTo: rightAnchor, constant: -10),
+      imageCell.centerYAnchor.constraint(equalTo: centerYAnchor),
+      imageCell.heightAnchor.constraint(equalToConstant: 80),
+      imageCell.widthAnchor.constraint(equalToConstant: 80)
     ])
+    //========================================================================
+    stalyCell.font = UIFont.systemFont(ofSize: 17)
+    stalyCell.numberOfLines = 0
+    stalyCell.textColor = .darkGray
+    stalyCell.translatesAutoresizingMaskIntoConstraints = false
+    stalyCell.backgroundColor = .black
+    stalyCell.layer.cornerRadius = 10
+    stalyCell.clipsToBounds = true
+
     
-    nameCell.textColor = .white
-    nameCell.text = ""
+    self.addSubview(stalyCell)
+    
+    NSLayoutConstraint.activate([
+      stalyCell.centerYAnchor.constraint(equalTo: centerYAnchor),
+      stalyCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 5),
+      stalyCell.rightAnchor.constraint(equalTo:imageCell.leftAnchor, constant: -5),
+      stalyCell.heightAnchor.constraint(equalToConstant: 75)
+
+    ])
+    //========================================================================
     nameCell.translatesAutoresizingMaskIntoConstraints = false
     self.addSubview(nameCell)
     
+    nameCell.textColor = .black
+    nameCell.textAlignment = .right
+    nameCell.backgroundColor = .systemBlue
+    nameCell.font = UIFont.boldSystemFont(ofSize: 20)
+    
     NSLayoutConstraint.activate([
-      nameCell.leftAnchor.constraint(equalTo: imageCell.leftAnchor , constant: 80),
-      nameCell.heightAnchor.constraint(equalToConstant: 80),
-      nameCell.trailingAnchor.constraint(equalTo: trailingAnchor , constant: 100),
-      nameCell.bottomAnchor.constraint(equalTo: bottomAnchor)])
-    
-//    blog.text = "BLOG"
-//    blog.textColor = .white
-//    blog.translatesAutoresizingMaskIntoConstraints = false
-//    self.addSubview(blog)
-//
-//    NSLayoutConstraint.activate([
-//      blog.topAnchor.constraint(equalTo: topAnchor, constant:171),
-//      blog.leftAnchor.constraint(equalTo: leftAnchor),
-//      blog.heightAnchor.constraint(equalToConstant: 30),
-//      blog.widthAnchor.constraint(equalToConstant: 60)
-//    ])
-    
-//    nameblog.font = UIFont.boldSystemFont(ofSize: 25)
-//    nameblog.textColor = .blue
-//    nameblog.translatesAutoresizingMaskIntoConstraints = false
-//    self.addSubview(nameblog)
-//
-//    NSLayoutConstraint.activate([
-//      nameblog.topAnchor.constraint(equalTo: topAnchor, constant:205),
-//      nameblog.leftAnchor.constraint(equalTo: leftAnchor),
-//      nameblog.heightAnchor.constraint(equalToConstant: 30),
-//      nameblog.widthAnchor.constraint(equalToConstant: 200)
-//    ])
-//
-//    text.font = UIFont.systemFont(ofSize: 17)
-//    text.numberOfLines = 2
-//    text.textColor = .darkGray
-//    text.translatesAutoresizingMaskIntoConstraints = false
-//    self.addSubview(text)
-//
-//    NSLayoutConstraint.activate([
-//      text.topAnchor.constraint(equalTo: topAnchor, constant:220),
-//      text.leftAnchor.constraint(equalTo: leftAnchor),
-//      text.heightAnchor.constraint(equalToConstant: 90),
-//      text.widthAnchor.constraint(equalToConstant: 200)
-//    ])
-//
-//    imageblog.translatesAutoresizingMaskIntoConstraints = false
-//    self.addSubview(imageblog)
-//
-//    NSLayoutConstraint.activate([
-//      imageblog.topAnchor.constraint(equalTo: topAnchor),
-//      imageblog.leftAnchor.constraint(equalTo: leftAnchor),
-//      imageblog.heightAnchor.constraint(equalToConstant: 170),
-//      imageblog.widthAnchor.constraint(equalToConstant: 375)
-//    ])
+      nameCell.rightAnchor.constraint(equalTo:imageCell.leftAnchor, constant: -15),
+      nameCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 15),
+      nameCell.topAnchor.constraint(equalTo: topAnchor, constant: 20),
+      nameCell.heightAnchor.constraint(equalToConstant: 60)
+    ])
   }
   //==========================================================================
   required init?(coder: NSCoder) {

@@ -7,31 +7,94 @@
 
 import UIKit
 
+//class NewsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+//
+//  override func viewDidLoad() {
+//    super.viewDidLoad()
+//
+//    let TV = UITableView()
+//
+//    TV.dataSource = self
+//    TV.delegate = self
+//
+//    TV.register(NewsVC_Cell.self, forCellReuseIdentifier: NewsVC_Cell.identifier)
+//    TV.backgroundColor = .white
+//    TV.rowHeight = 400
+//    TV.translatesAutoresizingMaskIntoConstraints = false
+//
+//    view.addSubview(TV)
+//
+//    NSLayoutConstraint.activate([
+//      TV.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10),
+//      TV.topAnchor.constraint(equalTo: view.topAnchor, constant: 120),
+//
+//      TV.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10),
+//      TV.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -32)
+//    ])
+//
+//  }
+//  //======================================================================
+//  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//
+//    return data_News_str.count
+//  }
+//  //======================================================================
+//  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//
+//    let list = data_News_str[indexPath.row]
+//    let cell = tableView.dequeueReusableCell(withIdentifier: NewsVC_Cell.identifier, for: indexPath) as! NewsVC_Cell
+//
+//    cell.backgroundColor = .white
+//    cell.imageCell.image = UIImage(systemName: "person.fill")
+//    cell.imageblog.image = list.image
+//    cell.nameCell.text = list.name
+//    cell.nameblog.text = list.type
+//    cell.text.text = list.text
+//    cell.imageCell.layer.masksToBounds = true
+//    cell.imageCell.layer.cornerRadius = 40
+//    return cell
+//  }
+//  //======================================================================
+//
+//  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//
+//    let data4 = data_News_str[indexPath.row]
+//
+//    let VC4_NewsPageVC = LawyersPageVC()
+//    VC4_NewsPageVC.imageBlogPage.image = data4.image
+//    VC4_NewsPageVC.nameBlogPage.text = data4.type
+//    VC4_NewsPageVC.textBlogPage.text = data4.text
+//
+//    self.present(VC4_NewsPageVC, animated: true, completion: nil)
+////    VC3_NewsPageVC.modalPresentationStyle = .fullScreen
+//  }
+//}
+
 class NewsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+//    view.backgroundColor = .brown
     let TV = UITableView()
     
     TV.dataSource = self
     TV.delegate = self
     
     TV.register(NewsVC_Cell.self, forCellReuseIdentifier: NewsVC_Cell.identifier)
-    TV.backgroundColor = .white
-    TV.rowHeight = 400
+    
+//    TV.backgroundColor = .green
+    TV.rowHeight = 410
     TV.translatesAutoresizingMaskIntoConstraints = false
     
     view.addSubview(TV)
     
     NSLayoutConstraint.activate([
-      TV.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10),
-      TV.topAnchor.constraint(equalTo: view.topAnchor, constant: 120),
       
-      TV.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10),
-      TV.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -32)
+      TV.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+      TV.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+      TV.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
+      TV.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor)
     ])
-    
   }
   //======================================================================
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,30 +105,26 @@ class NewsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
     let list = data_News_str[indexPath.row]
-    let cell = tableView.dequeueReusableCell(withIdentifier: NewsVC_Cell.identifier, for: indexPath) as! NewsVC_Cell
     
-    cell.backgroundColor = .white
-    cell.imageCell.image = UIImage(systemName: "person.fill")
-    cell.imageblog.image = list.image
-    cell.nameCell.text = list.name
-    cell.nameblog.text = list.type
-    cell.text.text = list.text
-    cell.imageCell.layer.masksToBounds = true
-    cell.imageCell.layer.cornerRadius = 40
+    let cell = tableView.dequeueReusableCell(withIdentifier: NewsVC_Cell.identifier, for: indexPath) as! NewsVC_Cell
+    cell.backgroundColor = .systemGray
+    
+    cell.imageCell.image = list.image
+    cell.titleCell.text = list.title
+    
     return cell
   }
   //======================================================================
-  
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
-    let data4 = data_News_str[indexPath.row]
+    tableView.reloadData()
     
-    let VC4_NewsPageVC = LawyersPageVC()
-    VC4_NewsPageVC.imageBlogPage.image = data4.image
-    VC4_NewsPageVC.nameBlogPage.text = data4.type
-    VC4_NewsPageVC.textBlogPage.text = data4.text
+    let data3 = data_News_str[indexPath.row]
     
-    self.present(VC4_NewsPageVC, animated: true, completion: nil)
-//    VC3_NewsPageVC.modalPresentationStyle = .fullScreen
+    let VC4_NewsPageVC = NewsPageVC()
+    VC4_NewsPageVC.imageBlogPage.image = data3.image
+    VC4_NewsPageVC.nameBlogPage.text = data3.title
+    VC4_NewsPageVC.textBlogPage.text = data3.text
+    navigationController?.pushViewController(VC4_NewsPageVC, animated: true)
   }
 }

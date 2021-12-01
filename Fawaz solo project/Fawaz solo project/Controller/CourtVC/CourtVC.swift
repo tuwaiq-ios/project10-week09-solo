@@ -13,12 +13,12 @@ class CourtVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
   //==========================================================================
   override func viewDidLoad(){
     super.viewDidLoad()
-    
+    view.backgroundColor = .systemGray
     let layout = UICollectionViewFlowLayout()
     layout.scrollDirection = .vertical
     layout.minimumLineSpacing = 10
     layout.minimumInteritemSpacing = 1
-    layout.sectionInset = UIEdgeInsets(top: 20,left: 10,bottom: 10,right: 10)
+    layout.sectionInset = UIEdgeInsets(top: 20,left: 10,bottom: 100,right: 10)
     layout.itemSize = CGSize(width: 180, height: 220)
     
     collectionView = UICollectionView(frame: .zero,
@@ -29,7 +29,7 @@ class CourtVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     }
     
     collectionView.register(CourtVC_Cell.self, forCellWithReuseIdentifier: CourtVC_Cell.identifier)
-    collectionView.backgroundColor = .systemGray
+//    collectionView.backgroundColor = .systemGray
     collectionView.dataSource = self
     collectionView.delegate = self
     view.addSubview(collectionView)
@@ -42,8 +42,6 @@ class CourtVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
   }
   //==========================================================================
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
-    
-//    collectionView.reloadData()
     
     let list = data_Court_str[indexPath.row]
     

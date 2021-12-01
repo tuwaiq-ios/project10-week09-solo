@@ -14,7 +14,7 @@ class LawyersVC_Cell: UITableViewCell {
   let imageCell = UIImageView()
   let nameCell = UILabel()
   let numberCell = UILabel()
-  let text = UILabel()
+  let stalyCell = UILabel()
   
   //==========================================================================
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
@@ -24,72 +24,49 @@ class LawyersVC_Cell: UITableViewCell {
     
     imageCell.translatesAutoresizingMaskIntoConstraints = false
     self.addSubview(imageCell)
-    imageCell.backgroundColor = .brown
     imageCell.layer.masksToBounds = true
     imageCell.layer.cornerRadius = 10
+    imageCell.backgroundColor = .blue
     
     NSLayoutConstraint.activate([
       imageCell.rightAnchor.constraint(equalTo: rightAnchor, constant: -10),
-      imageCell.topAnchor.constraint(equalTo: topAnchor, constant: 10),
-      imageCell.heightAnchor.constraint(equalToConstant: 100),
-      imageCell.widthAnchor.constraint(equalToConstant: 100)
+      imageCell.centerYAnchor.constraint(equalTo: centerYAnchor),
+      imageCell.heightAnchor.constraint(equalToConstant: 80),
+      imageCell.widthAnchor.constraint(equalToConstant: 80)
+    ])
+    //========================================================================
+    stalyCell.font = UIFont.systemFont(ofSize: 17)
+    stalyCell.numberOfLines = 0
+    stalyCell.textColor = .darkGray
+    stalyCell.translatesAutoresizingMaskIntoConstraints = false
+    stalyCell.backgroundColor = .black
+    stalyCell.layer.cornerRadius = 10
+    stalyCell.clipsToBounds = true
+
+    
+    self.addSubview(stalyCell)
+    
+    NSLayoutConstraint.activate([
+      stalyCell.centerYAnchor.constraint(equalTo: centerYAnchor),
+      stalyCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 5),
+      stalyCell.rightAnchor.constraint(equalTo:imageCell.leftAnchor, constant: -5),
+      stalyCell.heightAnchor.constraint(equalToConstant: 75)
+
     ])
     //========================================================================
     nameCell.translatesAutoresizingMaskIntoConstraints = false
     self.addSubview(nameCell)
     
-    nameCell.textColor = .green
-    
+    nameCell.textColor = .black
     nameCell.textAlignment = .right
     nameCell.backgroundColor = .systemBlue
-    nameCell.font = UIFont.boldSystemFont(ofSize: 25)
+    nameCell.font = UIFont.boldSystemFont(ofSize: 20)
     
     NSLayoutConstraint.activate([
-      nameCell.rightAnchor.constraint(equalTo: imageCell.leftAnchor, constant: -10),
-      nameCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 10),
-      nameCell.topAnchor.constraint(equalTo: topAnchor, constant: 10),
-      nameCell.heightAnchor.constraint(equalToConstant: 50),
-//      nameCell.widthAnchor.constraint(equalToConstant: 50)
-    ])
-    //========================================================================
-    
-    
-    numberCell.textColor = .blue
-    numberCell.translatesAutoresizingMaskIntoConstraints = false
-    
-    numberCell.textAlignment = .right
-    numberCell.backgroundColor = .systemBlue
-    numberCell.font = UIFont.boldSystemFont(ofSize: 25)
-    
-    self.addSubview(numberCell)
-    
-    NSLayoutConstraint.activate([
-//      numberCell.topAnchor.constraint(equalTo: topAnchor, constant:205),
-//      numberCell.leftAnchor.constraint(equalTo: leftAnchor),
-//      numberCell.heightAnchor.constraint(equalToConstant: 30),
-//      numberCell.widthAnchor.constraint(equalToConstant: 200)
-      
-      numberCell.rightAnchor.constraint(equalTo: imageCell.leftAnchor, constant: -10),
-      numberCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 10),
-      numberCell.topAnchor.constraint(equalTo: nameCell.bottomAnchor, constant: 10),
-      numberCell.heightAnchor.constraint(equalToConstant: 50),
-//      numberCell.widthAnchor.constraint(equalToConstant: 50)
-      
-    ])
-    //========================================================================
-    text.font = UIFont.systemFont(ofSize: 17)
-    text.numberOfLines = 0
-    text.textColor = .darkGray
-    text.translatesAutoresizingMaskIntoConstraints = false
-    
-    
-    self.addSubview(text)
-    
-    NSLayoutConstraint.activate([
-      text.topAnchor.constraint(equalTo: topAnchor, constant:220),
-      text.leftAnchor.constraint(equalTo: leftAnchor),
-      text.heightAnchor.constraint(equalToConstant: 90),
-      text.widthAnchor.constraint(equalToConstant: 200)
+      nameCell.rightAnchor.constraint(equalTo:imageCell.leftAnchor, constant: -15),
+      nameCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 15),
+      nameCell.topAnchor.constraint(equalTo: topAnchor, constant: 20),
+      nameCell.heightAnchor.constraint(equalToConstant: 60)
     ])
   }
   //==========================================================================

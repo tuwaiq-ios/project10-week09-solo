@@ -21,32 +21,22 @@ class CourtPageVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     view.backgroundColor = .systemGray
     
     imageCourtPage.translatesAutoresizingMaskIntoConstraints = false
-    view.addSubview(imageCourtPage)
-    
     nameCourtPage.translatesAutoresizingMaskIntoConstraints = false
-    view.addSubview(nameCourtPage)
-    
-//    summaryCourtPage.translatesAutoresizingMaskIntoConstraints = false
-//    view.addSubview(summaryCourtPage)
     
     let TVs = UITableView()
     TVs.dataSource = self
     TVs.delegate = self
     TVs.register(Service_Cell.self, forCellReuseIdentifier: Service_Cell.identifier)
-    TVs.backgroundColor = .white
-    TVs.rowHeight = 400
+    TVs.rowHeight = 100
     TVs.translatesAutoresizingMaskIntoConstraints = false
-    
-    TVs.layer.cornerRadius = 20
     
     view.addSubview(TVs)
     
     NSLayoutConstraint.activate([
-      TVs.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10),
-      TVs.topAnchor.constraint(equalTo: view.topAnchor, constant: 120),
-      
-      TVs.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10),
-      TVs.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -90)
+      TVs.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+      TVs.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+      TVs.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
+      TVs.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor)
       
     ])
     
@@ -61,17 +51,10 @@ class CourtPageVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     let list = restFromVC!.a[indexPath.row]
     let cell = tableView.dequeueReusableCell(withIdentifier: Service_Cell.identifier, for: indexPath) as! Service_Cell
-    
-//    cell.backgroundColor = .white
-    
-    cell.imageCell.image = list.imageA
-//    cell.imageCell.image = UIImage(systemName: "person.fill")
-//    cell.imageCell.backgroundColor = .black
-//    cell.imageCell.layer.masksToBounds = true
-//    cell.imageCell.layer.cornerRadius = 40
-    
+//    cell.backgroundColor = UIColor.brown
+    cell.imageCell.image = list.imageA    
     cell.nameCell.text = list.nameA
-
+    
     return cell
   }
   //======================================================================
@@ -85,6 +68,7 @@ class CourtPageVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     let VC2_ServicePageVC = ServicePageVC()
     VC2_ServicePageVC.imageBlogPage.image = data2.imageA
     VC2_ServicePageVC.nameBlogPage.text = data2.nameA
+    VC2_ServicePageVC.textBlogPage.text = data2.summaryA
     VC2_ServicePageVC.restFromVC2 = data2
     
     navigationController?.pushViewController(VC2_ServicePageVC, animated: true)

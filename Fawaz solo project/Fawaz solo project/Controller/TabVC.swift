@@ -17,6 +17,8 @@ class TabVC: UITabBarController {
     navController.tabBarItem.image = image
     
     rootViewController.navigationItem.title = title
+//    navigationController?.navigationBar.barTintColor = UIColor.black
+    
     return navController
   }
   

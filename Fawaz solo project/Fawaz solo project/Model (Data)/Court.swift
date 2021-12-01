@@ -18,162 +18,111 @@ struct Court_str {
 struct A{
   let imageA: UIImage?
   let nameA: String
-  let b: Array <B>
+  let staly: String
+  let summaryA: String
 }
 
-struct B{
-  let imageB: UIImage?
-  let nameB: String
-  let summaryB: String
-}
+//struct B{
+//  let imageB: UIImage?
+//  let nameB: String
+//  let summaryB: String
+//}
 
 
 var data_Court_str = [
   
   Court_str(
     image: UIImage(systemName: "person.fill"),
-    name: "aa",
+    name: "aaaaaaaaaaaaaaaaaaaaa",
     
     a: [A(
       imageA: UIImage(systemName: "person.fill"),
       nameA: "xxxxxxxxxxxxxxx",
-      
-      b: [B(
-        imageB: UIImage(systemName: "person.fill"),
-        nameB: "mmmmmmmmmmm",
-        summaryB: "ooooooooooooooooo"
-      ),]
+      staly: "staly",
+      summaryA: "vijnafkjvndfvkjadnf[idjnb[idnbdijbndkjfnboirie"
+    ),
+    
+    A(
+      imageA: UIImage(systemName: "person.fill"),
+      nameA: "xxxxxxxxxxxxxxx",
+      staly: "staly",
+      summaryA: "vijnafkjvndfvkjadnf[idjnb[idnbdijbndkjfnboirie"
     )]
   ),
   
   Court_str(
     image: UIImage(systemName: "person.fill"),
-    name: "bb",
+    name: "aaaaaaaaaaaaaaaaaaaaa",
     
     a: [A(
       imageA: UIImage(systemName: "person.fill"),
-      nameA: "bbbbbbbbbbbbbbb",
-      
-      b: [B(
-        imageB: UIImage(systemName: "person.fill"),
-        nameB: "mmmmmmmmmmm",
-        summaryB: "ooooooooooooooooo"
-      ),]
+      nameA: "xxxxxxxxxxxxxxx",
+      staly: "staly",
+      summaryA: "vijnafkjvndfvkjadnf[idjnb[idnbdijbndkjfnboirie"
+    ),
+    
+    A(
+      imageA: UIImage(systemName: "person.fill"),
+      nameA: "xxxxxxxxxxxxxxx",
+      staly: "staly",
+      summaryA: "vijnafkjvndfvkjadnf[idjnb[idnbdijbndkjfnboirie"
     )]
   ),
   
   Court_str(
     image: UIImage(systemName: "person.fill"),
-    name: "bb",
+    name: "aaaaaaaaaaaaaaaaaaaaa",
     
     a: [A(
       imageA: UIImage(systemName: "person.fill"),
-      nameA: "bbbbbbbbbbbbbbb",
-      
-      b: [B(
-        imageB: UIImage(systemName: "person.fill"),
-        nameB: "mmmmmmmmmmm",
-        summaryB: "ooooooooooooooooo"
-      ),]
+      nameA: "xxxxxxxxxxxxxxx",
+      staly: "staly",
+      summaryA: "vijnafkjvndfvkjadnf[idjnb[idnbdijbndkjfnboirie"
+    ),
+    
+    A(
+      imageA: UIImage(systemName: "person.fill"),
+      nameA: "xxxxxxxxxxxxxxx",
+      staly: "staly",
+      summaryA: "vijnafkjvndfvkjadnf[idjnb[idnbdijbndkjfnboirie"
     )]
   ),
   
   Court_str(
     image: UIImage(systemName: "person.fill"),
-    name: "bb",
+    name: "aaaaaaaaaaaaaaaaaaaaa",
     
     a: [A(
       imageA: UIImage(systemName: "person.fill"),
-      nameA: "bbbbbbbbbbbbbbb",
-      
-      b: [B(
-        imageB: UIImage(systemName: "person.fill"),
-        nameB: "mmmmmmmmmmm",
-        summaryB: "ooooooooooooooooo"
-      ),]
+      nameA: "xxxxxxxxxxxxxxx",
+      staly: "staly",
+      summaryA: "vijnafkjvndfvkjadnf[idjnb[idnbdijbndkjfnboirie"
+    ),
+    
+    A(
+      imageA: UIImage(systemName: "person.fill"),
+      nameA: "xxxxxxxxxxxxxxx",
+      staly: "staly",
+      summaryA: "vijnafkjvndfvkjadnf[idjnb[idnbdijbndkjfnboirie"
     )]
   ),
   
   Court_str(
     image: UIImage(systemName: "person.fill"),
-    name: "bb",
+    name: "aaaaaaaaaaaaaaaaaaaaa",
     
     a: [A(
       imageA: UIImage(systemName: "person.fill"),
-      nameA: "bbbbbbbbbbbbbbb",
-      
-      b: [B(
-        imageB: UIImage(systemName: "person.fill"),
-        nameB: "mmmmmmmmmmm",
-        summaryB: "ooooooooooooooooo"
-      ),]
-    )]
-  ),
-  
-  Court_str(
-    image: UIImage(systemName: "person.fill"),
-    name: "bb",
+      nameA: "xxxxxxxxxxxxxxx",
+      staly: "staly",
+      summaryA: "vijnafkjvndfvkjadnf[idjnb[idnbdijbndkjfnboirie"
+    ),
     
-    a: [A(
+    A(
       imageA: UIImage(systemName: "person.fill"),
-      nameA: "bbbbbbbbbbbbbbb",
-      
-      b: [B(
-        imageB: UIImage(systemName: "person.fill"),
-        nameB: "mmmmmmmmmmm",
-        summaryB: "ooooooooooooooooo"
-      ),]
+      nameA: "xxxxxxxxxxxxxxx",
+      staly: "staly",
+      summaryA: "vijnafkjvndfvkjadnf[idjnb[idnbdijbndkjfnboirie"
     )]
   ),
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  Court_str(
-//    image: UIImage(systemName: "person.circle.fill"),
-//    name: "المحكمه العامه",
-////    summary: "جوال ابل ايفون ١٣ برو ماكس الجديد مع تطبيق فيس تايم 128 جيجا ازرق"
-//  ),
-//
-//  Court_str(
-//    image: UIImage(systemName: "person.circle.fill"),
-//    name: "المحكمه الجزائيه"
-////    summary: "جوال سامسونج جلكسي اس ٢١ ثنائي الشريحه ذاكره تخزين 256 جيجا يدعم تقنيه 5G لون رمادي"
-//  ),
-//
-//  Court_str(
-//    image: UIImage(systemName: "person.circle.fill"),
-//    name: "محكمه الاحوال الشخصيه"
-////    summary: "سماعه ابل ايربود برو لون ابيض"
-//  ),
-//
-//  Court_str(
-//    image: UIImage(systemName: "person.circle.fill"),
-//    name: "المحكمه التجاريه"
-////    summary: "باور بانك محمول من انكر بسعه 20000 مللي امبير في الساعه لون اسود"
-//  ),
-//
-//  Court_str(
-//    image: UIImage(systemName: "person.circle.fill"),
-//    name: "المحكمه العماليه"
-////    summary: "شاحن باور بورت من انكر شاحن جداري مناسب لاجهزه الماك والايباد واليفون "
-//  ),
-//
-//]

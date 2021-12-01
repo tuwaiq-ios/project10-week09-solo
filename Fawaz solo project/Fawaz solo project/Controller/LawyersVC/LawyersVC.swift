@@ -11,7 +11,7 @@ class LawyersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+//    view.backgroundColor = .brown
     let TV = UITableView()
     
     TV.dataSource = self
@@ -19,18 +19,18 @@ class LawyersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     TV.register(LawyersVC_Cell.self, forCellReuseIdentifier: LawyersVC_Cell.identifier)
     
-//    TV.backgroundColor = .white
-    TV.rowHeight = 120
+//    TV.backgroundColor = .green
+    TV.rowHeight = 100
     TV.translatesAutoresizingMaskIntoConstraints = false
     
     view.addSubview(TV)
     
     NSLayoutConstraint.activate([
       
-      TV.topAnchor.constraint(equalTo: view.topAnchor, constant: 10),
-      TV.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10),
-      TV.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10),
-      TV.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10)
+      TV.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+      TV.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+      TV.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
+      TV.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor)
     ])
   }
   //======================================================================
@@ -44,10 +44,10 @@ class LawyersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let list = data_Lawyers_str[indexPath.row]
     
     let cell = tableView.dequeueReusableCell(withIdentifier: LawyersVC_Cell.identifier, for: indexPath) as! LawyersVC_Cell
-      
+    cell.backgroundColor = .systemGray
     cell.imageCell.image = list.image
     cell.nameCell.text = list.name
-    cell.numberCell.text = list.number
+    cell.stalyCell.text = list.text
     
     return cell
   }
