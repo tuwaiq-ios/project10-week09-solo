@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFB48C613DFD6E56E5BA3F1A /* Pods_NOOK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186849A38171B3B28F0EB630 /* Pods_NOOK.framework */; };
+		E34AEA042756DDD60033A483 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AEA032756DDD50033A483 /* ViewController.swift */; };
+		E34AEA062756DDF00033A483 /* ArticleDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AEA052756DDF00033A483 /* ArticleDetailVC.swift */; };
+		E34AEA082756DE0E0033A483 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AEA072756DE0E0033A483 /* ArticleCell.swift */; };
+		E34AEA0A2756DE330033A483 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AEA092756DE330033A483 /* ArticleModel.swift */; };
+		E372F7D6274E1EAA0011E203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F7D5274E1EAA0011E203 /* AppDelegate.swift */; };
+		E372F7D8274E1EAA0011E203 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F7D7274E1EAA0011E203 /* SceneDelegate.swift */; };
+		E372F7DD274E1EAA0011E203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E372F7DB274E1EAA0011E203 /* Main.storyboard */; };
+		E372F7DF274E1EAC0011E203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E372F7DE274E1EAC0011E203 /* Assets.xcassets */; };
+		E372F7E2274E1EAC0011E203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E372F7E0274E1EAC0011E203 /* LaunchScreen.storyboard */; };
+		E372F80E2750622C0011E203 /* NookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F80D2750622C0011E203 /* NookVC.swift */; };
+		E372F81C2750A58D0011E203 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F81B2750A58D0011E203 /* FeedController.swift */; };
+		E372F81E2750A6210011E203 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F81D2750A6210011E203 /* ExploreController.swift */; };
+		E372F8202750A6960011E203 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F81F2750A6960011E203 /* NotificationsController.swift */; };
+		E372F8222750A6C00011E203 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F8212750A6C00011E203 /* ConversationsController.swift */; };
+		E372F8242750B2FD0011E203 /* MainTabControllerr.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F8232750B2FC0011E203 /* MainTabControllerr.swift */; };
+		E372F8262750D8B70011E203 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F8252750D8B70011E203 /* Extensions.swift */; };
+		E372F84B275104940011E203 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F84A275104940011E203 /* LoginController.swift */; };
+		E372F84D27510A8D0011E203 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F84C27510A8D0011E203 /* RegistrationController.swift */; };
+		E372F84F275143350011E203 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F84E275143350011E203 /* Utilities.swift */; };
+		E372F851275209AD0011E203 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E372F850275209AD0011E203 /* GoogleService-Info.plist */; };
+		E3785AFE27524F360036B7D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3785AFD27524F360036B7D5 /* Constants.swift */; };
+		E3785B00275262FC0036B7D5 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3785AFF275262FC0036B7D5 /* AuthService.swift */; };
+		E3E57B0B2752994A00C7847E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E57B0A2752994A00C7847E /* UserService.swift */; };
+		E3E57B0D27532FFB00C7847E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E57B0C27532FFB00C7847E /* User.swift */; };
+		E3E57B0F27533E4800C7847E /* UploadNookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E57B0E27533E4800C7847E /* UploadNookController.swift */; };
+		E3E57B112753D30300C7847E /* CaptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E57B102753D30300C7847E /* CaptionTextView.swift */; };
+		E3E57B132753E98C00C7847E /* NookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E57B122753E98C00C7847E /* NookService.swift */; };
+		E3E57B152754036300C7847E /* Nook.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E57B142754036300C7847E /* Nook.swift */; };
+		E3E57B172754255E00C7847E /* NookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E57B162754255E00C7847E /* NookCell.swift */; };
+		E3E57B192754A22D00C7847E /* NookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E57B182754A22D00C7847E /* NookViewModel.swift */; };
+		E3E57B1B2754B04000C7847E /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E57B1A2754B04000C7847E /* ProfileController.swift */; };
+		E3E57B1D2754BF6500C7847E /*  ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E57B1C2754BF6500C7847E /*  ProfileHeader.swift */; };
+		E3E57B1F27550AB100C7847E /* ProfileFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E57B1E27550AB100C7847E /* ProfileFilterView.swift */; };
+		E3E57B212755311100C7847E /* ProfileFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E57B202755311100C7847E /* ProfileFilterCell.swift */; };
+		E3E57B23275543D100C7847E /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E57B22275543D100C7847E /* ProfileHeaderViewModel.swift */; };
+		E3E57B25275592CE00C7847E /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E57B24275592CE00C7847E /* UserCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		186849A38171B3B28F0EB630 /* Pods_NOOK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NOOK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A21668F7AA70403CBC196C /* Pods-NOOK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NOOK.debug.xcconfig"; path = "Target Support Files/Pods-NOOK/Pods-NOOK.debug.xcconfig"; sourceTree = "<group>"; };
+		E34AEA032756DDD50033A483 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E34AEA052756DDF00033A483 /* ArticleDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailVC.swift; sourceTree = "<group>"; };
+		E34AEA072756DE0E0033A483 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		E34AEA092756DE330033A483 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		E372F7D2274E1EAA0011E203 /* NOOK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NOOK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E372F7D5274E1EAA0011E203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E372F7D7274E1EAA0011E203 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E372F7DC274E1EAA0011E203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E372F7DE274E1EAC0011E203 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E372F7E1274E1EAC0011E203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E372F7E3274E1EAC0011E203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E372F80D2750622C0011E203 /* NookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NookVC.swift; sourceTree = "<group>"; };
+		E372F81B2750A58D0011E203 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		E372F81D2750A6210011E203 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
+		E372F81F2750A6960011E203 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		E372F8212750A6C00011E203 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
+		E372F8232750B2FC0011E203 /* MainTabControllerr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabControllerr.swift; sourceTree = "<group>"; };
+		E372F8252750D8B70011E203 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E372F84A275104940011E203 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		E372F84C27510A8D0011E203 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		E372F84E275143350011E203 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		E372F850275209AD0011E203 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E3785AFD27524F360036B7D5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E3785AFF275262FC0036B7D5 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E3E57B0A2752994A00C7847E /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		E3E57B0C27532FFB00C7847E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E3E57B0E27533E4800C7847E /* UploadNookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadNookController.swift; sourceTree = "<group>"; };
+		E3E57B102753D30300C7847E /* CaptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionTextView.swift; sourceTree = "<group>"; };
+		E3E57B122753E98C00C7847E /* NookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NookService.swift; sourceTree = "<group>"; };
+		E3E57B142754036300C7847E /* Nook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nook.swift; sourceTree = "<group>"; };
+		E3E57B162754255E00C7847E /* NookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NookCell.swift; sourceTree = "<group>"; };
+		E3E57B182754A22D00C7847E /* NookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NookViewModel.swift; sourceTree = "<group>"; };
+		E3E57B1A2754B04000C7847E /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		E3E57B1C2754BF6500C7847E /*  ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ProfileHeader.swift"; sourceTree = "<group>"; };
+		E3E57B1E27550AB100C7847E /* ProfileFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFilterView.swift; sourceTree = "<group>"; };
+		E3E57B202755311100C7847E /* ProfileFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFilterCell.swift; sourceTree = "<group>"; };
+		E3E57B22275543D100C7847E /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
+		E3E57B24275592CE00C7847E /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		EED8B2D453918A89B41EE89E /* Pods-NOOK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NOOK.release.xcconfig"; path = "Target Support Files/Pods-NOOK/Pods-NOOK.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E372F7CF274E1EAA0011E203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFB48C613DFD6E56E5BA3F1A /* Pods_NOOK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45A866EF34D19723381B8122 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2A21668F7AA70403CBC196C /* Pods-NOOK.debug.xcconfig */,
+				EED8B2D453918A89B41EE89E /* Pods-NOOK.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B668FB0BA6769D2864112026 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				186849A38171B3B28F0EB630 /* Pods_NOOK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E372F7C9274E1EAA0011E203 = {
+			isa = PBXGroup;
+			children = (
+				E372F7D4274E1EAA0011E203 /* NOOK */,
+				E372F7D3274E1EAA0011E203 /* Products */,
+				45A866EF34D19723381B8122 /* Pods */,
+				B668FB0BA6769D2864112026 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E372F7D3274E1EAA0011E203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E372F7D2274E1EAA0011E203 /* NOOK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E372F7D4274E1EAA0011E203 /* NOOK */ = {
+			isa = PBXGroup;
+			children = (
+				E372F816275063700011E203 /* Model */,
+				E372F8152750636D0011E203 /* View */,
+				E372F8142750636A0011E203 /* ViewModel */,
+				E372F813275063660011E203 /* Controllers */,
+				E372F812275063610011E203 /* Api */,
+				E372F8112750635F0011E203 /* Utils */,
+				E372F7D5274E1EAA0011E203 /* AppDelegate.swift */,
+				E372F7D7274E1EAA0011E203 /* SceneDelegate.swift */,
+				E372F7DB274E1EAA0011E203 /* Main.storyboard */,
+				E372F7DE274E1EAC0011E203 /* Assets.xcassets */,
+				E372F7E0274E1EAC0011E203 /* LaunchScreen.storyboard */,
+				E372F7E3274E1EAC0011E203 /* Info.plist */,
+				E372F850275209AD0011E203 /* GoogleService-Info.plist */,
+				E372F80D2750622C0011E203 /* NookVC.swift */,
+			);
+			path = NOOK;
+			sourceTree = "<group>";
+		};
+		E372F8112750635F0011E203 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E372F8252750D8B70011E203 /* Extensions.swift */,
+				E372F84E275143350011E203 /* Utilities.swift */,
+				E3785AFD27524F360036B7D5 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E372F812275063610011E203 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				E3785AFF275262FC0036B7D5 /* AuthService.swift */,
+				E3E57B0A2752994A00C7847E /* UserService.swift */,
+				E3E57B122753E98C00C7847E /* NookService.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		E372F813275063660011E203 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E372F849275104080011E203 /* Authentication */,
+				E372F8232750B2FC0011E203 /* MainTabControllerr.swift */,
+				E372F81B2750A58D0011E203 /* FeedController.swift */,
+				E372F81D2750A6210011E203 /* ExploreController.swift */,
+				E372F81F2750A6960011E203 /* NotificationsController.swift */,
+				E372F8212750A6C00011E203 /* ConversationsController.swift */,
+				E3E57B0E27533E4800C7847E /* UploadNookController.swift */,
+				E3E57B1A2754B04000C7847E /* ProfileController.swift */,
+				E34AEA032756DDD50033A483 /* ViewController.swift */,
+				E34AEA052756DDF00033A483 /* ArticleDetailVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E372F8142750636A0011E203 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E3E57B182754A22D00C7847E /* NookViewModel.swift */,
+				E3E57B22275543D100C7847E /* ProfileHeaderViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E372F8152750636D0011E203 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3E57B102753D30300C7847E /* CaptionTextView.swift */,
+				E3E57B162754255E00C7847E /* NookCell.swift */,
+				E3E57B1C2754BF6500C7847E /*  ProfileHeader.swift */,
+				E3E57B1E27550AB100C7847E /* ProfileFilterView.swift */,
+				E3E57B202755311100C7847E /* ProfileFilterCell.swift */,
+				E3E57B24275592CE00C7847E /* UserCell.swift */,
+				E34AEA072756DE0E0033A483 /* ArticleCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E372F816275063700011E203 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3E57B0C27532FFB00C7847E /* User.swift */,
+				E3E57B142754036300C7847E /* Nook.swift */,
+				E34AEA092756DE330033A483 /* ArticleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E372F849275104080011E203 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E372F84A275104940011E203 /* LoginController.swift */,
+				E372F84C27510A8D0011E203 /* RegistrationController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E372F7D1274E1EAA0011E203 /* NOOK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E372F7E6274E1EAC0011E203 /* Build configuration list for PBXNativeTarget "NOOK" */;
+			buildPhases = (
+				9956497135B42694433470F8 /* [CP] Check Pods Manifest.lock */,
+				E372F7CE274E1EAA0011E203 /* Sources */,
+				E372F7CF274E1EAA0011E203 /* Frameworks */,
+				E372F7D0274E1EAA0011E203 /* Resources */,
+				BEFB6056800786B441A302F7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NOOK;
+			productName = NOOK;
+			productReference = E372F7D2274E1EAA0011E203 /* NOOK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E372F7CA274E1EAA0011E203 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					E372F7D1274E1EAA0011E203 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = E372F7CD274E1EAA0011E203 /* Build configuration list for PBXProject "NOOK" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E372F7C9274E1EAA0011E203;
+			productRefGroup = E372F7D3274E1EAA0011E203 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E372F7D1274E1EAA0011E203 /* NOOK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E372F7D0274E1EAA0011E203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E372F7E2274E1EAC0011E203 /* LaunchScreen.storyboard in Resources */,
+				E372F7DF274E1EAC0011E203 /* Assets.xcassets in Resources */,
+				E372F851275209AD0011E203 /* GoogleService-Info.plist in Resources */,
+				E372F7DD274E1EAA0011E203 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9956497135B42694433470F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NOOK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEFB6056800786B441A302F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NOOK/Pods-NOOK-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NOOK/Pods-NOOK-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NOOK/Pods-NOOK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E372F7CE274E1EAA0011E203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3E57B152754036300C7847E /* Nook.swift in Sources */,
+				E372F7D6274E1EAA0011E203 /* AppDelegate.swift in Sources */,
+				E34AEA0A2756DE330033A483 /* ArticleModel.swift in Sources */,
+				E372F8262750D8B70011E203 /* Extensions.swift in Sources */,
+				E372F7D8274E1EAA0011E203 /* SceneDelegate.swift in Sources */,
+				E34AEA082756DE0E0033A483 /* ArticleCell.swift in Sources */,
+				E3E57B132753E98C00C7847E /* NookService.swift in Sources */,
+				E372F8222750A6C00011E203 /* ConversationsController.swift in Sources */,
+				E3E57B0D27532FFB00C7847E /* User.swift in Sources */,
+				E3E57B192754A22D00C7847E /* NookViewModel.swift in Sources */,
+				E3E57B1F27550AB100C7847E /* ProfileFilterView.swift in Sources */,
+				E372F8242750B2FD0011E203 /* MainTabControllerr.swift in Sources */,
+				E3E57B1D2754BF6500C7847E /*  ProfileHeader.swift in Sources */,
+				E3E57B23275543D100C7847E /* ProfileHeaderViewModel.swift in Sources */,
+				E3E57B1B2754B04000C7847E /* ProfileController.swift in Sources */,
+				E3E57B112753D30300C7847E /* CaptionTextView.swift in Sources */,
+				E372F81C2750A58D0011E203 /* FeedController.swift in Sources */,
+				E372F84F275143350011E203 /* Utilities.swift in Sources */,
+				E3E57B212755311100C7847E /* ProfileFilterCell.swift in Sources */,
+				E3785AFE27524F360036B7D5 /* Constants.swift in Sources */,
+				E372F84D27510A8D0011E203 /* RegistrationController.swift in Sources */,
+				E372F8202750A6960011E203 /* NotificationsController.swift in Sources */,
+				E34AEA042756DDD60033A483 /* ViewController.swift in Sources */,
+				E3E57B25275592CE00C7847E /* UserCell.swift in Sources */,
+				E372F80E2750622C0011E203 /* NookVC.swift in Sources */,
+				E3E57B0F27533E4800C7847E /* UploadNookController.swift in Sources */,
+				E34AEA062756DDF00033A483 /* ArticleDetailVC.swift in Sources */,
+				E3E57B0B2752994A00C7847E /* UserService.swift in Sources */,
+				E372F81E2750A6210011E203 /* ExploreController.swift in Sources */,
+				E3E57B172754255E00C7847E /* NookCell.swift in Sources */,
+				E372F84B275104940011E203 /* LoginController.swift in Sources */,
+				E3785B00275262FC0036B7D5 /* AuthService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E372F7DB274E1EAA0011E203 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E372F7DC274E1EAA0011E203 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E372F7E0274E1EAC0011E203 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E372F7E1274E1EAC0011E203 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E372F7E4274E1EAC0011E203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E372F7E5274E1EAC0011E203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E372F7E7274E1EAC0011E203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2A21668F7AA70403CBC196C /* Pods-NOOK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NOOK/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuna.NOOK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E372F7E8274E1EAC0011E203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EED8B2D453918A89B41EE89E /* Pods-NOOK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NOOK/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuna.NOOK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E372F7CD274E1EAA0011E203 /* Build configuration list for PBXProject "NOOK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E372F7E4274E1EAC0011E203 /* Debug */,
+				E372F7E5274E1EAC0011E203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E372F7E6274E1EAC0011E203 /* Build configuration list for PBXNativeTarget "NOOK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E372F7E7274E1EAC0011E203 /* Debug */,
+				E372F7E8274E1EAC0011E203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E372F7CA274E1EAA0011E203 /* Project object */;
+}
