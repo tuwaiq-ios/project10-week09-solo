@@ -31,21 +31,47 @@
 
 ## You should have a:
 ### Project Name: 
-// Add your project name
+EsayFlight
 
 ### Project Description :
-// Add your project description
+My project serves two categories of society at the airport, the general public and people with special needs..
 
 ### Features List:
 // Add your project feature list
-- Feature 1
-- Feature 2
+It will help people to discover services in airport before they come and they can determined this need .
 
 ### Structure:
-// Add your project screens/models/views/cells
+// Add your project screens
+Home
+  -serch for flight
+  -serch for luggage
+  -services
+  -ask for help
+location
+profile
+advertisement
+free wifi
+/models/
+data
+services
+views/
+
+cells
+homeCell
+serchCell
+terminal1cell
+terminal2cell
+adertisement
+
 
 ### User Stories:
 // Add your project user stories
+  ...User stories: 
+  1- As passenger i can search for my fligt, so i will cone to airport on time .
+  2- As passenger i can see all airport facilities ، so I can reach it quickly.
+  3- As passenger whith special needs i can get helping very easy, so i will be more comfortable
+  4- As passenger i can serach for my lost luggage very esaly, so i will git it as sson as possible.
+  5-  As compnay i can show the passenger my services , so i will have more customer 
 
 ### Presentation:
 // Create your project presentation
@@ -62,3 +88,7 @@ On Sunday, you will present to us what you have achieved.
 
 
 ### For your project. Edit this README.md file to include your own project name,  overview, user stories, and usage. 
+
+
+ 
+  
