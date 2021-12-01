@@ -31,21 +31,42 @@
 
 ## You should have a:
 ### Project Name: 
-// Add your project name
+// Clinics Application
 
 ### Project Description :
-// Add your project description
+// The clinics reservation application is an important application and makes many people can book by entering the application and booking the clinic they want.
 
 ### Features List:
 // Add your project feature list
 - Feature 1
+Possibility to delete the appointment.
 - Feature 2
+The ability to search.
+- Feature 3
+ Add AppIcone.
+- Feature 4
+ Add medical advice.
 
 ### Structure:
 // Add your project screens/models/views/cells
+Models: clinic , data
+Controllers: ClinicVC , LoginVC , TabVC , ReservationVC , NewServiceVC , AdvicesVC
+Clinics: ClinicVC , ClinicData , ClinicDetalis 
+Services: ClinicServices
+cells:ClinicCell , ClinicDetalisCell , AdvicesCell 
+Tab bar:  العيادات ,المواعيد,ارشادات صحية, الملف الشخصي
 
 ### User Stories:
-// Add your project user stories
+* As a new user ,I want to register by name and email and password ,so that the system can remember me and my data.
+* As a registered user, I want to log in with my email and password, so that the system can authenticate me and I can trust it.
+* As a user, I want to choose the right dental clinic for me.
+* As a user, I want to book a dental.
+* As a user, I want to search my appointments .
+* As a user, I want to delete an appointment that I do not want.
+* As a user, I want to choose the right date for me.
+* As a user, I want to complete my data registration.
+* As a user, I want to get medical advice.
+
 
 ### Presentation:
 // Create your project presentation
