@@ -29,27 +29,46 @@
 - Use tab controller
 - Use alert controller
 
+
 ## You should have a:
 ### Project Name: 
-// Add your project name
+// RodeenaWater App
+
 
 ### Project Description :
 // Add your project description
+Application for water delivery and selection of 
+available products and offers.
 
 ### Features List:
 // Add your project feature list
-- Feature 1
-- Feature 2
+- collection view .
+- collection view timer .
+- table view .
+- map .
+- picker view .
+- tab bar .
+ 
 
 ### Structure:
 // Add your project screens/models/views/cells
-
+- productVC.
+- productCell.
+- LoginVC .
+- OrdersVC .
+- CartVC.
+- CartCell .
+- OffersVc .
+- OffersCell .
+- DeliveryVC .
+- MapVc
 ### User Stories:
 // Add your project user stories
+The user can choose the product and then specify its location and the appropriate time to have his order delivered on time .
 
 ### Presentation:
 // Create your project presentation
-
+Done
 
 ## Deadline: 
 9:00 am, Sunday, Nov 28, 2021 

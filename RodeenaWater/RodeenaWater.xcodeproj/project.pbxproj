@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		963CBCB527555C6300F81EFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CBCB427555C6300F81EFD /* AppDelegate.swift */; };
+		963CBCB727555C6300F81EFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CBCB627555C6300F81EFD /* SceneDelegate.swift */; };
+		963CBCB927555C6300F81EFD /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CBCB827555C6300F81EFD /* MapVC.swift */; };
+		963CBCBC27555C6300F81EFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963CBCBA27555C6300F81EFD /* Main.storyboard */; };
+		963CBCBE27555C6400F81EFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963CBCBD27555C6400F81EFD /* Assets.xcassets */; };
+		963CBCC127555C6400F81EFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963CBCBF27555C6400F81EFD /* LaunchScreen.storyboard */; };
+		963CBCC927555DF800F81EFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 963CBCC827555DF800F81EFD /* GoogleService-Info.plist */; };
+		963CBCCB27555F2F00F81EFD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CBCCA27555F2F00F81EFD /* Models.swift */; };
+		963CBCCD27555F3800F81EFD /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CBCCC27555F3800F81EFD /* CartVC.swift */; };
+		963CBCCF27555F3F00F81EFD /* OffersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CBCCE27555F3F00F81EFD /* OffersVC.swift */; };
+		963CBCD127555F4600F81EFD /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CBCD027555F4600F81EFD /* ProductVC.swift */; };
+		963CBCD327555F5100F81EFD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963CBCD227555F5100F81EFD /* LoginVC.swift */; };
+		96615ADA27579C10009A9DD4 /* OrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96615AD927579C10009A9DD4 /* OrdersVC.swift */; };
+		96615ADC27579F7A009A9DD4 /* DeliveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96615ADB27579F7A009A9DD4 /* DeliveryVC.swift */; };
+		E7C6BBB80C72D22D3A98CA58 /* Pods_RodeenaWater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A33233E838D1022F9E0BD6 /* Pods_RodeenaWater.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		963CBCB127555C6300F81EFD /* RodeenaWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RodeenaWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		963CBCB427555C6300F81EFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		963CBCB627555C6300F81EFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		963CBCB827555C6300F81EFD /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		963CBCBB27555C6300F81EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		963CBCBD27555C6400F81EFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		963CBCC027555C6400F81EFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		963CBCC227555C6400F81EFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		963CBCC827555DF800F81EFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		963CBCCA27555F2F00F81EFD /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		963CBCCC27555F3800F81EFD /* CartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
+		963CBCCE27555F3F00F81EFD /* OffersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffersVC.swift; sourceTree = "<group>"; };
+		963CBCD027555F4600F81EFD /* ProductVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
+		963CBCD227555F5100F81EFD /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		96615AD927579C10009A9DD4 /* OrdersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersVC.swift; sourceTree = "<group>"; };
+		96615ADB27579F7A009A9DD4 /* DeliveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryVC.swift; sourceTree = "<group>"; };
+		A50DFB8187DC83255799E6EA /* Pods-RodeenaWater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RodeenaWater.debug.xcconfig"; path = "Target Support Files/Pods-RodeenaWater/Pods-RodeenaWater.debug.xcconfig"; sourceTree = "<group>"; };
+		F0134905679765780F7BFB3E /* Pods-RodeenaWater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RodeenaWater.release.xcconfig"; path = "Target Support Files/Pods-RodeenaWater/Pods-RodeenaWater.release.xcconfig"; sourceTree = "<group>"; };
+		F6A33233E838D1022F9E0BD6 /* Pods_RodeenaWater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RodeenaWater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		963CBCAE27555C6300F81EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7C6BBB80C72D22D3A98CA58 /* Pods_RodeenaWater.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82182824B1CA28F7260003BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6A33233E838D1022F9E0BD6 /* Pods_RodeenaWater.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		963CBCA827555C6300F81EFD = {
+			isa = PBXGroup;
+			children = (
+				963CBCB327555C6300F81EFD /* RodeenaWater */,
+				963CBCB227555C6300F81EFD /* Products */,
+				A6A0DEC6405F16169DE89ED8 /* Pods */,
+				82182824B1CA28F7260003BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		963CBCB227555C6300F81EFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				963CBCB127555C6300F81EFD /* RodeenaWater.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		963CBCB327555C6300F81EFD /* RodeenaWater */ = {
+			isa = PBXGroup;
+			children = (
+				963CBCC827555DF800F81EFD /* GoogleService-Info.plist */,
+				96615AD827564BC3009A9DD4 /* Model */,
+				96615AD727564BB8009A9DD4 /* Controller */,
+				96615AD627564BAB009A9DD4 /* View */,
+				963CBCBA27555C6300F81EFD /* Main.storyboard */,
+				963CBCBD27555C6400F81EFD /* Assets.xcassets */,
+				963CBCBF27555C6400F81EFD /* LaunchScreen.storyboard */,
+				963CBCC227555C6400F81EFD /* Info.plist */,
+			);
+			path = RodeenaWater;
+			sourceTree = "<group>";
+		};
+		96615AD627564BAB009A9DD4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				963CBCB427555C6300F81EFD /* AppDelegate.swift */,
+				963CBCB627555C6300F81EFD /* SceneDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96615AD727564BB8009A9DD4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				963CBCD227555F5100F81EFD /* LoginVC.swift */,
+				963CBCD027555F4600F81EFD /* ProductVC.swift */,
+				963CBCCE27555F3F00F81EFD /* OffersVC.swift */,
+				963CBCCC27555F3800F81EFD /* CartVC.swift */,
+				963CBCB827555C6300F81EFD /* MapVC.swift */,
+				96615AD927579C10009A9DD4 /* OrdersVC.swift */,
+				96615ADB27579F7A009A9DD4 /* DeliveryVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		96615AD827564BC3009A9DD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				963CBCCA27555F2F00F81EFD /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6A0DEC6405F16169DE89ED8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A50DFB8187DC83255799E6EA /* Pods-RodeenaWater.debug.xcconfig */,
+				F0134905679765780F7BFB3E /* Pods-RodeenaWater.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		963CBCB027555C6300F81EFD /* RodeenaWater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 963CBCC527555C6400F81EFD /* Build configuration list for PBXNativeTarget "RodeenaWater" */;
+			buildPhases = (
+				152AA2D709EC5EDE7955414F /* [CP] Check Pods Manifest.lock */,
+				963CBCAD27555C6300F81EFD /* Sources */,
+				963CBCAE27555C6300F81EFD /* Frameworks */,
+				963CBCAF27555C6300F81EFD /* Resources */,
+				2BFE65EA02DBD1B3F65BD6BA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RodeenaWater;
+			productName = RodeenaWater;
+			productReference = 963CBCB127555C6300F81EFD /* RodeenaWater.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		963CBCA927555C6300F81EFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					963CBCB027555C6300F81EFD = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 963CBCAC27555C6300F81EFD /* Build configuration list for PBXProject "RodeenaWater" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 963CBCA827555C6300F81EFD;
+			productRefGroup = 963CBCB227555C6300F81EFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				963CBCB027555C6300F81EFD /* RodeenaWater */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		963CBCAF27555C6300F81EFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963CBCC127555C6400F81EFD /* LaunchScreen.storyboard in Resources */,
+				963CBCC927555DF800F81EFD /* GoogleService-Info.plist in Resources */,
+				963CBCBE27555C6400F81EFD /* Assets.xcassets in Resources */,
+				963CBCBC27555C6300F81EFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		152AA2D709EC5EDE7955414F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RodeenaWater-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BFE65EA02DBD1B3F65BD6BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RodeenaWater/Pods-RodeenaWater-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RodeenaWater/Pods-RodeenaWater-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RodeenaWater/Pods-RodeenaWater-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		963CBCAD27555C6300F81EFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963CBCB927555C6300F81EFD /* MapVC.swift in Sources */,
+				96615ADA27579C10009A9DD4 /* OrdersVC.swift in Sources */,
+				963CBCD127555F4600F81EFD /* ProductVC.swift in Sources */,
+				963CBCD327555F5100F81EFD /* LoginVC.swift in Sources */,
+				963CBCCF27555F3F00F81EFD /* OffersVC.swift in Sources */,
+				963CBCB527555C6300F81EFD /* AppDelegate.swift in Sources */,
+				963CBCB727555C6300F81EFD /* SceneDelegate.swift in Sources */,
+				963CBCCD27555F3800F81EFD /* CartVC.swift in Sources */,
+				96615ADC27579F7A009A9DD4 /* DeliveryVC.swift in Sources */,
+				963CBCCB27555F2F00F81EFD /* Models.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		963CBCBA27555C6300F81EFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				963CBCBB27555C6300F81EFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		963CBCBF27555C6400F81EFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				963CBCC027555C6400F81EFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		963CBCC327555C6400F81EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		963CBCC427555C6400F81EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		963CBCC627555C6400F81EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A50DFB8187DC83255799E6EA /* Pods-RodeenaWater.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UHBQU77Z37;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RodeenaWater/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saraM.RodeenaWater;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		963CBCC727555C6400F81EFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0134905679765780F7BFB3E /* Pods-RodeenaWater.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UHBQU77Z37;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RodeenaWater/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saraM.RodeenaWater;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		963CBCAC27555C6300F81EFD /* Build configuration list for PBXProject "RodeenaWater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963CBCC327555C6400F81EFD /* Debug */,
+				963CBCC427555C6400F81EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		963CBCC527555C6400F81EFD /* Build configuration list for PBXNativeTarget "RodeenaWater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963CBCC627555C6400F81EFD /* Debug */,
+				963CBCC727555C6400F81EFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 963CBCA927555C6300F81EFD /* Project object */;
+}

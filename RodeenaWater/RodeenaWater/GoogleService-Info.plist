@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1072720955307-l56tkt181urkcu6nuc0nap05eb06o77e.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1072720955307-l56tkt181urkcu6nuc0nap05eb06o77e</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCLk3USk8enXkPtwic7v3vHffnTF6EKTvA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1072720955307</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.saraM.RodeenaWater</string>
+	<key>PROJECT_ID</key>
+	<string>rodeenawater-ead94</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rodeenawater-ead94.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1072720955307:ios:109d2bccdf5066736ef4ee</string>
+</dict>
+</plist>
