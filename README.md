@@ -31,25 +31,38 @@
 
 ## You should have a:
 ### Project Name: 
-// Add your project name
+ A Spa App 
 
 ### Project Description :
-// Add your project description
+Reservation appliction for spa 
+and the uesr can choose many services and select how many guests 
+and the date.
 
 ### Features List:
 // Add your project feature list
-- Feature 1
-- Feature 2
+- map.
+- tab bar.
+- table view.
+- calculate the cost.
+- collection view.
+- picker view.
+- date picker.
+
 
 ### Structure:
-// Add your project screens/models/views/cells
+- ServicesVC
+- AppointmentVC
+- CheckoutVC
+- LocationVC
+- PhotosVC
+- PhotosCellVC
 
 ### User Stories:
-// Add your project user stories
+- The user can view the spa website, then choose many services, then select the number of guests, enter the name and number  to confirm the reservation, and then select the date.
 
 ### Presentation:
 // Create your project presentation
-
+Done
 
 ## Deadline: 
 9:00 am, Sunday, Nov 28, 2021 
