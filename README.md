@@ -30,7 +30,7 @@
 - Use alert controller
 
 ## You should have a:
-### Project Name: 
+### Project Name: Tuwaiq 1000
 // Add your project name
 
 ### Project Description :

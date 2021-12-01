@@ -2,7 +2,7 @@
 ////  ViewController.swift
 ////  tuwaiq 1000
 ////
-////  Created by m.Al-qhtani on 19/04/1443 AH.
+////  Created by m.Al-qhatani on 19/04/1443 AH.
 ////
 ////
 //

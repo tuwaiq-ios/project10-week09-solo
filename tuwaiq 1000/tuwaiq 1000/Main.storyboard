@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k8X-kS-q6g">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,20 +11,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--customer-->
+        <!--Top10.storyboard-->
         <scene sceneID="o9v-RH-Ul0">
             <objects>
-                <viewControllerPlaceholder storyboardName="customer" id="1gp-rh-9Ic" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="customer" id="1gp-rh-9Ic" userLabel="Top10.storyboard" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="BFl-UZ-nRF"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNa-nb-4Ut" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="893" y="505"/>
         </scene>
-        <!--Manager-->
+        <!--EditStudent.storyboard-->
         <scene sceneID="Gqz-cQ-ZAR">
             <objects>
-                <viewControllerPlaceholder storyboardName="Manager" id="SF6-uL-gqs" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Manager" id="SF6-uL-gqs" userLabel="EditStudent.storyboard" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="W4t-ZC-2uU"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0b-za-oxU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -169,36 +170,15 @@
                                     <constraint firstAttribute="height" constant="180" id="5Ox-LT-GtG"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwK-EV-1sQ">
-                                <rect key="frame" x="102" y="440" width="212" height="99"/>
+                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGq-mA-z3H">
+                                <rect key="frame" x="94" y="568.5" width="262" height="57"/>
                                 <color key="backgroundColor" red="0.009257174097" green="0.19132912160000001" blue="0.40141665939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="212" id="3iH-gL-FXC"/>
-                                    <constraint firstAttribute="height" constant="99" id="woT-Lu-fSp"/>
-                                </constraints>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Top 10🏅" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="28"/>
-                                    <color key="baseForegroundColor" name="label"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Edit Student" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="36"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
                                     <color key="baseBackgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="1gp-rh-9Ic" kind="show" id="auI-iB-0ur"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGq-mA-z3H">
-                                <rect key="frame" x="103" y="611" width="211" height="95"/>
-                                <color key="backgroundColor" red="0.009257174097" green="0.19132912160000001" blue="0.40141665939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="211" id="7Mr-7U-iAx"/>
-                                    <constraint firstAttribute="height" constant="95" id="q8t-ov-nNE"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Edit student" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="28"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="SF6-uL-gqs" kind="show" id="gmh-IJ-kEN"/>
@@ -210,27 +190,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwK-EV-1sQ">
+                                <rect key="frame" x="94" y="465" width="251" height="61.5"/>
+                                <color key="backgroundColor" red="0.009257174097" green="0.19132912160000001" blue="0.40141665939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Top 10🏅" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="36"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="1gp-rh-9Ic" kind="show" id="auI-iB-0ur"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Enq-6t-7Ei"/>
                         <color key="backgroundColor" red="0.0" green="0.19222940860000001" blue="0.39853244360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Enq-6t-7Ei" firstAttribute="bottom" secondItem="pGq-mA-z3H" secondAttribute="bottom" constant="102" id="5Sd-lu-859"/>
                             <constraint firstItem="Enq-6t-7Ei" firstAttribute="trailing" secondItem="LOG-z4-nUR" secondAttribute="trailing" constant="20" id="7cN-LU-dIP"/>
                             <constraint firstItem="VIn-rz-a7N" firstAttribute="top" secondItem="8LC-Gc-6GF" secondAttribute="bottom" constant="20" id="8YC-qz-AUp"/>
+                            <constraint firstItem="Enq-6t-7Ei" firstAttribute="trailing" secondItem="CwK-EV-1sQ" secondAttribute="trailing" constant="69" id="9cv-91-j3w"/>
                             <constraint firstItem="LOG-z4-nUR" firstAttribute="top" secondItem="8LC-Gc-6GF" secondAttribute="bottom" constant="20" id="Fn1-0M-vxP"/>
-                            <constraint firstItem="CwK-EV-1sQ" firstAttribute="top" secondItem="XPe-0A-a69" secondAttribute="bottom" constant="29.5" id="IdX-VQ-qJL"/>
-                            <constraint firstItem="Enq-6t-7Ei" firstAttribute="trailing" secondItem="pGq-mA-z3H" secondAttribute="trailing" constant="100" id="LgV-yY-1pw"/>
+                            <constraint firstItem="pGq-mA-z3H" firstAttribute="top" secondItem="CwK-EV-1sQ" secondAttribute="bottom" constant="42" id="N0b-sI-jlk"/>
+                            <constraint firstItem="Enq-6t-7Ei" firstAttribute="bottom" secondItem="pGq-mA-z3H" secondAttribute="bottom" constant="182.5" id="RWB-41-aKh"/>
+                            <constraint firstItem="pGq-mA-z3H" firstAttribute="leading" secondItem="Enq-6t-7Ei" secondAttribute="leading" constant="94" id="Ssq-1d-dSw"/>
+                            <constraint firstItem="CwK-EV-1sQ" firstAttribute="leading" secondItem="Enq-6t-7Ei" secondAttribute="leading" constant="94" id="UOi-wA-tgo"/>
                             <constraint firstItem="XPe-0A-a69" firstAttribute="leading" secondItem="Enq-6t-7Ei" secondAttribute="leading" id="VN5-Wf-leu"/>
-                            <constraint firstItem="pGq-mA-z3H" firstAttribute="top" secondItem="CwK-EV-1sQ" secondAttribute="bottom" constant="72" id="WVd-df-KPO"/>
-                            <constraint firstItem="Enq-6t-7Ei" firstAttribute="trailing" secondItem="CwK-EV-1sQ" secondAttribute="trailing" constant="100" id="a0u-C1-T4Z"/>
                             <constraint firstItem="8LC-Gc-6GF" firstAttribute="top" secondItem="Enq-6t-7Ei" secondAttribute="top" id="afF-9W-v31"/>
-                            <constraint firstItem="pGq-mA-z3H" firstAttribute="top" secondItem="CwK-EV-1sQ" secondAttribute="bottom" constant="72" id="fQn-P3-0gJ"/>
+                            <constraint firstItem="CwK-EV-1sQ" firstAttribute="top" secondItem="XPe-0A-a69" secondAttribute="bottom" constant="54.5" id="eT4-LU-uRc"/>
+                            <constraint firstItem="Enq-6t-7Ei" firstAttribute="trailing" secondItem="pGq-mA-z3H" secondAttribute="trailing" constant="58" id="knL-N7-ioo"/>
                             <constraint firstItem="8LC-Gc-6GF" firstAttribute="trailing" secondItem="Enq-6t-7Ei" secondAttribute="trailing" id="mkw-2O-w0x"/>
                             <constraint firstItem="Enq-6t-7Ei" firstAttribute="trailing" secondItem="XPe-0A-a69" secondAttribute="trailing" id="nDA-1v-Mjg"/>
                             <constraint firstItem="8LC-Gc-6GF" firstAttribute="leading" secondItem="Enq-6t-7Ei" secondAttribute="leading" id="od4-RZ-Dpj"/>
-                            <constraint firstItem="CwK-EV-1sQ" firstAttribute="leading" secondItem="Enq-6t-7Ei" secondAttribute="leading" constant="102" id="okV-ty-GTZ"/>
                             <constraint firstItem="XPe-0A-a69" firstAttribute="top" secondItem="LOG-z4-nUR" secondAttribute="bottom" constant="30" id="qfj-Zc-WtE"/>
-                            <constraint firstItem="pGq-mA-z3H" firstAttribute="leading" secondItem="Enq-6t-7Ei" secondAttribute="leading" constant="103" id="uJG-WP-YxR"/>
+                            <constraint firstItem="pGq-mA-z3H" firstAttribute="top" secondItem="CwK-EV-1sQ" secondAttribute="bottom" constant="42" id="red-fZ-hlV"/>
                             <constraint firstItem="VIn-rz-a7N" firstAttribute="leading" secondItem="Enq-6t-7Ei" secondAttribute="leading" constant="20" id="ukT-HW-3Yc"/>
                         </constraints>
                     </view>
@@ -244,20 +238,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0RU-Q1-iLy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25" y="579"/>
+            <point key="canvasLocation" x="-26.086956521739133" y="578.57142857142856"/>
         </scene>
     </scenes>
     <resources>
         <image name="707" width="1169" height="1191"/>
-        <image name="homekit" catalog="system" width="32" height="32"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="collectionViewBackground">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </namedColor>
-        <namedColor name="label">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
