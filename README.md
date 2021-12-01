@@ -30,19 +30,32 @@
 - Use alert controller
 
 ## You should have a:
+
 ### Project Name: 
 // Add your project name
+Books Library
+
 
 ### Project Description :
 // Add your project description
+His library contains a collection of books and audio.
 
 ### Features List:
 // Add your project feature list
+
 - Feature 1
+Religious books contain how many pages and source number the browser can browse at any time.
+
 - Feature 2
+It contains audio, religious supplications and Islamic songs, so the user can hear any time he wants, and there is also electronic praise.
 
 ### Structure:
 // Add your project screens/models/views/cells
+
+1 / login
+2/ his library - books
+3/ Audios
+4 / electronic rosary
 
 ### User Stories:
 // Add your project user stories
