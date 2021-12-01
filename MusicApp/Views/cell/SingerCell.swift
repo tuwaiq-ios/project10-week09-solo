@@ -6,7 +6,7 @@
 //
 
 import UIKit
-class MusicCell: UICollectionViewCell {
+class SingerCell: UICollectionViewCell {
     
   static let identifier = "SingersCell"
     
@@ -14,6 +14,7 @@ class MusicCell: UICollectionViewCell {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "m")
         imageView.clipsToBounds = true
+        imageView.layer.borderColor = .init(red: 230/255, green: 237/255, blue: 184/255, alpha: 1)
         imageView.layer.cornerRadius = 40
         imageView.contentMode = .scaleAspectFill
         

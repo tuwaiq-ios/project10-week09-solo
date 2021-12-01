@@ -22,7 +22,7 @@ class FavoriteSongsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor (named: "Color")
+        view.backgroundColor = UIColor (named: "Color-1")
         
         view.addSubview(favoriteTV)
         NSLayoutConstraint.activate([
@@ -50,7 +50,7 @@ class FavoriteSongsVC: UIViewController {
         let song = songFavoraite[indexPath.row]
               cell.songLabel.text = song.favoriteSong
               cell.songImage.image = UIImage(named: song.favImage)
-        
+        cell.backgroundColor = UIColor (named: "Color-1")
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

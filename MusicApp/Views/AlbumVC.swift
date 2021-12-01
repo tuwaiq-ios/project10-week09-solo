@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AlbumVC: UIViewController {
     
     
    private let albums = Album.get()
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        view.backgroundColor = UIColor (named: "Color-1")
         setupView()
     }
     func setupView(){
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController : UITableViewDelegate , UITableViewDataSource {
+extension AlbumVC : UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return albums.count
     }

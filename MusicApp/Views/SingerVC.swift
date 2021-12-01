@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SingerVC: UIViewController, UICollectionViewDelegateFlowLayout  {
+ class SingerVC: UIViewController, UICollectionViewDelegateFlowLayout  {
     
     lazy var layout: UICollectionViewFlowLayout = {
     let layout = UICollectionViewFlowLayout()
@@ -20,7 +20,7 @@ class SingerVC: UIViewController, UICollectionViewDelegateFlowLayout  {
         var musicTypeCV = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
         musicTypeCV.delegate = self
         musicTypeCV.dataSource = self
-        musicTypeCV.register(MusicCell.self, forCellWithReuseIdentifier: MusicCell.identifier)
+        musicTypeCV.register(SingerCell.self, forCellWithReuseIdentifier: SingerCell.identifier)
         musicTypeCV.translatesAutoresizingMaskIntoConstraints = false
         musicTypeCV.frame = view.bounds
         return musicTypeCV
@@ -33,8 +33,8 @@ class SingerVC: UIViewController, UICollectionViewDelegateFlowLayout  {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor (named: "Color")
-        
+        view.backgroundColor = UIColor (named: "Color-1")
+ 
         view.addSubview(musicTypeCV)
         NSLayoutConstraint.activate([
             musicTypeCV.topAnchor.constraint(equalTo: view.topAnchor),
@@ -53,12 +53,13 @@ extension SingerVC :  UICollectionViewDelegate  , UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MusicCell.identifier, for: indexPath) as! MusicCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SingerCell.identifier, for: indexPath) as! SingerCell
         cell.setCell(card: musicTypeList[indexPath.row])
+        cell.backgroundColor = UIColor (named: "Color-1")
               return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-         var newVC = ViewController()
+         var newVC = AlbumVC()
 //        newVC.fromMusicType = musicTypeList[indexPath.row]
         newVC.title = musicTypeList[indexPath.row].name
         newVC.navigationItem.largeTitleDisplayMode = .never
