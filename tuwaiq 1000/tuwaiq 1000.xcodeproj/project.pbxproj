@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E33D36A27538B8D007EC44C /* InstructioerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D36927538B8D007EC44C /* InstructioerVC.swift */; };
-		5E33D36C27538BB6007EC44C /* ManagerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D36B27538BB6007EC44C /* ManagerCell.swift */; };
+		5E33D36C27538BB6007EC44C /* EditStudentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D36B27538BB6007EC44C /* EditStudentsCell.swift */; };
 		5E33D36E27538BE6007EC44C /* NewStudentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D36D27538BE6007EC44C /* NewStudentVC.swift */; };
 		5E33D37027538C19007EC44C /* UpdateStudentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D36F27538C19007EC44C /* UpdateStudentVC.swift */; };
 		5E33D37227538C3F007EC44C /* DetelisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D37127538C3F007EC44C /* DetelisVC.swift */; };
@@ -22,7 +22,7 @@
 		5E33D38D275390CC007EC44C /* Top10VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D38C275390CC007EC44C /* Top10VC.swift */; };
 		5E33D38F2753910B007EC44C /* Top10 Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D38E2753910B007EC44C /* Top10 Cell.swift */; };
 		5E33D39127539125007EC44C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D39027539125007EC44C /* Data.swift */; };
-		5E33D393275391A5007EC44C /* stulnfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D392275391A5007EC44C /* stulnfo.swift */; };
+		5E33D393275391A5007EC44C /* stulnfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D392275391A5007EC44C /* stulnfoVC.swift */; };
 		5E33D3952753938F007EC44C /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33D3942753938F007EC44C /* DetailsCell.swift */; };
 		5E33D397275397AB007EC44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E33D396275397AB007EC44C /* Main.storyboard */; };
 		5E33D399275397C4007EC44C /* customer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E33D398275397C4007EC44C /* customer.storyboard */; };
@@ -43,7 +43,7 @@
 
 /* Begin PBXFileReference section */
 		5E33D36927538B8D007EC44C /* InstructioerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructioerVC.swift; sourceTree = "<group>"; };
-		5E33D36B27538BB6007EC44C /* ManagerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerCell.swift; sourceTree = "<group>"; };
+		5E33D36B27538BB6007EC44C /* EditStudentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditStudentsCell.swift; sourceTree = "<group>"; };
 		5E33D36D27538BE6007EC44C /* NewStudentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStudentVC.swift; sourceTree = "<group>"; };
 		5E33D36F27538C19007EC44C /* UpdateStudentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStudentVC.swift; sourceTree = "<group>"; };
 		5E33D37127538C3F007EC44C /* DetelisVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetelisVC.swift; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		5E33D38C275390CC007EC44C /* Top10VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top10VC.swift; sourceTree = "<group>"; };
 		5E33D38E2753910B007EC44C /* Top10 Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Top10 Cell.swift"; sourceTree = "<group>"; };
 		5E33D39027539125007EC44C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		5E33D392275391A5007EC44C /* stulnfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stulnfo.swift; sourceTree = "<group>"; };
+		5E33D392275391A5007EC44C /* stulnfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stulnfoVC.swift; sourceTree = "<group>"; };
 		5E33D3942753938F007EC44C /* DetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCell.swift; sourceTree = "<group>"; };
 		5E33D396275397AB007EC44C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5E33D398275397C4007EC44C /* customer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = customer.storyboard; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 		5E33D38727538F8B007EC44C /* Stu Collection */ = {
 			isa = PBXGroup;
 			children = (
-				5E33D392275391A5007EC44C /* stulnfo.swift */,
+				5E33D392275391A5007EC44C /* stulnfoVC.swift */,
 			);
 			path = "Stu Collection";
 			sourceTree = "<group>";
@@ -179,7 +179,7 @@
 				E633B940274E0F670046ED89 /* SideMenuVC.swift */,
 				5E33D36927538B8D007EC44C /* InstructioerVC.swift */,
 				5E33D36D27538BE6007EC44C /* NewStudentVC.swift */,
-				5E33D36B27538BB6007EC44C /* ManagerCell.swift */,
+				5E33D36B27538BB6007EC44C /* EditStudentsCell.swift */,
 				5E33D37327538C83007EC44C /* PurchaseVC.swift */,
 				5E33D37527538CA9007EC44C /* PrucheasCell.swift */,
 				5E33D37127538C3F007EC44C /* DetelisVC.swift */,
@@ -306,7 +306,7 @@
 				E69247002754F05A00421DCB /* StudentVC.swift in Sources */,
 				5E33D38F2753910B007EC44C /* Top10 Cell.swift in Sources */,
 				5E33D36E27538BE6007EC44C /* NewStudentVC.swift in Sources */,
-				5E33D393275391A5007EC44C /* stulnfo.swift in Sources */,
+				5E33D393275391A5007EC44C /* stulnfoVC.swift in Sources */,
 				5E33D38D275390CC007EC44C /* Top10VC.swift in Sources */,
 				E634873D274DAFCD00559B91 /* AppDelegate.swift in Sources */,
 				E633B941274E0F670046ED89 /* SideMenuVC.swift in Sources */,
@@ -314,7 +314,7 @@
 				5E33D37427538C83007EC44C /* PurchaseVC.swift in Sources */,
 				E69247022754F18300421DCB /* StudentVC2.swift in Sources */,
 				5E33D37F27538E47007EC44C /* RecCell.swift in Sources */,
-				5E33D36C27538BB6007EC44C /* ManagerCell.swift in Sources */,
+				5E33D36C27538BB6007EC44C /* EditStudentsCell.swift in Sources */,
 				E69246F72754B84100421DCB /* BootcampsCell.swift in Sources */,
 				5E33D37027538C19007EC44C /* UpdateStudentVC.swift in Sources */,
 				E69246FD2754C77E00421DCB /* BootcampVC.swift in Sources */,

@@ -30,25 +30,64 @@
 - Use alert controller
 
 ## You should have a:
-### Project Name: Tuwaiq 1000
-// Add your project name
+### Project Name: 
+Tuwaiq 1000
+
 
 ### Project Description :
-// Add your project description
+An application that displays the best students at Tuwaiq Academy by determining their level and evaluating them and send email to them inside App
 
 ### Features List:
-// Add your project feature list
-- Feature 1
-- Feature 2
+
+- Feature 1:
+You can see the level of the students through their assessment in the camp
+- Feature 2:
+You can send to the top ten students a congratulatory message by e-mail
 
 ### Structure:
-// Add your project screens/models/views/cells
-
+Models:
+Student Data
+Bootcamp Data
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Views:
+SceneDelegate
+AppDelegate
+Basic Min
+Main of Top 10
+Main of Edit Student
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Cells:
+BootcampsCell
+EditStudentsCell
+PrucheasCell
+DetailsCell
+RecCell
+Top10 Cell
+EmailCell
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Controller:
+StudentVC
+StudentVC2
+BootcampVC
+BootcampsVC
+InstructioerVC
+NewStudentVC
+PurchaseVC
+DetelisVC
+UpdateStudentVC
+RecCollectionVC
+stulnfoVC
+Top10VC
+EmailVC
 ### User Stories:
-// Add your project user stories
-
+As a Instructioer i want to Update my Student greads
+As a Instructioer i want to Know my Student greads
+As a Instructioer i want to Know my Student levels
+As a Instructioer i want to congratulate my students by send email for them
+As a Management i want to Know our Student greads
 ### Presentation:
-// Create your project presentation
+
+in another file
 
 
 ## Deadline: 
