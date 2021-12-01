@@ -12,4 +12,5 @@ struct Song {
     var image : String
     var artisr: String
     var fileName : String
+    var isLiked : Bool
 }

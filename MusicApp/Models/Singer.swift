@@ -20,5 +20,11 @@ class Singer {
 }
 
 let musicTypeList = [ Singer(name: "nancy", image: "نانسي"),
-                      Singer(name: "shirin", image: "شيرين"),
+                      Singer(name: "Soon!", image: "شيرين"),
+                      Singer(name: "Soon!", image: "اليسا"),
+                      Singer(name: "Soon!", image: "ماجد "),
+                      Singer(name: "Soon!", image: "محمد"),
+                      Singer(name: "Soon!", image: "عبدالمجيد"),
+                      Singer(name: "Soon!", image: "تامر"),
+                      Singer(name: "Soon!", image: "احلام"),
 ]

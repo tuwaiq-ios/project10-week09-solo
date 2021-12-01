@@ -14,6 +14,9 @@ final class MediaPlayer: UIView{
     private var player = AVAudioPlayer()
     private var timer : Timer?
     private var playingIndex = 0
+    var postIndex: Int?
+//    var h :Array<Song> = []
+    var newSong: Song!
     
     private lazy var albumName: UILabel = {
          let albumName = UILabel()
@@ -96,14 +99,14 @@ final class MediaPlayer: UIView{
         nextButton.tintColor = .white
         return nextButton
      }()
-//    let heartButton : UIButton = {
-//        let heartButton = UIButton()
-//        heartButton.addTarget(self, action: #selector(favButtonTapped), for: .touchUpInside)
-//        heartButton.tintColor = .black
-//        heartButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
-//        heartButton.translatesAutoresizingMaskIntoConstraints = false
-//        return heartButton
-//    }()
+    let likeButton : UIButton = {
+        let button = UIButton()
+         button.translatesAutoresizingMaskIntoConstraints = false
+         button.setBackgroundImage(UIImage(systemName: "heart.circle.fill"), for: .normal)
+         button.tintColor = .white
+         button.addTarget(self, action: #selector(likeButtonAction), for: .touchUpInside)
+         return button
+    }()
     
     private lazy var controlStack: UIStackView = {
          let controlStack = UIStackView(arrangedSubviews: [previousButton,playPlauseButton,nextButton])
@@ -134,7 +137,7 @@ final class MediaPlayer: UIView{
             v.textColor = .white
         }
         
-        [albumName, albumCover , songNameLabel , artistLabel, progressBar , elapsedTimeLabel , remainingTimeLabel , controlStack].forEach{(v) in
+        [albumName, albumCover , songNameLabel , artistLabel, progressBar , elapsedTimeLabel , remainingTimeLabel,likeButton , controlStack].forEach{(v) in
         addSubview(v)
         }
         setupConstraints()
@@ -157,12 +160,13 @@ final class MediaPlayer: UIView{
             songNameLabel.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -16),
             songNameLabel.topAnchor.constraint(equalTo: albumCover.bottomAnchor, constant: 16),
         ])
-//        NSLayoutConstraint.activate([
-//            heartButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-//            heartButton.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -16),
-//            heartButton.topAnchor.constraint(equalTo: albumCover.bottomAnchor, constant: 16),
-//            heartButton.leftAnchor.constraint(equalTo: songNameLabel.rightAnchor, constant: 16),
-//        ])
+        NSLayoutConstraint.activate([
+            likeButton.topAnchor.constraint(equalTo: albumCover.bottomAnchor, constant: 15),
+            likeButton.leftAnchor.constraint(equalTo: songNameLabel.rightAnchor, constant: 70),
+            likeButton.rightAnchor.constraint(equalTo: rightAnchor, constant: -250),
+            likeButton.widthAnchor.constraint(equalToConstant: 30),
+            likeButton.heightAnchor.constraint(equalToConstant: 20),
+        ])
         NSLayoutConstraint.activate([
             artistLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             artistLabel.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -16),
@@ -271,11 +275,21 @@ final class MediaPlayer: UIView{
         setPlayPauseIcon(isPlaying: player.isPlaying)
     }
     
-//    @objc func favButtonTapped(_ sender: UIButton) {
-//        heartButton.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
-//        heartButton.tintColor = .systemRed
-//        print("h")
-//    }
+    @objc func likeButtonAction() {
+        likeButton.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
+        likeButton.tintColor = .systemRed
+        album.songs[postIndex ?? 0].isLiked = true
+        if album.songs[postIndex ?? 0].isLiked == true {
+              likeButton.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
+              likeButton.tintColor = .red
+            let songName = songNameLabel.text ?? ""
+            let songImage = albumCover.image ?? UIImage(systemName: "house")
+            
+            favoriteSongService.shared.addTofavoriteSong(FavSong: FavSong(
+                favoriteSong: songName, favImage: album.image))
+            
+          }
+    }
     
     private func getFormattedTime(timeInterval : TimeInterval) -> String {
         let mins = timeInterval / 60

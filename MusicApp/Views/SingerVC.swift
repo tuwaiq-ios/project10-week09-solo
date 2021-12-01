@@ -5,12 +5,6 @@
 //  Created by Amal on 24/04/1443 AH.
 //
 
-//
-//  ViewController.swift
-//  SeqApp
-//
-//  Created by Amal on 18/04/1443 AH.
-
 import UIKit
 
 class SingerVC: UIViewController, UICollectionViewDelegateFlowLayout  {
@@ -33,7 +27,7 @@ class SingerVC: UIViewController, UICollectionViewDelegateFlowLayout  {
     }()
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-           return CGSize(width: 190, height: 210)
+           return CGSize(width: 190, height: 130)
     }
     
     override func viewDidLoad() {
