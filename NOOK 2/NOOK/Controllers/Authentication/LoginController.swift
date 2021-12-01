@@ -1,9 +1,11 @@
 //
-//  LoginController.swift
+//  File.swift
 //  NOOK
 //
-//  Created by HANAN on 21/04/1443 AH.
+//  Created by HANAN on 26/04/1443 AH.
 //
+
+import Foundation
 
 import UIKit
 
@@ -79,6 +81,7 @@ class LoginController : UIViewController {
     @objc func handleShowSignUp() {
        let controller = RegistrationController()
         navigationController?.pushViewController(controller, animated: true)
+        self.present(controller, animated: true, completion: nil)
     }
     @objc func handleLogin() {
         guard let email = emailTextField.text else {return}
@@ -121,7 +124,7 @@ class LoginController : UIViewController {
     
     func configureUI() {
         view.backgroundColor = UIColor(red: (87/255), green: (10/255), blue: (87/255), alpha: 1)
-        navigationController?.navigationBar.barStyle = .black 
+        navigationController?.navigationBar.barStyle = .black
         
         view.addSubview(logoImageView)
         logoImageView.centerX(inView: view, topAnchor: view.safeAreaLayoutGuide.topAnchor)

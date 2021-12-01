@@ -12,6 +12,8 @@
 		E34AEA062756DDF00033A483 /* ArticleDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AEA052756DDF00033A483 /* ArticleDetailVC.swift */; };
 		E34AEA082756DE0E0033A483 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AEA072756DE0E0033A483 /* ArticleCell.swift */; };
 		E34AEA0A2756DE330033A483 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AEA092756DE330033A483 /* ArticleModel.swift */; };
+		E34AEA0C2758074F0033A483 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AEA0B2758074F0033A483 /* LaunchScreen.swift */; };
+		E34AEA0E27580C400033A483 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AEA0D27580C400033A483 /* LoginController.swift */; };
 		E372F7D6274E1EAA0011E203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F7D5274E1EAA0011E203 /* AppDelegate.swift */; };
 		E372F7D8274E1EAA0011E203 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F7D7274E1EAA0011E203 /* SceneDelegate.swift */; };
 		E372F7DD274E1EAA0011E203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E372F7DB274E1EAA0011E203 /* Main.storyboard */; };
@@ -24,7 +26,6 @@
 		E372F8222750A6C00011E203 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F8212750A6C00011E203 /* ConversationsController.swift */; };
 		E372F8242750B2FD0011E203 /* MainTabControllerr.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F8232750B2FC0011E203 /* MainTabControllerr.swift */; };
 		E372F8262750D8B70011E203 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F8252750D8B70011E203 /* Extensions.swift */; };
-		E372F84B275104940011E203 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F84A275104940011E203 /* LoginController.swift */; };
 		E372F84D27510A8D0011E203 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F84C27510A8D0011E203 /* RegistrationController.swift */; };
 		E372F84F275143350011E203 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F84E275143350011E203 /* Utilities.swift */; };
 		E372F851275209AD0011E203 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E372F850275209AD0011E203 /* GoogleService-Info.plist */; };
@@ -53,6 +54,8 @@
 		E34AEA052756DDF00033A483 /* ArticleDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailVC.swift; sourceTree = "<group>"; };
 		E34AEA072756DE0E0033A483 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		E34AEA092756DE330033A483 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		E34AEA0B2758074F0033A483 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		E34AEA0D27580C400033A483 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E372F7D2274E1EAA0011E203 /* NOOK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NOOK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E372F7D5274E1EAA0011E203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E372F7D7274E1EAA0011E203 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +70,6 @@
 		E372F8212750A6C00011E203 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 		E372F8232750B2FC0011E203 /* MainTabControllerr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabControllerr.swift; sourceTree = "<group>"; };
 		E372F8252750D8B70011E203 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		E372F84A275104940011E203 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E372F84C27510A8D0011E203 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		E372F84E275143350011E203 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		E372F850275209AD0011E203 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				E372F8252750D8B70011E203 /* Extensions.swift */,
 				E372F84E275143350011E203 /* Utilities.swift */,
 				E3785AFD27524F360036B7D5 /* Constants.swift */,
+				E34AEA0B2758074F0033A483 /* LaunchScreen.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -231,8 +234,8 @@
 		E372F849275104080011E203 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				E372F84A275104940011E203 /* LoginController.swift */,
 				E372F84C27510A8D0011E203 /* RegistrationController.swift */,
+				E34AEA0D27580C400033A483 /* LoginController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 			files = (
 				E3E57B152754036300C7847E /* Nook.swift in Sources */,
 				E372F7D6274E1EAA0011E203 /* AppDelegate.swift in Sources */,
+				E34AEA0C2758074F0033A483 /* LaunchScreen.swift in Sources */,
 				E34AEA0A2756DE330033A483 /* ArticleModel.swift in Sources */,
 				E372F8262750D8B70011E203 /* Extensions.swift in Sources */,
 				E372F7D8274E1EAA0011E203 /* SceneDelegate.swift in Sources */,
@@ -363,6 +367,7 @@
 				E372F8222750A6C00011E203 /* ConversationsController.swift in Sources */,
 				E3E57B0D27532FFB00C7847E /* User.swift in Sources */,
 				E3E57B192754A22D00C7847E /* NookViewModel.swift in Sources */,
+				E34AEA0E27580C400033A483 /* LoginController.swift in Sources */,
 				E3E57B1F27550AB100C7847E /* ProfileFilterView.swift in Sources */,
 				E372F8242750B2FD0011E203 /* MainTabControllerr.swift in Sources */,
 				E3E57B1D2754BF6500C7847E /*  ProfileHeader.swift in Sources */,
@@ -383,7 +388,6 @@
 				E3E57B0B2752994A00C7847E /* UserService.swift in Sources */,
 				E372F81E2750A6210011E203 /* ExploreController.swift in Sources */,
 				E3E57B172754255E00C7847E /* NookCell.swift in Sources */,
-				E372F84B275104940011E203 /* LoginController.swift in Sources */,
 				E3785B00275262FC0036B7D5 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
