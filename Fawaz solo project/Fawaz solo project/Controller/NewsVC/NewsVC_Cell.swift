@@ -7,101 +7,6 @@
 
 import UIKit
 
-//class NewsVC_Cell: UITableViewCell {
-//
-//  static let identifier = "NewsVC_Cell_key"
-//
-//  let imageCell = UIImageView()
-//  let nameCell = UILabel()
-//  let blog = UILabel()
-//  let imageblog = UIImageView()
-//  let nameblog = UILabel()
-//  let text = UILabel()
-//
-//  override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
-//
-//    super.init(style: style , reuseIdentifier: reuseIdentifier)
-//
-//    imageCell.translatesAutoresizingMaskIntoConstraints = false
-//
-//    self.addSubview(imageCell)
-//
-//    NSLayoutConstraint.activate([
-//      imageCell.leftAnchor.constraint(equalTo: leftAnchor),
-//      imageCell.heightAnchor.constraint(equalToConstant: 60),
-//      imageCell.widthAnchor.constraint(
-//        equalTo: imageCell.heightAnchor,multiplier: 100/100),
-//      imageCell.bottomAnchor.constraint(equalTo: bottomAnchor)
-//    ])
-//
-//    nameCell.textColor = .white
-//    nameCell.text = ""
-//    nameCell.translatesAutoresizingMaskIntoConstraints = false
-//
-//    self.addSubview(nameCell)
-//
-//    NSLayoutConstraint.activate([
-//      nameCell.leftAnchor.constraint(equalTo: imageCell.leftAnchor , constant: 80),
-//      nameCell.heightAnchor.constraint(equalToConstant: 80),
-//      nameCell.trailingAnchor.constraint(equalTo: trailingAnchor , constant: 100),
-//      nameCell.bottomAnchor.constraint(equalTo: bottomAnchor)])
-//
-//    blog.text = "BLOG"
-//    blog.textColor = .white
-//    blog.translatesAutoresizingMaskIntoConstraints = false
-//
-//    self.addSubview(blog)
-//
-//    NSLayoutConstraint.activate([
-//      blog.topAnchor.constraint(equalTo: topAnchor, constant:171),
-//      blog.leftAnchor.constraint(equalTo: leftAnchor),
-//      blog.heightAnchor.constraint(equalToConstant: 30),
-//      blog.widthAnchor.constraint(equalToConstant: 60)
-//    ])
-//
-//    nameblog.font = UIFont.boldSystemFont(ofSize: 25)
-//    nameblog.textColor = .blue
-//    nameblog.translatesAutoresizingMaskIntoConstraints = false
-//
-//    self.addSubview(nameblog)
-//
-//    NSLayoutConstraint.activate([
-//      nameblog.topAnchor.constraint(equalTo: topAnchor, constant:205),
-//      nameblog.leftAnchor.constraint(equalTo: leftAnchor),
-//      nameblog.heightAnchor.constraint(equalToConstant: 30),
-//      nameblog.widthAnchor.constraint(equalToConstant: 200)
-//    ])
-//
-//    text.font = UIFont.systemFont(ofSize: 17)
-//    text.numberOfLines = 2
-//    text.textColor = .darkGray
-//    text.translatesAutoresizingMaskIntoConstraints = false
-//
-//    self.addSubview(text)
-//
-//    NSLayoutConstraint.activate([
-//      text.topAnchor.constraint(equalTo: topAnchor, constant:220),
-//      text.leftAnchor.constraint(equalTo: leftAnchor),
-//      text.heightAnchor.constraint(equalToConstant: 90),
-//      text.widthAnchor.constraint(equalToConstant: 200)
-//    ])
-//
-//    imageblog.translatesAutoresizingMaskIntoConstraints = false
-//
-//    self.addSubview(imageblog)
-//
-//    NSLayoutConstraint.activate([
-//      imageblog.topAnchor.constraint(equalTo: topAnchor),
-//      imageblog.leftAnchor.constraint(equalTo: leftAnchor),
-//      imageblog.heightAnchor.constraint(equalToConstant: 170),
-//      imageblog.widthAnchor.constraint(equalToConstant: 375)
-//    ])
-//  }
-//  required init?(coder: NSCoder) {
-//    super.init(coder: coder)
-//  }
-//}
-
 class NewsVC_Cell: UITableViewCell {
   
   static let identifier = "NewsVC_Cell_key"
@@ -119,31 +24,32 @@ class NewsVC_Cell: UITableViewCell {
     
     imageCell.translatesAutoresizingMaskIntoConstraints = false
     self.addSubview(imageCell)
-    imageCell.backgroundColor = .blue
+    imageCell.layer.cornerRadius = 10
+    imageCell.clipsToBounds = true
+    imageCell.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
     NSLayoutConstraint.activate([
-      imageCell.topAnchor.constraint(equalTo: topAnchor,constant: 10),
-      imageCell.centerXAnchor.constraint(equalTo: centerXAnchor),
-      imageCell.heightAnchor.constraint(equalToConstant: 300),
-      imageCell.leftAnchor.constraint(equalTo: leftAnchor),
-      imageCell.rightAnchor.constraint(equalTo: rightAnchor)
+      imageCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 10),
+      imageCell.centerYAnchor.constraint(equalTo: centerYAnchor),
+      imageCell.heightAnchor.constraint(equalToConstant: 120),
+      imageCell.widthAnchor.constraint(equalToConstant: 120)
     ])
     //========================================================================
     stalyCell.font = UIFont.systemFont(ofSize: 17)
     stalyCell.numberOfLines = 0
     stalyCell.textColor = .darkGray
     stalyCell.translatesAutoresizingMaskIntoConstraints = false
-    stalyCell.backgroundColor = .black
+    stalyCell.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     stalyCell.layer.cornerRadius = 10
     stalyCell.clipsToBounds = true
     
     self.addSubview(stalyCell)
     
     NSLayoutConstraint.activate([
-      stalyCell.topAnchor.constraint(equalTo: imageCell.bottomAnchor, constant: 10),
-      stalyCell.centerXAnchor.constraint(equalTo: centerXAnchor),
-      stalyCell.heightAnchor.constraint(equalToConstant: 80),
-      stalyCell.widthAnchor.constraint(equalToConstant: 380),
+      stalyCell.rightAnchor.constraint(equalTo: rightAnchor, constant: -10),
+      stalyCell.centerYAnchor.constraint(equalTo: centerYAnchor),
+      stalyCell.heightAnchor.constraint(equalToConstant: 120),
+      stalyCell.widthAnchor.constraint(equalToConstant: 240)
     ])
     //========================================================================
     titleCell.translatesAutoresizingMaskIntoConstraints = false
@@ -151,14 +57,15 @@ class NewsVC_Cell: UITableViewCell {
     
     titleCell.textColor = .black
     titleCell.textAlignment = .right
-    titleCell.backgroundColor = .systemBlue
+    titleCell.numberOfLines = 0
+    titleCell.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     titleCell.font = UIFont.boldSystemFont(ofSize: 20)
     
     NSLayoutConstraint.activate([
-      titleCell.topAnchor.constraint(equalTo: imageCell.bottomAnchor, constant: 15),
-      titleCell.centerXAnchor.constraint(equalTo: centerXAnchor),
-      titleCell.heightAnchor.constraint(equalToConstant: 70),
-      titleCell.widthAnchor.constraint(equalToConstant: 370)
+      titleCell.rightAnchor.constraint(equalTo: rightAnchor, constant: -20),
+      titleCell.topAnchor.constraint(equalTo: topAnchor, constant: 10),
+      titleCell.bottomAnchor.constraint(equalTo: bottomAnchor,constant: -10),
+      titleCell.widthAnchor.constraint(equalToConstant: 220)
     ])
   }
   //==========================================================================

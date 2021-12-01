@@ -28,28 +28,28 @@ class TabVC: UITabBarController {
       
       createNavController(
         for:CourtVC(),
-           title: NSLocalizedString("Courts", comment: ""),
-           image: UIImage(systemName: "location")!),
+           title: NSLocalizedString("خدمات المحاكم", comment: ""),
+           image: UIImage(systemName: "rectangle.grid.2x2")!),
       
       createNavController(
         for:LawyersVC (),
-           title: NSLocalizedString("Lawyers", comment: ""),
-           image: UIImage(systemName: "location")!),
+           title: NSLocalizedString("المحامين", comment: ""),
+           image: UIImage(systemName: "person.2.crop.square.stack")!),
       
       createNavController(
         for:NewsVC (),
-           title: NSLocalizedString("News", comment: ""),
-           image: UIImage(systemName: "location")!),
+           title: NSLocalizedString("اخبار", comment: ""),
+           image: UIImage(systemName: "newspaper")!),
       
       createNavController(
         for:MapVC (),
-           title: NSLocalizedString("Location", comment: ""),
+           title: NSLocalizedString("الموقع", comment: ""),
            image: UIImage(systemName: "location")!),
       
       createNavController(
         for:MyProfileVC(),
-           title: NSLocalizedString("profile", comment: ""),
-           image: UIImage(systemName: "person")!),
+           title: NSLocalizedString("المزيد", comment: ""),
+           image: UIImage(systemName: "ellipsis.circle")!),
       
     ]
   }
@@ -62,7 +62,7 @@ class TabVC: UITabBarController {
     
     tabBar.tintColor = .label
     
-    self.tabBar.isTranslucent = false
+//    self.tabBar.isTranslucent = false
     
     
     setupVCs()

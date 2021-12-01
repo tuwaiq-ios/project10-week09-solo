@@ -1,19 +1,20 @@
 //
-//  Service_Cell.swift
+//  File.swift
 //  Fawaz solo project
 //
-//  Created by Fawaz on 29/11/2021.
+//  Created by Fawaz on 01/12/2021.
 //
 
-//data_Court_str
+import Foundation
 import UIKit
 
-class Service_Cell: UITableViewCell {
+class MyProfileVC_Cell: UITableViewCell {
   
-  static let identifier = "Service_Cell_key"
+  static let identifier = "MyProfileVC_Cell_key"
   
   let imageCell = UIImageView()
-  let nameCell = UILabel()
+  let titleCell = UILabel()
+  let textCell = UILabel()
   let stalyCell = UILabel()
   
   //==========================================================================
@@ -21,14 +22,12 @@ class Service_Cell: UITableViewCell {
     
     super.init(style: style , reuseIdentifier: reuseIdentifier)
     //========================================================================
+    
     imageCell.translatesAutoresizingMaskIntoConstraints = false
     self.addSubview(imageCell)
-    imageCell.contentMode = .scaleToFill
     imageCell.layer.masksToBounds = true
     imageCell.layer.cornerRadius = 10
-    imageCell.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
-    
-//    UIColor(red: 0.11, green: 0.47, blue: 0.38, alpha: 1.00)
+    imageCell.backgroundColor = .blue
     
     NSLayoutConstraint.activate([
       imageCell.rightAnchor.constraint(equalTo: rightAnchor, constant: -10),
@@ -39,11 +38,9 @@ class Service_Cell: UITableViewCell {
     //========================================================================
     stalyCell.font = UIFont.systemFont(ofSize: 17)
     stalyCell.numberOfLines = 0
-//    stalyCell.textColor = .darkGray
+    stalyCell.textColor = .darkGray
     stalyCell.translatesAutoresizingMaskIntoConstraints = false
-//    stalyCell.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
-    
-//    UIColor(red: 0.11, green: 0.47, blue: 0.38, alpha: 1.00)
+    stalyCell.backgroundColor = .black
     stalyCell.layer.cornerRadius = 10
     stalyCell.clipsToBounds = true
 
@@ -58,22 +55,20 @@ class Service_Cell: UITableViewCell {
 
     ])
     //========================================================================
-    nameCell.translatesAutoresizingMaskIntoConstraints = false
-    self.addSubview(nameCell)
     
-    nameCell.textColor = .black
-    nameCell.textAlignment = .right
-//    nameCell.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    titleCell.translatesAutoresizingMaskIntoConstraints = false
+    self.addSubview(titleCell)
     
-//    UIColor(red: 0.11, green: 0.47, blue: 0.38, alpha: 1.00)
-//    nameCell.font = UIFont.boldSystemFont(ofSize: 20)
-    nameCell.font = UIFont.systemFont(ofSize: 20)
+    titleCell.textColor = .black
+    titleCell.textAlignment = .right
+    titleCell.backgroundColor = .systemBlue
+    titleCell.font = UIFont.boldSystemFont(ofSize: 20)
     
     NSLayoutConstraint.activate([
-      nameCell.rightAnchor.constraint(equalTo:imageCell.leftAnchor, constant: -15),
-      nameCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 15),
-      nameCell.topAnchor.constraint(equalTo: topAnchor, constant: 20),
-      nameCell.heightAnchor.constraint(equalToConstant: 60)
+      titleCell.rightAnchor.constraint(equalTo:imageCell.leftAnchor, constant: -15),
+      titleCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 15),
+      titleCell.topAnchor.constraint(equalTo: topAnchor, constant: 20),
+      titleCell.heightAnchor.constraint(equalToConstant: 60)
     ])
   }
   //==========================================================================
@@ -81,4 +76,4 @@ class Service_Cell: UITableViewCell {
     super.init(coder: coder)
   }
 }
-//==========================================================================
+

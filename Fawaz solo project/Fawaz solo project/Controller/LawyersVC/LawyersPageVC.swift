@@ -21,7 +21,8 @@ class LawyersPageVC : UIViewController{
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    view.backgroundColor = .red
+//    view.backgroundColor = .red
+    view.backgroundColor = UIColor (named: "myBackgroundColor")
     
     imageBlogPage.layer.masksToBounds = true
     imageBlogPage.layer.cornerRadius = 10

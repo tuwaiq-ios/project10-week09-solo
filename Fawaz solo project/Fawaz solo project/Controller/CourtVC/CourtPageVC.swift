@@ -18,7 +18,7 @@ class CourtPageVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    view.backgroundColor = .systemGray
+    view.backgroundColor = UIColor (named: "myBackgroundColor")
     
     imageCourtPage.translatesAutoresizingMaskIntoConstraints = false
     nameCourtPage.translatesAutoresizingMaskIntoConstraints = false
