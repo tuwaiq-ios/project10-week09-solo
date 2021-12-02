@@ -30,7 +30,7 @@ class ReminderVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                           albumName: "عبدالعزيز الفقيه",
                           artistName: "تشغيل",
                           imageName: "فقيه",
-                          trackName: "IMG_3885(1)"))
+                          trackName: "song1"))
         songs.append(Song(name: "تعليق الحرم المكي",
                           albumName: "محمد الصبيحي",
                           artistName: "تشغيل",

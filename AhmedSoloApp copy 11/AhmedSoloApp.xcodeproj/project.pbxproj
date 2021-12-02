@@ -11,6 +11,7 @@
 		FC15B2C32758F07000DD76BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC15B2C22758F07000DD76BB /* Assets.xcassets */; };
 		FC24476927562FBF005B0643 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC24476827562FBF005B0643 /* WebVC.swift */; };
 		FC2447722757493F005B0643 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2447712757493F005B0643 /* Views.swift */; };
+		FC36C98A275935500078CCAB /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC36C989275935500078CCAB /* song1.mp3 */; };
 		FC4F1A462754DE4100C9DC0F /* ReminderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F1A452754DE4100C9DC0F /* ReminderVC.swift */; };
 		FC4F1A482754DE6300C9DC0F /* ReminderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F1A472754DE6300C9DC0F /* ReminderCell.swift */; };
 		FC4F1A58275598C300C9DC0F /* TasbihVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F1A57275598C300C9DC0F /* TasbihVC.swift */; };
@@ -36,6 +37,7 @@
 		FC24476627560662005B0643 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		FC24476827562FBF005B0643 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 		FC2447712757493F005B0643 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		FC36C989275935500078CCAB /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song1.mp3; sourceTree = "<group>"; };
 		FC45C0922754B52D00D09A9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		FC4F1A452754DE4100C9DC0F /* ReminderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderVC.swift; sourceTree = "<group>"; };
 		FC4F1A472754DE6300C9DC0F /* ReminderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCell.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		FC45C0902754A76400D09A9D /* section3 */ = {
 			isa = PBXGroup;
 			children = (
+				FC36C989275935500078CCAB /* song1.mp3 */,
 				FC7E38CA2753F64E00AEAF5D /* song2.mp3 */,
 				FC7E38CE2753FC7000AEAF5D /* song3.mp3 */,
 				FC7E38BF2753EED500AEAF5D /* Soot.swift */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC7E38CF2753FC7000AEAF5D /* song3.mp3 in Resources */,
+				FC36C98A275935500078CCAB /* song1.mp3 in Resources */,
 				FC962E0427538FB0006B84C7 /* LaunchScreen.storyboard in Resources */,
 				FC7E38CB2753F64E00AEAF5D /* song2.mp3 in Resources */,
 				FC962DFF27538FB0006B84C7 /* Main.storyboard in Resources */,
