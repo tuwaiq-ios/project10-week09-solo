@@ -25,6 +25,7 @@ final class MusicPlayerVC : UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         addBlurredView()
         setupView()
     }

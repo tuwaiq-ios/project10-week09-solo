@@ -33,6 +33,7 @@
 		C9FD3E0E275780D300908743 /* Favorite Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD3E0D275780D300908743 /* Favorite Service.swift */; };
 		C9FD3E1027578C0300908743 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD3E0F27578C0300908743 /* FavoriteCell.swift */; };
 		C9FD3E132757ABB100908743 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD3E122757ABB100908743 /* LogInVC.swift */; };
+		C9FD3E162758BF5200908743 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FD3E152758BF5200908743 /* API.swift */; };
 		F703995AFDB0C9C5B63D7E74 /* Pods_MusicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD5FE417B1C27BC6AFC593D /* Pods_MusicApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		C9FD3E0D275780D300908743 /* Favorite Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favorite Service.swift"; sourceTree = "<group>"; };
 		C9FD3E0F27578C0300908743 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		C9FD3E122757ABB100908743 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		C9FD3E152758BF5200908743 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				C91752AC2754F7AE0008C218 /* Assets.xcassets */,
 				C91752AE2754F7AE0008C218 /* LaunchScreen.storyboard */,
 				C91752B12754F7AE0008C218 /* Info.plist */,
+				C9FD3E142758BEB900908743 /* API */,
 			);
 			path = MusicApp;
 			sourceTree = "<group>";
@@ -181,6 +184,14 @@
 				C9FD3E0D275780D300908743 /* Favorite Service.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		C9FD3E142758BEB900908743 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C9FD3E152758BF5200908743 /* API.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		E5D384BAC0D400DD5BD38FF0 /* Frameworks */ = {
@@ -328,6 +339,7 @@
 				C9FD3E1027578C0300908743 /* FavoriteCell.swift in Sources */,
 				C91752C22754FB130008C218 /* Album.swift in Sources */,
 				C91752C527550D390008C218 /* AlbumTableViewCell.swift in Sources */,
+				C9FD3E162758BF5200908743 /* API.swift in Sources */,
 				C9FD3E132757ABB100908743 /* LogInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

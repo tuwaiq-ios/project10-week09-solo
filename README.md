@@ -34,7 +34,7 @@
      Music 
 
 ### Project Description :
-A program that allows you to listen to your favorite song without the Internet
+Application that allows you to listen to your favorite song without the Internet
 
 ### Features List:
 // Add your project feature list

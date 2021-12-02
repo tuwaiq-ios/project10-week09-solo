@@ -22,6 +22,7 @@ import UIKit
         musicTypeCV.dataSource = self
         musicTypeCV.register(SingerCell.self, forCellWithReuseIdentifier: SingerCell.identifier)
         musicTypeCV.translatesAutoresizingMaskIntoConstraints = false
+        musicTypeCV.backgroundColor = UIColor (named: "Color-1")
         musicTypeCV.frame = view.bounds
         return musicTypeCV
     }()

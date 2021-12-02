@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol LogIn : class {
+    
+}
+
 class LogInVC: UIViewController , UITextFieldDelegate {
     
     lazy var imageView: UIImageView = {
@@ -44,7 +48,6 @@ class LogInVC: UIViewController , UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
        view.backgroundColor = UIColor(patternImage: UIImage(named: "10")!)
-//        view.backgroundColor = UIColor (named: "Color-1")
        
         view.addSubview(imageView)
         

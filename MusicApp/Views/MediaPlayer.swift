@@ -15,7 +15,6 @@ final class MediaPlayer: UIView{
     private var timer : Timer?
     private var playingIndex = 0
     var postIndex: Int?
-//    var h :Array<Song> = []
     var newSong: Song!
     
     private lazy var albumName: UILabel = {

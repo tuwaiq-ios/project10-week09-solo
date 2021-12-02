@@ -17,6 +17,7 @@ class FavoriteSongsVC: UIViewController {
         favoriteTV.translatesAutoresizingMaskIntoConstraints = false
         favoriteTV.dataSource = self
         favoriteTV.delegate = self
+        favoriteTV.backgroundColor = UIColor (named: "Color-1")
         return favoriteTV
     }()
     

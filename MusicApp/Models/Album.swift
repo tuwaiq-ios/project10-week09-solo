@@ -41,3 +41,8 @@ struct FavSong {
     var favoriteSong : String
     var favImage : String
 }
+
+let dictionary : [String: Int] = ["a" : 1 , "b" : 2 , "c" : 3]
+let s : Set = [1,2,3]
+
+
