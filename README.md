@@ -60,6 +60,9 @@ It contains audio, religious supplications and Islamic songs, so the user can he
 ### User Stories:
 // Add your project user stories
 
+User can read books
+The audios can be heard within the application, as well as the electronic rosary.
+
 ### Presentation:
 // Create your project presentation
 
