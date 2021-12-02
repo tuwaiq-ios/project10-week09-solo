@@ -55,6 +55,7 @@ AppDelegate
 Basic Min
 Main of Top 10
 Main of Edit Student
+Dark and light mode
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\
 Cells:
 BootcampsCell
