@@ -1,64 +1,39 @@
 # Project 10, Week 09: Solo
 
 
-## Based on what you’ve learned until now, create a project of your choosing (impress us with your imagination). This project must at least satisfy the following requirements:
+BluePrint 
 
-- Use optional
-- Use conditional (if, switch)
-- Use array
-- Use dictionary
-- Use set
-- Use loop
-- Use functions to organize code
-- Use closure
-- Use struct
-- Use classe with an initializer
-- Use some form of error handling
-- Use protocol
-- Use extension
-- Use computed property
-- Use table view
-- Use collecton view
-- Use button
-- Use auto layout
-- Use dark/light modes
-- Use stack view
-- Use image view
-- Use label
-- Use navigation controller
-- Use tab controller
-- Use alert controller
+Project Name: Health App.
 
-## You should have a:
-### Project Name: 
-// Add your project name
+Project Description:
 
-### Project Description :
-// Add your project description
+An application that takes care of the user from the health aspect of his life, as the application offers many features that facilitate the user a lot of health goals that were difficult for him.  Such as doing exercises, organizing sleep, eating healthy foods, calculating body mass, as well as a list to record health goals.
+__________________________________________
 
-### Features List:
-// Add your project feature list
-- Feature 1
-- Feature 2
+Define structure:
 
-### Structure:
-// Add your project screens/models/views/cells
+Models
+Controllers/
+Sign & Login
+health goals
+Food
+Activities
+Sleep
+BMI 
+__________________________________________
 
-### User Stories:
-// Add your project user stories
+User Stories:
 
-### Presentation:
-// Create your project presentation
-
-
-## Deadline: 
-9:00 am, Sunday, Nov 28, 2021 
-
-
-## ...
-Now is the time to showcase your skills. You will have a week to complete the project.
-On Sunday, you will present to us what you have achieved. 
+As a User I can sign and Login to the app so that I can save my data  on Firebase.
+As a User I can write my Healthy goals in a list and save it on database so that I can do it.
+As a User I can see alot of activities and workouts so that I can practise with it.
+As a User I can browse a list of healthy foods so that I can prepare it.
+As a User I can calculate my body mass so that I can reach the desired number.
+As a User I can regulate my sleep so that I can get  the healthy and ideal Sleep.
+__________________________________________
 
 
 
-### For your project. Edit this README.md file to include your own project name,  overview, user stories, and usage. 
+
+
+
