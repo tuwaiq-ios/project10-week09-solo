@@ -31,24 +31,24 @@
 
 ## You should have a:
 ### Project Name: 
-// Add your project name
+Covid-19 statistics
 
 ### Project Description :
-// Add your project description
+application show up covid-19 updated cases and news
 
 ### Features List:
 // Add your project feature list
-- Feature 1
-- Feature 2
+- using api 
+- show all countries cases
 
 ### Structure:
-// Add your project screens/models/views/cells
+// views - collection view - cells 
 
 ### User Stories:
-// Add your project user stories
+// registration pages , cases page , news  page 
 
 ### Presentation:
-// Create your project presentation
+// there is file inside project file 
 
 
 ## Deadline: 
