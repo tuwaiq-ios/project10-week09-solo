@@ -1,0 +1,6 @@
+framework module Pods_Raha_and_Nawa {
+  umbrella header "Pods-Raha and Nawa-umbrella.h"
+
+  export *
+  module * { export * }
+}

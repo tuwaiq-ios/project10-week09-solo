@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B04BE78155F960B9C4DC92D3 /* Pods_Raha_and_Nawa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A14931F5D6B34A219EEDC3F /* Pods_Raha_and_Nawa.framework */; };
+		FA4F2905275861C000E5D267 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA4F2904275861C000E5D267 /* GoogleService-Info.plist */; };
+		FA5FDB37274E1E7000F374D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FDB36274E1E7000F374D3 /* AppDelegate.swift */; };
+		FA5FDB39274E1E7000F374D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FDB38274E1E7000F374D3 /* SceneDelegate.swift */; };
+		FA5FDB3E274E1E7000F374D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5FDB3C274E1E7000F374D3 /* Main.storyboard */; };
+		FA5FDB40274E1E7100F374D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5FDB3F274E1E7100F374D3 /* Assets.xcassets */; };
+		FA5FDB43274E1E7100F374D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5FDB41274E1E7100F374D3 /* LaunchScreen.storyboard */; };
+		FA5FDB52274E506400F374D3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FDB51274E506400F374D3 /* Model.swift */; };
+		FA5FDB56274E631100F374D3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5FDB55274E631100F374D3 /* HomeVC.swift */; };
+		FA91458C2754B50400AB3C95 /* ViewControllerSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91458B2754B50400AB3C95 /* ViewControllerSignIn.swift */; };
+		FA91458E2754E68C00AB3C95 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91458D2754E68C00AB3C95 /* HomeCollectionViewCell.swift */; };
+		FA914593275511EB00AB3C95 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA914592275511EB00AB3C95 /* PhotosCollectionViewCell.swift */; };
+		FA9145952755129300AB3C95 /* PhotosCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9145942755129300AB3C95 /* PhotosCollectionReusableView.swift */; };
+		FA91459727553EFE00AB3C95 /* PhotosBasicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91459627553EFE00AB3C95 /* PhotosBasicVC.swift */; };
+		FA91459C2755CC0C00AB3C95 /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91459B2755CC0C00AB3C95 /* CartVC.swift */; };
+		FA91459E2755CCF700AB3C95 /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91459D2755CCF700AB3C95 /* ProductVC.swift */; };
+		FA9145A22755DEE000AB3C95 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9145A12755DEE000AB3C95 /* ProductTableViewCell.swift */; };
+		FA9145A727560D7A00AB3C95 /* DetailsProViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9145A627560D7A00AB3C95 /* DetailsProViewController.swift */; };
+		FA9145A927563DC800AB3C95 /* productListingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9145A827563DC800AB3C95 /* productListingCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5905BE501D50213C5F7CD3FC /* Pods-Raha and Nawa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Raha and Nawa.release.xcconfig"; path = "Target Support Files/Pods-Raha and Nawa/Pods-Raha and Nawa.release.xcconfig"; sourceTree = "<group>"; };
+		9A14931F5D6B34A219EEDC3F /* Pods_Raha_and_Nawa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Raha_and_Nawa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13C8796224CD97007E212AF /* Pods-Raha and Nawa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Raha and Nawa.debug.xcconfig"; path = "Target Support Files/Pods-Raha and Nawa/Pods-Raha and Nawa.debug.xcconfig"; sourceTree = "<group>"; };
+		FA4F2904275861C000E5D267 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA5FDB33274E1E7000F374D3 /* Raha and Nawa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Raha and Nawa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5FDB36274E1E7000F374D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA5FDB38274E1E7000F374D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA5FDB3D274E1E7000F374D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA5FDB3F274E1E7100F374D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA5FDB42274E1E7100F374D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA5FDB44274E1E7100F374D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA5FDB51274E506400F374D3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FA5FDB55274E631100F374D3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FA91458B2754B50400AB3C95 /* ViewControllerSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSignIn.swift; sourceTree = "<group>"; };
+		FA91458D2754E68C00AB3C95 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA914592275511EB00AB3C95 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		FA9145942755129300AB3C95 /* PhotosCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionReusableView.swift; sourceTree = "<group>"; };
+		FA91459627553EFE00AB3C95 /* PhotosBasicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosBasicVC.swift; sourceTree = "<group>"; };
+		FA91459B2755CC0C00AB3C95 /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
+		FA91459D2755CCF700AB3C95 /* ProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
+		FA9145A12755DEE000AB3C95 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		FA9145A627560D7A00AB3C95 /* DetailsProViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsProViewController.swift; sourceTree = "<group>"; };
+		FA9145A827563DC800AB3C95 /* productListingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = productListingCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA5FDB30274E1E7000F374D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04BE78155F960B9C4DC92D3 /* Pods_Raha_and_Nawa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B67D6247EB61941BED1E61FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A13C8796224CD97007E212AF /* Pods-Raha and Nawa.debug.xcconfig */,
+				5905BE501D50213C5F7CD3FC /* Pods-Raha and Nawa.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CBF8A93A703B8142803B9B63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A14931F5D6B34A219EEDC3F /* Pods_Raha_and_Nawa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA5FDB2A274E1E7000F374D3 = {
+			isa = PBXGroup;
+			children = (
+				FA91458F275510CF00AB3C95 /* HomePage */,
+				FA5FDB35274E1E7000F374D3 /* Raha and Nawa */,
+				FA5FDB34274E1E7000F374D3 /* Products */,
+				B67D6247EB61941BED1E61FA /* Pods */,
+				CBF8A93A703B8142803B9B63 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA5FDB34274E1E7000F374D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA5FDB33274E1E7000F374D3 /* Raha and Nawa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA5FDB35274E1E7000F374D3 /* Raha and Nawa */ = {
+			isa = PBXGroup;
+			children = (
+				FA5FDB51274E506400F374D3 /* Model.swift */,
+				FA5FDB50274E4D3400F374D3 /* ChatPage */,
+				FA5FDB36274E1E7000F374D3 /* AppDelegate.swift */,
+				FA5FDB38274E1E7000F374D3 /* SceneDelegate.swift */,
+				FA5FDB3C274E1E7000F374D3 /* Main.storyboard */,
+				FA9145A827563DC800AB3C95 /* productListingCollectionViewCell.swift */,
+				FA9145A627560D7A00AB3C95 /* DetailsProViewController.swift */,
+				FA91459B2755CC0C00AB3C95 /* CartVC.swift */,
+				FA5FDB3F274E1E7100F374D3 /* Assets.xcassets */,
+				FA4F2904275861C000E5D267 /* GoogleService-Info.plist */,
+				FA5FDB41274E1E7100F374D3 /* LaunchScreen.storyboard */,
+				FA5FDB44274E1E7100F374D3 /* Info.plist */,
+			);
+			path = "Raha and Nawa";
+			sourceTree = "<group>";
+		};
+		FA5FDB50274E4D3400F374D3 /* ChatPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChatPage;
+			sourceTree = "<group>";
+		};
+		FA91458F275510CF00AB3C95 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				FA5FDB55274E631100F374D3 /* HomeVC.swift */,
+				FA91458D2754E68C00AB3C95 /* HomeCollectionViewCell.swift */,
+				FA91458B2754B50400AB3C95 /* ViewControllerSignIn.swift */,
+				FA9145A52755E2E300AB3C95 /* Products */,
+				FA9145982755CB4300AB3C95 /* Photo */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		FA9145982755CB4300AB3C95 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				FA91459627553EFE00AB3C95 /* PhotosBasicVC.swift */,
+				FA9145942755129300AB3C95 /* PhotosCollectionReusableView.swift */,
+				FA914592275511EB00AB3C95 /* PhotosCollectionViewCell.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		FA9145A52755E2E300AB3C95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA9145A12755DEE000AB3C95 /* ProductTableViewCell.swift */,
+				FA91459D2755CCF700AB3C95 /* ProductVC.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA5FDB32274E1E7000F374D3 /* Raha and Nawa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5FDB47274E1E7100F374D3 /* Build configuration list for PBXNativeTarget "Raha and Nawa" */;
+			buildPhases = (
+				B4CDAE269992440F642EEEB5 /* [CP] Check Pods Manifest.lock */,
+				FA5FDB2F274E1E7000F374D3 /* Sources */,
+				FA5FDB30274E1E7000F374D3 /* Frameworks */,
+				FA5FDB31274E1E7000F374D3 /* Resources */,
+				6FF6E846256B504E6B98F22C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Raha and Nawa";
+			productName = "Raha and Nawa";
+			productReference = FA5FDB33274E1E7000F374D3 /* Raha and Nawa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA5FDB2B274E1E7000F374D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					FA5FDB32274E1E7000F374D3 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = FA5FDB2E274E1E7000F374D3 /* Build configuration list for PBXProject "Raha and Nawa" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA5FDB2A274E1E7000F374D3;
+			productRefGroup = FA5FDB34274E1E7000F374D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA5FDB32274E1E7000F374D3 /* Raha and Nawa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA5FDB31274E1E7000F374D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5FDB43274E1E7100F374D3 /* LaunchScreen.storyboard in Resources */,
+				FA4F2905275861C000E5D267 /* GoogleService-Info.plist in Resources */,
+				FA5FDB40274E1E7100F374D3 /* Assets.xcassets in Resources */,
+				FA5FDB3E274E1E7000F374D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FF6E846256B504E6B98F22C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Raha and Nawa/Pods-Raha and Nawa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Raha and Nawa/Pods-Raha and Nawa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Raha and Nawa/Pods-Raha and Nawa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4CDAE269992440F642EEEB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Raha and Nawa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA5FDB2F274E1E7000F374D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA91459E2755CCF700AB3C95 /* ProductVC.swift in Sources */,
+				FA91459727553EFE00AB3C95 /* PhotosBasicVC.swift in Sources */,
+				FA9145A927563DC800AB3C95 /* productListingCollectionViewCell.swift in Sources */,
+				FA91459C2755CC0C00AB3C95 /* CartVC.swift in Sources */,
+				FA91458E2754E68C00AB3C95 /* HomeCollectionViewCell.swift in Sources */,
+				FA5FDB56274E631100F374D3 /* HomeVC.swift in Sources */,
+				FA5FDB52274E506400F374D3 /* Model.swift in Sources */,
+				FA9145A727560D7A00AB3C95 /* DetailsProViewController.swift in Sources */,
+				FA9145A22755DEE000AB3C95 /* ProductTableViewCell.swift in Sources */,
+				FA5FDB37274E1E7000F374D3 /* AppDelegate.swift in Sources */,
+				FA9145952755129300AB3C95 /* PhotosCollectionReusableView.swift in Sources */,
+				FA914593275511EB00AB3C95 /* PhotosCollectionViewCell.swift in Sources */,
+				FA91458C2754B50400AB3C95 /* ViewControllerSignIn.swift in Sources */,
+				FA5FDB39274E1E7000F374D3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA5FDB3C274E1E7000F374D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA5FDB3D274E1E7000F374D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA5FDB41274E1E7100F374D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA5FDB42274E1E7100F374D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA5FDB45274E1E7100F374D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA5FDB46274E1E7100F374D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA5FDB48274E1E7100F374D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A13C8796224CD97007E212AF /* Pods-Raha and Nawa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Raha and Nawa/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FA.Raha-and-Nawa";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA5FDB49274E1E7100F374D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5905BE501D50213C5F7CD3FC /* Pods-Raha and Nawa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Raha and Nawa/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FA.Raha-and-Nawa";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA5FDB2E274E1E7000F374D3 /* Build configuration list for PBXProject "Raha and Nawa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5FDB45274E1E7100F374D3 /* Debug */,
+				FA5FDB46274E1E7100F374D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA5FDB47274E1E7100F374D3 /* Build configuration list for PBXNativeTarget "Raha and Nawa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5FDB48274E1E7100F374D3 /* Debug */,
+				FA5FDB49274E1E7100F374D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA5FDB2B274E1E7000F374D3 /* Project object */;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>116628182452-ndh4s6gphpe1hlbedqtslom5193e37dq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.116628182452-ndh4s6gphpe1hlbedqtslom5193e37dq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyASLHqxVadXYoUYJIsYJfrSM1yzcCwN5zA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>116628182452</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.FA.Raha-and-Nawa</string>
+	<key>PROJECT_ID</key>
+	<string>raha-and-nawa</string>
+	<key>STORAGE_BUCKET</key>
+	<string>raha-and-nawa.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:116628182452:ios:29a80527731a06b7ee4ee1</string>
+	<key>DATABASE_URL</key>
+	<string>https://raha-and-nawa-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
