@@ -17,18 +17,19 @@ class LawyersPageVC : UIViewController{
   let textBlogPage = UILabel()
   let button = UIButton()
   
+  
   //==========================================================================
   override func viewDidLoad() {
     super.viewDidLoad()
     
-//    view.backgroundColor = .red
-    view.backgroundColor = UIColor (named: "myBackgroundColor")
+    view.backgroundColor = UIColor (named: "myBackgroundColor2")
     
     imageBlogPage.layer.masksToBounds = true
     imageBlogPage.layer.cornerRadius = 10
     imageBlogPage.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(imageBlogPage)
-    imageBlogPage.backgroundColor = .blue
+    imageBlogPage.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
     NSLayoutConstraint.activate([
       imageBlogPage.topAnchor.constraint(equalTo:view.safeAreaLayoutGuide.topAnchor),
@@ -38,9 +39,10 @@ class LawyersPageVC : UIViewController{
     ])
     //========================================================================
     staly.textAlignment = .center
-    staly.backgroundColor = .black
-    staly.textColor = .black
-    staly.font = .boldSystemFont(ofSize: 20)
+    staly.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    staly.textColor = .label
+    staly.font = .systemFont(ofSize: 20)
     staly.layer.cornerRadius = 10
     staly.clipsToBounds = true
     staly.translatesAutoresizingMaskIntoConstraints = false
@@ -54,9 +56,10 @@ class LawyersPageVC : UIViewController{
     ])
     //========================================================================
     nameBlogPage.textAlignment = .center
-    nameBlogPage.backgroundColor = .systemBlue
-    nameBlogPage.textColor = .black
-    nameBlogPage.font = .boldSystemFont(ofSize: 20)
+    nameBlogPage.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    nameBlogPage.textColor = .label
+    nameBlogPage.font = .systemFont(ofSize: 20)
     nameBlogPage.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(nameBlogPage)
     
@@ -68,9 +71,10 @@ class LawyersPageVC : UIViewController{
     ])
     //========================================================================
     numberBlogePage.textAlignment = .center
-    numberBlogePage.backgroundColor = .systemBlue
-    numberBlogePage.textColor = .black
-    numberBlogePage.font = .boldSystemFont(ofSize: 20)
+    numberBlogePage.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    numberBlogePage.textColor = .label
+    numberBlogePage.font = .systemFont(ofSize: 20)
     numberBlogePage.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(numberBlogePage)
     
@@ -81,27 +85,29 @@ class LawyersPageVC : UIViewController{
       numberBlogePage.heightAnchor.constraint(equalToConstant: 30)
     ])
     //========================================================================
-    staly2.font = UIFont.systemFont(ofSize: 17)
+    staly2.font = UIFont.systemFont(ofSize: 18)
     staly2.numberOfLines = 0
-    staly2.textColor = .darkGray
+    staly2.textColor = .label
     staly2.translatesAutoresizingMaskIntoConstraints = false
-    staly2.backgroundColor = .black
+    staly2.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     staly2.layer.cornerRadius = 10
     staly2.clipsToBounds = true
     view.addSubview(staly2)
     
     NSLayoutConstraint.activate([
       staly2.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-      staly2.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 75),
+      staly2.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 40),
       staly2.widthAnchor.constraint(equalToConstant: 350),
       staly2.heightAnchor.constraint(equalToConstant: 330)
       
     ])
     //========================================================================
     
-    textBlogPage.backgroundColor = .systemGray
-    textBlogPage.textColor = .black
-    textBlogPage.font = .systemFont(ofSize: 22)
+    textBlogPage.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    textBlogPage.textColor = .label
+    textBlogPage.font = .systemFont(ofSize: 18)
     textBlogPage.numberOfLines = 12
     textBlogPage.textAlignment = .right
     textBlogPage.translatesAutoresizingMaskIntoConstraints = false
@@ -114,21 +120,24 @@ class LawyersPageVC : UIViewController{
       textBlogPage.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -30),
     ])
     //========================================================================
-    
-    button.setTitle("اتصل", for: .normal)
-    button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+    button.setTitle("اتصال", for: .normal)
+    button.setTitleColor(.label, for: .normal)
+    button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
     button.layer.cornerRadius = 20
     button.clipsToBounds = true
     button.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(button)
-    button.backgroundColor = .blue
+    button.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
     NSLayoutConstraint.activate([
       button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-      button.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 330),
+      button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30),
+//      button.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 330),
       button.widthAnchor.constraint(equalToConstant: 350),
       button.heightAnchor.constraint(equalToConstant: 70)
     ])
+    
   }
   
 }

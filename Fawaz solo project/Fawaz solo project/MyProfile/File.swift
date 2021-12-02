@@ -21,7 +21,7 @@ class MyProfilePageVC : UIViewController{
   //==========================================================================
   override func viewDidLoad() {
     super.viewDidLoad()
-    view.backgroundColor = UIColor (named: "myBackgroundColor")
+    view.backgroundColor = UIColor (named: "myBackgroundColor2")
  }
   
 }

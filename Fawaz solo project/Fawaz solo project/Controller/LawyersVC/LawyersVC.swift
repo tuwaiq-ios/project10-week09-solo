@@ -11,7 +11,8 @@ class LawyersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    view.backgroundColor = UIColor (named: "myBackgroundColor")
+    
+    view.backgroundColor = UIColor (named: "myBackgroundColor2")
     let TV = UITableView()
     
     TV.dataSource = self
@@ -19,7 +20,6 @@ class LawyersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     TV.register(LawyersVC_Cell.self, forCellReuseIdentifier: LawyersVC_Cell.identifier)
     
-//    TV.backgroundColor = .green
     TV.rowHeight = 100
     TV.translatesAutoresizingMaskIntoConstraints = false
     
@@ -44,10 +44,8 @@ class LawyersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let list = data_Lawyers_str[indexPath.row]
     
     let cell = tableView.dequeueReusableCell(withIdentifier: LawyersVC_Cell.identifier, for: indexPath) as! LawyersVC_Cell
-//    cell.backgroundColor = .systemGray
     cell.imageCell.image = list.image
     cell.nameCell.text = list.name
-    cell.stalyCell.text = list.text
     
     return cell
   }

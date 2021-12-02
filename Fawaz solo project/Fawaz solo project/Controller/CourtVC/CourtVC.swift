@@ -14,7 +14,8 @@ class CourtVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
   override func viewDidLoad(){
     super.viewDidLoad()
     
-    view.backgroundColor = UIColor (named: "myBackgroundColor")
+    view.backgroundColor = UIColor (named: "myBackgroundColor2")
+    
     let layout = UICollectionViewFlowLayout()
     layout.scrollDirection = .vertical
     layout.minimumLineSpacing = 10
@@ -30,7 +31,6 @@ class CourtVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     }
     
     collectionView.register(CourtVC_Cell.self, forCellWithReuseIdentifier: CourtVC_Cell.identifier)
-    //    collectionView.backgroundColor = .systemGray
     collectionView.dataSource = self
     collectionView.delegate = self
     view.addSubview(collectionView)

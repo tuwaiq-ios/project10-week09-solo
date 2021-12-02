@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,31 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cc1" translatesAutoresizingMaskIntoConstraints="NO" id="edy-X3-ZZh">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jjjjjj" translatesAutoresizingMaskIntoConstraints="NO" id="edy-X3-ZZh">
+                                <rect key="frame" x="37" y="204" width="341" height="512"/>
                                 <color key="backgroundColor" red="0.2588235438" green="0.54901963470000004" blue="0.54901963470000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عدل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDt-mh-iQn">
+                                <rect key="frame" x="20" y="88" width="374" height="95.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.2588235438" green="0.54901963470000004" blue="0.54901963470000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="edy-X3-ZZh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="F6x-jk-Goi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="edy-X3-ZZh" secondAttribute="bottom" id="UHZ-D0-vZF"/>
-                            <constraint firstItem="edy-X3-ZZh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fqz-zF-cWy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="edy-X3-ZZh" secondAttribute="trailing" id="oy7-A4-sqJ"/>
+                            <constraint firstItem="edy-X3-ZZh" firstAttribute="top" secondItem="NDt-mh-iQn" secondAttribute="bottom" constant="20.5" id="7xB-Ee-kg7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NDt-mh-iQn" secondAttribute="trailing" constant="20" id="C4Y-hL-CsF"/>
+                            <constraint firstItem="NDt-mh-iQn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="IP6-z2-Ash"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="edy-X3-ZZh" secondAttribute="trailing" constant="36" id="j4i-la-OCg"/>
+                            <constraint firstItem="edy-X3-ZZh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="paD-7V-mpj"/>
+                            <constraint firstItem="NDt-mh-iQn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tBd-hh-8RJ"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>
-        <image name="cc1" width="1080" height="2220"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="jjjjjj" width="512" height="512"/>
     </resources>
 </document>

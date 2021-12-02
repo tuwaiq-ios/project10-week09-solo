@@ -12,7 +12,7 @@ class NewsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    view.backgroundColor = UIColor (named: "myBackgroundColor")
+    view.backgroundColor = UIColor (named: "myBackgroundColor2")
     let TV = UITableView()
     
     TV.dataSource = self
@@ -26,7 +26,6 @@ class NewsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     view.addSubview(TV)
     
     NSLayoutConstraint.activate([
-      
       TV.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
       TV.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
       TV.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),

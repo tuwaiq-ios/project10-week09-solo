@@ -25,373 +25,775 @@ struct A{
 var data_Court_str = [
   
   Court_str(
-    image: UIImage(named: "c2.png"),
+    image: UIImage(named: "law3.png"),
     name: "المحكمه العامه",
     
     a: [A(
-      imageA: UIImage(named: "paper.png"),
+      imageA: UIImage(named: "law4.png"),
       nameA: "اصدار الصكوك",
       staly: "",
-      summaryA: ""
+      summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
     ),
-    
-    A(
-      imageA: UIImage(named: "person.fill"),
-      nameA: "المنازعه في الملكيه",
-      staly: "",
-      summaryA: ""
-    )]
+        
+        A(
+          imageA: UIImage(named: "law4.png"),
+          nameA: "المنازعه في الملكيه",
+          staly: "",
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
+        )]
   ),
   //==========================================================================
   Court_str(
-    image: UIImage(named: "c2.png"),
+    image: UIImage(named: "law3.png"),
     name: "المحكمه الجزائيه",
     
     a: [A(
-      imageA: UIImage(named: "person.fill"),
+      imageA: UIImage(named: "law4.png"),
       nameA: "الاستعلام التفصيلي عن قضية",
       staly: "",
-      summaryA: ""
-    ),
-    
-    A(
-      imageA: UIImage(named: "person.fill"),
-      nameA: "الاطلاع على الأحكام",
-      staly: "",
-      summaryA: ""
+      summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
     ),
         
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
+          nameA: "الاطلاع على الأحكام",
+          staly: "",
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
+        ),
+        
+        A(
+          imageA: UIImage(named: "law4.png"),
           nameA: "الاستعلام عن مواعيد الجلسات",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "الاستعلام عن حالة قضية",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "قضاياي",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "مواعيدي",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
        ]
   ),
   
   //==========================================================================
   Court_str(
-    image: UIImage(named: "c2.png"),
+    image: UIImage(named: "law3.png"),
     name: "محكمه الاحوال الشخصيه",
     
     a: [A(
-      imageA: UIImage(named: "person.fill"),
+      imageA: UIImage(named: "law4.png"),
       nameA: "إثبات الزواج",
       staly: "",
-      summaryA: ""
+      summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
     ),
-    
-    A(
-      imageA: UIImage(named: "person.fill"),
-      nameA: "إثبات الطلاق والخلع",
-      staly: "",
-      summaryA: ""
-    ),
+        
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
+          nameA: "إثبات الطلاق والخلع",
+          staly: "",
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
+        ),
+        A(
+          imageA: UIImage(named: "law4.png"),
           nameA: "الحضانه والنفقه و الزياره",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "إثتبات الوقف والوصيه",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "إثبات النسب",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "الميراث وقسمه التركه",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "إثبات تعيين الاوصياء",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "إثبات الغيبه والوفاه و حصر الورثه",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "الحجر على السفهاء",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "تزويج من لا ولي لها",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "إثبات توكيل الأخرس",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
        ]
   ),
   
   //==========================================================================
   Court_str(
-    image: UIImage(named: "c2.png"),
+    image: UIImage(named: "law3.png"),
     name: "المحكمه التجاريه",
     
     a: [A(
-      imageA: UIImage(named: "person.fill"),
+      imageA: UIImage(named: "law4.png"),
       nameA: "المنازعات التجاريه",
       staly: "",
-      summaryA: ""
+      summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
     ),
-    
-    A(
-      imageA: UIImage(named: "person.fill"),
-      nameA: "الدعوى على تاجر",
-      staly: "",
-      summaryA: ""
-    ),
-    
+        
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
+          nameA: "الدعوى على تاجر",
+          staly: "",
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
+        ),
+        
+        A(
+          imageA: UIImage(named: "law4.png"),
           nameA: "دعاوى الإفلاس",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "مخالفات الانظمه التجاريه",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "دعوى على مقاول إنشائي",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "دعوى  بالتوريد",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "دعوى المتعلقه بالسمسره",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "النزاعات في تركت المتوفي",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
        ]
   ),
   
   //==========================================================================
   Court_str(
-    image: UIImage(named: "c2.png"),
+    image: UIImage(named: "law3.png"),
     name: "المحكمه العماليه",
     
     a: [A(
-      imageA: UIImage(named: "person.fill"),
+      imageA: UIImage(named: "law4.png"),
       nameA: "عقود العمل و الاجور",
       staly: "",
-      summaryA: ""
-    ),
-    
-    A(
-      imageA: UIImage(named: "person.fill"),
-      nameA: "عقوبات نظام العمل",
-      staly: "",
-      summaryA: ""
+      summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
     ),
         
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
+          nameA: "عقوبات نظام العمل",
+          staly: "",
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
+        ),
+        
+        A(
+          imageA: UIImage(named: "law4.png"),
           nameA: "الفصل من العمل",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "اعتراض على قرار",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
         
         A(
-          imageA: UIImage(named: "person.fill"),
+          imageA: UIImage(named: "law4.png"),
           nameA: "التظلم",
           staly: "",
-          summaryA: ""
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
         ),
        ]
   ),
   
   //==========================================================================
   Court_str(
-    image: UIImage(named: "c2.png"),
-    name: "",
+    image: UIImage(named: "law3.png"),
+    name: "منصة تراضي",
     
     a: [A(
-      imageA: UIImage(named: "person.fill"),
+      imageA: UIImage(named: "law4.png"),
       nameA: "",
       staly: "",
-      summaryA: ""
+      summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
     ),
-    
-    A(
-      imageA: UIImage(named: "person.fill"),
-      nameA: "xxxxxxxxxxxxxxx",
-      staly: "",
-      summaryA: ""
-    )]
+        
+        A(
+          imageA: UIImage(named: "law4.png"),
+          nameA: "",
+          staly: "",
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
+        )]
   ),
   
   //==========================================================================
   Court_str(
-    image: UIImage(named: "c2.png"),
-    name: "",
+    image: UIImage(named: "law3.png"),
+    name: "خدمة التقاضي الإلكتروني",
     
     a: [A(
-      imageA: UIImage(named: "person.fill"),
+      imageA: UIImage(named: "law4.png"),
       nameA: "",
       staly: "",
-      summaryA: ""
+      summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
     ),
-    
-    A(
-      imageA: UIImage(named: "person.fill"),
-      nameA: "xxxxxxxxxxxxxxx",
-      staly: "",
-      summaryA: ""
-    )]
+        
+        A(
+          imageA: UIImage(named: "law4.png"),
+          nameA: "",
+          staly: "",
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
+        )]
   ),
   
   //==========================================================================
   Court_str(
-    image: UIImage(named: "c2.png"),
-    name: "",
+    image: UIImage(named: "law3.png"),
+    name: "التحقق من صحة وثائق الصلح",
     
     a: [A(
-      imageA: UIImage(named: "person.fill"),
+      imageA: UIImage(named: "law4.png"),
       nameA: "",
       staly: "",
-      summaryA: ""
+      summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
     ),
-    
-    A(
-      imageA: UIImage(named: "person.fill"),
-      nameA: "xxxxxxxxxxxxxxx",
-      staly: "",
-      summaryA: ""
-    )]
+        
+        A(
+          imageA: UIImage(named: "law4.png"),
+          nameA: "",
+          staly: "",
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
+        )]
   ),
   
   //==========================================================================
   Court_str(
-    image: UIImage(named: "c2.png"),
-    name: "",
+    image: UIImage(named: "law3.png"),
+    name: "صحيفة الدعوى الإلكترونية",
     
     a: [A(
-      imageA: UIImage(named: "person.fill"),
+      imageA: UIImage(named: "law4.png"),
       nameA: "",
       staly: "",
-      summaryA: ""
+      summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
     ),
-    
-    A(
-      imageA: UIImage(named: "person.fill"),
-      nameA: "xxxxxxxxxxxxxxx",
-      staly: "",
-      summaryA: ""
-    )]
+        
+        A(
+          imageA: UIImage(named: "law4.png"),
+          nameA: "",
+          staly: "",
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
+        )]
   ),
   
   //==========================================================================
   Court_str(
-    image: UIImage(named: "c2.png"),
-    name: "",
+    image: UIImage(named: "law3.png"),
+    name: "طلب التنفيذ الإلكتروني",
     
     a: [A(
-      imageA: UIImage(named: "person.fill"),
+      imageA: UIImage(named: "law4.png"),
       nameA: "",
       staly: "",
-      summaryA: ""
+      summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
     ),
-    
-    A(
-      imageA: UIImage(named: "person.fill"),
-      nameA: "xxxxxxxxxxxxxxx",
-      staly: "",
-      summaryA: ""
-    )]
+        
+        A(
+          imageA: UIImage(named: "law4.png"),
+          nameA: "",
+          staly: "",
+          summaryA: """
+وصف الخدمه ......
+
+
+
+متطلبات الخدمه .......
+
+
+
+خطوات التقديم على الخدمه .......
+"""
+        )]
   ),
   
   //==========================================================================
-  Court_str(
-    image: UIImage(named: "c2.png"),
-    name: "",
-    
-    a: [A(
-      imageA: UIImage(named: "person.fill"),
-      nameA: "",
-      staly: "",
-      summaryA: ""
-    ),
-    
-    A(
-      imageA: UIImage(named: "person.fill"),
-      nameA: "xxxxxxxxxxxxxxx",
-      staly: "",
-      summaryA: ""
-    )]
-  ),
 ]

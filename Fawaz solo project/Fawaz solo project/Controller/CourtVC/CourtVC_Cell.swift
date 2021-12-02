@@ -14,13 +14,11 @@ class CourtVC_Cell: UICollectionViewCell {
   //==========================================================================
   let staly: UILabel = {
     let staly = UILabel()
-//    staly.textColor = .white
+    staly.textColor = .label
     staly.layer.cornerRadius = 40
     staly.clipsToBounds = true
-    staly.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
-    
-    
-//    UIColor(red: 0.11, green: 0.47, blue: 0.38, alpha: 1.00)
+    staly.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
     return staly
   }()
@@ -28,21 +26,21 @@ class CourtVC_Cell: UICollectionViewCell {
   let myImageView: UIImageView = {
     let imageView = UIImageView()
     imageView.contentMode = .scaleAspectFit
-//    imageView.backgroundColor = .black
-    imageView.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    imageView.tintColor = .label
+    imageView.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
-//    UIColor(red: 0.11, green: 0.47, blue: 0.38, alpha: 1.00)
     return imageView
   }()
   //==========================================================================
   let name: UILabel = {
     let label = UILabel()
-    label.textColor = .white
+    label.textColor = .label
     label.numberOfLines = 0
     label.textAlignment = .center
-    label.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    label.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
-//    UIColor(red: 0.11, green: 0.47, blue: 0.38, alpha: 1.00)
     return label
   }()
   //==========================================================================
@@ -61,7 +59,7 @@ class CourtVC_Cell: UICollectionViewCell {
   //==========================================================================
   override func layoutSubviews() {
     super.layoutSubviews()
-    //contentView.frame.size.height-50
+    
     staly.frame = CGRect(x: 0,
                          y: 0,
                          width: contentView.frame.size.height-40,

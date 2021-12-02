@@ -27,20 +27,24 @@ class MyProfileVC_Cell: UITableViewCell {
     self.addSubview(imageCell)
     imageCell.layer.masksToBounds = true
     imageCell.layer.cornerRadius = 10
-    imageCell.backgroundColor = .blue
+    imageCell.contentMode = .scaleAspectFit
+    imageCell.tintColor = .label
+    imageCell.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
     NSLayoutConstraint.activate([
       imageCell.rightAnchor.constraint(equalTo: rightAnchor, constant: -10),
       imageCell.centerYAnchor.constraint(equalTo: centerYAnchor),
-      imageCell.heightAnchor.constraint(equalToConstant: 80),
-      imageCell.widthAnchor.constraint(equalToConstant: 80)
+      imageCell.heightAnchor.constraint(equalToConstant: 50),
+      imageCell.widthAnchor.constraint(equalToConstant: 50)
     ])
     //========================================================================
-    stalyCell.font = UIFont.systemFont(ofSize: 17)
+    stalyCell.font = UIFont.systemFont(ofSize: 18)
     stalyCell.numberOfLines = 0
-    stalyCell.textColor = .darkGray
+    stalyCell.textColor = .label
     stalyCell.translatesAutoresizingMaskIntoConstraints = false
-    stalyCell.backgroundColor = .black
+    stalyCell.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     stalyCell.layer.cornerRadius = 10
     stalyCell.clipsToBounds = true
 
@@ -51,7 +55,7 @@ class MyProfileVC_Cell: UITableViewCell {
       stalyCell.centerYAnchor.constraint(equalTo: centerYAnchor),
       stalyCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 5),
       stalyCell.rightAnchor.constraint(equalTo:imageCell.leftAnchor, constant: -5),
-      stalyCell.heightAnchor.constraint(equalToConstant: 75)
+      stalyCell.heightAnchor.constraint(equalToConstant: 50)
 
     ])
     //========================================================================
@@ -59,16 +63,18 @@ class MyProfileVC_Cell: UITableViewCell {
     titleCell.translatesAutoresizingMaskIntoConstraints = false
     self.addSubview(titleCell)
     
-    titleCell.textColor = .black
+    titleCell.textColor = .label
     titleCell.textAlignment = .right
-    titleCell.backgroundColor = .systemBlue
-    titleCell.font = UIFont.boldSystemFont(ofSize: 20)
+    titleCell.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    titleCell.font = UIFont.systemFont(ofSize: 18)
     
     NSLayoutConstraint.activate([
       titleCell.rightAnchor.constraint(equalTo:imageCell.leftAnchor, constant: -15),
       titleCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 15),
-      titleCell.topAnchor.constraint(equalTo: topAnchor, constant: 20),
-      titleCell.heightAnchor.constraint(equalToConstant: 60)
+//      titleCell.topAnchor.constraint(equalTo: topAnchor, constant: 20),
+      titleCell.centerYAnchor.constraint(equalTo: centerYAnchor),
+      titleCell.heightAnchor.constraint(equalToConstant: 40)
     ])
   }
   //==========================================================================

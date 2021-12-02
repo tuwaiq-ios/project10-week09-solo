@@ -17,27 +17,39 @@ struct MyProfile_str {
 var data_MyProfile_str = [
   
   MyProfile_str(
-    image: UIImage(systemName: "person.fill"),
-    title: "ccccccccccccc",
-    text: "log."
+    image: UIImage(systemName: "globe"),
+    title: "اللغه",
+    text: ""
     ),
   
   MyProfile_str(
-    image: UIImage(systemName: "person.fill"),
-    title: "Mohammed Blog",
-    text: "Ao a blog."
+    image: UIImage(systemName: "questionmark.circle"),
+    title: "الأسئله الشائعه",
+    text: ""
     ),
   
   MyProfile_str(
-    image: UIImage(systemName: "person.fill"),
-    title: "Mohammed Blog",
-    text: "A blog."
+    image: UIImage(systemName: "text.bubble"),
+    title: "تواصل معنا",
+    text: ""
     ),
   
   MyProfile_str(
-    image: UIImage(systemName: "person.fill"),
-    title: "Mohammed Blog",
-    text: "A blog blog."
+    image: UIImage(systemName: "text.alignright"),
+    title: "شروط الإستخدام",
+    text: ""
+    ),
+  
+  MyProfile_str(
+    image: UIImage(systemName: "doc.text"),
+    title: "سياسه الخصوصيه",
+    text: ""
+    ),
+  
+  MyProfile_str(
+    image: UIImage(systemName: "gear"),
+    title: "الإعدادات",
+    text: ""
     ),
   
 ]

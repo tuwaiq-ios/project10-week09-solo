@@ -40,7 +40,7 @@ class LogInVC: UIViewController, UITextFieldDelegate {
     loginButton.translatesAutoresizingMaskIntoConstraints = false
     loginButton.setTitle(NSLocalizedString("Log In", comment: ""), for: .normal)
     loginButton.setTitleColor(.white, for: .normal)
-    loginButton.backgroundColor = .systemBrown
+    loginButton.backgroundColor = .systemGray2
     loginButton.layer.cornerRadius = 12
     loginButton.layer.masksToBounds = true
     loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)

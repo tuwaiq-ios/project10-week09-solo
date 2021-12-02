@@ -26,7 +26,9 @@ class NewsVC_Cell: UITableViewCell {
     self.addSubview(imageCell)
     imageCell.layer.cornerRadius = 10
     imageCell.clipsToBounds = true
-    imageCell.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    imageCell.backgroundColor = .systemGray4
+    imageCell.contentMode = .scaleAspectFill
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
     NSLayoutConstraint.activate([
       imageCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 10),
@@ -35,11 +37,12 @@ class NewsVC_Cell: UITableViewCell {
       imageCell.widthAnchor.constraint(equalToConstant: 120)
     ])
     //========================================================================
-    stalyCell.font = UIFont.systemFont(ofSize: 17)
+    stalyCell.font = UIFont.systemFont(ofSize: 20)
     stalyCell.numberOfLines = 0
-    stalyCell.textColor = .darkGray
+    stalyCell.textColor = .label
     stalyCell.translatesAutoresizingMaskIntoConstraints = false
-    stalyCell.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    stalyCell.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     stalyCell.layer.cornerRadius = 10
     stalyCell.clipsToBounds = true
     
@@ -55,11 +58,12 @@ class NewsVC_Cell: UITableViewCell {
     titleCell.translatesAutoresizingMaskIntoConstraints = false
     self.addSubview(titleCell)
     
-    titleCell.textColor = .black
+    titleCell.textColor = .label
     titleCell.textAlignment = .right
     titleCell.numberOfLines = 0
-    titleCell.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
-    titleCell.font = UIFont.boldSystemFont(ofSize: 20)
+    titleCell.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    titleCell.font = UIFont.systemFont(ofSize: 20)
     
     NSLayoutConstraint.activate([
       titleCell.rightAnchor.constraint(equalTo: rightAnchor, constant: -20),

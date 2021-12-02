@@ -73,7 +73,7 @@ class RegisterVC: UIViewController , UIImagePickerControllerDelegate , UINavigat
     registerButton.translatesAutoresizingMaskIntoConstraints = false
     registerButton.setTitle(NSLocalizedString("Sign In", comment: ""), for: .normal)
     registerButton.setTitleColor(.white, for: .normal)
-    registerButton.backgroundColor = .systemBrown
+    registerButton.backgroundColor = .systemGray2
     registerButton.layer.cornerRadius = 12
     registerButton.layer.masksToBounds = true
     registerButton.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)

@@ -21,14 +21,14 @@ class ServicePageVC : UIViewController{
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    view.backgroundColor = UIColor (named: "myBackgroundColor")
-//    view.backgroundColor = .white
+    view.backgroundColor = UIColor (named: "myBackgroundColor2")
     
     imageBlogPage.layer.masksToBounds = true
     imageBlogPage.layer.cornerRadius = 10
     imageBlogPage.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(imageBlogPage)
-    imageBlogPage.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    imageBlogPage.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
     NSLayoutConstraint.activate([
       imageBlogPage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -38,9 +38,10 @@ class ServicePageVC : UIViewController{
     ])
     //========================================================================
     nameBlogPage.textAlignment = .center
-    nameBlogPage.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
-    nameBlogPage.textColor = .black
-    nameBlogPage.font = .boldSystemFont(ofSize: 20)
+    nameBlogPage.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    nameBlogPage.textColor = .label
+    nameBlogPage.font = .systemFont(ofSize: 20)
     nameBlogPage.layer.cornerRadius = 10
     nameBlogPage.clipsToBounds = true
     nameBlogPage.translatesAutoresizingMaskIntoConstraints = false
@@ -53,12 +54,13 @@ class ServicePageVC : UIViewController{
       nameBlogPage.heightAnchor.constraint(equalToConstant: 50)
     ])
     //========================================================================
-    staly.font = UIFont.systemFont(ofSize: 17)
-    staly.backgroundColor = .brown
+    staly.font = UIFont.systemFont(ofSize: 18)
+    staly.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     staly.numberOfLines = 0
-    staly.textColor = .darkGray
+    staly.textColor = .label
     staly.translatesAutoresizingMaskIntoConstraints = false
-    staly.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+//    staly.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     staly.layer.cornerRadius = 10
     staly.clipsToBounds = true
     view.addSubview(staly)
@@ -73,11 +75,11 @@ class ServicePageVC : UIViewController{
     ])
     //========================================================================
 
-    textBlogPage.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
-    textBlogPage.backgroundColor = .red
-    textBlogPage.textColor = .black
-    textBlogPage.font = .systemFont(ofSize: 22)
-    textBlogPage.numberOfLines = 12
+    textBlogPage.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    textBlogPage.textColor = .label
+    textBlogPage.font = .systemFont(ofSize: 18)
+    textBlogPage.numberOfLines = 0
     textBlogPage.textAlignment = .right
     textBlogPage.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(textBlogPage)
@@ -85,19 +87,20 @@ class ServicePageVC : UIViewController{
     NSLayoutConstraint.activate([
       textBlogPage.widthAnchor.constraint(equalToConstant: 335),
       textBlogPage.topAnchor.constraint(equalTo: nameBlogPage.bottomAnchor, constant: 20),
-      textBlogPage.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -110),
       textBlogPage.leftAnchor.constraint(equalTo:view.leftAnchor,constant:30),
       textBlogPage.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -30),
     ])
     //========================================================================
     
-    button.setTitle("ok", for: .normal)
-    button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+    button.setTitle("تقديم طلب", for: .normal)
+    button.setTitleColor(.label, for: .normal)
+    button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
     button.layer.cornerRadius = 20
     button.clipsToBounds = true
     button.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(button)
-    button.backgroundColor = .blue
+    button.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
 
     NSLayoutConstraint.activate([
       button.centerXAnchor.constraint(equalTo: view.centerXAnchor),

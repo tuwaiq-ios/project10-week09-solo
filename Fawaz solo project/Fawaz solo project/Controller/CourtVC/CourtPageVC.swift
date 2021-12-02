@@ -18,7 +18,7 @@ class CourtPageVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    view.backgroundColor = UIColor (named: "myBackgroundColor")
+    view.backgroundColor = UIColor (named: "myBackgroundColor2")
     
     imageCourtPage.translatesAutoresizingMaskIntoConstraints = false
     nameCourtPage.translatesAutoresizingMaskIntoConstraints = false
@@ -27,7 +27,7 @@ class CourtPageVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     TVs.dataSource = self
     TVs.delegate = self
     TVs.register(Service_Cell.self, forCellReuseIdentifier: Service_Cell.identifier)
-    TVs.rowHeight = 100
+    TVs.rowHeight = 80
     TVs.translatesAutoresizingMaskIntoConstraints = false
     
     view.addSubview(TVs)
@@ -51,7 +51,7 @@ class CourtPageVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     let list = restFromVC!.a[indexPath.row]
     let cell = tableView.dequeueReusableCell(withIdentifier: Service_Cell.identifier, for: indexPath) as! Service_Cell
-//    cell.backgroundColor = UIColor.brown
+    
     cell.imageCell.image = list.imageA    
     cell.nameCell.text = list.nameA
     

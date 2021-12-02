@@ -28,8 +28,8 @@ class TabVC: UITabBarController {
       
       createNavController(
         for:CourtVC(),
-           title: NSLocalizedString("خدمات المحاكم", comment: ""),
-           image: UIImage(systemName: "rectangle.grid.2x2")!),
+           title: NSLocalizedString("الخدمات الإلكترونيه", comment: ""),
+           image: UIImage(systemName: "square.grid.2x2")!),
       
       createNavController(
         for:LawyersVC (),
@@ -49,8 +49,7 @@ class TabVC: UITabBarController {
       createNavController(
         for:MyProfileVC(),
            title: NSLocalizedString("المزيد", comment: ""),
-           image: UIImage(systemName: "ellipsis.circle")!),
-      
+           image: UIImage(systemName: "text.justify")!),
     ]
   }
   override func viewDidLoad() {

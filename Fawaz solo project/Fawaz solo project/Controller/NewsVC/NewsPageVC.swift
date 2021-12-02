@@ -20,13 +20,12 @@ class NewsPageVC: UIViewController{
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    view.backgroundColor = UIColor (named: "myBackgroundColor")
+    view.backgroundColor = UIColor (named: "myBackgroundColor2")
     
-    imageBlogPage.layer.masksToBounds = true
-    imageBlogPage.layer.cornerRadius = 10
     imageBlogPage.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(imageBlogPage)
-    imageBlogPage.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    imageBlogPage.backgroundColor = .systemGray4
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
     NSLayoutConstraint.activate([
       imageBlogPage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,constant: 10),
@@ -37,9 +36,9 @@ class NewsPageVC: UIViewController{
     ])
     //========================================================================
     staly.textAlignment = .center
-    staly.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
-    staly.textColor = .black
-    staly.font = .boldSystemFont(ofSize: 20)
+    staly.backgroundColor = .systemGray4
+    staly.textColor = .label
+    staly.font = .systemFont(ofSize: 20)
     staly.layer.cornerRadius = 10
     staly.clipsToBounds = true
     staly.translatesAutoresizingMaskIntoConstraints = false
@@ -53,9 +52,10 @@ class NewsPageVC: UIViewController{
     ])
     //========================================================================
     nameBlogPage.textAlignment = .center
-    nameBlogPage.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
-    nameBlogPage.textColor = .black
-    nameBlogPage.font = .boldSystemFont(ofSize: 20)
+    nameBlogPage.backgroundColor = .systemGray4
+    nameBlogPage.numberOfLines = 0
+    nameBlogPage.textColor = .label
+    nameBlogPage.font = .systemFont(ofSize: 20)
     nameBlogPage.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(nameBlogPage)
     
@@ -66,11 +66,11 @@ class NewsPageVC: UIViewController{
       nameBlogPage.widthAnchor.constraint(equalToConstant: 370)
     ])
     //========================================================================
-    staly2.font = UIFont.systemFont(ofSize: 17)
+    staly2.font = UIFont.systemFont(ofSize: 18)
     staly2.numberOfLines = 0
-    staly2.textColor = .darkGray
+    staly2.textColor = .label
     staly2.translatesAutoresizingMaskIntoConstraints = false
-    staly2.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    staly2.backgroundColor = .systemGray4
     staly2.layer.cornerRadius = 10
     staly2.clipsToBounds = true
     view.addSubview(staly2)
@@ -83,9 +83,9 @@ class NewsPageVC: UIViewController{
       staly2.widthAnchor.constraint(equalToConstant: 370)
     ])
     //========================================================================
-    textBlogPage.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
-    textBlogPage.textColor = .black
-    textBlogPage.font = .systemFont(ofSize: 22)
+    textBlogPage.backgroundColor = .systemGray4
+    textBlogPage.textColor = .label
+    textBlogPage.font = .systemFont(ofSize: 18)
     textBlogPage.numberOfLines = 12
     textBlogPage.textAlignment = .right
     textBlogPage.translatesAutoresizingMaskIntoConstraints = false

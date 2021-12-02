@@ -100,14 +100,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		CC0FC70E2757527600371ECD /* New Group */ = {
+		CC0FC70E2757527600371ECD /* MyProfile */ = {
 			isa = PBXGroup;
 			children = (
 				CCDB3EF82752B4B500CA9BA0 /* MyProfileVC.swift */,
 				CC0FC70A275750AA00371ECD /* cell.swift */,
 				CC0FC70F275753F400371ECD /* File.swift */,
 			);
-			path = "New Group";
+			path = MyProfile;
 			sourceTree = "<group>";
 		};
 		CC9C820C2753490600A7C0ED /* CourtVC */ = {
@@ -182,7 +182,7 @@
 				CCDB1CC52752AA4C0027D9A3 /* Service */,
 				CCDB1CC62752AA570027D9A3 /* Controller */,
 				CCDB3EF62752B36100CA9BA0 /* MapVC.swift */,
-				CC0FC70E2757527600371ECD /* New Group */,
+				CC0FC70E2757527600371ECD /* MyProfile */,
 			);
 			path = "Fawaz solo project";
 			sourceTree = "<group>";

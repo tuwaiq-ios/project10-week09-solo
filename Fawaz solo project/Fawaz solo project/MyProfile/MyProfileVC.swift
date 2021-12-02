@@ -14,6 +14,7 @@ class MyProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
   var users: Array<User> = []
   
   lazy var singOutButton: UIButton = {
+    
     let buttonSingOut = UIButton(type: .system)
     buttonSingOut.setTitle(NSLocalizedString("singOut", comment: ""), for: .normal)
     buttonSingOut.setTitleColor(.red, for: .normal)
@@ -25,13 +26,13 @@ class MyProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
   
   override func viewDidLoad () {
     super.viewDidLoad()
-    
-    view.backgroundColor = UIColor (named: "myBackgroundColor")
+//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    view.backgroundColor = UIColor (named: "myBackgroundColor2")
     
     let TV = UITableView()
     TV.dataSource = self
     TV.delegate = self
-    TV.rowHeight = 100
+    TV.rowHeight = 80
     TV.translatesAutoresizingMaskIntoConstraints = false
     TV.register(MyProfileVC_Cell.self, forCellReuseIdentifier: MyProfileVC_Cell.identifier)
     view.addSubview(TV)
@@ -66,7 +67,6 @@ class MyProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     let list = data_MyProfile_str[indexPath.row]
     
     let cell = tableView.dequeueReusableCell(withIdentifier: MyProfileVC_Cell.identifier, for: indexPath) as! MyProfileVC_Cell
-//    cell.backgroundColor = .systemGray
     cell.imageCell.image = list.image
     cell.titleCell.text = list.title
     cell.textCell.text = list.text
@@ -99,6 +99,19 @@ class MyProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     present(LogInVC(), animated: true, completion: nil)
   }
+  
+  @objc func showAlertButtonTapped(_ sender: UIButton) {
+
+          // create the alert
+          let alert = UIAlertController(title: "UIAlertController", message: "Would you like to continue learning how to use iOS alerts?", preferredStyle: UIAlertController.Style.alert)
+
+          // add the actions (buttons)
+          alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
+          alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+
+          // show the alert
+          self.present(alert, animated: true, completion: nil)
+      }
     
 }
 //======================================================================
