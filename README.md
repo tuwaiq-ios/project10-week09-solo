@@ -4,7 +4,7 @@
 Where
 
 ### Project Description :
-To search for cafes, Watch its details and add comments to them ..
+To Display cafes, Watch its details and add comments to them ..
 
 ### Features List:
 - Register an account and control the profile
