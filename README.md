@@ -46,45 +46,45 @@ You can send to the top ten students a congratulatory message by e-mail
 
 ### Structure:
 Models:
-Student Data,
+Student Data
 Bootcamp Data
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 Views:
-SceneDelegate,
-AppDelegate,
-Basic Min,
-Main of Top 10,
-Main of Edit Student,
+SceneDelegate
+AppDelegate
+Basic Min
+Main of Top 10
+Main of Edit Student
 Dark and light mode
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\
 Cells:
-BootcampsCell,
-EditStudentsCell,
-PrucheasCell,
-DetailsCell,
-RecCell,
-Top10 Cell,
-EmailCell,
+BootcampsCell
+EditStudentsCell
+PrucheasCell
+DetailsCell
+RecCell
+Top10 Cell
+EmailCell
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\
 Controller:
-StudentVC,
-StudentVC2,
-BootcampVC,
-BootcampsVC,
-InstructioerVC,
-NewStudentVC,
-PurchaseVC,
-DetelisVC,
-UpdateStudentVC,
-RecCollectionVC,
-stulnfoVC,
-Top10VC,
+StudentVC
+StudentVC2
+BootcampVC
+BootcampsVC
+InstructioerVC
+NewStudentVC
+PurchaseVC
+DetelisVC
+UpdateStudentVC
+RecCollectionVC
+stulnfoVC
+Top10VC
 EmailVC
 ### User Stories:
-As a Instructioer i want to Update my Student greads,
-As a Instructioer i want to Know my Student greads,
-As a Instructioer i want to Know my Student levels,
-As a Instructioer i want to congratulate my students by send email for them,
+As a Instructioer i want to Update my Student greads
+As a Instructioer i want to Know my Student greads
+As a Instructioer i want to Know my Student levels
+As a Instructioer i want to congratulate my students by send email for them
 As a Management i want to Know our Student greads
 ### Presentation:
 
