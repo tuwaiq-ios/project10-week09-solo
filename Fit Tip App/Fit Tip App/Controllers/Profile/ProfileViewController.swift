@@ -230,7 +230,7 @@ class ProfileViewController: UIViewController, ChartViewDelegate {
         settingButton.addTarget(self, action: #selector(settingButtonPressed), for: .touchUpInside)
         let constraint = [
             settingButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 110),
-            settingButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20),
+            settingButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             settingButton.heightAnchor.constraint(equalToConstant: 50),
             settingButton.widthAnchor.constraint(equalToConstant: 50)
         ]
@@ -249,8 +249,9 @@ class ProfileViewController: UIViewController, ChartViewDelegate {
         nameLabel.font = .boldSystemFont(ofSize: 18)
         nameLabel.textColor = UIColor(named: "BackgroundColor")
         let constraints = [
-            nameLabel.leftAnchor.constraint(equalTo: profilePicture.rightAnchor, constant: 16),
             nameLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 120),
+            nameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            nameLabel.widthAnchor.constraint(equalToConstant: 116)
         ]
         NSLayoutConstraint.activate(constraints)
     }
@@ -259,20 +260,19 @@ class ProfileViewController: UIViewController, ChartViewDelegate {
         view.addSubview(goalDropDownView)
         goalDropDownView.translatesAutoresizingMaskIntoConstraints = false
         goalDropDownView.addSubview(goalLabel)
+        goalDropDownView.backgroundColor = .white
         goalLabel.translatesAutoresizingMaskIntoConstraints = false
         goalLabel.text = CurrentUser.goal ?? NSLocalizedString("select_your_goal", comment: "")
         goalLabel.font = .systemFont(ofSize: 13, weight: .semibold)
-        goalLabel.textAlignment = .left
         goalLabel.textColor = UIColor(named: "BackgroundColor")
         goalDropDownView.backgroundColor = .clear
         let constraint = [
             goalDropDownView.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 10),
-            goalDropDownView.leftAnchor.constraint(equalTo: profilePicture.rightAnchor, constant: 15),
+            goalDropDownView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             goalDropDownView.heightAnchor.constraint(equalToConstant: 20),
-            goalDropDownView.widthAnchor.constraint(equalToConstant: 100),
-            goalLabel.leftAnchor.constraint(equalTo: goalDropDownView.leftAnchor),
-            goalLabel.topAnchor.constraint(equalTo: goalDropDownView.topAnchor),
-            goalLabel.centerYAnchor.constraint(equalTo: goalDropDownView.centerYAnchor)
+            goalDropDownView.widthAnchor.constraint(equalToConstant: 116),
+            goalLabel.centerYAnchor.constraint(equalTo: goalDropDownView.centerYAnchor),
+            goalLabel.widthAnchor.constraint(equalTo: goalDropDownView.widthAnchor)
         ]
         
         NSLayoutConstraint.activate(constraint)
@@ -304,8 +304,9 @@ class ProfileViewController: UIViewController, ChartViewDelegate {
         emailLabel.textColor = .systemGray3
 
         let constraint = [
-            emailLabel.leftAnchor.constraint(equalTo: profilePicture.rightAnchor, constant: 15),
-            emailLabel.topAnchor.constraint(equalTo: goalDropDownView.bottomAnchor, constant: 10)
+            emailLabel.topAnchor.constraint(equalTo: goalDropDownView.bottomAnchor, constant: 10),
+            emailLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            emailLabel.widthAnchor.constraint(equalToConstant: 116)
         ]
         NSLayoutConstraint.activate(constraint)
     }

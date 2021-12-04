@@ -58,7 +58,7 @@ class MealViewController: UIViewController,UICollectionViewDelegate, UICollectio
         breakfastLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             breakfastLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 60),
-            breakfastLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16)
+            breakfastLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16)
         ])
     }
     
@@ -85,7 +85,7 @@ class MealViewController: UIViewController,UICollectionViewDelegate, UICollectio
         lunchLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             lunchLabel.topAnchor.constraint(equalTo: collectionViewBreakfast.bottomAnchor, constant: 2),
-            lunchLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16)
+            lunchLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16)
         ])
     }
     
@@ -112,7 +112,7 @@ class MealViewController: UIViewController,UICollectionViewDelegate, UICollectio
         dinnerLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             dinnerLabel.topAnchor.constraint(equalTo: collectionViewLunch.bottomAnchor, constant: 2),
-            dinnerLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16)
+            dinnerLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16)
         ])
     }
     
