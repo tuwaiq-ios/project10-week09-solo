@@ -30,6 +30,7 @@ As a User I can see alot of activities and workouts so that I can practise with 
 As a User I can browse a list of healthy foods so that I can prepare it.
 As a User I can calculate my body mass so that I can reach the desired number.
 As a User I can regulate my sleep so that I can get  the healthy and ideal Sleep.
+Aa a User I can use a Dark Mode so that I can relieve the pressure on my eyes.
 __________________________________________
 
 

@@ -16,6 +16,11 @@ class FoodInterFace: UIViewController,UICollectionViewDelegate,UICollectionViewD
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+            backgroundImage.image = UIImage(named: "Image-24")
+            backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+            self.view.insertSubview(backgroundImage, at: 0)
         ProductsVC.dataSource = self
         ProductsVC.delegate = self
         SearchBar.delegate = self

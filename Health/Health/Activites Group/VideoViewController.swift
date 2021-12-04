@@ -19,7 +19,10 @@ class VideoViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+            backgroundImage.image = UIImage(named: "Image-26")
+            backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+            self.view.insertSubview(backgroundImage, at: 0)
         table.dataSource = self
         table.delegate = self
         // Do any additional setup after loading the view.

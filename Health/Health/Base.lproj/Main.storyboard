@@ -608,7 +608,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IXP-na-Bvq">
                                 <rect key="frame" x="0.0" y="88" width="414" height="720"/>
-                                <color key="backgroundColor" red="0.85632337010000004" green="0.94509804249999996" blue="0.61778215690000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="y3b-FP-krF">
                                     <size key="itemSize" width="320" height="340"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -637,7 +637,7 @@
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.85632337010000004" green="0.94509804249999996" blue="0.61778215690000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Ep5-kd-jpn" firstAttribute="leading" secondItem="Spw-e2-kax" secondAttribute="leading" id="5WX-FQ-ypE"/>
                                             <constraint firstItem="Spw-e2-kax" firstAttribute="leading" secondItem="pF3-8I-Xxa" secondAttribute="leading" id="Iad-50-Lef"/>
@@ -662,7 +662,7 @@
                             </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F5y-gj-cYW"/>
-                        <color key="backgroundColor" red="0.85632337010224269" green="0.94509804249999996" blue="0.61778215689576754" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="JNA-uE-Feq" firstAttribute="leading" secondItem="F5y-gj-cYW" secondAttribute="leading" id="GbP-vD-unn"/>
                             <constraint firstItem="JNA-uE-Feq" firstAttribute="top" secondItem="F5y-gj-cYW" secondAttribute="top" id="Trr-pt-dnB"/>
@@ -747,7 +747,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="220" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dJr-FQ-1Rg">
                                 <rect key="frame" x="0.0" y="70" width="414" height="738"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Vcell" rowHeight="228" id="vu5-z8-YWT" customClass="VideoCell" customModule="Health" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="228"/>
@@ -767,7 +767,7 @@
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="G6d-qS-mJA" secondAttribute="trailing" constant="20" id="4RW-cm-Tgt"/>
                                                 <constraint firstItem="JUd-fb-OcZ" firstAttribute="top" secondItem="gSa-6b-Ojv" secondAttribute="top" constant="162" id="IMe-ty-DFn"/>
@@ -777,6 +777,7 @@
                                                 <constraint firstItem="JUd-fb-OcZ" firstAttribute="leading" secondItem="gSa-6b-Ojv" secondAttribute="leading" constant="28" id="ykT-WZ-WIs"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="thumbNailImage" destination="G6d-qS-mJA" id="3p8-cG-NfE"/>
                                         </connections>
