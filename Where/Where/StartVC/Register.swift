@@ -48,7 +48,7 @@ class Register: UITableViewController {
 
         view.backgroundColor = .secondarySystemBackground
 
-        containerV.backgroundColor = .white
+        containerV.backgroundColor = UIColor(named: "bgColor")
         containerV.layer.cornerRadius = 5
         containerV.layer.masksToBounds = true
         containerV.translatesAutoresizingMaskIntoConstraints = false
@@ -118,7 +118,7 @@ class Register: UITableViewController {
         registerBtn.addTarget(self, action: #selector(register), for: .touchUpInside)
         NSLayoutConstraint.activate([
             registerBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
-            registerBtn.topAnchor.constraint(equalTo: containerV.bottomAnchor, constant: 70),
+            registerBtn.topAnchor.constraint(equalTo: containerV.bottomAnchor, constant: 50),
             registerBtn.widthAnchor.constraint(equalToConstant: 150),
             registerBtn.heightAnchor.constraint(equalToConstant: 50)
         ])

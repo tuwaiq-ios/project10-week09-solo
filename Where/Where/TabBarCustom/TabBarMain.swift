@@ -21,7 +21,7 @@ class TabBarMain: UITabBarController {
             
             barItem(tabBarTitle: "New Places", tabBarImage: UIImage(systemName: "newspaper")!.withTintColor(.white, renderingMode: .alwaysOriginal), viewController: PlacesVC()),
             
-//            barItem(tabBarTitle: "Favorite", tabBarImage: UIImage(systemName: "heart.fill")!.withTintColor(.white, renderingMode: .alwaysOriginal), viewController: CafesLikeVC()),
+            barItem(tabBarTitle: "Exit", tabBarImage: UIImage(systemName: "pip.exit")!.withTintColor(.white, renderingMode: .alwaysOriginal), viewController: ExitVC()),
 
         ]
         

@@ -6,22 +6,24 @@
 //
 
 import UIKit
-import RealmSwift
 
-class AddComment: UIViewController {
+class AddComment: UIViewController, UITextViewDelegate {
     
     let commentTF = UITextView()
     let addButton = UIButton()
     
-    let realm = try! Realm()
+    var note: CommentCafe?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .lightGray
+        title = "Comment"
         
         setupNameNoteTF()
         setupAddNoteBtn()
+        commentTF.text = note?.comment
+
     }
     
     private func setupNameNoteTF() {
@@ -41,7 +43,7 @@ class AddComment: UIViewController {
     }
 
     private func setupAddNoteBtn() {
-        
+
         addButton.layer.cornerRadius    = 20
         addButton.layer.borderColor     = UIColor.black.cgColor
         addButton.layer.borderWidth     = 0.55
@@ -57,16 +59,12 @@ class AddComment: UIViewController {
         addButton.heightAnchor.constraint(equalToConstant: 45).isActive = true
     }
     
-    @objc private func addBtnTapped() {
+    
+        
+    @objc func addBtnTapped() {
+        let note = CommentCafe(id: UUID().uuidString, comment:  commentTF.text)
+        CommentsService.shared.updateOrAddNote(comment: note)
         dismiss(animated: true, completion: nil)
-        
-        let newLandMark = CommentUser()
-        newLandMark.comment = commentTF.text!
-        
-        try! realm.write {
-            realm.add(newLandMark)
-            
-        }
     }
- }
+}
 

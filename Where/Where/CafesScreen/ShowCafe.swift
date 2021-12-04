@@ -6,10 +6,10 @@
 //
 
 import UIKit
-import RealmSwift
+
 class ShowCafe: UIViewController {
     
-    let realm = try! Realm()
+    var comments: [CommentCafe] = []
 
     let cellId = "CommentCell"
     
@@ -26,8 +26,10 @@ class ShowCafe: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let commentUsers = realm.objects(CommentUser.self)
-        Comment.shared.comments = commentUsers
+        CommentsService.shared.listenToComments { newNotes in
+            self.comments = newNotes
+            self.tableView.reloadData()
+        }
         
         title = "Cafes"
         view.backgroundColor = .white
@@ -121,7 +123,7 @@ class ShowCafe: UIViewController {
         
                 }
     
-    @objc private func addNote() {
+    @objc func addNote() {
         present(AddComment(), animated: true, completion: nil)
     }
     
@@ -134,34 +136,29 @@ class ShowCafe: UIViewController {
 extension ShowCafe: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Comment.shared.comments.count
+        return comments.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         as! CommentCell
-        
-        
-        let comment = Comment.shared.comments[indexPath.row]
-                
+
+        let note = comments[indexPath.row]
+        cell.textLabel?.text = note.comment
         cell.backgroundColor = .systemBrown
-        cell.titlePlase.text = comment.comment
-    
+        
         return cell
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let note = comments[indexPath.row]
         
-        if editingStyle == .delete {
-        let landMark = Place.shared.landMarks[indexPath.row]
+        let noteVC = AddComment()
+        noteVC.note = note
         
-        try! realm.write {
-            realm.delete(landMark)
-        }
-        tableView.reloadData()
-            
-        }
+        present(noteVC, animated: true, completion: nil)
     }
+    
 }
 
 
