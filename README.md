@@ -31,21 +31,44 @@
 
 ## You should have a:
 ### Project Name: 
-// Add your project name
+Amneen App (آمنين)
 
 ### Project Description :
-// Add your project description
+It is a simple security application that helps to enhance and increase security in places
+ 
+such as hotels , and helps the security agencies to get information for people who are in the 
+
+blacklist to track them.
 
 ### Features List:
-// Add your project feature list
-- Feature 1
-- Feature 2
+
+-Adding renters in the hotel, and displaying their informations.
+-Increase security in hotels.
+-Sending an automatic alert to the security agency in the event of the entry of a criminal.
+-Helping the security agency to obtain the information of the criminal, and help them to track the criminal.
+-The security agency obtains information about the criminal, which helps to track him .
+-Easy access for users to important emergency numbers and the ability to contact them directly.
+
 
 ### Structure:
 // Add your project screens/models/views/cells
 
 ### User Stories:
-// Add your project user stories
+
+-As a hotel, I can display the renters informations , name, ID number, hotel entry date and time, hotel name and suite number.
+
+-As a hotel, I can search in the list of renters for any renter.
+
+-As a hotel, when a new renter is entered and if it is on the Blacklist, a security alert will be shown and an automatic notification will be sent to the security agency and the hotel can contacts with security agency directly.
+
+
+-As a security agency, I can add criminals to the blacklist with name, ID number and type of crime.
+
+
+-As a security agency, I can obtain reports or information about the criminal that facilitates tracking the criminal
+
+
+-As a user (Citizen), I can get the important emergency numbers and contact them directly.
 
 ### Presentation:
 // Create your project presentation
