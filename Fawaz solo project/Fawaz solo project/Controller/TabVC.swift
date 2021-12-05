@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class TabVC: UITabBarController {
   
   fileprivate func createNavController(for rootViewController: UIViewController, title: String, image: UIImage) -> UIViewController {
@@ -17,11 +16,10 @@ class TabVC: UITabBarController {
     navController.tabBarItem.image = image
     
     rootViewController.navigationItem.title = title
-//    navigationController?.navigationBar.barTintColor = UIColor.black
     
     return navController
   }
-  
+  //==========================================================================
   func setupVCs() {
     
     viewControllers = [
@@ -51,7 +49,21 @@ class TabVC: UITabBarController {
            title: NSLocalizedString("المزيد", comment: ""),
            image: UIImage(systemName: "text.justify")!),
     ]
+    
+    let dictionary = [
+      
+      1:"CourtVC",
+      2:"LawyersVC",
+      3:"NewsVC",
+      4:"MapVC",
+      5:"MyProfileVC"
+    ]
+    print(dictionary[2] ?? "CourtVC")
+    
+    let a: Set<String> = ["CourtVC" , "LawyersVC" ,"NewsVC" ,"MapVC" ,"MyProfileVC"]
+                
   }
+  //==========================================================================
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -61,10 +73,8 @@ class TabVC: UITabBarController {
     
     tabBar.tintColor = .label
     
-//    self.tabBar.isTranslucent = false
-    
-    
     setupVCs()
     
   }
 }
+//==========================================================================

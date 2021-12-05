@@ -28,7 +28,6 @@ class Service_Cell: UITableViewCell {
     imageCell.layer.masksToBounds = true
     imageCell.layer.cornerRadius = 10
     imageCell.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
     NSLayoutConstraint.activate([
       imageCell.rightAnchor.constraint(equalTo: rightAnchor, constant: -10),
@@ -42,7 +41,6 @@ class Service_Cell: UITableViewCell {
     stalyCell.textColor = .label
     stalyCell.translatesAutoresizingMaskIntoConstraints = false
     stalyCell.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     stalyCell.layer.cornerRadius = 10
     stalyCell.clipsToBounds = true
     
@@ -62,13 +60,11 @@ class Service_Cell: UITableViewCell {
     nameCell.textColor = .label
     nameCell.textAlignment = .right
     nameCell.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     nameCell.font = UIFont.systemFont(ofSize: 20)
     
     NSLayoutConstraint.activate([
       nameCell.rightAnchor.constraint(equalTo:imageCell.leftAnchor, constant: -15),
       nameCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 15),
-//      nameCell.topAnchor.constraint(equalTo: topAnchor, constant: 20),
       nameCell.centerYAnchor.constraint(equalTo: centerYAnchor),
       nameCell.heightAnchor.constraint(equalToConstant: 45)
     ])

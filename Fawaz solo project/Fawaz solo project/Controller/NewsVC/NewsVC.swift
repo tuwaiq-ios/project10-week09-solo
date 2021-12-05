@@ -7,8 +7,8 @@
 
 import UIKit
 
-class NewsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-  
+class NewsVC: UIViewController {
+  //==========================================================================
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -32,6 +32,8 @@ class NewsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
       TV.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor)
     ])
   }
+}
+extension NewsVC: UITableViewDelegate, UITableViewDataSource {
   //======================================================================
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
@@ -62,4 +64,6 @@ class NewsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     VC4_NewsPageVC.textBlogPage.text = data3.text
     navigationController?.pushViewController(VC4_NewsPageVC, animated: true)
   }
+  
 }
+//==========================================================================

@@ -13,7 +13,7 @@ class RegisterService {
   static let shared = RegisterService()
   
   let usersCollection = Firestore.firestore().collection("users")
-  
+  //==========================================================================
   // Add user to firestor
   func addUser(user: User) {
     usersCollection.document(user.id).setData([
@@ -23,7 +23,7 @@ class RegisterService {
       "longitude" : user.longitude
     ])
   }
-  
+  //==========================================================================
   func listenToUsers(completion: @escaping (([User]) -> Void)) {
     
     usersCollection.addSnapshotListener { snapshot, error in
@@ -47,6 +47,7 @@ class RegisterService {
       completion(users)
     }
   }
+  //==========================================================================
   func updateUserInfo(user: User) {
     usersCollection.document(user.id).setData([
       "id": user.id,
@@ -55,3 +56,4 @@ class RegisterService {
   }
   
 }
+//==========================================================================

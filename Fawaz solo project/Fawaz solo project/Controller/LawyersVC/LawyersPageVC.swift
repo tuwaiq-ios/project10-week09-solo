@@ -17,7 +17,6 @@ class LawyersPageVC : UIViewController{
   let textBlogPage = UILabel()
   let button = UIButton()
   
-  
   //==========================================================================
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -29,7 +28,6 @@ class LawyersPageVC : UIViewController{
     imageBlogPage.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(imageBlogPage)
     imageBlogPage.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
     NSLayoutConstraint.activate([
       imageBlogPage.topAnchor.constraint(equalTo:view.safeAreaLayoutGuide.topAnchor),
@@ -40,7 +38,6 @@ class LawyersPageVC : UIViewController{
     //========================================================================
     staly.textAlignment = .center
     staly.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     staly.textColor = .label
     staly.font = .systemFont(ofSize: 20)
     staly.layer.cornerRadius = 10
@@ -57,7 +54,6 @@ class LawyersPageVC : UIViewController{
     //========================================================================
     nameBlogPage.textAlignment = .center
     nameBlogPage.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     nameBlogPage.textColor = .label
     nameBlogPage.font = .systemFont(ofSize: 20)
     nameBlogPage.translatesAutoresizingMaskIntoConstraints = false
@@ -72,7 +68,6 @@ class LawyersPageVC : UIViewController{
     //========================================================================
     numberBlogePage.textAlignment = .center
     numberBlogePage.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     numberBlogePage.textColor = .label
     numberBlogePage.font = .systemFont(ofSize: 20)
     numberBlogePage.translatesAutoresizingMaskIntoConstraints = false
@@ -90,7 +85,6 @@ class LawyersPageVC : UIViewController{
     staly2.textColor = .label
     staly2.translatesAutoresizingMaskIntoConstraints = false
     staly2.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     staly2.layer.cornerRadius = 10
     staly2.clipsToBounds = true
     view.addSubview(staly2)
@@ -103,9 +97,7 @@ class LawyersPageVC : UIViewController{
       
     ])
     //========================================================================
-    
     textBlogPage.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     textBlogPage.textColor = .label
     textBlogPage.font = .systemFont(ofSize: 18)
     textBlogPage.numberOfLines = 12
@@ -128,16 +120,32 @@ class LawyersPageVC : UIViewController{
     button.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(button)
     button.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
     NSLayoutConstraint.activate([
       button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
       button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30),
-//      button.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 330),
       button.widthAnchor.constraint(equalToConstant: 350),
       button.heightAnchor.constraint(equalToConstant: 70)
     ])
     
+    //Add a Simple Alert with Buttons
+    button.addTarget(self, action: #selector(popupAlert), for: .touchUpInside)
+    self.view.addSubview(button)
+  }
+  //==========================================================================
+  @objc func popupAlert(sender: UIButton!){
+    
+    let alert = UIAlertController(title: "هل تريد الاتصال بهذا الرقم؟",
+                                  message: "",
+                                  preferredStyle: .alert)
+    
+    alert.addAction(UIAlertAction(title: "نعم", style: .default, handler: { action in
+      print("Yes call")}))
+    
+    alert.addAction(UIAlertAction(title: "لا", style: .cancel, handler: { action in
+      print("Do not call")}))
+    
+    self.present(alert, animated: true)
   }
   
 }

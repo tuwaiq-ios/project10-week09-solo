@@ -32,7 +32,7 @@ var data_Lawyers_str = [
 
  https://goo.gl/maps/j7RsUfiwY52RzhBb9
 """
-    ),
+  ),
   
   Lawyers_str(
     image: UIImage(named: "l1.jpeg"),
@@ -49,7 +49,7 @@ var data_Lawyers_str = [
 
  https://goo.gl/maps/j7RsUfiwY52RzhBb9
 """
-    ),
+  ),
   
   Lawyers_str(
     image: UIImage(named: "l1.jpeg"),
@@ -66,7 +66,7 @@ var data_Lawyers_str = [
 
  https://goo.gl/maps/j7RsUfiwY52RzhBb9
 """
-    ),
+  ),
   
   Lawyers_str(
     image: UIImage(named: "l1.jpeg"),
@@ -83,7 +83,7 @@ var data_Lawyers_str = [
 
  https://goo.gl/maps/j7RsUfiwY52RzhBb9
 """
-    ),
+  ),
   
   Lawyers_str(
     image: UIImage(named: "l1.jpeg"),
@@ -100,7 +100,7 @@ var data_Lawyers_str = [
 
  https://goo.gl/maps/j7RsUfiwY52RzhBb9
 """
-    ),
+  ),
   
   Lawyers_str(
     image: UIImage(named: "l1.jpeg"),
@@ -117,7 +117,7 @@ var data_Lawyers_str = [
 
  https://goo.gl/maps/j7RsUfiwY52RzhBb9
 """
-    ),
+  ),
   
   Lawyers_str(
     image: UIImage(named: "l1.jpeg"),
@@ -134,7 +134,7 @@ var data_Lawyers_str = [
 
  https://goo.gl/maps/j7RsUfiwY52RzhBb9
 """
-    ),
+  ),
   
   Lawyers_str(
     image: UIImage(named: "l1.jpeg"),
@@ -151,5 +151,5 @@ var data_Lawyers_str = [
 
  https://goo.gl/maps/j7RsUfiwY52RzhBb9
 """
-    ),
+  ),
 ]

@@ -27,7 +27,6 @@ class LawyersVC_Cell: UITableViewCell {
     imageCell.layer.masksToBounds = true
     imageCell.layer.cornerRadius = 10
     imageCell.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
     NSLayoutConstraint.activate([
       imageCell.rightAnchor.constraint(equalTo: rightAnchor, constant: -10),
@@ -41,10 +40,8 @@ class LawyersVC_Cell: UITableViewCell {
     stalyCell.textColor = .label
     stalyCell.translatesAutoresizingMaskIntoConstraints = false
     stalyCell.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     stalyCell.layer.cornerRadius = 10
     stalyCell.clipsToBounds = true
-
     
     self.addSubview(stalyCell)
     
@@ -53,7 +50,6 @@ class LawyersVC_Cell: UITableViewCell {
       stalyCell.leftAnchor.constraint(equalTo: leftAnchor, constant: 5),
       stalyCell.rightAnchor.constraint(equalTo:imageCell.leftAnchor, constant: -5),
       stalyCell.heightAnchor.constraint(equalToConstant: 75)
-
     ])
     //========================================================================
     nameCell.translatesAutoresizingMaskIntoConstraints = false
@@ -62,7 +58,6 @@ class LawyersVC_Cell: UITableViewCell {
     nameCell.textColor = .label
     nameCell.textAlignment = .right
     nameCell.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     nameCell.font = UIFont.systemFont(ofSize: 20)
     
     NSLayoutConstraint.activate([
@@ -77,4 +72,4 @@ class LawyersVC_Cell: UITableViewCell {
     super.init(coder: coder)
   }
 }
-
+//==========================================================================

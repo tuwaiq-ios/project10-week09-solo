@@ -18,7 +18,6 @@ class CourtVC_Cell: UICollectionViewCell {
     staly.layer.cornerRadius = 40
     staly.clipsToBounds = true
     staly.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
     return staly
   }()
@@ -28,7 +27,6 @@ class CourtVC_Cell: UICollectionViewCell {
     imageView.contentMode = .scaleAspectFit
     imageView.tintColor = .label
     imageView.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
     return imageView
   }()
@@ -39,7 +37,6 @@ class CourtVC_Cell: UICollectionViewCell {
     label.numberOfLines = 0
     label.textAlignment = .center
     label.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
     return label
   }()

@@ -28,7 +28,6 @@ class ServicePageVC : UIViewController{
     imageBlogPage.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(imageBlogPage)
     imageBlogPage.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
     NSLayoutConstraint.activate([
       imageBlogPage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -39,14 +38,13 @@ class ServicePageVC : UIViewController{
     //========================================================================
     nameBlogPage.textAlignment = .center
     nameBlogPage.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     nameBlogPage.textColor = .label
     nameBlogPage.font = .systemFont(ofSize: 20)
     nameBlogPage.layer.cornerRadius = 10
     nameBlogPage.clipsToBounds = true
     nameBlogPage.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(nameBlogPage)
-
+    
     NSLayoutConstraint.activate([
       nameBlogPage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
       nameBlogPage.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -180),
@@ -56,11 +54,9 @@ class ServicePageVC : UIViewController{
     //========================================================================
     staly.font = UIFont.systemFont(ofSize: 18)
     staly.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     staly.numberOfLines = 0
     staly.textColor = .label
     staly.translatesAutoresizingMaskIntoConstraints = false
-//    staly.backgroundColor = UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     staly.layer.cornerRadius = 10
     staly.clipsToBounds = true
     view.addSubview(staly)
@@ -71,19 +67,18 @@ class ServicePageVC : UIViewController{
       staly.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -100),
       staly.widthAnchor.constraint(equalToConstant: 350),
       staly.heightAnchor.constraint(equalToConstant: 410)
-
+      
     ])
     //========================================================================
-
+    
     textBlogPage.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     textBlogPage.textColor = .label
     textBlogPage.font = .systemFont(ofSize: 18)
     textBlogPage.numberOfLines = 0
     textBlogPage.textAlignment = .right
     textBlogPage.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(textBlogPage)
-
+    
     NSLayoutConstraint.activate([
       textBlogPage.widthAnchor.constraint(equalToConstant: 335),
       textBlogPage.topAnchor.constraint(equalTo: nameBlogPage.bottomAnchor, constant: 20),
@@ -100,16 +95,32 @@ class ServicePageVC : UIViewController{
     button.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(button)
     button.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
-
+    
     NSLayoutConstraint.activate([
       button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//      button.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 330),
-      
       button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
       button.widthAnchor.constraint(equalToConstant: 350),
       button.heightAnchor.constraint(equalToConstant: 70)
     ])
+    
+    //Add a Simple Alert with Buttons
+    button.addTarget(self, action: #selector(popupAlert), for: .touchUpInside)
+    self.view.addSubview(button)
+  }
+  
+  //==========================================================================
+  @objc func popupAlert(sender: UIButton!){
+    
+    let alert = UIAlertController(title: "هل تريد تقديم طلب على هذه الخدمه؟",
+                                  message: "",
+                                  preferredStyle: .alert)
+    
+    alert.addAction(UIAlertAction(title: "نعم", style: .default, handler: { action in
+      print("Yes, apply")}))
+    alert.addAction(UIAlertAction(title: "لا", style: .cancel, handler: { action in
+      print("Do not apply")}))
+    
+    self.present(alert, animated: true)
   }
   
 }

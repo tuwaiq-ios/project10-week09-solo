@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B14ED23D88EA394BFDA914FE /* Pods_Fawaz_solo_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E840346B558699FC8194E271 /* Pods_Fawaz_solo_project.framework */; };
-		CC0FC70B275750AA00371ECD /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FC70A275750AA00371ECD /* cell.swift */; };
+		CC0FC70B275750AA00371ECD /* MyProfileVC_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FC70A275750AA00371ECD /* MyProfileVC_Cell.swift */; };
 		CC0FC70D2757517A00371ECD /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FC70C2757517A00371ECD /* Profile.swift */; };
-		CC0FC710275753F400371ECD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FC70F275753F400371ECD /* File.swift */; };
+		CC0FC710275753F400371ECD /* MyProfilePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0FC70F275753F400371ECD /* MyProfilePageVC.swift */; };
 		CC2AF8FF27547748006C5172 /* CourtVC_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AF8FE27547748006C5172 /* CourtVC_Cell.swift */; };
 		CC2AF901275479BE006C5172 /* LawyersVC_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AF900275479BE006C5172 /* LawyersVC_Cell.swift */; };
 		CC2AF90327547A40006C5172 /* LawyersPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AF90227547A40006C5172 /* LawyersPageVC.swift */; };
@@ -43,15 +43,16 @@
 /* Begin PBXFileReference section */
 		01633A4CA85B35A08BB82A24 /* Pods-Fawaz solo project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fawaz solo project.debug.xcconfig"; path = "Target Support Files/Pods-Fawaz solo project/Pods-Fawaz solo project.debug.xcconfig"; sourceTree = "<group>"; };
 		1813FD0F2D0B8B9110BC7433 /* Pods-Fawaz solo project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fawaz solo project.release.xcconfig"; path = "Target Support Files/Pods-Fawaz solo project/Pods-Fawaz solo project.release.xcconfig"; sourceTree = "<group>"; };
-		CC0FC70A275750AA00371ECD /* cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
+		CC0FC70A275750AA00371ECD /* MyProfileVC_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC_Cell.swift; sourceTree = "<group>"; };
 		CC0FC70C2757517A00371ECD /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		CC0FC70F275753F400371ECD /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		CC0FC70F275753F400371ECD /* MyProfilePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfilePageVC.swift; sourceTree = "<group>"; };
 		CC2AF8FE27547748006C5172 /* CourtVC_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtVC_Cell.swift; sourceTree = "<group>"; };
 		CC2AF900275479BE006C5172 /* LawyersVC_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyersVC_Cell.swift; sourceTree = "<group>"; };
 		CC2AF90227547A40006C5172 /* LawyersPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyersPageVC.swift; sourceTree = "<group>"; };
 		CC2AF90427547E9C006C5172 /* NewsVC_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC_Cell.swift; sourceTree = "<group>"; };
 		CC2AF90627547EA2006C5172 /* NewsPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPageVC.swift; sourceTree = "<group>"; };
 		CC2AF90827548C84006C5172 /* ServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
+		CC8DD90A275D511F0014F479 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		CC9C8208275347E200A7C0ED /* Court.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Court.swift; sourceTree = "<group>"; };
 		CC9C820A275348FD00A7C0ED /* CourtPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourtPageVC.swift; sourceTree = "<group>"; };
 		CC9C82102753772F00A7C0ED /* Lawyers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lawyers.swift; sourceTree = "<group>"; };
@@ -104,8 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				CCDB3EF82752B4B500CA9BA0 /* MyProfileVC.swift */,
-				CC0FC70A275750AA00371ECD /* cell.swift */,
-				CC0FC70F275753F400371ECD /* File.swift */,
+				CC0FC70A275750AA00371ECD /* MyProfileVC_Cell.swift */,
+				CC0FC70F275753F400371ECD /* MyProfilePageVC.swift */,
 			);
 			path = MyProfile;
 			sourceTree = "<group>";
@@ -272,6 +273,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = CCDB1CA42752A9E80027D9A3;
 			productRefGroup = CCDB1CAE2752A9E80027D9A3 /* Products */;
@@ -343,7 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC0FC70B275750AA00371ECD /* cell.swift in Sources */,
+				CC0FC70B275750AA00371ECD /* MyProfileVC_Cell.swift in Sources */,
 				CCCE6F562754A4AE003DBEB2 /* ServicePage.swift in Sources */,
 				CCDB3EF92752B4B500CA9BA0 /* MyProfileVC.swift in Sources */,
 				CCDB3EF12752B14B00CA9BA0 /* LogInVC.swift in Sources */,
@@ -358,7 +360,7 @@
 				CCDB3EFB2752D74900CA9BA0 /* CourtVC.swift in Sources */,
 				CC2AF90727547EA2006C5172 /* NewsPageVC.swift in Sources */,
 				CCA9446527533D41000BEE49 /* NewsVC.swift in Sources */,
-				CC0FC710275753F400371ECD /* File.swift in Sources */,
+				CC0FC710275753F400371ECD /* MyProfilePageVC.swift in Sources */,
 				CCDB3EED2752B13700CA9BA0 /* User.swift in Sources */,
 				CC0FC70D2757517A00371ECD /* Profile.swift in Sources */,
 				CC9C820B275348FD00A7C0ED /* CourtPageVC.swift in Sources */,
@@ -379,6 +381,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CCDB1CBC2752A9E80027D9A3 /* Base */,
+				CC8DD90A275D511F0014F479 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -451,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

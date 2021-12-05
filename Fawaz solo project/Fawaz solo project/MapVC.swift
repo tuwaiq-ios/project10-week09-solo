@@ -13,7 +13,7 @@ class MapVC: UIViewController {
   
   var locationManager: CLLocationManager!
   var mapView: MKMapView!
-  
+  //==========================================================================
   let centerMapButton: UIButton = {
     
     let button = UIButton()
@@ -25,23 +25,24 @@ class MapVC: UIViewController {
     
     return button
   }()
-  
+  //==========================================================================
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     configureLocationManager()
     configureMapView()
     enableLocationServices()
   }
-  
+  //==========================================================================
   @objc func handleCenterLocation() {
     centerMapOnUserLocation()
   }
-  
+  //==========================================================================
   func configureLocationManager() {
     locationManager = CLLocationManager()
     locationManager.delegate = self
   }
-  
+  //==========================================================================
   func configureMapView() {
     
     mapView = MKMapView()
@@ -124,7 +125,7 @@ class MapVC: UIViewController {
     mapView.setRegion(region, animated: true)
   }
 }
-
+//==========================================================================
 extension MapVC: MKMapViewDelegate {
   
   func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
@@ -134,7 +135,7 @@ extension MapVC: MKMapViewDelegate {
   }
   
 }
-
+//==========================================================================
 extension MapVC: CLLocationManagerDelegate {
   
   func enableLocationServices() {
@@ -160,9 +161,10 @@ extension MapVC: CLLocationManagerDelegate {
       locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
   }
-  
+  //==========================================================================
   func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
     guard locationManager.location != nil else { return }
     centerMapOnUserLocation()
   }
 }
+//==========================================================================

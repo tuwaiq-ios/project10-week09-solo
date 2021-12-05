@@ -10,6 +10,8 @@ import FirebaseAuth
 
 class LogInVC: UIViewController, UITextFieldDelegate {
   
+  let stackView_LogIn = UIStackView()
+  
   lazy var userEmail: UITextField = {
     let userEmail = UITextField()
     userEmail.translatesAutoresizingMaskIntoConstraints = false
@@ -21,7 +23,7 @@ class LogInVC: UIViewController, UITextFieldDelegate {
     userEmail.textAlignment = .center
     return userEmail
   }()
-  
+  //==========================================================================
   lazy var userPassword: UITextField = {
     let userPassword = UITextField()
     userPassword.translatesAutoresizingMaskIntoConstraints = false
@@ -34,7 +36,7 @@ class LogInVC: UIViewController, UITextFieldDelegate {
     userPassword.textAlignment = .center
     return userPassword
   }()
-  
+  //==========================================================================
   lazy var loginButton: UIButton = {
     let loginButton = UIButton()
     loginButton.translatesAutoresizingMaskIntoConstraints = false
@@ -47,7 +49,7 @@ class LogInVC: UIViewController, UITextFieldDelegate {
     loginButton.titleLabel?.font = .systemFont(ofSize: 20, weight: .medium)
     return loginButton
   }()
-  
+  //==========================================================================
   lazy var labelToRegister: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
@@ -55,18 +57,17 @@ class LogInVC: UIViewController, UITextFieldDelegate {
     label.text = (NSLocalizedString("Don't have account?", comment: ""))
     return label
   }()
-  
+  //==========================================================================
   lazy var registerButton: UIButton = {
     let registerButton = UIButton()
     registerButton.translatesAutoresizingMaskIntoConstraints = false
     registerButton.setTitle(NSLocalizedString("Sign In", comment: ""), for: .normal)
     registerButton.setTitleColor(.blue, for: .normal)
-    //        registerButton.backgroundColor = .white
     registerButton.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
     registerButton.titleLabel?.font = .systemFont(ofSize: 12, weight: .medium)
     return registerButton
   }()
-  
+  //==========================================================================
   lazy var imageView: UIImageView = {
     let imageView = UIImageView()
     imageView.image = UIImage(named: "Anjiz")
@@ -76,7 +77,7 @@ class LogInVC: UIViewController, UITextFieldDelegate {
     
     return imageView
   }()
-  
+  //==========================================================================
   var rememberData: Bool! = false
   
   override func viewDidLoad() {
@@ -144,7 +145,7 @@ class LogInVC: UIViewController, UITextFieldDelegate {
     tapGesture.cancelsTouchesInView = false
     
   }
-  
+  //==========================================================================
   var rem: Bool! = false
   @objc private func loginButtonTapped() {
     
@@ -176,14 +177,14 @@ class LogInVC: UIViewController, UITextFieldDelegate {
       self.present(vc, animated: true, completion: nil)
     }
   }
-  
+  //==========================================================================
   //oben RegisterVC bage
   @objc private func registerButtonTapped() {
     let vc = RegisterVC()
     vc.modalPresentationStyle = .fullScreen
     self.present(vc, animated: true, completion: nil)
   }
-  
+  //==========================================================================
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     userEmail.resignFirstResponder()
     userPassword.resignFirstResponder()
@@ -191,3 +192,4 @@ class LogInVC: UIViewController, UITextFieldDelegate {
   }
   
 }
+//==========================================================================

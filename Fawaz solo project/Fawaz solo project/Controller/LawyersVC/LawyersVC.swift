@@ -7,32 +7,31 @@
 
 import UIKit
 
-class LawyersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class LawyersVC: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     view.backgroundColor = UIColor (named: "myBackgroundColor2")
+    
     let TV = UITableView()
     
     TV.dataSource = self
     TV.delegate = self
-    
     TV.register(LawyersVC_Cell.self, forCellReuseIdentifier: LawyersVC_Cell.identifier)
-    
     TV.rowHeight = 100
     TV.translatesAutoresizingMaskIntoConstraints = false
-    
     view.addSubview(TV)
     
     NSLayoutConstraint.activate([
-      
       TV.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
       TV.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
       TV.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
       TV.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor)
     ])
   }
+}
+extension LawyersVC: UITableViewDelegate, UITableViewDataSource {
   //======================================================================
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
@@ -63,4 +62,6 @@ class LawyersVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     VC3_LawyersPageVC.textBlogPage.text = data3.text
     navigationController?.pushViewController(VC3_LawyersPageVC, animated: true)
   }
+  
 }
+//==========================================================================

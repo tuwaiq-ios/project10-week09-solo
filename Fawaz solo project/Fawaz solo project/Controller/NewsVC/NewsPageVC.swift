@@ -25,7 +25,6 @@ class NewsPageVC: UIViewController{
     imageBlogPage.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(imageBlogPage)
     imageBlogPage.backgroundColor = .systemGray4
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
     
     NSLayoutConstraint.activate([
       imageBlogPage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,constant: 10),
@@ -78,7 +77,6 @@ class NewsPageVC: UIViewController{
     NSLayoutConstraint.activate([
       staly2.topAnchor.constraint(equalTo: nameBlogPage.bottomAnchor, constant: 15),
       staly2.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//      staly2.heightAnchor.constraint(equalToConstant: 350),
       staly2.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -15),
       staly2.widthAnchor.constraint(equalToConstant: 370)
     ])

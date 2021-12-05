@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CourtVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class CourtVC: UIViewController {
   
   private var collectionView: UICollectionView?
   //==========================================================================
@@ -36,6 +36,8 @@ class CourtVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     view.addSubview(collectionView)
     collectionView.frame = view.bounds
   }
+}
+extension CourtVC: UICollectionViewDelegate, UICollectionViewDataSource {
   //==========================================================================
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) ->Int {
     
@@ -47,11 +49,10 @@ class CourtVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     let list = data_Court_str[indexPath.row]
     
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CourtVC_Cell.identifier, for: indexPath) as! CourtVC_Cell
-    
     cell.configure(label: "Custem\(indexPath.row)")
-    
     cell.myImageView.image = list.image
     cell.name.text = list.name
+    
     return cell
   }
   //==========================================================================

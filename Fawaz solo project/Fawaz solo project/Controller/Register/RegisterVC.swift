@@ -8,29 +8,13 @@
 import UIKit
 import FirebaseAuth
 
-class RegisterVC: UIViewController , UIImagePickerControllerDelegate , UINavigationControllerDelegate {
+class RegisterVC: UIViewController {
+  
+   let stackView_Register = UIStackView()
   
   var users: Array<User> = []
   
-  lazy var profileImage: UIImageView = {
-    let image = UIImageView()
-    image.translatesAutoresizingMaskIntoConstraints = false
-    image.backgroundColor = .systemBrown
-    image.isUserInteractionEnabled = true
-    image.layer.cornerRadius = 25
-    
-    return image
-  }()
-  
-  lazy var imagePicker : UIImagePickerController = {
-    let imagePicker = UIImagePickerController()
-    imagePicker.delegate = self
-    imagePicker.sourceType = .photoLibrary
-    imagePicker.allowsEditing = true
-    
-    return imagePicker
-  }()
-  
+  //==========================================================================
   lazy var firstName: UITextField = {
     let firstName = UITextField()
     firstName.translatesAutoresizingMaskIntoConstraints = false
@@ -42,7 +26,7 @@ class RegisterVC: UIViewController , UIImagePickerControllerDelegate , UINavigat
     firstName.textAlignment = .center
     return firstName
   }()
-  
+  //==========================================================================
   lazy var userEmail: UITextField = {
     let userEmail = UITextField()
     userEmail.translatesAutoresizingMaskIntoConstraints = false
@@ -54,7 +38,7 @@ class RegisterVC: UIViewController , UIImagePickerControllerDelegate , UINavigat
     userEmail.textAlignment = .center
     return userEmail
   }()
-  
+  //==========================================================================
   private let userPassword: UITextField = {
     let userPassword = UITextField()
     userPassword.translatesAutoresizingMaskIntoConstraints = false
@@ -67,7 +51,7 @@ class RegisterVC: UIViewController , UIImagePickerControllerDelegate , UINavigat
     userPassword.textAlignment = .center
     return userPassword
   }()
-  
+  //==========================================================================
   private let registerButton: UIButton = {
     let registerButton = UIButton()
     registerButton.translatesAutoresizingMaskIntoConstraints = false
@@ -80,7 +64,7 @@ class RegisterVC: UIViewController , UIImagePickerControllerDelegate , UINavigat
     registerButton.titleLabel?.font = .systemFont(ofSize: 20, weight: .medium)
     return registerButton
   }()
-  
+  //==========================================================================
   lazy var labelToRegister: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
@@ -88,7 +72,7 @@ class RegisterVC: UIViewController , UIImagePickerControllerDelegate , UINavigat
     label.text = (NSLocalizedString("did you have account?", comment: ""))
     return label
   }()
-  
+  //==========================================================================
   lazy var logInButton: UIButton = {
     let logInBtn = UIButton()
     logInBtn.translatesAutoresizingMaskIntoConstraints = false
@@ -98,7 +82,7 @@ class RegisterVC: UIViewController , UIImagePickerControllerDelegate , UINavigat
     logInBtn.titleLabel?.font = .systemFont(ofSize: 12, weight: .medium)
     return logInBtn
   }()
-  
+  //==========================================================================
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = UIColor (named: "myBackgroundColor")
@@ -106,22 +90,12 @@ class RegisterVC: UIViewController , UIImagePickerControllerDelegate , UINavigat
     RegisterService.shared.listenToUsers { newUsers in
       self.users = newUsers
     }
-    let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
-    profileImage.addGestureRecognizer(tapRecognizer)
     title = (NSLocalizedString("Register ", comment: ""))
-    
-    view.addSubview(profileImage)
-    NSLayoutConstraint.activate([
-      profileImage.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -145),
-      profileImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 80),
-      profileImage.widthAnchor.constraint(equalToConstant: 100),
-      profileImage.heightAnchor.constraint(equalToConstant: 100),
-    ])
-    
     view.addSubview(firstName)
+
     NSLayoutConstraint.activate([
       firstName.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20),
-      firstName.topAnchor.constraint(equalTo: profileImage.topAnchor, constant: 200),
+      firstName.topAnchor.constraint(equalTo: view.topAnchor, constant: 200),
       firstName.widthAnchor.constraint(equalToConstant: 350),
       firstName.heightAnchor.constraint(equalToConstant: 40),
     ])
@@ -172,7 +146,7 @@ class RegisterVC: UIViewController , UIImagePickerControllerDelegate , UINavigat
     tapGesture.cancelsTouchesInView = false
     
   }
-  
+  //==========================================================================
   @objc private func registerButtonTapped() {
     
     // linke with firebase
@@ -180,7 +154,6 @@ class RegisterVC: UIViewController , UIImagePickerControllerDelegate , UINavigat
     let password = userPassword.text ?? ""
     let firstNam = firstName.text ?? ""
     let uuid = UUID().uuidString
-    let image = profileImage.image
     
     if email.isEmpty || password.isEmpty || firstNam.isEmpty {
       return
@@ -200,21 +173,16 @@ class RegisterVC: UIViewController , UIImagePickerControllerDelegate , UINavigat
     vc.modalPresentationStyle = .fullScreen
     self.present(vc, animated: true, completion: nil)
   }
-  
-  // image picker in register page
-  @objc func imageTapped() {
-    print("Image tapped")
-    present(imagePicker, animated: true)
-  }
+  //==========================================================================
   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
     let image = info[.editedImage] ?? info [.originalImage] as? UIImage
-    profileImage.image = image as? UIImage
     dismiss(animated: true)
   }
-  
+  //==========================================================================
   @objc private func logInButtonTapped() {
     let vc = LogInVC()
     vc.modalPresentationStyle = .fullScreen
     self.present(vc, animated: true, completion: nil)
   }
 }
+//==========================================================================

@@ -7,13 +7,12 @@
 
 import UIKit
 
-class CourtPageVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CourtPageVC: UIViewController {
   
   var restFromVC: Court_str?
   
   let imageCourtPage = UIImageView()
   let nameCourtPage = UILabel()
-//  let summaryCourtPage = UILabel()
   //==========================================================================
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -37,10 +36,11 @@ class CourtPageVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
       TVs.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
       TVs.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
       TVs.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor)
-      
     ])
     
   }
+}
+extension CourtPageVC: UITableViewDelegate, UITableViewDataSource {
   //======================================================================
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
@@ -52,14 +52,13 @@ class CourtPageVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     let list = restFromVC!.a[indexPath.row]
     let cell = tableView.dequeueReusableCell(withIdentifier: Service_Cell.identifier, for: indexPath) as! Service_Cell
     
-    cell.imageCell.image = list.imageA    
+    cell.imageCell.image = list.imageA
     cell.nameCell.text = list.nameA
     
     return cell
   }
   //======================================================================
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//    data_Court_str
     
     tableView.reloadData()
     
@@ -72,8 +71,7 @@ class CourtPageVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     VC2_ServicePageVC.restFromVC2 = data2
     
     navigationController?.pushViewController(VC2_ServicePageVC, animated: true)
-    //    self.present(VC2_LawyersPageVC, animated: true, completion: nil)
     
-      }
+  }
 }
 //==========================================================================

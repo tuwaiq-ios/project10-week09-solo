@@ -9,12 +9,11 @@ import UIKit
 import FirebaseAuth
 import FirebaseFirestore
 
-class MyProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MyProfileVC: UIViewController {
   
   var users: Array<User> = []
   
   lazy var singOutButton: UIButton = {
-    
     let buttonSingOut = UIButton(type: .system)
     buttonSingOut.setTitle(NSLocalizedString("singOut", comment: ""), for: .normal)
     buttonSingOut.setTitleColor(.red, for: .normal)
@@ -23,10 +22,10 @@ class MyProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     buttonSingOut.addTarget(self, action: #selector(singOutButtonTapped), for: .touchUpInside)
     return buttonSingOut
   }()
-  
+  //==========================================================================
   override func viewDidLoad () {
     super.viewDidLoad()
-//    UIColor(red: 0.26, green: 0.55, blue: 0.55, alpha: 1.00)
+    
     view.backgroundColor = UIColor (named: "myBackgroundColor2")
     
     let TV = UITableView()
@@ -56,6 +55,8 @@ class MyProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
       action: #selector(singOutButtonTapped)
     )
   }
+}
+extension MyProfileVC: UITableViewDelegate, UITableViewDataSource {
   //======================================================================
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
@@ -87,32 +88,23 @@ class MyProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     VC4_MyProfileVC.textBlogPage.text = data4.text
     navigationController?.pushViewController(VC4_MyProfileVC, animated: false)
   }
-  
+  //==========================================================================
   //sing out from snap chat
-  @objc private func singOutButtonTapped() {
-    let firebaseAuth = Auth.auth()
-    do {
-      try firebaseAuth.signOut()
-      dismiss(animated: true, completion: nil)
-    } catch let signOutError as NSError {
-      print ("Error signing out: \(signOutError.localizedDescription)")
-    }
-    present(LogInVC(), animated: true, completion: nil)
-  }
-  
-  @objc func showAlertButtonTapped(_ sender: UIButton) {
-
-          // create the alert
-          let alert = UIAlertController(title: "UIAlertController", message: "Would you like to continue learning how to use iOS alerts?", preferredStyle: UIAlertController.Style.alert)
-
-          // add the actions (buttons)
-          alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
-          alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
-
-          // show the alert
-          self.present(alert, animated: true, completion: nil)
-      }
+  @objc private func singOutButtonTapped(sender: UIButton!) {
     
+    let alert = UIAlertController(title: "هل تريد تسجيل الخروج؟",
+                                  message: "",
+                                  preferredStyle: .alert)
+    
+    alert.addAction(UIAlertAction(title: "نعم", style: .default, handler: { action in
+      self.dismiss(animated: true, completion: nil)}))
+    
+    alert.addAction(UIAlertAction(title: "لا", style: .cancel, handler: { action in
+      print("Do not call")}))
+    
+    self.present(alert, animated: true)
+    
+  }
 }
 //======================================================================
 
