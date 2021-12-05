@@ -22,7 +22,7 @@ class serchForluggage : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleCancel))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Back", comment: ""), style: .plain, target: self, action: #selector(handleCancel))
         blackSquare = UIView(frame: CGRect(x: 0, y: 80, width: 390, height: 800))
         blackSquare.backgroundColor = .white
         blackSquare.layer.cornerRadius = 55

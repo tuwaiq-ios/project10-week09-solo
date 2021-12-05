@@ -16,9 +16,11 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
     let stackView   = UIStackView()
     let stackView2   = UIStackView()
     var users = [information] ()
+    
+    
     let Button1 : UIButton = {
         $0.backgroundColor = .white
-        $0.setTitle("sign out", for: .normal)
+        $0.setTitle(NSLocalizedString("signout", comment: ""), for: .normal)
         $0.setTitleColor(UIColor.systemMint, for: .normal)
         $0.layer.cornerRadius = 22.5
         $0.translatesAutoresizingMaskIntoConstraints = false
@@ -26,9 +28,20 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
         return $0
     }(UIButton())
     
+    let changelanguage : UIButton = {
+        $0.backgroundColor = .white
+        $0.setTitle(NSLocalizedString("changelanguage", comment: ""), for: .normal)
+        $0.setTitleColor(UIColor.systemMint, for: .normal)
+        $0.layer.cornerRadius = 22.5
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.addTarget(self, action: #selector(changeLang), for: .touchUpInside)
+        return $0
+    }(UIButton())
+    
+    
     let name: UILabel = {
         let label = UILabel()
-        label.text = "Name:"
+        label.text = NSLocalizedString("Name:", comment: "")
         label.textColor = .black
         label.font = label.font.withSize(25)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -37,7 +50,7 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
     
     let helath : UILabel = {
         let label = UILabel()
-        label.text = "Health status:"
+        label.text =  NSLocalizedString("Health status:", comment: "")
         label.textColor = .black
         label.font = label.font.withSize(25)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -46,7 +59,7 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
     
     let flightNumber: UILabel = {
         let label = UILabel()
-        label.text = "Flight number:"
+        label.text = NSLocalizedString("Flight number:", comment: "")
         label.textColor = .black
         label.font = label.font.withSize(25)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -56,7 +69,7 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
     
     let specailNeeds: UILabel = {
         let label = UILabel()
-        label.text = "special Needs:"
+        label.text =  NSLocalizedString("special Needs:", comment: "")
         label.textColor = .black
         label.font = label.font.withSize(25)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -119,6 +132,15 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
             Button1.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
             Button1.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
             Button1.heightAnchor.constraint(equalToConstant: 70)
+        ])
+        
+        
+        view.addSubview(changelanguage)
+        NSLayoutConstraint.activate([
+            changelanguage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 500),
+            changelanguage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
+            changelanguage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
+            changelanguage.heightAnchor.constraint(equalToConstant: 70)
         ])
         
         
@@ -210,7 +232,14 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
         }
     }
     
+    @objc func changeLang() {
+        let currentLang = Locale.current.languageCode
+        let newLanguage = currentLang == "en" ? "ar" : "en"
+        UserDefaults.standard.setValue([newLanguage], forKey: "AppleLanguages")
+        exit(0)
 
+    }
+    
 }
     
     

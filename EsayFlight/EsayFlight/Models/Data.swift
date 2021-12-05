@@ -13,10 +13,10 @@ struct Homme {
 }
  
 var details = [
-               Homme (image: UIImage(named: "air")!, name: "Flight"),
-               Homme (image: UIImage(named: "information")!, name: "Ask for help"),
-               Homme (image: UIImage(named: "services")!, name: "Services"),
-               Homme (image: UIImage(named: "luggage")!, name: "lost luggage")
+               Homme (image: UIImage(named: "air")!, name: NSLocalizedString("Flight", comment: "")),
+               Homme (image: UIImage(named: "information")!, name: NSLocalizedString("Ask for help", comment: "")),
+               Homme (image: UIImage(named: "services")!, name: NSLocalizedString("Services", comment: "")),
+               Homme (image: UIImage(named: "luggage")!, name: NSLocalizedString("lost luggage", comment: ""))
                 ]
 
 let searchArray = [12234,  12234, 87655, 8997]

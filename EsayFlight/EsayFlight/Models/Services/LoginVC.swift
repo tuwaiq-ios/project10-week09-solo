@@ -21,7 +21,8 @@ class LoginVC: UIViewController {
         tf.layer.borderColor = UIColor.systemMint.cgColor
         tf.textAlignment = .center
         tf.layer.borderWidth = 2
-        tf.text = ""
+        tf.text = NSLocalizedString(  "Enter your Email", comment: "")
+       
         return tf
     }()
     
@@ -34,7 +35,8 @@ class LoginVC: UIViewController {
         tf.layer.borderColor = UIColor.systemMint.cgColor
         tf.textAlignment = .center
         tf.layer.borderWidth = 2
-        tf.text = ""
+        tf.text = NSLocalizedString( "Enter your password", comment: "")
+       
       
         return tf
     }()
@@ -42,7 +44,7 @@ class LoginVC: UIViewController {
     var loginBtn: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.setTitle("Login", for: .normal)
+        btn.setTitle(NSLocalizedString("Login", comment: ""), for: .normal)
         btn.backgroundColor = .white
         btn.setTitleColor(UIColor.systemMint, for: UIControl.State.normal)
         btn.layer.cornerRadius = 15
@@ -54,7 +56,7 @@ class LoginVC: UIViewController {
     var registerBtn: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.setTitle("Register", for: .normal)
+        btn.setTitle(NSLocalizedString("Register", comment: ""), for: .normal)
         btn.backgroundColor = .white
         btn.layer.cornerRadius = 15
         btn.setTitleColor(UIColor.systemMint, for: UIControl.State.normal)

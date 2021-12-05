@@ -31,7 +31,7 @@ class AskForHelp : UIViewController, UITextViewDelegate {
     
     let name: UILabel = {
         let label = UILabel()
-        label.text = "Name:"
+        label.text = NSLocalizedString("Name:", comment: "")
         label.textColor = .black
         label.font = label.font.withSize(25)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -40,7 +40,7 @@ class AskForHelp : UIViewController, UITextViewDelegate {
     
     let helath : UILabel = {
         let label = UILabel()
-        label.text = "Health status:"
+        label.text = NSLocalizedString("Health status:", comment: "")
         label.textColor = .black
         label.font = label.font.withSize(25)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -49,7 +49,7 @@ class AskForHelp : UIViewController, UITextViewDelegate {
     
     let specailNeeds : UILabel = {
         let label = UILabel()
-        label.text = "Flight number:"
+        label.text = NSLocalizedString("Flight number:", comment: "")
         label.textColor = .black
         label.font = label.font.withSize(25)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -59,7 +59,7 @@ class AskForHelp : UIViewController, UITextViewDelegate {
     
     let flightNumber : UILabel = {
         let label = UILabel()
-        label.text = "special Needs:"
+        label.text =  NSLocalizedString("special Needs:", comment: "")
         label.textColor = .black
         label.font = label.font.withSize(25)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -68,7 +68,8 @@ class AskForHelp : UIViewController, UITextViewDelegate {
     
     let dropdownlable : UILabel = {
         let label = UILabel()
-        label.text = "select health status.."
+        label.text =  NSLocalizedString( "select health status..", comment: "")
+       
         label.textColor = .black
         label.font = label.font.withSize(19)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -78,7 +79,8 @@ class AskForHelp : UIViewController, UITextViewDelegate {
     
     let dropdownlable2 : UILabel = {
         let label = UILabel()
-        label.text = "select your needs.."
+        label.text = NSLocalizedString("select your needs..", comment: "")
+       
         label.textColor = .black
         label.font = label.font.withSize(19)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -137,7 +139,7 @@ class AskForHelp : UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(handleCancel))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Back", comment: ""), style: .plain, target: self, action: #selector(handleCancel))
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: #selector(menubar))
 
