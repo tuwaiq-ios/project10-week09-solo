@@ -1,0 +1,17 @@
+/* 
+  File.strings
+  MusicApp
+
+  Created by Amal on 01/05/1443 AH.
+  
+*/
+"SignIn" = "Sign in";
+"LogIn" = "Enter your name";
+"signers" = "signers";
+"nancy" = "Nancy";
+"soon" = "soon!";
+"album" = "Album Hassa Beek";
+"album2" = "Album Rahent Aleik";
+"album3" = "Album Baddi Hada";
+"favorite" = "favorite";
+

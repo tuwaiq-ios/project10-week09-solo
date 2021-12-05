@@ -20,7 +20,7 @@ class TabVC: UITabBarController {
     }
   func setupVCs() {
      viewControllers = [
-        createNavController(for:SingerVC (), title: NSLocalizedString("singers🎵", comment: ""), image: UIImage(systemName: "music.quarternote.3")!),
+        createNavController(for:SingerVC (), title:NSLocalizedString("signers", comment: ""), image: UIImage(systemName: "music.quarternote.3")!),
         createNavController(for:FavoriteSongsVC(), title: NSLocalizedString("favorite", comment: ""), image: UIImage(systemName: "heart")!),
 
      ]

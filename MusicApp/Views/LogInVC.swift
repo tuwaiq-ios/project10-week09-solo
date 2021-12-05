@@ -27,7 +27,7 @@ class LogInVC: UIViewController , UITextFieldDelegate {
           userName.layer.cornerRadius = 12
           userName.layer.borderWidth = 1
           userName.layer.borderColor = UIColor.lightGray.cgColor
-          userName.placeholder = "  Enter your name"
+          userName.placeholder = (NSLocalizedString("LogIn", comment: ""))
           userName.backgroundColor = UIColor(#colorLiteral(red: 0.2856064439, green: 0.6273604631, blue: 0.571624279, alpha: 1))
           userName.delegate = self
         return userName
@@ -37,7 +37,7 @@ class LogInVC: UIViewController , UITextFieldDelegate {
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         loginButton.backgroundColor = UIColor(#colorLiteral(red: 0.2856064439, green: 0.6273604631, blue: 0.571624279, alpha: 1))
         loginButton.layer.cornerRadius = 12
-        loginButton.setTitle("Sign in", for: .normal)
+        loginButton.setTitle(NSLocalizedString("SignIn", comment: ""), for: .normal)
         loginButton.layer.masksToBounds = true
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         loginButton.setTitleColor(.white, for: .normal)
