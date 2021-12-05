@@ -66,7 +66,7 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
     
     let name1: UILabel = {
         let label = UILabel()
-        label.text = "Saeed"
+        label.text = ""
         label.textColor = .black
         label.font = label.font.withSize(25)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -75,7 +75,7 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
     
     let helath1 : UILabel = {
         let label = UILabel()
-        label.text = "Old"
+        label.text = ""
         label.textColor = .black
         label.font = label.font.withSize(25)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -84,7 +84,7 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
     
     let specailNeeds1 : UILabel = {
         let label = UILabel()
-        label.text = "personal escort"
+        label.text = ""
         label.textColor = .black
         label.font = label.font.withSize(25)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -94,7 +94,7 @@ class profiel : UIViewController,  UINavigationControllerDelegate{
 
     let flightNumber1 : UILabel = {
         let label = UILabel()
-        label.text = "12345"
+        label.text = ""
         label.textColor = .black
         label.font = label.font.withSize(25)
         label.translatesAutoresizingMaskIntoConstraints = false
