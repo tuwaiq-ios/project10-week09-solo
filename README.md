@@ -30,22 +30,36 @@
 - Use alert controller
 
 ## You should have a:
-### Project Name: 
-// Add your project name
+### Project Name: Music
+     Music 
 
 ### Project Description :
-// Add your project description
+Application that allows you to listen to your favorite song without the Internet
 
 ### Features List:
 // Add your project feature list
-- Feature 1
-- Feature 2
+- Feature 1 : Choose your favorite singer
+- Feature 2 : View the singer's albums and the number of songs in each album
+- Feature 3 : Choose your favorite song and switch between songs
+- Feature 4 : Save the song to your favourites
 
 ### Structure:
-// Add your project screens/models/views/cells
-
+- views:
+MediaPlayer , MusicPlayerVC , SingerVC , TabVC , FavoriteSongsVC , AlbumVC
+LogInVC 
+- Service:
+favoriteSongService 
+- models:
+Song , Album , Singer
+- cells:
+ AlbumTableViewCell , SingerCell, FavoriteCell 
+- Music
+ 
 ### User Stories:
-// Add your project user stories
+- As a user, i want to choose my favorite singer to listen to
+- As a user, i want to choose the favorite album and the number of songs to play
+ - As a user, i want to switch to other songs from within the player for easier access
+- As a user, i want to save songs in my favorite list to listen to them later
 
 ### Presentation:
 // Create your project presentation

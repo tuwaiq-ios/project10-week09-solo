@@ -1,0 +1,17 @@
+/* 
+  File.strings
+  MusicApp
+
+  Created by Amal on 01/05/1443 AH.
+  
+*/
+
+"SignIn" = "دخول";
+"LogIn" = "ادخل اسمك";
+"signers" = "المغنيين";
+"nancy" = "نانسي";
+"soon" = "قريبا!";
+"album" = "البوم حاسه بيك";
+"album2" = "البوم رهنت عليك";
+"album3" = "البوم بدي حدا";
+"favorite" = "المفضله";
