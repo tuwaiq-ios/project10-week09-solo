@@ -15,7 +15,7 @@ class TipViewController: UIViewController,UICollectionViewDelegate, UICollection
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupCollectionView()
-        navigationItem.title = "Tips"
+        navigationItem.title = NSLocalizedString("tips", comment: "")
     }
     
     func setupCollectionView(){
