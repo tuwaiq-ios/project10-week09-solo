@@ -99,7 +99,7 @@ class  ProfileHeader: UICollectionReusableView {
     
     private let followingLabel: UILabel = {
         let label = UILabel()
-        label.text = " 0 Following "
+        label.text = " 1Following "
         let followTap = UITapGestureRecognizer(target: self, action: #selector(handleFollowersTapped))
         label.isUserInteractionEnabled = true
         label.addGestureRecognizer(followTap)
@@ -135,7 +135,7 @@ class  ProfileHeader: UICollectionReusableView {
         
         addSubview(profileImageView)
         profileImageView.anchor(top: containerView.bottomAnchor, left: leftAnchor,
-        paddingTop: -24, paddingLeft: 171)
+        paddingTop: -24, paddingLeft: 118)
         profileImageView.setDimensions(width: 80, height: 80)
         profileImageView.layer.cornerRadius = 80 / 2
         

@@ -87,7 +87,7 @@ class NookCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = .systemGray6
+        backgroundColor = UIColor(named: "Color")
         addSubview(profileImageView)
         
         profileImageView.anchor(top: topAnchor, left: leftAnchor, paddingTop: 8, paddingLeft: 8)
@@ -134,6 +134,8 @@ class NookCell: UICollectionViewCell {
         delegate?.handleProfileImageTapped(self)
     }
     @objc func handlerenookTapped() {
+        likeButton.setBackgroundImage(UIImage(systemName: "like"), for: .normal)
+        likeButton.tintColor = .green
         
     }
     @objc func handlelikeTapped() {

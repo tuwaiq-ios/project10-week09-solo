@@ -30,6 +30,7 @@ class FeedController : UICollectionViewController {
         super .viewDidLoad()
         configureUI()
         fetchNooks()
+        self.title = "NOOK"
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -21,7 +21,7 @@ class NotificationsController : UIViewController , WKUIDelegate{
         override func viewDidLoad() {
             super.viewDidLoad()
             configureUI()
-            
+            self.title = "library"
             let myURL = URL(string:"https://mana.net")
             let myRequest = URLRequest(url: myURL!)
             webView.load(myRequest)

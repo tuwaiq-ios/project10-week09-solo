@@ -12,14 +12,13 @@
 		E34AEA062756DDF00033A483 /* ArticleDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AEA052756DDF00033A483 /* ArticleDetailVC.swift */; };
 		E34AEA082756DE0E0033A483 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AEA072756DE0E0033A483 /* ArticleCell.swift */; };
 		E34AEA0A2756DE330033A483 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AEA092756DE330033A483 /* ArticleModel.swift */; };
-		E34AEA0C2758074F0033A483 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AEA0B2758074F0033A483 /* LaunchScreen.swift */; };
+		E34AEA0C2758074F0033A483 /* AnimationLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AEA0B2758074F0033A483 /* AnimationLaunch.swift */; };
 		E34AEA0E27580C400033A483 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AEA0D27580C400033A483 /* LoginController.swift */; };
 		E372F7D6274E1EAA0011E203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F7D5274E1EAA0011E203 /* AppDelegate.swift */; };
 		E372F7D8274E1EAA0011E203 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F7D7274E1EAA0011E203 /* SceneDelegate.swift */; };
 		E372F7DD274E1EAA0011E203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E372F7DB274E1EAA0011E203 /* Main.storyboard */; };
 		E372F7DF274E1EAC0011E203 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E372F7DE274E1EAC0011E203 /* Assets.xcassets */; };
 		E372F7E2274E1EAC0011E203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E372F7E0274E1EAC0011E203 /* LaunchScreen.storyboard */; };
-		E372F80E2750622C0011E203 /* NookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F80D2750622C0011E203 /* NookVC.swift */; };
 		E372F81C2750A58D0011E203 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F81B2750A58D0011E203 /* FeedController.swift */; };
 		E372F81E2750A6210011E203 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F81D2750A6210011E203 /* ExploreController.swift */; };
 		E372F8202750A6960011E203 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E372F81F2750A6960011E203 /* NotificationsController.swift */; };
@@ -54,7 +53,7 @@
 		E34AEA052756DDF00033A483 /* ArticleDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailVC.swift; sourceTree = "<group>"; };
 		E34AEA072756DE0E0033A483 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		E34AEA092756DE330033A483 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
-		E34AEA0B2758074F0033A483 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		E34AEA0B2758074F0033A483 /* AnimationLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationLaunch.swift; sourceTree = "<group>"; };
 		E34AEA0D27580C400033A483 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E372F7D2274E1EAA0011E203 /* NOOK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NOOK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E372F7D5274E1EAA0011E203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +62,6 @@
 		E372F7DE274E1EAC0011E203 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E372F7E1274E1EAC0011E203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E372F7E3274E1EAC0011E203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E372F80D2750622C0011E203 /* NookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NookVC.swift; sourceTree = "<group>"; };
 		E372F81B2750A58D0011E203 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		E372F81D2750A6210011E203 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
 		E372F81F2750A6960011E203 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
@@ -121,6 +119,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E34AEA13275C80470033A483 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				E372F7D5274E1EAA0011E203 /* AppDelegate.swift */,
+				E372F7DE274E1EAC0011E203 /* Assets.xcassets */,
+				E372F7E0274E1EAC0011E203 /* LaunchScreen.storyboard */,
+				E372F7DB274E1EAA0011E203 /* Main.storyboard */,
+				E372F7D7274E1EAA0011E203 /* SceneDelegate.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 		E372F7C9274E1EAA0011E203 = {
 			isa = PBXGroup;
 			children = (
@@ -142,20 +152,15 @@
 		E372F7D4274E1EAA0011E203 /* NOOK */ = {
 			isa = PBXGroup;
 			children = (
+				E34AEA13275C80470033A483 /* MainView */,
 				E372F816275063700011E203 /* Model */,
 				E372F8152750636D0011E203 /* View */,
 				E372F8142750636A0011E203 /* ViewModel */,
 				E372F813275063660011E203 /* Controllers */,
 				E372F812275063610011E203 /* Api */,
 				E372F8112750635F0011E203 /* Utils */,
-				E372F7D5274E1EAA0011E203 /* AppDelegate.swift */,
-				E372F7D7274E1EAA0011E203 /* SceneDelegate.swift */,
-				E372F7DB274E1EAA0011E203 /* Main.storyboard */,
-				E372F7DE274E1EAC0011E203 /* Assets.xcassets */,
-				E372F7E0274E1EAC0011E203 /* LaunchScreen.storyboard */,
 				E372F7E3274E1EAC0011E203 /* Info.plist */,
 				E372F850275209AD0011E203 /* GoogleService-Info.plist */,
-				E372F80D2750622C0011E203 /* NookVC.swift */,
 			);
 			path = NOOK;
 			sourceTree = "<group>";
@@ -166,7 +171,7 @@
 				E372F8252750D8B70011E203 /* Extensions.swift */,
 				E372F84E275143350011E203 /* Utilities.swift */,
 				E3785AFD27524F360036B7D5 /* Constants.swift */,
-				E34AEA0B2758074F0033A483 /* LaunchScreen.swift */,
+				E34AEA0B2758074F0033A483 /* AnimationLaunch.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -358,7 +363,7 @@
 			files = (
 				E3E57B152754036300C7847E /* Nook.swift in Sources */,
 				E372F7D6274E1EAA0011E203 /* AppDelegate.swift in Sources */,
-				E34AEA0C2758074F0033A483 /* LaunchScreen.swift in Sources */,
+				E34AEA0C2758074F0033A483 /* AnimationLaunch.swift in Sources */,
 				E34AEA0A2756DE330033A483 /* ArticleModel.swift in Sources */,
 				E372F8262750D8B70011E203 /* Extensions.swift in Sources */,
 				E372F7D8274E1EAA0011E203 /* SceneDelegate.swift in Sources */,
@@ -382,7 +387,6 @@
 				E372F8202750A6960011E203 /* NotificationsController.swift in Sources */,
 				E34AEA042756DDD60033A483 /* ViewController.swift in Sources */,
 				E3E57B25275592CE00C7847E /* UserCell.swift in Sources */,
-				E372F80E2750622C0011E203 /* NookVC.swift in Sources */,
 				E3E57B0F27533E4800C7847E /* UploadNookController.swift in Sources */,
 				E34AEA062756DDF00033A483 /* ArticleDetailVC.swift in Sources */,
 				E3E57B0B2752994A00C7847E /* UserService.swift in Sources */,

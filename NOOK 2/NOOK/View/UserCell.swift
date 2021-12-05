@@ -75,4 +75,6 @@ class UserCell: UITableViewCell {
         usernameLabel.text = user.username
         fullnameLabel.text = user.fullname
     }
+    
+   
 }

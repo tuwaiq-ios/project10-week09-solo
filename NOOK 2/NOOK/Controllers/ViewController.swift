@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
                 configureCollectionView()
-        self.title = "Anime Blog"
+        self.title = "Articles📑"
         self.navigationItem.largeTitleDisplayMode = .always
     }
     private func configureCollectionView(){

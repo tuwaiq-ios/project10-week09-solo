@@ -35,7 +35,7 @@ class ArticleDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Blog Post"
+        self.title = " Posts "
         self.navigationItem.largeTitleDisplayMode = .never
         setupView()
     }

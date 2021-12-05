@@ -51,6 +51,7 @@ class SearchController: UITableViewController {
         configureUI()
         fetchUsers()
         configureSearchController()
+        self.title = "Explore"
     }
     
     override func viewWillAppear(_ animated: Bool) {
