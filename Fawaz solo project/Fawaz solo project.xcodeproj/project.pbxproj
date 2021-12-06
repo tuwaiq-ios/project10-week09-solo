@@ -17,6 +17,7 @@
 		CC2AF90527547E9C006C5172 /* NewsVC_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AF90427547E9C006C5172 /* NewsVC_Cell.swift */; };
 		CC2AF90727547EA2006C5172 /* NewsPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AF90627547EA2006C5172 /* NewsPageVC.swift */; };
 		CC2AF90927548C84006C5172 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AF90827548C84006C5172 /* ServiceCell.swift */; };
+		CC4D82F9275E1D0600C59D2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDB1CB92752A9E80027D9A3 /* Assets.xcassets */; };
 		CC9C8209275347E200A7C0ED /* Court.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C8208275347E200A7C0ED /* Court.swift */; };
 		CC9C820B275348FD00A7C0ED /* CourtPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C820A275348FD00A7C0ED /* CourtPageVC.swift */; };
 		CC9C82112753772F00A7C0ED /* Lawyers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C82102753772F00A7C0ED /* Lawyers.swift */; };
@@ -27,7 +28,6 @@
 		CCCE6F562754A4AE003DBEB2 /* ServicePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCE6F552754A4AE003DBEB2 /* ServicePage.swift */; };
 		CCDB1CB12752A9E80027D9A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB1CB02752A9E80027D9A3 /* AppDelegate.swift */; };
 		CCDB1CB32752A9E80027D9A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB1CB22752A9E80027D9A3 /* SceneDelegate.swift */; };
-		CCDB1CBA2752A9E80027D9A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDB1CB92752A9E80027D9A3 /* Assets.xcassets */; };
 		CCDB1CBD2752A9E80027D9A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDB1CBB2752A9E80027D9A3 /* LaunchScreen.storyboard */; };
 		CCDB1CC82752AC420027D9A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCDB1CC72752AC420027D9A3 /* GoogleService-Info.plist */; };
 		CCDB3EED2752B13700CA9BA0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB3EEC2752B13700CA9BA0 /* User.swift */; };
@@ -291,7 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCDB1CBD2752A9E80027D9A3 /* LaunchScreen.storyboard in Resources */,
-				CCDB1CBA2752A9E80027D9A3 /* Assets.xcassets in Resources */,
+				CC4D82F9275E1D0600C59D2E /* Assets.xcassets in Resources */,
 				CCDB1CC82752AC420027D9A3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +518,7 @@
 				DEVELOPMENT_TEAM = TUQH58C925;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Fawaz solo project/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "عدل";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -547,6 +548,7 @@
 				DEVELOPMENT_TEAM = TUQH58C925;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Fawaz solo project/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "عدل";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
