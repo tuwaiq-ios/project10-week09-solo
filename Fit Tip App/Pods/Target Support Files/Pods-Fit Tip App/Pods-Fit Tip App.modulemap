@@ -1,0 +1,6 @@
+framework module Pods_Fit_Tip_App {
+  umbrella header "Pods-Fit Tip App-umbrella.h"
+
+  export *
+  module * { export * }
+}
