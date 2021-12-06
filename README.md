@@ -1,6 +1,5 @@
-# project10-week09-solo
-# Project 10, Week 09: Solo
 
+# Project 10, Week 09: Solo
 
 My Project was Larg size , i can't push to git hub $$
 
