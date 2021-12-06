@@ -1,0 +1,115 @@
+/* 
+  File.strings
+  KidsLogic
+
+  Created by sara saud on 25/04/1443 AH.
+
+//*/
+//LogIn
+"Login" = "Log in  ";
+"Register" = "Register Now !";
+"email" = "Email...";
+"password" = "Password...";
+//Profile
+"name" = "Your Name 🧒🏻";
+"status" = "Your Status ✨";
+"save" = "Save...";
+"sign Out" = "Sign Out...";
+//TabVC
+"profile" = "Profile";
+//"Users" = "Users";
+"Lesson" = "Lesson";
+"Logic KID" = "Lesson";
+"More" = "More";
+//MORE
+"GAME 🎮" = "GAME 🎮" ;
+"Video 📀" = "Video 📀" ;
+"Carton 🧩" = "Carton 🧩" ;
+"Share 🔖 " = "Share 🔖 " ;
+
+//Lessons
+"ALGORITHM" = "ALGORITHM";
+"1: Think of it this way: many introductory lessons introduce algorithms as mathematical “recipes”; and like a recipe, algorithms contain clear steps working towards an established result. " = "bhjjbjhbv";
+
+"BOOLEAN" = "BOOLEAN";
+"2: Booleans are “truth values” — they’re a data type that can represent one of two outcomes: true or false. (In some languages, true and false can be represented as 1 or 0, but the takeaway message is the same.)" = "2: Booleans are “truth values” — they’re a data type that can represent one of two outcomes: true or false. (In some languages, true and false can be represented as 1 or 0, but the takeaway message is the same.)";
+"BORDER RADIUS" = "BORDER RADIUS";
+"3: A box's backgrounds, but not its border-image, are clipped to the appropriate curve (as determined by ‘background-clip’). Other effects that clip to the border or padding edge (such as ‘overflow’ other than ‘visible’) also must clip to the curve. The content of replaced elements is always trimmed to the content edge curve. Also, the area outside the curve of the border edge does not accept mouse events on behalf of the element." = "3: A box's backgrounds, but not its border-image, are clipped to the appropriate curve (as determined by ‘background-clip’). Other effects that clip to the border or padding edge (such as ‘overflow’ other than ‘visible’) also must clip to the curve. The content of replaced elements is always trimmed to the content edge curve. Also, the area outside the curve of the border edge does not accept mouse events on behalf of the element.";
+    
+"BUG" = "BUG";
+"4: In IT, a bug refers to an error, fault or flaw in any computer program or a hardware system. A bug produces unexpected results or causes a system to behave unexpectedly. In short it is any behavior or result that." = "4: In IT, a bug refers to an error, fault or flaw in any computer program or a hardware system. A bug produces unexpected results or causes a system to behave unexpectedly. In short it is any behavior or result that." ;
+    
+"CSS" = "CSS";
+"5: CSS, which stands for Cascading Style Sheets, is a language used alongside HTML to separate a webpage's content (the HTML part) from the design and formatting (the CSS part). It defines fonts, colors, margins, lines, height, width, backgrounds, images, positions and other visual aspects of a webpage, something which HTML was not originally designed to do. Simply put, CSS decides how your HTML is displayed." = "5: CSS, which stands for Cascading Style Sheets, is a language used alongside HTML to separate a webpage's content (the HTML part) from the design and formatting (the CSS part). It defines fonts, colors, margins, lines, height, width, backgrounds, images, positions and other visual aspects of a webpage, something which HTML was not originally designed to do. Simply put, CSS decides how your HTML is displayed.";
+
+"DEBUG" = "DEBUG";
+"6: In computer programming and software development, debugging is the process of finding and resolving bugs (defects or problems that prevent correct operation) within computer programs, software, or systems.Debugging tactics can involve interactive debugging, control flow analysis, unit testing, integration testing, log file analysis, monitoring at the application or system level, memory dumps, and profiling. Many programming languages and software development tools also offer programs to aid in debugging, known as debuggers." = "6: In computer programming and software development, debugging is the process of finding and resolving bugs (defects or problems that prevent correct operation) within computer programs, software, or systems.Debugging tactics can involve interactive debugging, control flow analysis, unit testing, integration testing, log file analysis, monitoring at the application or system level, memory dumps, and profiling. Many programming languages and software development tools also offer programs to aid in debugging, known as debuggers." ;
+
+"DEFAULT"= "DEFAULT";
+"7:Default values are standards values that are universal to all instances of the device or model and intended to make the device as accessible as possible (out of the box) without necessitating a lengthy configuration process prior to use. The user only has to modify the default settings according to their personal preferences. In many devices, the user has the option to restore these default settings for one or all options. Such an assignment makes the choice of that setting or value more likely, this is called the default effect." = "7:Default values are standards values that are universal to all instances of the device or model and intended to make the device as accessible as possible (out of the box) without necessitating a lengthy configuration process prior to use. The user only has to modify the default settings according to their personal preferences. In many devices, the user has the option to restore these default settings for one or all options. Such an assignment makes the choice of that setting or value more likely, this is called the default effect.";
+
+"HTML5" = "HTML5";
+"8: HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and last[3] major HTML version that is a World Wide Web Consortium (W3C) recommendation. The current specification is known as the HTML Living Standard. It is maintained by the Web Hypertext Application Technology Working Group (WHATWG), a consortium of the major browser vendors (Apple, Google, Mozilla, and Microsoft). " = "8: HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and last[3] major HTML version that is a World Wide Web Consortium (W3C) recommendation. The current specification is known as the HTML Living Standard. It is maintained by the Web Hypertext Application Technology Working Group (WHATWG), a consortium of the major browser vendors (Apple, Google, Mozilla, and Microsoft). " ;
+
+"HTML" = "HTML";
+"9: In IT, a bug refers to an error, fault or flaw in any computer program or a hardware system. A bug produces unexpected results or causes a system to behave unexpectedly. In short it is any behavior or result that." = "9: In IT, a bug refers to an error, fault or flaw in any computer program or a hardware system. A bug produces unexpected results or causes a system to behave unexpectedly. In short it is any behavior or result that." ;
+
+"HOVER" = "HOVER";
+"10:                                              He hover effect is the alteration of the appearance of a component of the graphical interface once the mouse is hovering over it, even if it has not been selected. For example, if you hover your mouse over this word you will see that it changes color, giving you to understand that it will refer you to another link if you click on it, but you still cannot visualize what is hidden behind this word. All the user will need to visualize your effect is a mouse. It is very original when we place this effect in the caption. The e fecto hover t It is also known as hovering.
+" = "
+He hover effect is the alteration of the appearance of a component of the graphical interface once the mouse is hovering over it, even if it has not been selected. For example, if you hover your mouse over this word you will see that it changes color, giving you to understand that it will refer you to another link if you click on it, but you still cannot visualize what is hidden behind this word. All the user will need to visualize your effect is a mouse. It is very original when we place this effect in the caption. The e fecto hover t It is also known as hovering.
+";
+
+"HEX COLOR" = "HEX COLOR" ;
+"11:Hex colors are a way of representing colors from various color models through hexadecimal values. A hexadecimal color follows the format #RRGGBB, where RR is red, GG is green, and BB is blue. These hexadecimal integers can be in a range of 00 to FF to specify the intensity of the color." = "11:Hex colors are a way of representing colors from various color models through hexadecimal values. A hexadecimal color follows the format #RRGGBB, where RR is red, GG is green, and BB is blue. These hexadecimal integers can be in a range of 00 to FF to specify the intensity of the color." ;
+
+"HEIGHT" = "HEIGHT";
+"12: A box's backgrounds, but not its border-image, are clipped to the appropriate curve (as determined by ‘background-clip’). Other effects that clip to the border or padding edge (such as ‘overflow’ other than ‘visible’) also must clip to the curve. The content of replaced elements is always trimmed to the content edge curve. Also, the area outside the curve of the border edge does not accept mouse events on behalf of the element." = "12: A box's backgrounds, but not its border-image, are clipped to the appropriate curve (as determined by ‘background-clip’). Other effects that clip to the border or padding edge (such as ‘overflow’ other than ‘visible’) also must clip to the curve. The content of replaced elements is always trimmed to the content edge curve. Also, the area outside the curve of the border edge does not accept mouse events on behalf of the element." ;
+
+"FUNCTION" = "FUNCTION" ;
+"13:Functions are self contained modules of code that accomplish a specific task. Functions usually take in data, process it, and return a result. Once a function is written, it can be used over and over and over again. Functions can be called from the inside of other functions." = "13:Functions are self contained modules of code that accomplish a specific task. Functions usually take in data, process it, and return a result. Once a function is written, it can be used over and over and over again. Functions can be called from the inside of other functions." ;
+
+"OPACITY" = "OPACITY";
+"14: CSS, which stands for Cascading Style Sheets, is a language used alongside HTML to separate a webpage's content (the HTML part) from the design and formatting (the CSS part). It defines fonts, colors, margins, lines, height, width, backgrounds, images, positions and other visual aspects of a webpage, something which HTML was not originally designed to do. Simply put, CSS decides how your HTML is displayed." = "14: CSS, which stands for Cascading Style Sheets, is a language used alongside HTML to separate a webpage's content (the HTML part) from the design and formatting (the CSS part). It defines fonts, colors, margins, lines, height, width, backgrounds, images, positions and other visual aspects of a webpage, something which HTML was not originally designed to do. Simply put, CSS decides how your HTML is displayed." ;
+
+"NULL" = "NULL" ;
+"15: Think of it this way: many introductory lessons introduce algorithms as mathematical “recipes”; and like a recipe, algorithms contain clear steps working towards an established result. " = "15: Think of it this way: many introductory lessons introduce algorithms as mathematical “recipes”; and like a recipe, algorithms contain clear steps working towards an established result.";
+
+"LOOP" = "LOOP" ;
+"16: Booleans are “truth values” — they’re a data type that can represent one of two outcomes: true or false. (In some languages, true and false can be represented as 1 or 0, but the takeaway message is the same.)" = "16: Booleans are “truth values” — they’re a data type that can represent one of two outcomes: true or false. (In some languages, true and false can be represented as 1 or 0, but the takeaway message is the same.)";
+
+"JAVA SCRIPT" = "JAVA SCRIPT";
+"17: A box's backgrounds, but not its border-image, are clipped to the appropriate curve (as determined by ‘background-clip’). Other effects that clip to the border or padding edge (such as ‘overflow’ other than ‘visible’) also must clip to the curve. The content of replaced elements is always trimmed to the content edge curve. Also, the area outside the curve of the border edge does not accept mouse events on behalf of the element." = "17: A box's backgrounds, but not its border-image, are clipped to the appropriate curve (as determined by ‘background-clip’). Other effects that clip to the border or padding edge (such as ‘overflow’ other than ‘visible’) also must clip to the curve. The content of replaced elements is always trimmed to the content edge curve. Also, the area outside the curve of the border edge does not accept mouse events on behalf of the element.";
+
+"IF STATEMENT" = "IF STATEMENT";
+"18: In IT, a bug refers to an error, fault or flaw in any computer program or a hardware system. A bug produces unexpected results or causes a system to behave unexpectedly. In short it is any behavior or result that." = "18: In IT, a bug refers to an error, fault or flaw in any computer program or a hardware system. A bug produces unexpected results or causes a system to behave unexpectedly. In short it is any behavior or result that.";
+
+"SCALE" = "SCALE";
+"19: CSS, which stands for Cascading Style Sheets, is a language used alongside HTML to separate a webpage's content (the HTML part) from the design and formatting (the CSS part). It defines fonts, colors, margins, lines, height, width, backgrounds, images, positions and other visual aspects of a webpage, something which HTML was not originally designed to do. Simply put, CSS decides how your HTML is displayed." = "19: CSS, which stands for Cascading Style Sheets, is a language used alongside HTML to separate a webpage's content (the HTML part) from the design and formatting (the CSS part). It defines fonts, colors, margins, lines, height, width, backgrounds, images, positions and other visual aspects of a webpage, something which HTML was not originally designed to do. Simply put, CSS decides how your HTML is displayed.";
+
+"RUNTIME" = "RUNTIME";
+"20: Think of it this way: many introductory lessons introduce algorithms as mathematical “recipes”; and like a recipe, algorithms contain clear steps working towards an established result. " = "20: Think of it this way: many introductory lessons introduce algorithms as mathematical “recipes”; and like a recipe, algorithms contain clear steps working towards an established result. ";
+
+"RGB COLOR" = "RGB COLOR";
+"21: Booleans are “truth values” — they’re a data type that can represent one of two outcomes: true or false. (In some languages, true and false can be represented as 1 or 0, but the takeaway message is the same.)" = "21: Booleans are “truth values” — they’re a data type that can represent one of two outcomes: true or false. (In some languages, true and false can be represented as 1 or 0, but the takeaway message is the same.)";
+
+"REFRESH" = "REFRESH";
+"22: A box's backgrounds, but not its border-image, are clipped to the appropriate curve (as determined by ‘background-clip’). Other effects that clip to the border or padding edge (such as ‘overflow’ other than ‘visible’) also must clip to the curve. The content of replaced elements is always trimmed to the content edge curve. Also, the area outside the curve of the border edge does not accept mouse events on behalf of the element." = "22: A box's backgrounds, but not its border-image, are clipped to the appropriate curve (as determined by ‘background-clip’). Other effects that clip to the border or padding edge (such as ‘overflow’ other than ‘visible’) also must clip to the curve. The content of replaced elements is always trimmed to the content edge curve. Also, the area outside the curve of the border edge does not accept mouse events on behalf of the element.";
+
+"PIXELS" = "PIXELS";
+"23: In IT, a bug refers to an error, fault or flaw in any computer program or a hardware system. A bug produces unexpected results or causes a system to behave unexpectedly. In short it is any behavior or result that." = "23: In IT, a bug refers to an error, fault or flaw in any computer program or a hardware system. A bug produces unexpected results or causes a system to behave unexpectedly. In short it is any behavior or result that.";
+
+"PATH" = "PATH";
+"24: CSS, which stands for Cascading Style Sheets, is a language used alongside HTML to separate a webpage's content (the HTML part) from the design and formatting (the CSS part). It defines fonts, colors, margins, lines, height, width, backgrounds, images, positions and other visual aspects of a webpage, something which HTML was not originally designed to do. Simply put, CSS decides how your HTML is displayed." = "24: CSS, which stands for Cascading Style Sheets, is a language used alongside HTML to separate a webpage's content (the HTML part) from the design and formatting (the CSS part). It defines fonts, colors, margins, lines, height, width, backgrounds, images, positions and other visual aspects of a webpage, something which HTML was not originally designed to do. Simply put, CSS decides how your HTML is displayed.";
+
+"SYNTAX" ="SYNTAX";
+"26: A box's backgrounds, but not its border-image, are clipped to the appropriate curve (as determined by ‘background-clip’). Other effects that clip to the border or padding edge (such as ‘overflow’ other than ‘visible’) also must clip to the curve. The content of replaced elements is always trimmed to the content edge curve. Also, the area outside the curve of the border edge does not accept mouse events on behalf of the element." = "26: A box's backgrounds, but not its border-image, are clipped to the appropriate curve (as determined by ‘background-clip’). Other effects that clip to the border or padding edge (such as ‘overflow’ other than ‘visible’) also must clip to the curve. The content of replaced elements is always trimmed to the content edge curve. Also, the area outside the curve of the border edge does not accept mouse events on behalf of the element.";
+
+"STRING" = "STRING";
+"27: In IT, a bug refers to an error, fault or flaw in any computer program or a hardware system. A bug produces unexpected results or causes a system to behave unexpectedly. In short it is any behavior or result that." = "27: In IT, a bug refers to an error, fault or flaw in any computer program or a hardware system. A bug produces unexpected results or causes a system to behave unexpectedly. In short it is any behavior or result that.";
+
+
+
+
+
+
