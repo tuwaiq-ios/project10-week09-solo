@@ -37,7 +37,7 @@
 -  [ ] Add authentication for users
 -  [ ] Craft a README.md file that explains your app
 
-Additional Requirements & Bonus:
+## Additional Requirements & Bonus:
 
 - Authorization roles and groups
 - High quality, professional design
