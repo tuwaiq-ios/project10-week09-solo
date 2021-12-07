@@ -2,40 +2,40 @@
 
 ## Based on what you’ve learned until now, create a project of your choosing (impress us with your imagination). This project must at least satisfy the following requirements:
 
--[ ] Use the MVC design pattern
--[ ] Use optionals
--[ ] Use conditionals (if, switch)
--[ ] Use arrays
--[ ] Use dictionaries
--[ ] Use sets
--[ ] Use loops
--[ ] Use functions to organize code
--[ ] Use closures
--[ ] Use structs
--[ ] Use classes with an initializer
--[ ] Use some form of error handling
--[ ] Use protocols
--[ ] Use extensions
--[ ] Use computed properties
--[ ] Use table views
--[ ] Use collecton views
--[ ] Use buttons
--[ ] Use auto layout
--[ ] Use dark/light modes
--[ ] Use stack view
--[ ] Use image view
--[ ] Use label
--[ ] Use navigation controller
--[ ] Use tab controller
--[ ] Use navigation controller
--[ ] Use alert controller
--[ ] Internationalization & Localization (e.g. Arabic/English language)
--[ ] Have at least one gesture recognizer
--[ ] Have at least one animation
--[ ] Connect to a backend (Firebase, mongoDB, or any database resource), and have full CRUD
--[ ] Have at least 2 Core Data models (more if it makes sense)
--[ ] Add authetication for users
--[ ] Craft a README.md file that explains your app
+-  [ ] Use the MVC design pattern
+-  [ ] Use optionals
+-  [ ] Use conditionals (if, switch)
+-  [ ] Use arrays
+-  [ ] Use dictionaries
+-  [ ] Use sets
+-  [ ] Use loops
+-  [ ] Use functions to organize code
+-  [ ] Use closures
+-  [ ] Use structs
+-  [ ] Use classes with an initializer
+-  [ ] Use some form of error handling
+-  [ ] Use protocols
+-  [ ] Use extensions
+-  [ ] Use computed properties
+-  [ ] Use table views
+-  [ ] Use collecton views
+-  [ ] Use buttons
+-  [ ] Use auto layout
+-  [ ] Use dark/light modes
+-  [ ] Use stack view
+-  [ ] Use image view
+-  [ ] Use label
+-  [ ] Use navigation controller
+-  [ ] Use tab controller
+-  [ ] Use navigation controller
+-  [ ] Use alert controller
+-  [ ] Internationalization & Localization (e.g. Arabic/English language)
+-  [ ] Have at least one gesture recognizer
+-  [ ] Have at least one animation
+-  [ ] Connect to a backend (Firebase, mongoDB, or any database resource), and have full CRUD
+-  [ ] Have at least 2 Core Data models (more if it makes sense)
+-  [ ] Add authentication for users
+-  [ ] Craft a README.md file that explains your app
 
 Additional Requirements & Bonus:
 
@@ -63,8 +63,8 @@ Submissions will be submitted by posting into slack
 - What was your favorite part of the project?
 
 ## Readme Example:
-https://github.com/EcaCosca/dataBASE-server/blob/master/README.md
 
+https://github.com/EcaCosca/dataBASE-server/blob/master/README.md
 
 ## Deadline:
 
