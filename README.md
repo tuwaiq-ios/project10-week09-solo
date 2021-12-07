@@ -22,9 +22,9 @@
 -  [ ] Use buttons
 -  [ ] Use auto layout
 -  [ ] Use dark/light modes
--  [ ] Use stack view
--  [ ] Use image view
--  [ ] Use label
+-  [ ] Use stack views
+-  [ ] Use image views
+-  [ ] Use labels
 -  [ ] Use navigation controller
 -  [ ] Use tab controller
 -  [ ] Use navigation controller
