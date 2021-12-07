@@ -68,7 +68,7 @@ https://github.com/EcaCosca/dataBASE-server/blob/master/README.md
 
 ## Deadline:
 
-9:00 am, Wednesday, Dec 15, 2021
+9:00 am, Thursday, Dec 16, 2021
 
 ## ...
 
