@@ -72,6 +72,6 @@ https://github.com/EcaCosca/dataBASE-server/blob/master/README.md
 
 ## ...
 
-Now is the time to showcase your skills. On Tue, you will present to us what you have achieved.
+Now is the time to showcase your skills. On Wed, you will present to us what you have achieved.
 
 ### For your project. Edit this README.md file to include your own project name, overview, user stories, and usage. 
