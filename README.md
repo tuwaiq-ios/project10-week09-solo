@@ -1,64 +1,77 @@
 # Project 10, Week 09: Solo
 
-
 ## Based on what you’ve learned until now, create a project of your choosing (impress us with your imagination). This project must at least satisfy the following requirements:
 
-- Use optional
-- Use conditional (if, switch)
-- Use array
-- Use dictionary
-- Use set
-- Use loop
-- Use functions to organize code
-- Use closure
-- Use struct
-- Use classe with an initializer
-- Use some form of error handling
-- Use protocol
-- Use extension
-- Use computed property
-- Use table view
-- Use collecton view
-- Use button
-- Use auto layout
-- Use dark/light modes
-- Use stack view
-- Use image view
-- Use label
-- Use navigation controller
-- Use tab controller
-- Use alert controller
+-[ ] Use the MVC design pattern
+-[ ] Use optionals
+-[ ] Use conditionals (if, switch)
+-[ ] Use arrays
+-[ ] Use dictionaries
+-[ ] Use sets
+-[ ] Use loops
+-[ ] Use functions to organize code
+-[ ] Use closures
+-[ ] Use structs
+-[ ] Use classes with an initializer
+-[ ] Use some form of error handling
+-[ ] Use protocols
+-[ ] Use extensions
+-[ ] Use computed properties
+-[ ] Use table views
+-[ ] Use collecton views
+-[ ] Use buttons
+-[ ] Use auto layout
+-[ ] Use dark/light modes
+-[ ] Use stack view
+-[ ] Use image view
+-[ ] Use label
+-[ ] Use navigation controller
+-[ ] Use tab controller
+-[ ] Use navigation controller
+-[ ] Use alert controller
+-[ ] Internationalization & Localization (e.g. Arabic/English language)
+-[ ] Have at least one gesture recognizer
+-[ ] Have at least one animation
+-[ ] Connect to a backend (Firebase, mongoDB, or any database resource), and have full CRUD
+-[ ] Have at least 2 Core Data models (more if it makes sense)
+-[ ] Add authetication for users
+-[ ] Craft a README.md file that explains your app
 
-## You should have a:
-### Project Name: 
-// Add your project name
+Additional Requirements & Bonus:
 
-### Project Description :
-// Add your project description
+- Authorization roles and groups
+- High quality, professional design
+- Location
+- Speech recognition
+- Deployment on App Store
 
-### Features List:
-// Add your project feature list
-- Feature 1
-- Feature 2
+## Necessary Deliverables:
 
-### Structure:
-// Add your project screens/models/views/cells
+Submissions will be submitted by posting into slack
 
-### User Stories:
-// Add your project user stories
+- A link to your github repository
+- A link of your presentation
 
-### Presentation:
-// Create your project presentation
+### The presentation must be a 8-10 minutes presentation in which you answer the following questions:
+
+- What is the application about?
+- What are the user stories for your application?
+- What API did you choose to use?
+- Demo of the application
+- Walk through a piece of code
+- What was the most difficult part of the project?
+- What was your favorite part of the project?
+
+## Readme Example:
+https://github.com/EcaCosca/dataBASE-server/blob/master/README.md
 
 
-## Deadline: 
-9:00 am, Sunday, Nov 28, 2021 
+## Deadline:
 
+9:00 am, Wednesday, Dec 15, 2021
 
 ## ...
-Now is the time to showcase your skills. You will have a week to complete the project.
-On Sunday, you will present to us what you have achieved. 
 
+Now is the time to showcase your skills. On Tue, you will present to us what you have achieved.
 
-
-### For your project. Edit this README.md file to include your own project name,  overview, user stories, and usage. 
+### For your project. Edit this README.md file to include your own project name, overview, user stories, and usage. 
