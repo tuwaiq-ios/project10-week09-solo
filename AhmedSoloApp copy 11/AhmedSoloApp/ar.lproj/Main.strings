@@ -1,0 +1,75 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0Eu-6e-mPl"; */
+"0Eu-6e-mPl.normalTitle" = "اضغط هنا";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "1jf-1J-fcP"; */
+"1jf-1J-fcP.title" = "Item";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "HWl-2j-Y1u"; */
+"HWl-2j-Y1u.text" = "Title";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "IJq-JO-Msi"; */
+"IJq-JO-Msi.text" = "Subtitle";
+
+/* Class = "UINavigationItem"; title = "Music"; ObjectID = "IWK-Eb-063"; */
+"IWK-Eb-063.title" = "Music";
+
+/* Class = "UINavigationItem"; title = "Reminders"; ObjectID = "KjF-hH-uH5"; */
+"KjF-hH-uH5.title" = "تذكيرات";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "O3q-eN-fmD"; */
+"O3q-eN-fmD.text" = "Subtitle";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "O6m-O2-3UN"; */
+"O6m-O2-3UN.text" = "0";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "Oik-Lp-NYu"; */
+"Oik-Lp-NYu.title" = "Item";
+
+/* Class = "UIButton"; configuration.title = "تسبيح الكتروني  اضغط هنا"; ObjectID = "SpJ-1z-Tcz"; */
+"SpJ-1z-Tcz.configuration.title" = "تسبيح الكتروني  اضغط هنا";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SpJ-1z-Tcz"; */
+"SpJ-1z-Tcz.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "VFm-Mq-F06"; */
+"VFm-Mq-F06.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ZGA-d7-Y67"; */
+"ZGA-d7-Y67.text" = "Label";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "bTS-tn-XVu"; */
+"bTS-tn-XVu.text" = "Detail";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "bx8-2u-Zaj"; */
+"bx8-2u-Zaj.text" = "Title";
+
+/* Class = "UILabel"; text = "صوتيات"; ObjectID = "cqQ-jr-rNU"; */
+"cqQ-jr-rNU.text" = "صوتيات";
+
+/* Class = "UILabel"; text = "تسبيح الكتروني"; ObjectID = "eKc-1l-Sjd"; */
+"eKc-1l-Sjd.text" = "تسبيح الكتروني";
+
+/* Class = "UILabel"; text = "00.00.00"; ObjectID = "h3m-6l-z2C"; */
+"h3m-6l-z2C.text" = "00.00.00";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "isc-AC-0Cu"; */
+"isc-AC-0Cu.title" = "Item";
+
+/* Class = "UILabel"; text = "التاريخ"; ObjectID = "kBB-aq-g3c"; */
+"kBB-aq-g3c.text" = "التاريخ";
+
+/* Class = "UITextField"; placeholder = "enter title"; ObjectID = "m5e-G9-fG4"; */
+"m5e-G9-fG4.placeholder" = "enter title";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "nFh-Fu-gL6"; */
+"nFh-Fu-gL6.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "oy1-q7-quO"; */
+"oy1-q7-quO.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "enter body"; ObjectID = "rdj-ob-GrQ"; */
+"rdj-ob-GrQ.placeholder" = "enter body";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "wDU-EF-4eQ"; */
+"wDU-EF-4eQ.text" = "Title";
